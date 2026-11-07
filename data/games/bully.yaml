@@ -18,6 +18,11 @@ developers: [rockstar-vancouver]
 vancouver_connection: Made by Rockstar Vancouver (founded as Barking Dog Studios by ex-Radical developers in 1998); part of the AAA prehistory, not the indie scene.
 region: vancouver
 summary: Rockstar Vancouver's PS2 game, released in North America on October 17, 2006 and in Europe as Canis Canem Edit on October 25. The studio was merged into Rockstar Toronto in July 2012.
+box_art:
+  source_url: https://upload.wikimedia.org/wikipedia/en/6/63/Bully_frontcover.jpg
+  credit: Rockstar Vancouver; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Bully_(video_game)
 status: single-source

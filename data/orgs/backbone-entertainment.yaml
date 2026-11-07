@@ -8,6 +8,11 @@ location:
 summary: Its Vancouver office cut most of its staff in September 2008, one of the first local signs of the downturn.
 current: Kept a satellite operation after the 2008 cuts (per research notes); later status unknown.
 operating_status: unknown
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/en/1/18/Backbone_Entertainment_logo.png
+  credit: Backbone Entertainment; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: verified
 sources:
 - straight-2009-family-tree

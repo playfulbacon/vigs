@@ -5,5 +5,12 @@ developers: [klei-entertainment]
 vancouver_connection: An upcoming game from Vancouver's Klei Entertainment.
 region: vancouver
 summary: A Klei game announced on April 9, 2026. No release date is recorded.
+box_art:
+  source_url: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2239770/97f5aeda42c47810ecf38415ec4226fb632fd852/header.jpg
+  credit: Klei Entertainment; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/2239770/
 status: single-source
 sources: [wikipedia-klei-entertainment]

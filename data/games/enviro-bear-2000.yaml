@@ -29,6 +29,11 @@ awards:
 vancouver_connection: Often counted in the Vancouver story, but Justin Smith's Vancouver residence is unconfirmed; the opened sources call him "Canadian" without naming a city.
 region: canada
 summary: Justin Smith's driving game about a bear, made for the TIGSource Cockpit Competition with art drawn in MS Paint, where it won the most user votes. It was a 2010 IGF Nuovo Award finalist.
+box_art:
+  source_url: https://upload.wikimedia.org/wikipedia/en/e/ea/Enviro-Bear_2000_Cover.gif
+  credit: Enviro-Bear 2000; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Enviro-Bear_2000
 status: single-source

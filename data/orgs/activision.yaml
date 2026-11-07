@@ -3,6 +3,11 @@ name: Activision
 kind: publisher
 summary: Owner of Radical Entertainment; announced the 2012 staff reduction that turned Radical into a
   support studio.
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/0/01/Activision.svg
+  credit: Activision; image via Wikipedia
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - wikipedia-radical-entertainment

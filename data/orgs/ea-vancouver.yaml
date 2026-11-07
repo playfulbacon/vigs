@@ -26,6 +26,11 @@ lineage:
 summary: EA's Burnaby studio, created when Electronic Arts bought Distinctive Software in 1991. Veterans of EA Canada went on to found Relic and Blackbird Interactive, among others.
 current: Active as EA Vancouver in Burnaby, as of November 2026 (per the report's studio table).
 operating_status: active
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/en/0/0e/EA_Vancouver.png
+  credit: EA Vancouver; image via Wikipedia
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 accounts:
 - summary: EA paid US$10 million for Distinctive Software.
   sources:

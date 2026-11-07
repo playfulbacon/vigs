@@ -16,6 +16,11 @@ summary: Founded in Burnaby on July 4, 2004 by Robert Barrett as Blue Castle Gam
   (Dead Rising 2).
 current: Closure announced September 18, 2018.
 operating_status: closed
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/en/8/83/Capcom_Vancouver_logo.png
+  credit: Capcom Vancouver; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-capcom-vancouver

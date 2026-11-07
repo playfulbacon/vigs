@@ -2,6 +2,11 @@ id: capcom
 name: Capcom
 kind: publisher
 summary: Bought Blue Castle Games in 2010, renaming it Capcom Vancouver; announced its closure in 2018.
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/e/ef/Capcom_logo.svg
+  credit: Capcom; image via Wikipedia
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - wikipedia-capcom-vancouver

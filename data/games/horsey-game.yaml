@@ -15,9 +15,15 @@ credits:
 vancouver_connection: Made by Justin Smith as Captain Games; his Vancouver residence is unconfirmed.
 region: canada
 summary: Justin Smith's horse collecting, breeding and racing sim, released on Steam by Captain Games on February 18, 2026. It is rated Overwhelmingly Positive on Steam.
+box_art:
+  source_url: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3602570/945b3e12201603882fedbbf7abcb5fc3f3ad3fcb/header.jpg
+  credit: Captain Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   steam: https://store.steampowered.com/app/3602570/Horsey_Game/
   giantbomb: https://giantbomb.com/wiki/Games/Horsey_Game
+  steam: https://store.steampowered.com/app/3602570/
 status: verified
 sources: [steam-horsey-game, giantbomb-horsey-game]
 notes: Steam showed 96% positive of 2,743 reviews at research time. A third-party sales estimate in the research notes is low-reliability and not recorded.

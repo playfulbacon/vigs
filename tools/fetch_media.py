@@ -34,6 +34,7 @@ import argparse
 import datetime as dt
 import hashlib
 import json
+import random
 import re
 import sys
 import time
@@ -70,7 +71,7 @@ def read_yaml(path):
 
 # --- HTTP -------------------------------------------------------------------------------
 
-MIN_INTERVAL = {"default": 1.0, "wikimedia": 2.0}
+MIN_INTERVAL = {"default": 1.0, "wikimedia": 3.0}
 _last = {}
 
 
@@ -82,12 +83,15 @@ def _host_key(host):
     return "wikimedia" if host.endswith(("wikipedia.org", "wikimedia.org", "wikidata.org")) else host
 
 
-def http(url, method="GET", max_wait=60, extra_headers=None):
-    """Return (status, headers, body). Paces each host; on 429 backs off 2, 4, ... up to max_wait s."""
+def http(url, method="GET", max_wait=60, max_tries=8, extra_headers=None):
+    """Return (status, headers, body). Paces each host; on 429 backs off 2, 4, ... 60 s, max_tries times.
+
+    Wikimedia rate-limits shared egress IPs hard and intermittently, so patience beats giving up.
+    """
     host = urllib.parse.urlsplit(url).hostname or ""
     key = _host_key(host)
     interval = MIN_INTERVAL.get(key, MIN_INTERVAL["default"])
-    delay = 2.0
+    delay, tries = 2.0, 0
     while True:
         wait = _last.get(key, 0) + interval - time.monotonic()
         if wait > 0:
@@ -102,12 +106,14 @@ def http(url, method="GET", max_wait=60, extra_headers=None):
                 return r.status, dict(r.headers), body
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                if delay > max_wait:
+                tries += 1
+                if tries > max_tries:
                     raise RateLimited(url)
                 retry_after = e.headers.get("Retry-After")
-                pause = delay
+                pause = min(delay, max_wait)
                 if retry_after and retry_after.isdigit():
-                    pause = min(max(float(retry_after), delay), max_wait)
+                    pause = min(max(float(retry_after), pause), max_wait)
+                pause += random.uniform(0, 1)
                 print(f"    429 from {host}; waiting {pause:.0f}s", file=sys.stderr, flush=True)
                 time.sleep(pause)
                 delay *= 2
@@ -260,7 +266,17 @@ def wiki_title(url):
     return urllib.parse.unquote(m.group(1)).replace("_", " ") if m else None
 
 
+_raw = {}
+
+
 def wiki_raw(title, host="en.wikipedia.org", section0=True):
+    key = (title, host, section0)
+    if key not in _raw:
+        _raw[key] = _wiki_raw(title, host, section0)
+    return _raw[key]
+
+
+def _wiki_raw(title, host, section0):
     q = {"title": title.replace(" ", "_"), "action": "raw"}
     if section0:
         q["section"] = 0
@@ -359,7 +375,14 @@ def wiki_image(page):
     """Verified upload.wikimedia.org URL for the page's infobox file, or None."""
     if not page.get("file"):
         return None, None
-    for where, url in file_urls(page["file"]):
+    urls = file_urls(page["file"])
+    try:   # a local en file page means the file lives on en (usually non-free); else Commons
+        local = wiki_raw("File:" + page["file"], section0=False) is not None
+    except RuntimeError:
+        local = None
+    if local is not None:
+        urls = [u for u in urls if (u[0] == "en") == local]
+    for where, url in urls:
         if is_image(url):
             return url, where
     return None, None
@@ -481,16 +504,18 @@ def do_games(games, orgs, people, args, report):
         other_titles = {t for g, t in titles.items() if g != gid}
         credit_name = makers[0] if makers else rec["title"]
         links = rec.get("links") or {}
-        url = src = note = None
+        url = src = note = flag = None
         appid = steam_appid(links.get("steam"))
         try:
             if not appid:
                 appid, note = steam_search(rec, makers, people_orgs, other_titles)
+                if appid:
+                    flag, note = note, None
             if appid:
                 url = steam_art(appid)
                 src = "Steam" if url else None
                 if not url:
-                    note = f"Steam app {appid} has no capsule/header image"
+                    note, flag = f"Steam app {appid} has no capsule/header image", None
             if not url and links.get("wikipedia"):
                 page = wiki_page(wiki_title(links["wikipedia"]), ["image", "cover"])
                 url, _ = wiki_image(page)
@@ -503,8 +528,8 @@ def do_games(games, orgs, people, args, report):
             note = f"lookup failed ({e})"
         if url:
             found[gid] = dict(url=url, src=src, appid=appid if src == "Steam" else None,
-                              credit=f"{credit_name}; image via {src}", note=note, rec=rec, path=path)
-            print(f"  -> {src}: {url}" + (f"  [{note}]" if note else ""), flush=True)
+                              credit=f"{credit_name}; image via {src}", note=flag, rec=rec, path=path)
+            print(f"  -> {src}: {url}" + (f"  [{flag}]" if flag else ""), flush=True)
         else:
             report["miss"].append(("game", gid, rec["title"], note or "not on Steam; no Wikipedia link"))
             print(f"  -- miss: {note}", flush=True)

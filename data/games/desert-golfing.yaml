@@ -19,7 +19,13 @@ credits:
 vancouver_connection: The Vancouver tie is unverified. Opened sources call Blinkbat "Canadian" without a city; a 2014 Medium profile reportedly calls Smith "Vancouver-based" but could not be read.
 region: canada
 summary: A minimalist mobile golf game designed by Justin Smith and released by Blinkbat Games on August 6, 2014, with a PC and Mac release in December 2017.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/757040/library_600x900.jpg
+  credit: Blinkbat Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Desert_Golfing
+  steam: https://store.steampowered.com/app/757040/
 status: single-source
 sources: [wikipedia-desert-golfing, gamedev-7-questions-for-i-desert-golfing-i-creator-justin-smith]

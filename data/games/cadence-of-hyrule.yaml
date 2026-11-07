@@ -17,6 +17,11 @@ audio_by: [power-up-audio]
 vancouver_connection: Made by Vancouver's Brace Yourself Games with audio by Vancouver's Power Up Audio.
 region: vancouver
 summary: A Zelda-themed rhythm game from Brace Yourself Games, published by Nintendo on Switch on June 13, 2019 after its March 2019 Nindies reveal. Ryan Clark directed.
+box_art:
+  source_url: https://upload.wikimedia.org/wikipedia/en/b/b1/Cadence_of_Hyrule.jpg
+  credit: Brace Yourself Games; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Cadence_of_Hyrule
 status: single-source

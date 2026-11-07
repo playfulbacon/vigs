@@ -26,6 +26,11 @@ lineage:
 summary: 'Founded in 2007 by Relic founding members Rob Cunningham and Aaron Kambeitz with other ex-Relic and ex-EA staff; it made Homeworld: Deserts of Kharak (2016), Hardspace: Shipbreaker and Homeworld 3 (2024).'
 current: Active after layoffs of 41 (August 2023); bought the Hardspace IP from Focus and signed with Lyrical Games in August 2025 (as of November 2026).
 operating_status: active
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/0/06/Blackbird_Interactive.png
+  credit: Blackbird Interactive; image via Wikipedia
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - wikipedia-blackbird-interactive

@@ -14,6 +14,11 @@ credits:
 vancouver_connection: Made by Brian Provinciano, whom Vancouver Weekly called "one of the biggest local names"; he conceived the first Full Indie Summit (2013).
 region: vancouver
 summary: Brian Provinciano's retro open-world action game from Vblank Entertainment, released October 9, 2012 on PC, PS3 and Vita.
+box_art:
+  source_url: https://upload.wikimedia.org/wikipedia/en/9/97/Retro_City_Rampage_cover.png
+  credit: Vblank Entertainment; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Retro_City_Rampage
 status: single-source

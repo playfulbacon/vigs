@@ -3,7 +3,7 @@
 
 Usage:
   python3 tools/vigs.py validate        Check every record against its schema and all cross-references.
-  python3 tools/vigs.py build           Validate, then write dist/graph.json (records + reverse links + ages).
+  python3 tools/vigs.py build           Validate, then write dist/graph.json and site/graph.json (records + reverse links + ages).
   python3 tools/vigs.py glossary        Write glossary/ (name list for transcription tools).
   python3 tools/vigs.py stats           Count records by type and status.
 """
@@ -341,7 +341,9 @@ def build():
     }
     DIST.mkdir(exist_ok=True)
     (DIST / "graph.json").write_text(json.dumps(out, indent=1, ensure_ascii=False, default=str))
-    print(f"wrote dist/graph.json ({sum(out['counts'].values())} records)")
+    # the site reads a compact copy
+    (ROOT / "site" / "graph.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":"), default=str))
+    print(f"wrote dist/graph.json and site/graph.json ({sum(out['counts'].values())} records)")
 
 
 # ---------------------------------------------------------------- glossary

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vancouver Indie Games Story</title>
+<meta name="description" content="A working timeline of the Vancouver indie game scene, the foundation for an oral history in progress.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">An oral history in progress</p>
+    <h1>Vancouver Indie Games Story</h1>
+    <p class="lede">
+      How did Vancouver become one of the world's great indie game cities? This is the working timeline behind
+      a series of interviews with the people who built the scene. It's assembled from published sources, and every
+      entry shows how well it's documented. The interviews will fill in the gaps, correct the record and tell the
+      parts nobody wrote down.
+    </p>
+    <p class="stats" id="stats"></p>
+  </div>
+</header>
+
+<nav class="tabs wrap" role="tablist">
+  <button role="tab" data-view="timeline" aria-selected="true">Timeline</button>
+  <button role="tab" data-view="planner" aria-selected="false">Interview planner</button>
+  <button role="tab" data-view="questions" aria-selected="false">Open questions</button>
+</nav>
+
+<main>
+  <section id="view-timeline" class="view">
+    <div class="controls wrap">
+      <label class="search">
+        <span class="visually-hidden">Follow a person, game, studio or place</span>
+        <input id="search" type="search" list="entities" placeholder="Follow a person, game, studio or place…" autocomplete="off">
+        <datalist id="entities"></datalist>
+      </label>
+      <div class="filters">
+        <label><input type="checkbox" data-filter="status" value="verified" checked> Verified</label>
+        <label><input type="checkbox" data-filter="status" value="single-source" checked> Single source</label>
+        <label><input type="checkbox" data-filter="status" value="disputed" checked> Disputed</label>
+        <label><input type="checkbox" data-filter="status" value="unverified" checked> Unverified</label>
+        <select id="region" aria-label="Region">
+          <option value="all">All regions</option>
+          <option value="vancouver">Vancouver &amp; Lower Mainland</option>
+          <option value="island">Victoria &amp; Vancouver Island</option>
+        </select>
+        <select id="significance" aria-label="Significance">
+          <option value="1">All events</option>
+          <option value="2">Notable and up</option>
+          <option value="3">Turning points only</option>
+        </select>
+      </div>
+      <div class="zoom">
+        <button id="zoom-out" aria-label="Zoom out">−</button>
+        <button id="zoom-in" aria-label="Zoom in">+</button>
+      </div>
+    </div>
+    <div class="focus-bar wrap" id="focus-bar" hidden></div>
+    <div class="timeline-scroll" id="timeline-scroll">
+      <svg id="timeline" role="img" aria-label="Timeline of events"></svg>
+    </div>
+    <div class="legend wrap" id="legend"></div>
+  </section>
+
+  <section id="view-planner" class="view wrap" hidden>
+    <h2>Interview planner</h2>
+    <p class="note">People ranked by how much of their part of the story still needs testimony: open questions, disputed accounts and events resting on a single source. Pick someone to see what to ask them.</p>
+    <table class="planner">
+      <thead><tr><th>Person</th><th>Vancouver tie</th><th title="Open questions on their events">Questions</th><th title="Disputed events">Disputed</th><th title="Single-source or unverified events">Thin sourcing</th><th>Events</th></tr></thead>
+      <tbody id="planner-rows"></tbody>
+    </table>
+  </section>
+
+  <section id="view-questions" class="view wrap" hidden>
+    <h2>Open questions</h2>
+    <p class="note">Every unanswered question attached to an event, in story order.</p>
+    <div id="questions"></div>
+  </section>
+</main>
+
+<aside class="panel" id="panel" hidden aria-live="polite">
+  <button class="close" id="panel-close" aria-label="Close">×</button>
+  <div id="panel-body"></div>
+</aside>
+
+<footer class="wrap footer">
+  <p>Data, sources and method: <a href="https://github.com/playfulbacon/vigs">github.com/playfulbacon/vigs</a>. Corrections and memories welcome.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

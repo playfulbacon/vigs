@@ -25,7 +25,7 @@
 <main>
   <section id="view-timeline" class="view">
     <div class="controls">
-      <div class="lane-toggles" id="lane-toggles" aria-label="Show categories"></div>
+      <div class="lane-toggles" id="lane-toggles" aria-label="Show or hide events"></div>
     </div>
     <div class="controls zoom-row">
       <div class="seg" role="group" aria-label="Timeline layout">
@@ -36,26 +36,6 @@
         <button id="zoom-out" aria-label="Zoom out">−</button>
         <button id="zoom-in" aria-label="Zoom in">+</button>
       </div>
-      <button class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">Filters <span class="filter-count" id="filter-count" hidden></span></button>
-    </div>
-    <div class="card filter-panel" id="filter-panel" hidden>
-      <div class="filters">
-        <label><input type="checkbox" data-filter="status" value="verified" checked> Verified</label>
-        <label><input type="checkbox" data-filter="status" value="single-source" checked> Single source</label>
-        <label><input type="checkbox" data-filter="status" value="disputed" checked> Disputed</label>
-        <label><input type="checkbox" data-filter="status" value="unverified" checked> Unverified</label>
-        <select id="region" aria-label="Region">
-          <option value="all">All regions</option>
-          <option value="vancouver">Vancouver &amp; Lower Mainland</option>
-          <option value="island">Victoria &amp; Vancouver Island</option>
-        </select>
-        <select id="significance" aria-label="Significance">
-          <option value="1">All events</option>
-          <option value="2">Notable and up</option>
-          <option value="3">Turning points only</option>
-        </select>
-      </div>
-      <button class="filter-reset" id="filter-reset">Reset</button>
     </div>
     <div class="legend" id="legend"></div>
     <div class="card timeline-card" id="timeline-card">

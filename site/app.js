@@ -14,6 +14,7 @@
   let selected = null;          // selected event id
   let query = "";               // free-text search shared by every tab
   const hiddenLanes = new Set();
+  const hiddenStatuses = new Set();
   let orientation = "horizontal";  // or "vertical"
 
   const LANES = [
@@ -102,13 +103,7 @@
 
   function passes(e) {
     if (hiddenLanes.has(laneOf(e))) return false;
-    const statuses = [...document.querySelectorAll('[data-filter="status"]:checked')].map((i) => i.value);
-    if (!statuses.includes(e.status === "interview-only" ? "unverified" : e.status)) return false;
-    const region = $("#region").value;
-    const island = e.region === "victoria" || e.region === "vancouver-island";
-    if (region === "vancouver" && island) return false;
-    if (region === "island" && !island) return false;
-    if ((e.significance || 1) < +$("#significance").value) return false;
+    if (hiddenStatuses.has(e.status === "interview-only" ? "unverified" : e.status)) return false;
     return true;
   }
 
@@ -300,10 +295,8 @@
       : `<svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-dasharray="${dash}"/></svg>`;
     const ink = cssVar("--muted"), surf = cssVar("--surface");
     $("#legend").innerHTML =
-      `<span>${dot(ink, ink)}Verified</span><span>${dot(surf, ink)}Single source</span>` +
-      `<span>${dot(surf, cssVar("--disputed"), "", 2.5)}Disputed</span><span>${dot(surf, ink, "2 2")}Unverified</span>` +
       `<span><svg width="26" height="14"><rect x="0" y="4" width="26" height="6" rx="3" fill="${ink}" opacity=".28"/></svg>A span, or an uncertain date</span>` +
-      `<span>Larger dot = bigger turning point</span>`;
+      `<span>${dot(ink, ink, "", 1)}<svg width="18" height="18" style="margin-left:-2px">${square ? `<rect x="2" y="2" width="14" height="14" rx="1.5" fill="${ink}"/>` : `<circle cx="9" cy="9" r="7" fill="${ink}"/>`}</svg>Larger dot = bigger turning point</span>`;
   }
 
   // ------------------------------------------------------------ panel
@@ -741,11 +734,30 @@
     if (v === "questions") renderQuestions();
   }
 
+  const STATUS_TOGGLES = [["verified", "Verified"], ["single-source", "Single source"], ["disputed", "Disputed"], ["unverified", "Unverified"]];
+
+  function statusSwatch(st) {
+    const sq = cssVar("--dot-shape") === "square";
+    const ink = cssVar("--muted"), surf = cssVar("--surface");
+    const [fill, stroke, dash, sw] = {
+      verified: [ink, ink, "", 1.5], "single-source": [surf, ink, "", 1.5],
+      disputed: [surf, cssVar("--disputed"), "", 2.5], unverified: [surf, ink, "2 2", 1.5],
+    }[st];
+    const shape = sq ? `<rect x="2" y="2" width="10" height="10" rx="1.5"` : `<circle cx="7" cy="7" r="5"`;
+    return `<svg class="swatch-svg" width="14" height="14">${shape} fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-dasharray="${dash}"/></svg>`;
+  }
+
   function setupLaneToggles() {
-    $("#lane-toggles").innerHTML = LANES.map((l) =>
-      `<label class="lane-toggle"><input type="checkbox" value="${l.id}" checked><span class="swatch" style="background:var(${l.color})"></span>${esc(l.label)}</label>`).join("");
-    $("#lane-toggles").querySelectorAll("input").forEach((i) => i.addEventListener("change", () => {
-      i.checked ? hiddenLanes.delete(i.value) : hiddenLanes.add(i.value);
+    $("#lane-toggles").innerHTML =
+      `<div class="toggle-group"><span class="toggle-label">Category</span>` +
+      LANES.map((l) => `<button class="toggle" data-lane="${l.id}" aria-pressed="${!hiddenLanes.has(l.id)}"><span class="swatch" style="background:var(${l.color})"></span>${esc(l.label)}</button>`).join("") +
+      `</div><div class="toggle-group"><span class="toggle-label">Confidence</span>` +
+      STATUS_TOGGLES.map(([k, l]) => `<button class="toggle" data-status="${k}" aria-pressed="${!hiddenStatuses.has(k)}">${statusSwatch(k)}${esc(l)}</button>`).join("") +
+      `</div>`;
+    $("#lane-toggles").querySelectorAll(".toggle").forEach((btn) => btn.addEventListener("click", () => {
+      const [set, key] = btn.dataset.lane ? [hiddenLanes, btn.dataset.lane] : [hiddenStatuses, btn.dataset.status];
+      set.has(key) ? set.delete(key) : set.add(key);
+      btn.setAttribute("aria-pressed", !set.has(key));
       render();
     }));
   }
@@ -753,14 +765,6 @@
   function route() {
     const [type, id] = location.hash.slice(1).split("/");
     if (SHOW[type] && id) SHOW[type](decodeURIComponent(id));
-  }
-
-  // How many filters differ from the defaults, shown on the Filters button.
-  function updateFilterCount() {
-    const n = document.querySelectorAll('[data-filter="status"]:not(:checked)').length +
-      ($("#region").value !== "all") + ($("#significance").value !== "1");
-    $("#filter-count").hidden = !n;
-    $("#filter-count").textContent = n;
   }
 
   // ------------------------------------------------------------ boot
@@ -782,7 +786,7 @@
       g.querySelectorAll("button").forEach((btn) => btn.addEventListener("click", () => {
         g.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === btn));
         onPick(btn.dataset.v);
-        if (G) { legend(); render(); }
+        if (G) { legend(); setupLaneToggles(); render(); }
       }));
       bar.appendChild(g);
     }
@@ -820,17 +824,6 @@
     legend(); setupTabs(); setupLaneToggles(); setupSearch(); renderQuestions(); render();
     $("#timeline-scroll").addEventListener("scroll", pinLaneLabels, { passive: true });
     $("#timeline-scroll").scrollLeft = xOf(2008) - LEFT;
-    document.querySelectorAll("[data-filter], #region, #significance").forEach((i) => i.addEventListener("change", () => { updateFilterCount(); render(); }));
-    $("#filter-toggle").addEventListener("click", () => {
-      const open = $("#filter-panel").hidden;
-      $("#filter-panel").hidden = !open;
-      $("#filter-toggle").setAttribute("aria-expanded", open);
-    });
-    $("#filter-reset").addEventListener("click", () => {
-      document.querySelectorAll('[data-filter="status"]').forEach((i) => (i.checked = true));
-      $("#region").value = "all"; $("#significance").value = "1";
-      updateFilterCount(); render();
-    });
     document.querySelectorAll("[data-orient]").forEach((b) => b.addEventListener("click", () => {
       orientation = b.dataset.orient;
       document.querySelectorAll("[data-orient]").forEach((x) => x.setAttribute("aria-pressed", x === b));

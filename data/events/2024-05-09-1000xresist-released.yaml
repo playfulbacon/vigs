@@ -1,0 +1,32 @@
+id: 2024-05-09-1000xresist-released
+title: 1000xRESIST released
+date: '2024-05-09'
+era: current-era
+type: release
+summary: 1000xRESIST by Sunset Visitor, a four-person Vancouver team led by Remy Siu and Kodai Yanagawa and published
+  by Fellow Traveller, is released. It wins a 2024 Peabody Award (Interactive & Immersive) and is an IGF Grand Prize
+  nominee; PS5 and Xbox versions follow on November 4, 2025, and Switch 2 on August 20, 2026.
+people:
+- remy-siu
+- kodai-yanagawa
+games:
+- 1000xresist
+orgs:
+- sunset-visitor
+- fellow-traveller
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- wikipedia-1000xresist
+- source: mobilesyrup-1000xresist-vancouver-sunset-visitor-remy-siu-interview
+  note: Interview with Remy Siu, Nov 2024 (snippet)
+open_questions:
+- Is anyone leaving Vancouver over housing now? (Ask newer developers (Sunset Visitor, Buffalo Buffalo) and Game
+  Garden exhibitors.)
+- Is there a 'Vancouver style'? Where did you first say it was nature, environmentalism and emotional stories? (Ask
+  Greg Lobanov, then test the idea with the Northways and Sunset Visitor.)
+tags:
+- release
+- peabody
+- new-wave

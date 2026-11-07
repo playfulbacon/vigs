@@ -1,0 +1,46 @@
+id: klei-entertainment
+name: Klei Entertainment
+aliases:
+- Klei
+- Klei Publishing
+kind: indie-studio
+founded:
+  value: "2005-07"
+  note: The July month rests on Wikipedia.
+founders:
+- jamie-cheng
+- jeffrey-agala
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: spun-off-from
+  org: relic-entertainment
+  date: "2005-07"
+  note: Jamie Cheng left his job as a specialist AI programmer at Relic and bootstrapped Klei.
+  sources:
+  - straight-2013-bov-games-made-in-vancouver
+  - wikipedia-klei-entertainment
+- type: subsidiary-of
+  org: tencent
+  date: "2021-01"
+  note: Tencent took a majority stake (listed as a subsidiary from January 25, 2021); Cheng says Klei keeps full autonomy.
+  sources:
+  - wikipedia-klei-entertainment
+  - gematsu-tencent-to-acquire-majority-stake-in-klei-entertainment
+summary: Bootstrapped by Jamie Cheng after he left Relic, with Jeffrey Agala as co-founder and creative director; the clearest early Vancouver indie. It made Shank, Mark of the Ninja, Don't Starve and Rotwood, and acts as a patron of the local scene by publishing Crypt of the NecroDancer, Rift of the NecroDancer and Beastieball.
+current: Active, with a Tencent majority stake since January 2021; Rotwood reached 1.0 on March 3, 2026 and Don't Starve Elsewhere was announced April 9, 2026 (as of November 2026).
+operating_status: active
+status: verified
+sources:
+- straight-2013-bov-games-made-in-vancouver
+- wikipedia-klei-entertainment
+- cgm-2014-canadian-scene-part-2
+- gematsu-tencent-to-acquire-majority-stake-in-klei-entertainment
+- gematsu-beastieball-launches-in-early-access-on-november-12
+- nichegamer-rotwood-hits-full-release-alongside-switch-2-port
+notes: Wikipedia (◐) says Cheng funded Klei by selling his THQ shares and borrowing $10,000 from his brother; unconfirmed by a primary interview. Whether Kevin Forbes was a co-founder or an early designer is an open interview question, so he is not listed as a founder.
+tags:
+- aaa-spin-off
+- publisher
+- family-tree

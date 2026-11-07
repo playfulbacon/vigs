@@ -1,0 +1,16 @@
+id: igda-vancouver
+name: IGDA Vancouver
+aliases:
+- IGDA BC–Vancouver
+kind: industry-association
+location:
+  city: Vancouver
+  region: vancouver
+summary: Vancouver chapter of the International Game Developers Association, revived at least once and led by Kevin Brunt and Christopher James; it met on June 17, 2025.
+current: Meeting again in 2025–26 (as of November 2026).
+operating_status: active
+status: verified
+sources:
+- igda-6710
+- igda-igda-vancouver-june-17th-2025-meeting
+notes: Founding date, early leaders and when it lapsed are unknown. The IGDA parent body is not in the org registry.

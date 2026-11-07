@@ -1,0 +1,14 @@
+id: the-hex
+title: The Hex
+releases:
+  - date: "2018"
+    kind: release
+release_status: released
+developers: [daniel-mullins-games]
+credits:
+  - person: daniel-mullins
+    role: creator
+vancouver_connection: Daniel Mullins is documented as Vancouver-based from 2020; no source places The Hex's development in Vancouver.
+summary: Daniel Mullins Games' second game, between Pony Island and Inscryption.
+status: unverified
+notes: The 2018 year comes from the report's Daniel Mullins card, which cites no source for it; research notes say The Hex's details were not fetched.

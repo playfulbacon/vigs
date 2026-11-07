@@ -1,0 +1,60 @@
+id: amora-bettany
+name: Amora Bettany
+born:
+  date: "1987"
+  place: São Paulo
+  sources:
+  - source: wikipedia-amora-bettany
+    note: Wikipedia cites her own site
+origin: São Paulo, Brazil
+vancouver:
+  tie: resident
+  arrived: "2019"
+  note: Moved from São Paulo to Vancouver in 2019 to work at EXOK in person.
+  sources:
+  - wikipedia-amora-bettany
+roles:
+- artist
+- writer
+- animator
+- founder
+summary: >-
+  Brazilian artist and MiniBoss co-founder whose credits include TowerFall, Celeste and Celeste 64; she
+  moved to Vancouver in 2019.
+bio: >-
+  Bettany co-founded MiniBoss in São Paulo in 2010 with Pedro Medeiros and Heidy Motta; the studio later
+  did art for TowerFall and Celeste. Her credits include character design and concept art on TowerFall,
+  writing, concept art and animation on Celeste (2018), co-creating Celeste 64: Fragments of the Mountain
+  (2024) and concept art for Wanderstop (2025). She was on the founding team of Extremely OK Games and
+  moved to Vancouver in 2019 to work there in person. Per Wikipedia she left EXOK around the dispute over
+  Celeste's IP.
+memberships:
+- org: miniboss
+  role: co-founder
+  start: "2010"
+  status: single-source
+  sources:
+  - wikipedia-amora-bettany
+- org: extremely-ok-games
+  role: founding team
+  start: "2019"
+  end:
+    value: "2025"
+    qualifier: by
+    note: Wikipedia says she left around the Celeste IP dispute; no date given
+  status: single-source
+  sources:
+  - gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
+  - wikipedia-amora-bettany
+current: 'As of the November 2026 report: Vancouver-based; current project not found.'
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Amora_Bettany
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-amora-bettany
+- gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
+- wikipedia-celeste-video-game
+- wikipedia-extremely-ok-games
+- wikipedia-wanderstop

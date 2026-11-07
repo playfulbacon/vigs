@@ -1,0 +1,15 @@
+id: gabby-darienzo
+name: Gabby DaRienzo
+vancouver:
+  tie: unconfirmed
+roles:
+- artist
+summary: Credited artist on Celeste (2018).
+bio: >-
+  Wikipedia's Celeste credits list DaRienzo among the game's artists, with Noel Berry, Amora Bettany and
+  Pedro Medeiros.
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-celeste-video-game

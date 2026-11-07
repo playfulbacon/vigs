@@ -1,0 +1,18 @@
+id: 2023-02-phoenix-labs-management-buyout
+title: Phoenix Labs management buyout
+date: 2023-02
+era: current-era
+type: acquisition
+summary: Phoenix Labs goes through a management buyout. Blockchain firm Forte was later reported to own the studio.
+orgs:
+- phoenix-labs
+- garena
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-phoenix-labs
+caveat: Forte has no registry record.
+tags:
+- ownership
+- phoenix-labs

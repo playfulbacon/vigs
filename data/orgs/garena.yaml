@@ -1,0 +1,7 @@
+id: garena
+name: Garena
+kind: publisher
+summary: Acquired Phoenix Labs in January 2020, reportedly for about US$150M.
+status: single-source
+sources:
+- wikipedia-phoenix-labs

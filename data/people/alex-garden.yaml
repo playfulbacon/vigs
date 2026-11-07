@@ -1,0 +1,23 @@
+id: alex-garden
+name: Alex Garden
+roles:
+- founder
+summary: >-
+  Co-founder of Relic Entertainment (May 1997), described by the Georgia Straight as coming from EA Canada/Radical.
+bio: >-
+  Garden co-founded Relic Entertainment in May 1997 with Luke Moloney, Erin Daly, Aaron Kambeitz, Rob
+  Cunningham, Gary Shaw and Shane Alfreds. In the Georgia Straight's 2009 family tree he is quoted: "There's
+  probably 50 companies that have started up and failed that I've never even heard of."
+memberships:
+- org: relic-entertainment
+  role: co-founder
+  start: "1997-05"
+  sources:
+  - wikipedia-relic-entertainment
+  - straight-2009-family-tree
+consent:
+  status: not-asked
+status: verified
+sources:
+- wikipedia-relic-entertainment
+- straight-2009-family-tree

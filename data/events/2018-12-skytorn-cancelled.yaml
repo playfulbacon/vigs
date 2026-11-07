@@ -1,0 +1,28 @@
+id: 2018-12-skytorn-cancelled
+title: Noel Berry cancels Skytorn
+date:
+  value: 2018-12
+  qualifier: late
+  display: late December 2018
+  note: PC Gamer reports it Dec 30; the Medium post is dated Dec 28 or 29 depending on the source
+era: breakout-years
+type: cancellation
+summary: Noel Berry cancels Skytorn, which had been paused while the team made Celeste.
+people:
+- noel-berry
+games:
+- skytorn
+- celeste
+orgs:
+- extremely-ok-games
+region: vancouver
+significance: 2
+status: verified
+sources:
+- source: pcgamer-celeste-devs-cancel-skytorn-their-2d-action-game
+  note: Reported Dec 30, 2018
+- source: medium-skytorn-is-cancelled-d40c5d9d35e5
+  note: Berry's own post; dated Dec 28 or 29
+tags:
+- cancellation
+- skytorn

@@ -1,0 +1,30 @@
+id: next-level-games
+name: Next Level Games
+kind: mid-size-studio
+founded: "2002-08-22"
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: spun-off-from
+  org: black-box-games
+  date: "2002-08-22"
+  note: Founded by ex-Black Box staff Eric Randall, Douglas Tronsgard, Jason Carr and David Catlin.
+  sources:
+  - wikipedia-next-level-games
+- type: acquired-by
+  org: nintendo
+  date: "2021-03-31"
+  note: Nintendo announced the acquisition in January 2021; effective March 31, 2021.
+  sources:
+  - wikipedia-next-level-games
+summary: Founded August 22, 2002 by ex-Black Box staff; known for its work for Nintendo, which bought the studio in 2021.
+current: Nintendo-owned since March 31, 2021 (as of November 2026).
+operating_status: acquired
+status: single-source
+sources:
+- wikipedia-next-level-games
+notes: Founders Eric Randall, Douglas Tronsgard, Jason Carr and David Catlin have no person records.
+tags:
+- aaa-roots
+- family-tree

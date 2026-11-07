@@ -1,0 +1,17 @@
+id: exok-office
+name: Extremely OK Games office
+aliases:
+- EXOK office
+kind: office
+city: Vancouver
+region: vancouver
+active:
+  start:
+    value: "2019"
+    note: EXOK announced on September 5, 2019 that it would continue in new Vancouver offices.
+summary: Extremely OK Games' Vancouver office from 2019; Amora Bettany moved from São Paulo to Vancouver that year to work at EXOK in person.
+status: verified
+sources:
+- gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
+- wikipedia-amora-bettany
+notes: No address recorded.

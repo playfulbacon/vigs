@@ -1,0 +1,14 @@
+id: celeste-classic-2
+title: "Celeste Classic 2: Lani's Trek"
+aliases: [Lani's Trek]
+releases:
+  - date: "2021"
+    kind: release
+    sources: [wikipedia-extremely-ok-games]
+release_status: released
+developers: [extremely-ok-games]
+vancouver_connection: Made by Vancouver's Extremely OK Games.
+region: vancouver
+summary: A follow-up to Celeste Classic released by Extremely OK Games in 2021.
+status: single-source
+sources: [wikipedia-extremely-ok-games]

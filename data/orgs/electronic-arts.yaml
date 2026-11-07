@@ -1,0 +1,13 @@
+id: electronic-arts
+name: Electronic Arts
+aliases:
+- EA
+kind: publisher
+summary: US publisher that bought Distinctive Software in 1991 (creating EA Canada, later EA Vancouver) and Black Box Games in 2002 (EA Black Box).
+status: single-source
+sources:
+- wikipedia-distinctive-software
+- wikipedia-ea-black-box
+tags:
+- aaa-roots
+- owner

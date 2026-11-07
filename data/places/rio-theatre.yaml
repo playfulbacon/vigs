@@ -1,0 +1,9 @@
+id: rio-theatre
+name: Rio Theatre
+kind: theatre
+city: Vancouver
+region: vancouver
+summary: Venue of the first Full Indie Summit on April 20, 2013.
+status: verified
+sources:
+- vanweekly-2013-full-indie-summit

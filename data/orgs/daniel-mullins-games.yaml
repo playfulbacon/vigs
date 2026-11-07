@@ -1,0 +1,19 @@
+id: daniel-mullins-games
+name: Daniel Mullins Games
+kind: indie-studio
+founders:
+- daniel-mullins
+location:
+  city: Vancouver
+  region: vancouver
+  note: Documented as Vancouver-based by 2020.
+summary: Daniel Mullins's studio, behind Pony Island (2016), The Hex (2018) and Inscryption (2021), which won the IGF Seumas McNally Grand Prize and GDCA Game of the Year.
+current: 'Pony Island 2: Panda Circus dated for April 27, 2027 (as of November 2026).'
+operating_status: active
+status: single-source
+sources:
+- thumbsticks-magic-myst-pokemon-inspire-inscryption
+- cgd-inscryption-announced
+- wikipedia-inscryption
+- gamesbeat-pony-island-2-panda-circus-launches-on-april-27-2027
+notes: No source dated 2016 places Mullins in Vancouver. Founding date not found.

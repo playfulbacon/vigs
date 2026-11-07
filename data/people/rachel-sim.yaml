@@ -1,0 +1,18 @@
+id: rachel-sim
+name: Rachel Sim
+roles:
+- executive
+summary: Studio director of A Shell in the Pit.
+bio: >-
+  A Shell in the Pit's team page lists Sim as studio director. The Georgia Straight gave that title to
+  Gordon McGladdery in 2024, so the role has probably changed hands.
+memberships:
+- org: a-shell-in-the-pit
+  role: studio director
+  sources:
+  - asitp-home
+consent:
+  status: not-asked
+status: verified
+sources:
+- asitp-home

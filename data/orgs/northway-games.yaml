@@ -1,0 +1,22 @@
+id: northway-games
+name: Northway Games
+kind: indie-studio
+founded:
+  value: "2011"
+  note: Founding year from the Northway Games press kit.
+founders:
+- colin-northway
+- sarah-northway
+location:
+  city: Vancouver
+  region: vancouver
+summary: Colin and Sarah Northway's studio, behind Fantastic Contraption, the Rebuild series, Incredipede and I Was a Teenage Exocolonist. The couple began at the University of Victoria and travelled for about five years before settling in Vancouver in 2014.
+current: Active; marked Exocolonist's fourth "Exoversary" with Steam Workshop modding in August 2026, with no new game announced (as of November 2026).
+operating_status: active
+status: verified
+sources:
+- northway-presskit
+- wikipedia-northway-games
+- northway-northwaygames-com
+- straight-2024-indie-hub
+notes: 'Geography caveat: Fantastic Contraption (2008) and Incredipede (2012) predate the 2014 move to Vancouver. Colin''s site says he has returned to the studio, while the press kit names Sarah as the sole active member; the statements may be from different dates.'

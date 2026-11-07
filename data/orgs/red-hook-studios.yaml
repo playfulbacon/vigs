@@ -1,0 +1,21 @@
+id: red-hook-studios
+name: Red Hook Studios
+aliases:
+- Red Hook
+kind: indie-studio
+founded:
+  value: "2013-04"
+  approximate: true
+founders:
+- chris-bourassa
+- tyler-sigman
+location:
+  city: Vancouver
+  region: vancouver
+summary: Formed around April 2013 by former AAA developers Chris Bourassa and Tyler Sigman; the Straight calls it the local team behind Darkest Dungeon (2016), one of the scene's biggest commercial hits, followed by Darkest Dungeon II (2023).
+current: 2025–26 status not found.
+operating_status: unknown
+status: verified
+sources:
+- wikipedia-darkest-dungeon
+- straight-2024-indie-hub

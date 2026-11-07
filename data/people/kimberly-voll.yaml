@@ -1,0 +1,30 @@
+id: kimberly-voll
+name: Kimberly Voll
+vancouver:
+  tie: resident
+  note: Based at the Centre for Digital Media.
+  sources:
+  - straight-2013-global-game-jam
+roles:
+- educator
+- organizer
+summary: Centre for Digital Media figure who has run Global Game Jam Vancouver since 2010.
+bio: >-
+  Voll, of the Centre for Digital Media, moved Global Game Jam Vancouver to UBC in January 2010 and has
+  run it since. The fifth Vancouver jam, in January 2013 at the UBC Life Sciences Centre, drew about 250
+  participants.
+memberships:
+- org: centre-for-digital-media
+  role: faculty/staff
+  sources:
+  - straight-2013-global-game-jam
+- org: global-game-jam-vancouver
+  role: organizer
+  start: "2010-01"
+  sources:
+  - straight-2013-global-game-jam
+consent:
+  status: not-asked
+status: verified
+sources:
+- straight-2013-global-game-jam

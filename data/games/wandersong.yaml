@@ -1,0 +1,26 @@
+id: wandersong
+title: Wandersong
+releases:
+  - date: { value: "2018", note: "Expected to be September 27, 2018, but the exact date is unverified." }
+    kind: release
+    sources: [straight-2024-indie-hub, wikipedia-wandersong]
+release_status: released
+credits:
+  - person: greg-lobanov
+    role: creator
+    sources: [straight-2024-indie-hub, wikipedia-wandersong]
+audio_by: [a-shell-in-the-pit]
+crowdfunding:
+  platform: Kickstarter
+  date: "2016-02"
+  raised: US$21,936
+  backers: 989
+  sources: [wikipedia-wandersong]
+vancouver_connection: Greg Lobanov began development in October 2015, the year he moved from Philadelphia into the Richmond Indie House; A Shell in the Pit is credited on it. The report does not say where it was made.
+region: vancouver
+summary: Greg Lobanov's musical adventure game, begun in October 2015, Kickstarted in February 2016 and released in 2018.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Wandersong
+status: verified
+sources: [straight-2024-indie-hub, wikipedia-wandersong, asitp-home]
+notes: The developer label is not stated in the report. The Wandersong Wikipedia page's release date was not re-verified.

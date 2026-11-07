@@ -1,0 +1,29 @@
+id: gdc-canada
+name: GDC Canada
+aliases:
+- Game Developers Conference Canada
+kind: event-series
+founded: "2009"
+closed: "2011"
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: successor-of
+  org: vancouver-international-game-summit
+  date: "2009"
+  note: The Vancouver International Game Summit was the industry conference that came before GDC Canada.
+  sources:
+  - gamedev-gdc-canada-2009-the-event-round-up
+summary: Industry conference held twice at the Vancouver Convention Centre, in 2009 (800+ attendees, produced by Think Services and Reboot Communications) and May 6–7, 2010. Its end left the gap the Full Indie Summit was created to fill.
+current: The Straight reported on May 10, 2011 that it "seems to be finished," replaced by the Canadian Games Conference.
+operating_status: closed
+status: verified
+sources:
+- gamedev-gdc-canada-2009-the-event-round-up
+- newswire-canadian-game-development-community-to-reconvene-at-the-secon
+- gamedev-2010-gdc-canada-offers-free-passes-for-laid-off-developers
+- straight-2011-gdc-canada-finished
+notes: Engadget (2013) wrongly calls 2010 the "first, and last" GDC Canada. The 2010 edition offered free passes to laid-off developers. Think Services, Reboot Communications and the Canadian Games Conference are not in the org registry.
+tags:
+- conference

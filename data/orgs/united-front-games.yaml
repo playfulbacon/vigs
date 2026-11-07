@@ -1,0 +1,41 @@
+id: united-front-games
+name: United Front Games
+kind: aaa-studio
+founded: "2007"
+closed:
+  value: "2016-10-17"
+  note: Date the closure was announced.
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: spun-off-from
+  org: black-box-games
+  date: "2007"
+  note: Founded by about 10 veterans of EA Black Box, Rockstar Vancouver, Radical and others.
+  sources:
+  - wikipedia-united-front-games
+  - straight-2009-family-tree
+- type: spun-off-from
+  org: rockstar-vancouver
+  date: "2007"
+  note: Founded by about 10 veterans of EA Black Box, Rockstar Vancouver, Radical and others.
+  sources:
+  - wikipedia-united-front-games
+  - straight-2009-family-tree
+- type: spun-off-from
+  org: radical-entertainment
+  date: "2007"
+  note: Founded by about 10 veterans of EA Black Box, Rockstar Vancouver, Radical and others.
+  sources:
+  - wikipedia-united-front-games
+  - straight-2009-family-tree
+summary: Founded in 2007 by about ten veterans of EA Black Box, Rockstar Vancouver, Radical and other studios; it made ModNation Racers and Sleeping Dogs.
+current: Closure announced October 17, 2016.
+operating_status: closed
+status: verified
+sources:
+- wikipedia-united-front-games
+- straight-2009-family-tree
+tags:
+- family-tree

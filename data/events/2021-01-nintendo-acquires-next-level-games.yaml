@@ -1,0 +1,19 @@
+id: 2021-01-nintendo-acquires-next-level-games
+title: Nintendo announces acquisition of Next Level Games
+date: 2021-01
+end_date: '2021-03-31'
+era: breakout-years
+type: acquisition
+summary: Nintendo announces it will acquire Next Level Games, effective March 31, 2021.
+orgs:
+- nintendo
+- next-level-games
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- wikipedia-next-level-games
+tags:
+- acquisition
+- aaa
+- nintendo

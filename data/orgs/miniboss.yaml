@@ -1,0 +1,16 @@
+id: miniboss
+name: MiniBoss
+kind: indie-studio
+founded: "2010"
+founders:
+- amora-bettany
+- pedro-medeiros
+- heidy-motta
+location:
+  city: São Paulo
+  region: international
+summary: São Paulo art studio founded in 2010 by Amora Bettany, Pedro Medeiros and Heidy Motta; it did art for TowerFall and Celeste, and its three founders later joined the founding team of Extremely OK Games.
+operating_status: unknown
+status: single-source
+sources:
+- wikipedia-amora-bettany

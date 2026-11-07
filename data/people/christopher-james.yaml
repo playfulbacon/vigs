@@ -1,0 +1,21 @@
+id: christopher-james
+name: Christopher James
+roles:
+- organizer
+summary: Co-lead of the revived IGDA Vancouver chapter, which met in 2025.
+bio: >-
+  IGDA's chapter page lists James and Kevin Brunt as leaders of IGDA Vancouver, which met on June 17,
+  2025 after at least one revival.
+memberships:
+- org: igda-vancouver
+  role: chapter lead
+  sources:
+  - igda-6710
+  - igda-igda-vancouver-june-17th-2025-meeting
+current: 'As of the November 2026 report: co-leads IGDA Vancouver.'
+consent:
+  status: not-asked
+status: verified
+sources:
+- igda-6710
+- igda-igda-vancouver-june-17th-2025-meeting

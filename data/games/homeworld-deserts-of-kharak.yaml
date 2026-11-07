@@ -1,0 +1,14 @@
+id: homeworld-deserts-of-kharak
+title: 'Homeworld: Deserts of Kharak'
+releases:
+  - date: "2016-01-20"
+    kind: release
+    sources: [wikipedia-blackbird-interactive]
+release_status: released
+developers: [blackbird-interactive]
+publishers: [gearbox-publishing]
+vancouver_connection: Made by Vancouver's Blackbird Interactive, founded by Relic veterans who worked on the original Homeworld.
+region: vancouver
+summary: Blackbird Interactive's Homeworld prequel, published by Gearbox on January 20, 2016.
+status: single-source
+sources: [wikipedia-blackbird-interactive]

@@ -1,0 +1,25 @@
+id: 2026-02-18-horsey-game-released
+title: Horsey Game released
+date: '2026-02-18'
+era: current-era
+type: release
+summary: Justin Smith releases Horsey Game (Captain Games) on Steam, where it is rated Overwhelmingly Positive (96%
+  of 2,743 reviews).
+people:
+- justin-smith
+games:
+- horsey-game
+orgs:
+- captain-games
+region: vancouver
+significance: 1
+status: verified
+sources:
+- steam-horsey-game
+- giantbomb-horsey-game
+caveat: Justin Smith's Vancouver residence is not documented in any opened source.
+open_questions:
+- Were you living in Vancouver when you made Enviro-Bear 2000 and Desert Golfing? Who else was in Blinkbat Games?
+  (Ask Justin Smith.)
+tags:
+- release

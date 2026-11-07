@@ -1,0 +1,58 @@
+id: jake-birkett
+name: Jake Birkett
+origin: United Kingdom
+vancouver:
+  tie: former-resident
+  left: "2012"
+  note: >-
+    UK developer brought to Vancouver by Big Fish Games, where he worked for about two years; left Vancouver
+    in 2012.
+  sources:
+  - greyalien-blog-1044
+  - fullindie-about
+roles:
+- founder
+- organizer
+- programmer
+summary: >-
+  UK developer who proposed and co-founded the 2010 Vancouver meetup that became Full Indie, then left
+  Vancouver in 2012.
+bio: >-
+  Birkett came to Vancouver from the UK to work at Big Fish Games, where he spent about two years. On
+  April 24, 2010 he proposed a monthly indie meetup on his Grey Alien Games blog, and Alex Vostrov answered
+  the same day. The first meeting, at Soho Cafe and Billiards in Yaletown, drew 40+ attendees from 60+
+  members, and Birkett wrote it up on May 22, 2010. By November 30, 2012 he reported Full Indie had "well
+  over 1000 members." He left Vancouver in 2012, the year the UK branch FullIndie.uk started. He runs
+  Grey Alien Games (Regency Solitaire, Shadowhand, Ancient Enemy).
+memberships:
+- org: big-fish-games
+  role: developer
+  end: "2012"
+  sources:
+  - greyalien-blog-1044
+  - greyalien-game-industry-meetups-in-vancouver
+- org: full-indie
+  role: co-founder
+  start: "2010-04-24"
+  end:
+    value: "2012"
+    note: Left Vancouver in 2012
+  sources:
+  - greyalien-game-industry-meetups-in-vancouver
+  - greyalien-first-vancouver-indie-game-developer-meetup-was-a-big-succes
+  - fullindie-about
+current: >-
+  As of the November 2026 report: UK-based, running Grey Alien Games (this rests on a Wikipedia mirror;
+  confirm with him).
+consent:
+  status: not-asked
+status: verified
+sources:
+- greyalien-game-industry-meetups-in-vancouver
+- greyalien-first-vancouver-indie-game-developer-meetup-was-a-big-succes
+- greyalien-blog-1044
+- fullindie-about
+- wikipedia-full-indie
+- straight-2024-indie-hub
+notes: >-
+  His contemporary posts call Vostrov "another Vancouver resident" and do not mention a Victoria meetup.

@@ -1,0 +1,10 @@
+id: finji
+name: Finji
+kind: publisher
+summary: 'US-based publisher of Vancouver-connected games: Night in the Woods (2017), Chicory: A Colorful Tale (2021) and I Was a Teenage Exocolonist (2022).'
+status: single-source
+sources:
+- wikipedia-night-in-the-woods
+- wikipedia-chicory-a-colorful-tale
+- wikipedia-i-was-a-teenage-exocolonist
+notes: 'Finji backed the Night in the Woods team''s 2019 decision to cut ties with Alec Holowka (Wikipedia: Alec Holowka).'

@@ -1,0 +1,28 @@
+id: 2018-night-in-the-woods-igf-grand-prize
+title: Night in the Woods wins IGF Seumas McNally Grand Prize
+date: '2018'
+era: breakout-years
+type: award
+summary: Night in the Woods wins the Seumas McNally Grand Prize at the 2018 Independent Games Festival. It also
+  wins a BAFTA for Narrative.
+people:
+- alec-holowka
+- scott-benson
+- bethany-hockenberry
+games:
+- night-in-the-woods
+orgs:
+- infinite-fall
+- finji
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- source: wikipedia-night-in-the-woods
+  note: Awards
+- source: igf-night-woods
+caveat: Awards rest on Wikipedia and the IGF entry; the BAFTA year is not given in the report.
+tags:
+- award
+- igf
+- bafta

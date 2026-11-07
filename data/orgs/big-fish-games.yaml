@@ -1,0 +1,13 @@
+id: big-fish-games
+name: Big Fish Games
+kind: publisher
+location:
+  city: Vancouver
+  region: vancouver
+  note: Its Vancouver office.
+summary: Casual-games company that brought Jake Birkett from the UK to its Vancouver office, where he worked for about two years and co-founded the meetup that became Full Indie.
+operating_status: unknown
+status: verified
+sources:
+- greyalien-game-industry-meetups-in-vancouver
+- greyalien-blog-1044

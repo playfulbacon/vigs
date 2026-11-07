@@ -1,0 +1,28 @@
+id: hothead-games
+name: Hothead Games
+aliases:
+- Hothead
+kind: mid-size-studio
+founded: "2006"
+founders:
+- steve-bocska
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: spun-off-from
+  org: radical-entertainment
+  date: "2006"
+  note: Founded by ex-Radical staff Steve Bocska, Vlad Ceraldi and Joel DeYoung.
+  sources:
+  - wikipedia-hothead-games
+summary: Founded in 2006 by ex-Radical staff; its first releases were the Penny Arcade Adventures episodes (2008). It cut staff in December 2008 after failing to find a publisher for Swarm.
+current: 2026 status not researched.
+operating_status: unknown
+status: single-source
+sources:
+- wikipedia-hothead-games
+- straight-2009-family-tree
+notes: Vlad Ceraldi and Joel DeYoung have no person records.
+tags:
+- family-tree

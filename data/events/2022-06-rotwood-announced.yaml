@@ -1,0 +1,19 @@
+id: 2022-06-rotwood-announced
+title: Klei announces Rotwood
+date: 2022-06
+era: current-era
+type: announcement
+summary: Klei Entertainment announces Rotwood, a co-op hack-and-slash game for PC.
+games:
+- rotwood
+orgs:
+- klei-entertainment
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- source: gematsu-klei-announces-co-op-hack-and-slash-game-rotwood-for-pc
+  note: Snippet
+tags:
+- announcement
+- klei

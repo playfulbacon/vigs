@@ -1,0 +1,27 @@
+id: 2026-11-beastieball-still-early-access
+title: Beastieball still in Early Access, 1.0 set for early 2027
+date:
+  value: 2026-11
+  display: as of November 2026
+era: current-era
+type: milestone
+summary: As of November 2026, Beastieball is still in Early Access, with its 1.0 release set for "early 2027."
+people:
+- greg-lobanov
+games:
+- beastieball
+orgs:
+- wishes-unlimited
+- klei-entertainment
+region: vancouver
+significance: 1
+status: verified
+sources:
+- source: steam-beastieball
+  quote: early 2027
+open_questions:
+- What are the final figures for the Beastieball Kickstarter, and what is the 1.0 plan? (Ask Greg Lobanov.)
+tags:
+- status
+- early-access
+- 2027-slip

@@ -1,0 +1,14 @@
+id: phantom-brigade
+title: Phantom Brigade
+releases:
+  - date: "2020"
+    kind: release
+    sources: [wikipedia-brace-yourself-games]
+release_status: released
+developers: [brace-yourself-games]
+audio_by: [power-up-audio]
+vancouver_connection: Released by Vancouver's Brace Yourself Games through Tetragon Works, which it acquired in 2018; Power Up Audio lists it among its credits.
+summary: A mech tactics game Brace Yourself Games released in 2020 through Tetragon Works, a developer it acquired in 2018.
+status: single-source
+sources: [wikipedia-brace-yourself-games, powerupaudio-home]
+notes: Tetragon Works has no org record and its location is not stated, so no region is set. BYG's Wikipedia page carries an AI-generated-text flag.

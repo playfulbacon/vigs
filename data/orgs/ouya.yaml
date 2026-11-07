@@ -1,0 +1,9 @@
+id: ouya
+name: Ouya
+kind: platform-holder
+summary: Microconsole on which TowerFall launched as an exclusive on June 25, 2013, the console's public launch day, becoming its "killer app."
+status: single-source
+sources:
+- wikipedia-ouya
+- wikipedia-towerfall
+- rollingstone-maddy-thorson

@@ -1,0 +1,19 @@
+id: 2023-relic-layoffs
+title: Relic lays off 121
+date: '2023'
+era: current-era
+type: layoff
+summary: Relic Entertainment, the Vancouver studio behind Company of Heroes, lays off 121 employees.
+orgs:
+- relic-entertainment
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- geekwire-relic-entertainment-the-vancouver-studio-behind-company-of-he
+open_questions:
+- Did the 2023-25 layoffs (Relic, Phoenix Labs, Blackbird, Brace Yourself, EA) seed new indie studios? Who left
+  and started something? (Ask Aryo Nazaradeh, Chloe Ezra and Ryan Clark.)
+tags:
+- layoffs
+- aaa

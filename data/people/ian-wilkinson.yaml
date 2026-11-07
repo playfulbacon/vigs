@@ -1,0 +1,21 @@
+id: ian-wilkinson
+name: Ian Wilkinson
+roles:
+- founder
+summary: Co-founder of Radical Entertainment (September 1991).
+bio: >-
+  Wilkinson co-founded Radical Entertainment in September 1991 with Rory Armes and Dave Davis, after EA's
+  purchase of Distinctive Software.
+memberships:
+- org: radical-entertainment
+  role: co-founder
+  start: "1991-09"
+  sources:
+  - wikipedia-radical-entertainment
+  - straight-2009-family-tree
+consent:
+  status: not-asked
+status: verified
+sources:
+- wikipedia-radical-entertainment
+- straight-2009-family-tree

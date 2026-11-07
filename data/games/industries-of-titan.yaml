@@ -1,0 +1,15 @@
+id: industries-of-titan
+title: Industries of Titan
+releases:
+  - date: "2023"
+    kind: release
+    sources: [wikipedia-brace-yourself-games]
+release_status: released
+developers: [brace-yourself-games]
+audio_by: [power-up-audio]
+vancouver_connection: Made by Vancouver's Brace Yourself Games; Power Up Audio lists it among its credits.
+region: vancouver
+summary: A Brace Yourself Games title dated 2023 in the studio's game list.
+status: single-source
+sources: [wikipedia-brace-yourself-games, powerupaudio-home]
+notes: BYG's Wikipedia page carries an AI-generated-text flag.

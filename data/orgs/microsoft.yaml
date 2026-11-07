@@ -1,0 +1,11 @@
+id: microsoft
+name: Microsoft
+aliases:
+- Microsoft Studios
+kind: platform-holder
+summary: Microsoft Studios published Klei's Mark of the Ninja (2012); Microsoft's Vancouver office hosted Full Indie monthly meetups in 2025. Don Mattrick later headed Xbox (2007–2013).
+status: single-source
+sources:
+- wikipedia-mark-of-the-ninja
+- luma-full-indie-meetup-2025-09
+- wikipedia-don-mattrick

@@ -1,0 +1,11 @@
+id: stanley-theatre
+name: Stanley Theatre
+kind: theatre
+address: 2750 Granville St.
+city: Vancouver
+region: vancouver
+summary: Venue of Full Indie Summit 2014 (August 9–10), the first to run a full weekend.
+status: verified
+sources:
+- meetup-full-indie-summit-2014
+- pocketgamer-full-indie-summit-returning-in-august

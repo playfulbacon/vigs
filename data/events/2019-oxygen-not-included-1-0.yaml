@@ -1,0 +1,21 @@
+id: 2019-oxygen-not-included-1-0
+title: Oxygen Not Included reaches 1.0
+date:
+  value: '2019'
+  note: Month unverified
+era: breakout-years
+type: release
+summary: Klei's Oxygen Not Included reaches its 1.0 release.
+games:
+- oxygen-not-included
+orgs:
+- klei-entertainment
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- wikipedia-klei-entertainment
+caveat: Month unverified.
+tags:
+- release
+- klei

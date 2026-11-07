@@ -1,0 +1,15 @@
+id: blinkbat-games
+name: Blinkbat Games
+kind: indie-studio
+founders:
+- justin-smith
+location:
+  region: canada
+  note: Sources call it "Canadian" without naming a city.
+summary: The label under which Justin Smith's Desert Golfing was released on August 6, 2014.
+operating_status: unknown
+status: single-source
+sources:
+- wikipedia-desert-golfing
+- gamedev-7-questions-for-i-desert-golfing-i-creator-justin-smith
+notes: 'Open question: who else was in Blinkbat Games, and was Smith the sole owner? The report''s studio table lists Smith as founder of "Blinkbat Games / Captain Games."'

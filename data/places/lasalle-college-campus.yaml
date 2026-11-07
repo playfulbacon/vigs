@@ -1,0 +1,9 @@
+id: lasalle-college-campus
+name: LaSalle College Vancouver campus
+kind: campus
+city: Vancouver
+region: vancouver
+summary: LaSalle College Vancouver's campus, which hosted a Full Indie event on an undated page.
+status: single-source
+sources:
+- lasalle-game-on-full-indie-takes-over-our-campus

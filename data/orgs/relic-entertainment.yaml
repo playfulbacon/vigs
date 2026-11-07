@@ -1,0 +1,46 @@
+id: relic-entertainment
+name: Relic Entertainment
+aliases:
+- Relic
+kind: aaa-studio
+founded: "1997-05"
+founders:
+- alex-garden
+- luke-moloney
+- aaron-kambeitz
+- rob-cunningham
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: spun-off-from
+  org: ea-vancouver
+  date: "1997-05"
+  note: The Straight names Garden and Moloney as coming "from EA Canada/Radical."
+  sources:
+  - straight-2009-family-tree
+- type: spun-off-from
+  org: radical-entertainment
+  date: "1997-05"
+  note: The Straight names Garden and Moloney as coming "from EA Canada/Radical."
+  sources:
+  - straight-2009-family-tree
+- type: acquired-by
+  org: thq
+  date: "2004-04-27"
+  note: THQ announced it would acquire Relic for about US$10M (date is the announcement).
+  sources:
+  - wikipedia-relic-entertainment
+summary: Founded in May 1997; its first game was Homeworld (1999). Ex-Relic developers founded Klei (Jamie Cheng), Blackbird Interactive (Rob Cunningham, Aaron Kambeitz) and Hinterland (Raphael van Lierop).
+current: Independent of Sega after layoffs of 121 (2023) and about 41 (2024); as of November 2026.
+operating_status: active
+status: verified
+sources:
+- wikipedia-relic-entertainment
+- straight-2009-family-tree
+- geekwire-relic-entertainment-the-vancouver-studio-behind-company-of-he
+- gamedev-relic-is-laying-off-41-staff-after-independence-from-sega
+notes: 'Full founding list: Alex Garden, Luke Moloney, Erin Daly, Aaron Kambeitz, Rob Cunningham, Gary Shaw and Shane Alfreds. Erin Daly, Gary Shaw and Shane Alfreds have no person records. Later owned by Sega (not in the org registry), from which it became independent before the 2024 layoffs.'
+tags:
+- aaa-roots
+- family-tree

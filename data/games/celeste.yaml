@@ -1,0 +1,86 @@
+id: celeste
+title: Celeste
+releases:
+  - date: "2018-01-25"
+    kind: release
+    platforms: [PC, Switch, PS4]
+    sources: [wikipedia-celeste-video-game]
+  - date: "2018-01-26"
+    kind: port
+    platforms: [Xbox One]
+    sources: [wikipedia-celeste-video-game]
+  - date: "2019-09-09"
+    kind: expansion
+    note: Free Farewell chapter.
+    sources: [wikipedia-extremely-ok-games]
+  - date: "2020-07-28"
+    kind: port
+    platforms: [Stadia]
+    sources: [wikipedia-celeste-video-game]
+release_status: released
+developers: [extremely-ok-games]
+publishers: [extremely-ok-games]
+credits:
+  - person: maddy-thorson
+    role: director, writer, programmer
+    sources: [wikipedia-celeste-video-game]
+  - person: noel-berry
+    role: lead programmer, art
+    sources: [wikipedia-celeste-video-game]
+  - person: amora-bettany
+    role: art (writing, concept art, animation)
+    sources: [wikipedia-celeste-video-game, wikipedia-amora-bettany]
+  - person: gabby-darienzo
+    role: art
+    sources: [wikipedia-celeste-video-game]
+  - person: pedro-medeiros
+    role: art
+    sources: [wikipedia-celeste-video-game]
+  - person: lena-raine
+    role: composer
+    sources: [wikipedia-celeste-video-game]
+  - person: kevin-regamey
+    role: sound design
+    org: power-up-audio
+    sources: [wikipedia-celeste-video-game, egm-power-up-audio]
+audio_by: [power-up-audio]
+origin_event: 2015-08-celeste-classic-jam
+vancouver_connection: Made in Vancouver by Maddy Makes Games (later Extremely OK Games), with sound design by Vancouver's Power Up Audio; the Georgia Straight counts it among the games that came out of the Indie House era.
+region: vancouver
+awards:
+  - name: The Game Awards, Best Independent Game
+    year: 2018
+    result: won
+    sources: [wikipedia-the-game-awards-2018]
+  - name: The Game Awards, Games for Impact
+    year: 2018
+    result: won
+    sources: [wikipedia-the-game-awards-2018]
+  - name: The Game Awards, Game of the Year
+    year: 2018
+    result: nominated
+    sources: [wikipedia-the-game-awards-2018]
+  - name: The Game Awards, Best Score/Music
+    year: 2018
+    result: nominated
+    sources: [wikipedia-the-game-awards-2018]
+  - name: Game Developers Choice Awards, Best Audio
+    year: 2019
+    result: won
+    sources: [egm-power-up-audio]
+sales:
+  - figure: more than 500,000 copies
+    as_of: { value: "2018", qualifier: by, display: "end of 2018" }
+    sources: [wikipedia-celeste-video-game]
+  - figure: 1 million copies
+    as_of: "2020-03"
+    sources: [wikipedia-celeste-video-game]
+  - figure: 1.7 million copies
+    as_of: "2025-01"
+    sources: [wikipedia-celeste-video-game]
+summary: Maddy Thorson's mountain-climbing platformer, grown from the 2015 PICO-8 jam game and released on January 25, 2018. It won Best Independent Game and Games for Impact at The Game Awards 2018 and had sold 1.7 million copies by January 2025.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Celeste_(video_game)
+status: single-source
+sources: [wikipedia-celeste-video-game, egm-power-up-audio, wikipedia-the-game-awards-2018, straight-2024-indie-hub, pcgamer-celeste-developer-starts-2025-with-a-huge-heartbreaking-and-ye, gamedev-i-celeste-s-i-audio-files-are-now-publicly-available-for-devs]
+notes: Wikipedia credits Kevin Regamey by name, not Power Up Audio as a company; EGM says PUA did all sound design plus some music support. PUA released the game's FMOD project and source audio in early 2020. The 1.7M figure appears in PC Gamer's Earthblade coverage, whose body could not be read. The Straight's Indie House tie is not otherwise detailed, so made_at is left empty.

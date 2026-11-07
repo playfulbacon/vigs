@@ -1,0 +1,9 @@
+id: gearbox-publishing
+name: Gearbox Publishing
+aliases:
+- Gearbox
+kind: publisher
+summary: 'Published Blackbird Interactive''s Homeworld: Deserts of Kharak (2016) and Homeworld 3 (2024).'
+status: single-source
+sources:
+- wikipedia-blackbird-interactive

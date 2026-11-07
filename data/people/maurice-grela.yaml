@@ -1,0 +1,23 @@
+id: maurice-grela
+name: Maurice Grela
+roles:
+- organizer
+summary: President of Full Indie from 2016 to about 2023, succeeding Alex Vostrov.
+bio: >-
+  Full Indie's own history says the presidency passed from Alex Vostrov to Grela in 2016 and that he held
+  it until about 2023. Nothing further was found.
+memberships:
+- org: full-indie
+  role: president
+  start: "2016"
+  end:
+    value: "2023"
+    approximate: true
+    display: c. 2023
+  sources:
+  - fullindie-about
+consent:
+  status: not-asked
+status: verified
+sources:
+- fullindie-about

@@ -1,0 +1,30 @@
+id: aaron-kambeitz
+name: Aaron Kambeitz
+roles:
+- founder
+- executive
+summary: Relic Entertainment founding member who co-founded Blackbird Interactive in 2007.
+bio: >-
+  Kambeitz was one of Relic Entertainment's founders in May 1997 and worked on Homeworld. In 2007 he co-founded
+  Blackbird Interactive with Rob Cunningham and other ex-Relic and ex-EA staff; Wikipedia lists him as
+  chief creative officer.
+memberships:
+- org: relic-entertainment
+  role: co-founder
+  start: "1997-05"
+  status: single-source
+  sources:
+  - wikipedia-relic-entertainment
+- org: blackbird-interactive
+  role: co-founder; chief creative officer
+  start: "2007"
+  status: single-source
+  sources:
+  - wikipedia-blackbird-interactive
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-relic-entertainment
+- wikipedia-blackbird-interactive
+notes: Wikipedia's Blackbird page gives his name as Jon Aaron Kambeitz.

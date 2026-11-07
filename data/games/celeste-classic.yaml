@@ -1,0 +1,24 @@
+id: celeste-classic
+title: Celeste Classic
+aliases: [Celeste (PICO-8)]
+releases:
+  - date: "2015-08"
+    kind: jam
+    platforms: [PICO-8]
+    note: Made in a four-day jam.
+    sources: [wikipedia-extremely-ok-games]
+release_status: released
+developers: [extremely-ok-games]
+credits:
+  - person: maddy-thorson
+    role: co-creator
+    sources: [wikipedia-extremely-ok-games]
+  - person: noel-berry
+    role: co-creator
+    sources: [wikipedia-extremely-ok-games]
+origin_event: 2015-08-celeste-classic-jam
+vancouver_connection: Made by Thorson and Noel Berry during the Indie House years; it became the seed of Celeste.
+region: vancouver
+summary: The original PICO-8 Celeste, made by Maddy Thorson and Noel Berry in a four-day jam in August 2015. Full development of Celeste began around January 2016.
+status: single-source
+sources: [wikipedia-extremely-ok-games, wikipedia-celeste-video-game]

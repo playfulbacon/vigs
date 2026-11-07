@@ -1,0 +1,19 @@
+id: masterpiece
+title: Masterpiece
+releases:
+  - date: "2025"
+    kind: release
+    note: Super Mario World romhack.
+    sources: [wikipedia-extremely-ok-games]
+release_status: released
+developers: [extremely-ok-games]
+credits:
+  - person: maddy-thorson
+    role: creator
+    sources: [wikipedia-extremely-ok-games]
+vancouver_connection: Released by Maddy Thorson of Vancouver's Extremely OK Games after Earthblade's cancellation.
+region: vancouver
+summary: A Super Mario World romhack released by Maddy Thorson in 2025, the only dated EXOK project found after Earthblade was cancelled.
+status: single-source
+sources: [wikipedia-extremely-ok-games]
+tags: [romhack]

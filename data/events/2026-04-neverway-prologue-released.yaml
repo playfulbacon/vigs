@@ -1,0 +1,33 @@
+id: 2026-04-neverway-prologue-released
+title: Neverway prologue released and October window announced
+date: 2026-04
+era: current-era
+type: announcement
+summary: Coldblood Inc., which Gematsu describes as "an independent Vancouver studio" founded by Pedro Medeiros
+  and Isadora Sophia, releases a free prologue for Neverway and announces an October 2026 release window. The game
+  is backed by Outersloth and scored by Disasterpeace.
+people:
+- pedro-medeiros
+- isadora-sophia
+games:
+- neverway
+orgs:
+- coldblood-inc
+region: vancouver
+significance: 2
+status: verified
+sources:
+- source: gematsu-neverway-launches-in-october-prologue-demo-now-available-for-p
+  note: Snippet
+  quote: an independent Vancouver studio
+- source: gameinformer-neverway-a-nightmarish-life-sim-from-the-artist-of-celest
+  note: Apr 9, 2026 (snippet)
+- steam-neverway
+caveat: Outersloth and Disasterpeace have no registry records.
+open_questions:
+- Is Coldblood based in Vancouver? Why did Neverway move from October 2026 to 2027? (Ask Pedro Medeiros and Isadora
+  Sophia.)
+tags:
+- announcement
+- demo
+- celeste-lineage

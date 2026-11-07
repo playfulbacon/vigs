@@ -1,0 +1,44 @@
+id: lena-raine
+name: Lena Raine
+aliases:
+- Kuraine
+born:
+  date: "1984-02-29"
+  place: Seattle
+  sources:
+  - source: wikipedia-lena-raine
+    note: Wikipedia cites her own tweet
+origin: Seattle
+vancouver:
+  tie: collaborator
+  note: Vancouver residence unconfirmed; list her as a collaborator.
+  sources:
+  - wikipedia-lena-raine
+roles:
+- composer
+- founder
+summary: >-
+  Composer of Celeste, Chicory and Beastieball and a founding member of Extremely OK Games; her Vancouver
+  residence is unconfirmed.
+bio: >-
+  Raine composed the music for Celeste (2018), Chicory: A Colorful Tale (2021) and Beastieball, and was
+  part of Extremely OK Games' founding team in 2019. Before Celeste she spent about six years at ArenaNet.
+  She has also worked on Minecraft and Deltarune.
+memberships:
+- org: extremely-ok-games
+  role: composer; founding team
+  start: "2019"
+  sources:
+  - gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Lena_Raine
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-lena-raine
+- wikipedia-celeste-video-game
+- wikipedia-chicory-a-colorful-tale
+- gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
+notes: >-
+  Where Celeste's music was made, and whether she has lived in Vancouver, are interview questions.

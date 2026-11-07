@@ -1,0 +1,74 @@
+id: alec-holowka
+name: Alec Holowka
+born:
+  date: "1983-10-30"
+  place: Winnipeg
+  sources:
+  - wikipedia-alec-holowka
+died:
+  date: "2019-08-31"
+  place: Winnipeg
+  sources:
+  - wikipedia-alec-holowka
+origin: Winnipeg
+vancouver:
+  tie: former-resident
+  note: >-
+    Early career on an Xbox 360 racer in Vancouver; at the June 2012 jam that produced TowerFall and lived
+    at Indie House (per Wikipedia: TowerFall). By the IGF period he was working on Night in the Woods
+    remotely from Winnipeg. His Vancouver residence dates are unknown.
+  sources:
+  - wikipedia-alec-holowka
+  - wikipedia-towerfall
+roles:
+- designer
+- programmer
+- composer
+- founder
+summary: >-
+  Winnipeg-born designer, programmer and composer who co-founded Bit Blot, Infinite Ammo and Infinite
+  Fall, and whose Indie House residency ties Night in the Woods to Vancouver.
+bio: >-
+  Holowka co-founded Bit Blot (Aquaria, IGF Grand Prize), Infinite Ammo and Infinite Fall. Early in his
+  career he worked on an Xbox 360 racer in Vancouver. TowerFall began from Maddy Thorson's visit with
+  him at the June 2012 Full Indie Game Jam; he stepped back from the project soon after. He lived at Indie
+  House, and Night in the Woods (Infinite Fall with Scott Benson and Bethany Hockenberry) was Kickstarted
+  in October 2013 and released on February 21, 2017. In August 2019 Zoë Quinn publicly accused him of
+  physical and emotional abuse; the next day the Night in the Woods team cut ties with him, with Benson
+  writing that corroborating evidence had been presented to them, and Finji backed the decision. Holowka
+  died in Winnipeg on August 31, 2019, four days after the allegations. His sister's statement said he
+  had been "battling mood and personality disorders," "was a victim of abuse," had been seeking treatment,
+  and "wished the best for Zoë and everyone else."
+memberships:
+- place: indie-house
+  role: resident
+  status: single-source
+  sources:
+  - wikipedia-towerfall
+  - straight-2024-indie-hub
+- org: infinite-fall
+  role: co-founder
+  status: single-source
+  sources:
+  - wikipedia-alec-holowka
+  - wikipedia-night-in-the-woods
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Alec_Holowka
+consent:
+  status: not-asked
+sensitive_note: >-
+  The August 2019 allegations and his death four days later are recorded only as attributed statements
+  from named sources (Wikipedia: Alec Holowka, citing Zoë Quinn, Scott Benson, Finji and his sister).
+  Do not characterize guilt, innocence or cause of death beyond what those sources say, and keep the account
+  neutral. Approach interviewees on this topic with care and by prior arrangement.
+status: single-source
+sources:
+- wikipedia-alec-holowka
+- wikipedia-towerfall
+- cgm-2014-canadian-scene-part-2
+- wikipedia-night-in-the-woods
+- straight-2024-indie-hub
+- psblog-procedurally-generated-adventure-skytorn-announced-ps4
+notes: >-
+  How long he lived at Indie House, and when he returned to Winnipeg, are open interview questions. Bit
+  Blot and Infinite Ammo have no org records in the registry.

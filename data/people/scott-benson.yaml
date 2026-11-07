@@ -1,0 +1,37 @@
+id: scott-benson
+name: Scott Benson
+origin: Pittsburgh, Pennsylvania
+vancouver:
+  tie: collaborator
+  note: Night in the Woods co-creator based in Pittsburgh; not a Vancouver resident.
+  sources:
+  - igf-night-woods
+roles:
+- animator
+- artist
+- designer
+- writer
+- founder
+summary: >-
+  Pittsburgh-based co-creator of Night in the Woods (2017) with Alec Holowka and Bethany Hockenberry.
+bio: >-
+  Benson was animator, designer, artist and lead writer on Night in the Woods, which Infinite Fall Kickstarted
+  in October 2013 and released on February 21, 2017; it won the IGF 2018 Seumas McNally Grand Prize and
+  a BAFTA for Narrative. In August 2019, after Zoë Quinn's allegations against Holowka, he wrote, "We
+  take such allegations seriously as a team." His later studio, The Glory Society, closed in November
+  2023 after his heart-disease diagnosis.
+memberships:
+- org: infinite-fall
+  role: co-founder
+  sources:
+  - wikipedia-night-in-the-woods
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Scott_Benson
+consent:
+  status: not-asked
+status: single-source
+sources:
+- igf-night-woods
+- wikipedia-scott-benson
+- wikipedia-night-in-the-woods
+- wikipedia-alec-holowka

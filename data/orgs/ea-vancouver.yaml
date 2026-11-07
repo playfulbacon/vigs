@@ -1,0 +1,38 @@
+id: ea-vancouver
+name: EA Vancouver
+aliases:
+- EA Canada
+kind: aaa-studio
+founded:
+  value: "1991-07"
+  note: Became EA Canada when EA's purchase of Distinctive Software closed (announced June 18, 1991).
+location:
+  city: Burnaby
+  region: lower-mainland
+  note: Burnaby campus.
+lineage:
+- type: renamed-from
+  org: distinctive-software
+  date: "1991-07"
+  note: Distinctive Software became EA Canada after EA's purchase; later renamed EA Vancouver.
+  sources:
+  - wikipedia-distinctive-software
+  - wikipedia-ea-vancouver
+- type: subsidiary-of
+  org: electronic-arts
+  date: "1991-07"
+  sources:
+  - wikipedia-ea-vancouver
+summary: EA's Burnaby studio, created when Electronic Arts bought Distinctive Software in 1991. Veterans of EA Canada went on to found Relic and Blackbird Interactive, among others.
+current: Active as EA Vancouver in Burnaby, as of November 2026 (per the report's studio table).
+operating_status: active
+status: disputed
+sources:
+- wikipedia-ea-vancouver
+- wikipedia-distinctive-software
+- nyt-1991-ea-buys-distinctive
+- straight-2009-family-tree
+notes: 'Disputed detail: the purchase price is given as US$10M (Wikipedia citing the NYT, June 18, 1991) or $11M (Wikipedia''s EA Vancouver history section). Wikipedia''s uncited claim that it is EA''s "largest and oldest studio" should not be used; a documented alternative is "one of EA''s largest studios, about 1,300 staff (2013)."'
+tags:
+- aaa-roots
+- family-tree

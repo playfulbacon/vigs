@@ -1,0 +1,27 @@
+id: kodai-yanagawa
+name: Kodai Yanagawa
+vancouver:
+  tie: resident
+  note: Leads Sunset Visitor, described as a four-person Vancouver team.
+  sources:
+  - wikipedia-1000xresist
+roles:
+- director
+- founder
+summary: >-
+  Co-director, with Remy Siu, of Sunset Visitor's 1000xRESIST (2024), winner of a 2024 Peabody Award.
+bio: >-
+  Kodai Yanagawa and Remy Siu lead Sunset Visitor, a four-person Vancouver team. Its 1000xRESIST, published
+  by Fellow Traveller, was released on May 9, 2024, won a 2024 Peabody Award (Interactive & Immersive)
+  and was an IGF Grand Prize nominee.
+memberships:
+- org: sunset-visitor
+  role: co-founder; director
+  status: single-source
+  sources:
+  - wikipedia-1000xresist
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-1000xresist

@@ -1,0 +1,17 @@
+id: hardspace-shipbreaker
+title: 'Hardspace: Shipbreaker'
+releases:
+  - date: "2020-06-16"
+    kind: early-access
+    sources: [wikipedia-blackbird-interactive]
+  - date: "2022"
+    kind: full-release
+    sources: [wikipedia-blackbird-interactive]
+release_status: released
+developers: [blackbird-interactive]
+vancouver_connection: Made by Vancouver's Blackbird Interactive.
+region: vancouver
+summary: Blackbird Interactive's spaceship-salvage game, in Early Access from June 16, 2020 and at 1.0 in 2022. In August 2025 Blackbird bought the Hardspace IP from publisher Focus and signed with Lyrical Games.
+status: single-source
+sources: [wikipedia-blackbird-interactive]
+notes: Publisher Focus and Lyrical Games have no org records.

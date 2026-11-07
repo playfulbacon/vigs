@@ -1,0 +1,11 @@
+id: emily-carr-campus
+name: Emily Carr University campus
+kind: campus
+address: 520 E 1st Ave
+city: Vancouver
+region: vancouver
+summary: Emily Carr University's campus, where the Full Indie Summit returned on September 21, 2024, the first post-Covid Summit found.
+status: single-source
+sources:
+- eventsforgamers-full-indie-summit-2024
+- digibc-video-game-the-full-indie-summit-is-on-for-2024

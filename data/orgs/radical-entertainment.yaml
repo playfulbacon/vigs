@@ -1,0 +1,33 @@
+id: radical-entertainment
+name: Radical Entertainment
+aliases:
+- Radical
+kind: aaa-studio
+founded: "1991-09"
+founders:
+- rory-armes
+- dave-davis
+- ian-wilkinson
+location:
+  city: Vancouver
+  region: vancouver
+  note: First based in Yaletown.
+lineage:
+- type: spun-off-from
+  org: distinctive-software
+  date: "1991-09"
+  note: Co-founder Rory Armes was ex-DSI.
+  sources:
+  - wikipedia-radical-entertainment
+  - straight-2009-family-tree
+summary: Founded in September 1991 by Rory Armes (ex-DSI), Dave Davis and Ian Wilkinson, first based in Yaletown. Ex-Radical staff founded Barking Dog, Black Box and Hothead, which makes it the second great trunk of the family tree.
+current: Cut to a support studio after Activision's June 28, 2012 staff reduction; later status not researched (as of November 2026).
+operating_status: acquired
+status: verified
+sources:
+- wikipedia-radical-entertainment
+- straight-2009-family-tree
+notes: Bought by Vivendi in 2005 (◐). On June 28, 2012, Activision announced a "significant reduction in staff" and Radical became a support studio (◐). Vivendi and Activision are not in the org registry, so these ownership changes are not recorded as lineage.
+tags:
+- aaa-roots
+- family-tree

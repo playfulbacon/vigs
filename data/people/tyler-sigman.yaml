@@ -1,0 +1,26 @@
+id: tyler-sigman
+name: Tyler Sigman
+roles:
+- founder
+summary: >-
+  Former AAA developer who co-founded Red Hook Studios (Darkest Dungeon) with Chris Bourassa in 2013.
+bio: >-
+  Tyler Sigman and Chris Bourassa, both former AAA developers, formed Red Hook Studios around April 2013.
+  Its Darkest Dungeon was Kickstarted in February 2014 and released in full on January 19, 2016; Darkest
+  Dungeon II reached 1.0 in May 2023.
+memberships:
+- org: red-hook-studios
+  role: co-founder
+  start:
+    value: "2013-04"
+    approximate: true
+  status: single-source
+  sources:
+  - wikipedia-darkest-dungeon
+current: Red Hook's 2025–2026 status was not found as of the November 2026 report.
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-darkest-dungeon
+- straight-2024-indie-hub

@@ -1,0 +1,22 @@
+id: josh-holmes
+name: Josh Holmes
+roles:
+- founder
+summary: Co-founder of Propaganda Games (founded April 2005 as Revolution Interactive).
+bio: >-
+  Holmes co-founded Propaganda Games in April 2005, originally as Revolution Interactive, with Howard
+  Donaldson, Daryl Anselmo and Jorge Freitas. Disney bought it the same year and closed it in January
+  2011.
+memberships:
+- org: propaganda-games
+  role: co-founder
+  start: "2005-04"
+  end: "2011-01"
+  status: single-source
+  sources:
+  - wikipedia-propaganda-games
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-propaganda-games

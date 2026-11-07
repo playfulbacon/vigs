@@ -1,0 +1,25 @@
+id: 2024-08-full-indie-monthly-meetups
+title: DigiBC lists monthly Full Indie meetups
+date: 2024-08
+end_date: 2025-06
+era: current-era
+type: meetup
+summary: DigiBC lists monthly Full Indie game dev meetups in August, September, October and December 2024 and April
+  to June 2025.
+people:
+- aryo-nazaradeh
+orgs:
+- full-indie
+- digibc
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- source: digibc-video-game-full-indie-game-dev-monthly-meet-up-august-2024
+  note: Snippet; DigiBC returns 403 to fetchers
+open_questions:
+- Why did meetups move from The Gaming Stadium to Microsoft? Was LaSalle a one-off? When did you hand over to Chloe
+  Ezra? (Ask Aryo Nazaradeh and Chloe Ezra.)
+tags:
+- full-indie
+- meetup

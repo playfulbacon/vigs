@@ -1,0 +1,7 @@
+id: devolver-digital
+name: Devolver Digital
+kind: publisher
+summary: Published Daniel Mullins Games' Inscryption (2021).
+status: single-source
+sources:
+- wikipedia-inscryption

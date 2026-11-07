@@ -1,0 +1,38 @@
+id: brian-provinciano
+name: Brian Provinciano
+vancouver:
+  tie: resident
+  note: Vancouver Weekly called him "one of the biggest local names" in 2013.
+  sources:
+  - vanweekly-2013-full-indie-summit
+roles:
+- designer
+- programmer
+- founder
+- organizer
+summary: >-
+  Vblank Entertainment developer of Retro City Rampage (2012) who conceived the first Full Indie Summit
+  in 2013.
+bio: >-
+  Provinciano's Vblank Entertainment released Retro City Rampage on PC, PS3 and Vita on October 9, 2012.
+  He came up with the idea for the Full Indie Summit and organized the first one with Full Indie at the
+  Rio Theatre on April 20, 2013, filling the gap left by GDC Canada.
+memberships:
+- org: vblank-entertainment
+  role: founder
+  sources:
+  - wikipedia-retro-city-rampage
+  - vanweekly-2013-full-indie-summit
+- org: full-indie-summit
+  role: creator and co-organizer
+  start: "2013"
+  sources:
+  - vanweekly-2013-full-indie-summit
+  - engadget-2013-04-10-full-indie-summit-brings-vancouver-dev-industry-to
+consent:
+  status: not-asked
+status: verified
+sources:
+- vanweekly-2013-full-indie-summit
+- engadget-2013-04-10-full-indie-summit-brings-vancouver-dev-industry-to
+- wikipedia-retro-city-rampage

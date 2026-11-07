@@ -1,0 +1,25 @@
+id: dylan-gedig
+name: Dylan Gedig
+roles:
+- founder
+summary: Founder of Victoria's Red Nexus Games (Peglin).
+bio: >-
+  Gedig founded Red Nexus Games, which has University of Victoria roots; sources differ on whether that
+  was in 2015 or 2016. Its Peglin started at Orca Jam 2019 and reached 1.0 on August 27, 2024.
+memberships:
+- org: red-nexus-games
+  role: founder
+  start:
+    value: "2015"
+    note: Some sources say 2016
+  status: disputed
+  sources:
+  - shacknews-peglin-developer-talks-making-the-game-with-a-four-person-te
+consent:
+  status: not-asked
+status: single-source
+sources:
+- shacknews-peglin-developer-talks-making-the-game-with-a-four-person-te
+- wikipedia-peglin
+tags:
+- victoria

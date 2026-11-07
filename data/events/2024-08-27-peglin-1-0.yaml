@@ -1,0 +1,22 @@
+id: 2024-08-27-peglin-1-0
+title: Peglin reaches 1.0
+date: '2024-08-27'
+era: current-era
+type: release
+summary: Peglin reaches its 1.0 release alongside a Switch release.
+people:
+- dylan-gedig
+games:
+- peglin
+orgs:
+- red-nexus-games
+region: victoria
+significance: 1
+status: single-source
+sources:
+- wikipedia-peglin
+- gamedev-from-game-jam-to-winning-best-design-the-story-behind-peglin
+caveat: BC-scene context from Vancouver Island and Victoria, not a Vancouver claim.
+tags:
+- victoria-sidebar
+- release

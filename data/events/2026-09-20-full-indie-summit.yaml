@@ -1,0 +1,37 @@
+id: 2026-09-20-full-indie-summit
+title: Full Indie Summit 2026 at the Westin Bayshore
+date: '2026-09-20'
+era: current-era
+type: conference
+summary: The Full Indie Summit is held at The Westin Bayshore, with three tracks, 20+ speakers and demos. Luma shows
+  1,351 RSVPs marked "went"; sources disagree on whether it ran one day or two.
+people:
+- chloe-ezra
+orgs:
+- full-indie
+- full-indie-summit
+places:
+- westin-bayshore
+region: vancouver
+significance: 2
+status: disputed
+sources:
+- source: luma-full-indie-summit-2026
+  note: 1,351 'went'; lists one day
+- source: pocketgamer-full-indie-summit-2026
+  note: Snippet; calls it a two-day event
+accounts:
+- summary: Luma lists the Summit as a one-day event on September 20, 2026.
+  sources:
+  - luma-full-indie-summit-2026
+- summary: PocketGamer.biz calls it a two-day event.
+  sources:
+  - source: pocketgamer-full-indie-summit-2026
+    note: Snippet
+caveat: 1,351 is an RSVP count on Luma, not audited attendance.
+open_questions:
+- Was the 2026 Summit one day or two? How many actually attended, compared with RSVPs? (Ask the Full Indie board.)
+tags:
+- full-indie
+- full-indie-summit
+- conference

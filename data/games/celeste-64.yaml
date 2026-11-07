@@ -1,0 +1,18 @@
+id: celeste-64
+title: 'Celeste 64: Fragments of the Mountain'
+aliases: [Celeste 64]
+releases:
+  - date: "2024"
+    kind: release
+    sources: [wikipedia-extremely-ok-games]
+release_status: released
+developers: [extremely-ok-games]
+credits:
+  - person: amora-bettany
+    role: co-creator
+    sources: [wikipedia-extremely-ok-games, wikipedia-amora-bettany]
+vancouver_connection: Made by Vancouver's Extremely OK Games.
+region: vancouver
+summary: A small 3D Celeste game released by Extremely OK Games in 2024, co-created by Amora Bettany.
+status: single-source
+sources: [wikipedia-extremely-ok-games]

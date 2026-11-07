@@ -1,0 +1,15 @@
+id: simon-fraser-university
+name: Simon Fraser University
+aliases:
+- SFU
+kind: school
+location:
+  city: Burnaby
+  region: lower-mainland
+  note: Also a downtown Vancouver campus at Harbour Centre.
+summary: University whose Harbour Centre campus hosted the first Global Game Jam Vancouver site in 2009; Don Mattrick and Jamie Cheng studied there.
+status: verified
+sources:
+- villagegamer-global-game-jam-vancouver-creativity-in-a-box
+- wikipedia-don-mattrick
+- wikipedia-klei-entertainment

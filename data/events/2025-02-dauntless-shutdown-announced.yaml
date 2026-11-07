@@ -1,0 +1,20 @@
+id: 2025-02-dauntless-shutdown-announced
+title: Dauntless shutdown announced
+date: 2025-02
+era: current-era
+type: announcement
+summary: Phoenix Labs announces that Dauntless will shut down, with servers closing on May 29, 2025.
+games:
+- dauntless
+orgs:
+- phoenix-labs
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-phoenix-labs
+- source: gamesradar-dauntless-is-dead-after-a-blockchain-company-buyout-a-disas
+  note: Snippet
+tags:
+- shutdown
+- phoenix-labs

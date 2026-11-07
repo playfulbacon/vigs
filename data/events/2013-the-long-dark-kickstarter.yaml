@@ -1,0 +1,25 @@
+id: 2013-the-long-dark-kickstarter
+title: The Long Dark announced and Kickstarted
+date:
+  value: '2013'
+  note: September to October 2013
+era: indie-house-era
+type: crowdfunding
+summary: Hinterland announces The Long Dark and Kickstarts it, with seed money from the Canada Media Fund.
+people:
+- raphael-van-lierop
+games:
+- the-long-dark
+orgs:
+- hinterland-studio
+region: vancouver-island
+significance: 1
+status: single-source
+sources:
+- wikipedia-the-long-dark
+caveat: BC-scene context from Vancouver Island and Victoria, not a Vancouver claim. The Canada Media Fund has no
+  registry record.
+tags:
+- victoria-sidebar
+- crowdfunding
+- kickstarter

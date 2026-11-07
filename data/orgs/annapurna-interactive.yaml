@@ -1,0 +1,9 @@
+id: annapurna-interactive
+name: Annapurna Interactive
+aliases:
+- Annapurna
+kind: publisher
+summary: Published Ivy Road's Wanderstop (2025).
+status: single-source
+sources:
+- wikipedia-wanderstop

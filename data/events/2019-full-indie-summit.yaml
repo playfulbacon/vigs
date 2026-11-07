@@ -1,0 +1,36 @@
+id: 2019-full-indie-summit
+title: Full Indie Summit 2019 (billed as "8th annual")
+date: '2019'
+era: breakout-years
+type: conference
+summary: The 2019 Full Indie Summit is billed as the "8th annual," with "650+ creators each year." Annual editions
+  counted from the first Summit in 2013 would make 2019 the seventh.
+orgs:
+- full-indie
+- full-indie-summit
+- digibc
+region: vancouver
+significance: 2
+status: disputed
+sources:
+- source: digibc-2019-full-indie-summit
+  note: Search snippet; page returns 403
+  quote: 8th annual
+accounts:
+- summary: DigiBC's event listing bills the 2019 Summit as the "8th annual," with "650+ creators each year."
+  sources:
+  - source: digibc-2019-full-indie-summit
+    note: Snippet; page returns 403
+- summary: Counting annual editions from the first Summit on April 20, 2013 makes 2019 the seventh Summit. This
+    is the report's own arithmetic; no source gives an alternative edition count.
+  sources:
+  - source: engadget-2013-04-10-full-indie-summit-brings-vancouver-dev-industry-to
+    note: First Summit, April 2013
+caveat: The venue is not documented. The 650+ figure is a billing claim, not audited attendance.
+open_questions:
+- What were the venues for the 2017, 2018 and 2019 Summits, and was 2015 at the Convention Centre? Why was 2019
+  billed as the '8th annual'? (Ask Maurice Grela and Alain-Daniel Bourdages.)
+tags:
+- full-indie
+- full-indie-summit
+- conference

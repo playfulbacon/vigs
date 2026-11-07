@@ -1,0 +1,64 @@
+id: pedro-medeiros
+name: Pedro Medeiros
+aliases:
+- saint11
+origin: Brazil
+vancouver:
+  tie: unconfirmed
+  note: >-
+    His studio Coldblood Inc. is described as Vancouver-based (Gematsu snippet); his own residence is
+    unconfirmed.
+  sources:
+  - gematsu-neverway-launches-in-october-prologue-demo-now-available-for-p
+roles:
+- artist
+- founder
+summary: >-
+  Brazilian pixel artist who co-founded MiniBoss and Extremely OK Games, did art on TowerFall and Celeste,
+  and left EXOK in November 2024 to co-run Coldblood Inc.
+bio: >-
+  Medeiros co-founded MiniBoss in São Paulo in 2010 with Amora Bettany and Heidy Motta, and did pixel
+  art for TowerFall and Celeste. He was on the founding team of Extremely OK Games in 2019 and left in
+  November 2024. Accounts of the January 2025 Earthblade cancellation differ: Shacknews says the conflict
+  centred on a disagreement over Celeste's IP rights between Thorson and Berry and Medeiros, who "reached
+  a resolution"; Engadget says the split was amicable and "not the reason," quoting Thorson that "Pedro
+  and the Neverway team aren't the enemy." He co-founded Coldblood Inc. with Isadora Sophia; its Neverway,
+  backed by Outersloth, now lists a 2027 release.
+memberships:
+- org: miniboss
+  role: co-founder
+  start: "2010"
+  status: single-source
+  sources:
+  - wikipedia-amora-bettany
+- org: extremely-ok-games
+  role: co-founder
+  start: "2019"
+  end: "2024-11"
+  sources:
+  - gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
+  - engadget-extremely-ok-games-has-cancelled-its-follow-up-to-celeste-000
+- org: coldblood-inc
+  role: co-founder
+  status: single-source
+  sources:
+  - gematsu-neverway-launches-in-october-prologue-demo-now-available-for-p
+current: >-
+  As of the November 2026 report: co-runs Coldblood Inc.; Neverway's Steam page reads "Planned Release
+  Date: 2027."
+consent:
+  status: not-asked
+status: verified
+sources:
+- engadget-extremely-ok-games-has-cancelled-its-follow-up-to-celeste-000
+- shacknews-extremely-ok-games-cancels-earthblade
+- gamesradar-celeste-developer-abruptly-cancels-new-game-after-5-years-o
+- wikipedia-amora-bettany
+- wikipedia-towerfall
+- wikipedia-celeste-video-game
+- gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
+- gematsu-neverway-launches-in-october-prologue-demo-now-available-for-p
+- gameinformer-neverway-a-nightmarish-life-sim-from-the-artist-of-celest
+- steam-neverway
+notes: >-
+  Present both Earthblade accounts in interviews; ask Thorson, Berry and Medeiros separately.

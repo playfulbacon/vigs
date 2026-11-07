@@ -1,0 +1,38 @@
+id: 2010-victoria-indie-meetup
+title: A Victoria indie meetup said to have seeded Full Indie
+date:
+  value: '2010'
+  qualifier: by
+  approximate: true
+  display: c. 2010 or earlier
+era: first-indies
+type: meetup
+summary: Sarah Northway recalls that a former Victoria roommate "started a meet-up in Victoria for indie devs, and
+  when he moved to Vancouver, I think he brought it with him." He is not named. The Georgia Straight treats this
+  as a Full Indie origin.
+people:
+- sarah-northway
+- colin-northway
+- alex-vostrov
+- jake-birkett
+orgs:
+- victoria-indie-meetup
+- full-indie
+region: victoria
+significance: 2
+status: single-source
+sources:
+- source: straight-2024-indie-hub
+  quote: started a meet-up in Victoria for indie devs, and when he moved to Vancouver, I think he brought it with
+    him
+- source: greyalien-first-vancouver-indie-game-developer-meetup-was-a-big-succes
+  note: Birkett calls Vostrov 'another Vancouver resident' and does not mention Victoria
+caveat: BC-scene context from Vancouver Island and Victoria, not a Vancouver claim. Birkett's contemporary posts
+  call Vostrov "another Vancouver resident" and do not mention Victoria, so the link to Full Indie rests on one
+  recollection.
+open_questions:
+- Who was the Victoria roommate who started an indie meetup and 'brought it with him'? When and where did the Victoria
+  meetup run? (Ask Sarah and Colin Northway and Alex Vostrov.)
+tags:
+- victoria-sidebar
+- full-indie-origins

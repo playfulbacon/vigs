@@ -1,0 +1,30 @@
+id: hinterland-studio
+name: Hinterland Studio
+aliases:
+- Hinterland
+kind: indie-studio
+founded:
+  value: "2013-09"
+  note: Team and Kickstarter announced September 2013.
+founders:
+- raphael-van-lierop
+location:
+  city: Comox Valley
+  region: vancouver-island
+  note: Mostly remote team.
+lineage:
+- type: spun-off-from
+  org: relic-entertainment
+  date: "2013-09"
+  note: Founder Raphael van Lierop is ex-Relic.
+  sources:
+  - wikipedia-the-long-dark
+summary: Formed by ex-Relic developer Raphael van Lierop after he moved from Vancouver to the Comox Valley; it made The Long Dark. It is a Vancouver Island story, kept in the report's sidebar.
+current: 'Active; shifted developers back to The Long Dark DLC while Blackfrost: The Long Dark 2 slipped to 2027 (as of November 2026).'
+operating_status: active
+status: single-source
+sources:
+- wikipedia-the-long-dark
+- pcgamer-the-long-dark-will-get-new-dlc-again-as-studio-shifts-devs-awa
+tags:
+- island

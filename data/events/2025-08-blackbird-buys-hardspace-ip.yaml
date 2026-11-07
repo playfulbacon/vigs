@@ -1,0 +1,20 @@
+id: 2025-08-blackbird-buys-hardspace-ip
+title: Blackbird buys the Hardspace IP
+date: 2025-08
+era: current-era
+type: acquisition
+summary: Blackbird Interactive buys the Hardspace IP from Focus and signs with publisher Lyrical Games.
+games:
+- hardspace-shipbreaker
+orgs:
+- blackbird-interactive
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-blackbird-interactive
+caveat: Focus and Lyrical Games have no registry records.
+tags:
+- acquisition
+- ip
+- blackbird

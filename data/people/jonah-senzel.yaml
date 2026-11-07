@@ -1,0 +1,13 @@
+id: jonah-senzel
+name: Jonah Senzel
+vancouver:
+  tie: unconfirmed
+roles:
+- composer
+summary: Composer of Daniel Mullins's Pony Island (2016).
+bio: Senzel wrote the music for Pony Island, released January 4, 2016.
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-pony-island

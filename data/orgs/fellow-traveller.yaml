@@ -1,0 +1,7 @@
+id: fellow-traveller
+name: Fellow Traveller
+kind: publisher
+summary: Published Sunset Visitor's 1000xRESIST (2024).
+status: single-source
+sources:
+- wikipedia-1000xresist

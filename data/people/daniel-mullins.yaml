@@ -1,0 +1,45 @@
+id: daniel-mullins
+name: Daniel Mullins
+vancouver:
+  tie: resident
+  arrived:
+    value: "2020"
+    qualifier: by
+    note: No source dated 2016 places him in Vancouver
+  note: Described as Vancouver-based from 2020 on.
+  sources:
+  - cgd-inscryption-announced
+  - thumbsticks-magic-myst-pokemon-inspire-inscryption
+roles:
+- designer
+- programmer
+- founder
+summary: Developer of Pony Island (2016) and Inscryption (2021), Vancouver-based by 2020.
+bio: >-
+  Mullins released Pony Island on January 4, 2016; it began as a December 2014 Ludum Dare prototype, with
+  music by Jonah Senzel. After The Hex (2018), Inscryption, which grew from his Ludum Dare 43 game Sacrifices
+  Must Be Made, was released by Devolver Digital on October 19, 2021. It sold more than 1 million copies
+  by January 2022 and won the IGF Seumas McNally Grand Prize and GDCA Game of the Year in March 2022.
+  He announced Pony Island 2: Panda Circus at The Game Awards on December 7, 2023; it is dated April 27,
+  2027.
+memberships:
+- org: daniel-mullins-games
+  role: founder
+  sources:
+  - wikipedia-inscryption
+  - wikipedia-pony-island
+current: 'As of the November 2026 report: Pony Island 2: Panda Circus is dated for April 27, 2027.'
+consent:
+  status: not-asked
+status: verified
+sources:
+- wikipedia-pony-island
+- wikipedia-inscryption
+- gamedev-how-game-jam-sacrifices-became-inscryption
+- thumbsticks-magic-myst-pokemon-inspire-inscryption
+- cgd-inscryption-announced
+- gamespot-pony-island-2-announced
+- gamesbeat-pony-island-2-panda-circus-launches-on-april-27-2027
+notes: >-
+  Reportedly a programmer at Vancouver studios before going indie (single source). His arrival date in
+  Vancouver is an interview question.

@@ -1,0 +1,31 @@
+id: 2020-10-08-ikenfell-released
+title: Ikenfell released
+date:
+  value: '2020-10-08'
+  note: Exact date rests on Wikipedia
+era: breakout-years
+type: release
+summary: Chevy Ray Johnston's Ikenfell, by Happy Ray Games and published by Humble Games, is released. The Georgia
+  Straight says it came out of Indie House.
+people:
+- chevy-ray-johnston
+games:
+- ikenfell
+orgs:
+- happy-ray-games
+- humble-games
+- a-shell-in-the-pit
+places:
+- indie-house
+region: vancouver
+significance: 2
+status: verified
+sources:
+- source: straight-2024-indie-hub
+  note: Came out of Indie House
+- source: wikipedia-ikenfell
+  note: Release date
+tags:
+- release
+- indie-house-lineage
+- a-shell-in-the-pit

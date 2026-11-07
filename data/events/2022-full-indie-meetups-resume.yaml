@@ -1,0 +1,36 @@
+id: 2022-full-indie-meetups-resume
+title: Aryo Nazaradeh returns and Full Indie meetups resume
+date:
+  value: '2022'
+  note: 'Straight: Nazaradeh returns in 2022; Full Indie: meetups resumed in 2023'
+era: current-era
+type: meetup
+summary: Aryo Nazaradeh returns to Vancouver from Toronto and becomes Full Indie president, and Full Indie's in-person
+  meetups resume after the Covid hiatus. Sources disagree on whether this happened in 2022 or 2023.
+people:
+- aryo-nazaradeh
+orgs:
+- full-indie
+region: vancouver
+significance: 2
+status: disputed
+sources:
+- straight-2024-indie-hub
+- fullindie-about
+accounts:
+- summary: The Georgia Straight says Nazaradeh returned to Vancouver from Toronto in 2022 and became Full Indie
+    president; it gives no start year for the presidency.
+  sources:
+  - straight-2024-indie-hub
+- summary: Full Indie's own site says meetups resumed in 2023, "after a five-year hiatus that began during the COVID-19
+    pandemic." A 2020 start makes a five-year hiatus impossible.
+  sources:
+  - source: fullindie-about
+    quote: after a five-year hiatus that began during the COVID-19 pandemic
+open_questions:
+- When exactly did meetups restart, 2022 or 2023? Where does the 'five-year hiatus' figure come from? Was there
+  any online activity, or were there Discords, in 2020-2022? (Ask Aryo Nazaradeh and Maurice Grela.)
+tags:
+- full-indie
+- revival
+- leadership

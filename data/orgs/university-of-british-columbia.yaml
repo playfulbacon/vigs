@@ -1,0 +1,12 @@
+id: university-of-british-columbia
+name: University of British Columbia
+aliases:
+- UBC
+kind: school
+location:
+  city: Vancouver
+  region: vancouver
+summary: University that has hosted Global Game Jam Vancouver since 2010, including the fifth edition at the UBC Life Sciences Centre in January 2013.
+status: verified
+sources:
+- straight-2013-global-game-jam

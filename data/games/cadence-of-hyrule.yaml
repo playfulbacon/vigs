@@ -1,0 +1,24 @@
+id: cadence-of-hyrule
+title: Cadence of Hyrule
+aliases: [Cadence of Hyrule – Crypt of the NecroDancer Featuring The Legend of Zelda]
+releases:
+  - date: "2019-06-13"
+    kind: release
+    platforms: [Switch]
+    sources: [wikipedia-cadence-of-hyrule]
+release_status: released
+developers: [brace-yourself-games]
+publishers: [nintendo]
+credits:
+  - person: ryan-clark
+    role: director
+    sources: [wikipedia-cadence-of-hyrule]
+audio_by: [power-up-audio]
+vancouver_connection: Made by Vancouver's Brace Yourself Games with audio by Vancouver's Power Up Audio.
+region: vancouver
+summary: A Zelda-themed rhythm game from Brace Yourself Games, published by Nintendo on Switch on June 13, 2019 after its March 2019 Nindies reveal. Ryan Clark directed.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Cadence_of_Hyrule
+status: single-source
+sources: [wikipedia-cadence-of-hyrule, egm-power-up-audio]
+notes: Spike Chunsoft published it in Japan. DLC followed December 2019 to September 2020, including "Symphony of the Mask" on September 23, 2020 (research notes). PUA's credit comes from the report's studios table.

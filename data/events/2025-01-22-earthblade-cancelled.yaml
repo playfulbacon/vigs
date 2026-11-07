@@ -1,0 +1,59 @@
+id: 2025-01-22-earthblade-cancelled
+title: Extremely OK Games cancels Earthblade
+date: '2025-01-22'
+era: current-era
+type: cancellation
+summary: Extremely OK Games cancels Earthblade in a "Final Earthblade Update"; Maddy Thorson and Noel Berry made
+  the decision in December 2024. Published accounts differ on how far a dispute with co-founder Pedro Medeiros over
+  Celeste's IP caused it. EXOK says it plans smaller projects.
+people:
+- maddy-thorson
+- noel-berry
+- pedro-medeiros
+games:
+- earthblade
+- celeste
+- neverway
+orgs:
+- extremely-ok-games
+- coldblood-inc
+region: vancouver
+significance: 3
+status: disputed
+sources:
+- shacknews-extremely-ok-games-cancels-earthblade
+- engadget-extremely-ok-games-has-cancelled-its-follow-up-to-celeste-000
+- source: gamesradar-celeste-developer-abruptly-cancels-new-game-after-5-years-o
+  note: Snippet
+- source: gamedev-extremely-ok-games-cancels-earthblade-amid-team-strife-develop
+  note: Snippet
+- source: pcgamer-celeste-developer-starts-2025-with-a-huge-heartbreaking-and-ye
+  note: Headline only
+accounts:
+- summary: 'Shacknews: "the conflict centered around a disagreement about the IP rights of Celeste" between Thorson
+    and Berry on one side and Medeiros on the other; they "reached a resolution" and agreed to "go our separate
+    ways."'
+  sources:
+  - source: shacknews-extremely-ok-games-cancels-earthblade
+    quote: the conflict centered around a disagreement about the IP rights of Celeste
+- summary: GamesRadar+ frames the cancellation as following the founding member's departure "over copyright fracture."
+  sources:
+  - source: gamesradar-celeste-developer-abruptly-cancels-new-game-after-5-years-o
+    note: Snippet
+- summary: Engadget stresses that the split was amicable and "not the reason," quoting Thorson that the work had
+    "become so exhausting" and "Pedro and the Neverway team aren't the enemy."
+  sources:
+  - source: engadget-extremely-ok-games-has-cancelled-its-follow-up-to-celeste-000
+    quote: Pedro and the Neverway team aren't the enemy
+- summary: Game Developer's headline describes the cancellation as "amid team strife, development struggles."
+  sources:
+  - source: gamedev-extremely-ok-games-cancels-earthblade-amid-team-strife-develop
+    note: Snippet
+open_questions:
+- In your own words, what role did the Celeste IP dispute play in cancelling Earthblade? (Ask Maddy Thorson, Noel
+  Berry and Pedro Medeiros separately, and present both published accounts.)
+tags:
+- cancellation
+- exok
+- earthblade
+- ip-dispute

@@ -1,0 +1,19 @@
+id: 2023-08-blackbird-layoffs
+title: Blackbird Interactive lays off 41
+date: 2023-08
+era: current-era
+type: layoff
+summary: Blackbird Interactive lays off 41 employees.
+orgs:
+- blackbird-interactive
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-blackbird-interactive
+open_questions:
+- Did the 2023-25 layoffs (Relic, Phoenix Labs, Blackbird, Brace Yourself, EA) seed new indie studios? Who left
+  and started something? (Ask Aryo Nazaradeh, Chloe Ezra and Ryan Clark.)
+tags:
+- layoffs
+- blackbird

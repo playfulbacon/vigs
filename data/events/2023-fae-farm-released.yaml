@@ -1,0 +1,18 @@
+id: 2023-fae-farm-released
+title: Fae Farm released
+date: '2023'
+era: current-era
+type: release
+summary: Phoenix Labs releases Fae Farm.
+games:
+- fae-farm
+orgs:
+- phoenix-labs
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-phoenix-labs
+tags:
+- release
+- phoenix-labs

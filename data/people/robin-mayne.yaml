@@ -1,0 +1,21 @@
+id: robin-mayne
+name: Robin Mayne
+roles:
+- founder
+summary: Former Riot developer who co-founded Phoenix Labs in April 2014.
+bio: >-
+  Robin Mayne co-founded Phoenix Labs in April 2014 with fellow ex-Riot developers Jesse Houston and Sean
+  Bender. The studio made Dauntless and Fae Farm, was acquired by Garena in January 2020 and laid off
+  most of its remaining staff in January 2025.
+memberships:
+- org: phoenix-labs
+  role: co-founder
+  start: "2014-04"
+  status: single-source
+  sources:
+  - wikipedia-phoenix-labs
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-phoenix-labs

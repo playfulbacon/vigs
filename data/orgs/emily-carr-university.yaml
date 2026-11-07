@@ -1,0 +1,14 @@
+id: emily-carr-university
+name: Emily Carr University of Art + Design
+aliases:
+- Emily Carr University
+- Emily Carr
+kind: school
+location:
+  city: Vancouver
+  region: vancouver
+summary: Art and design university whose campus at 520 E 1st Ave hosted the first post-Covid Full Indie Summit on September 21, 2024.
+status: single-source
+sources:
+- eventsforgamers-full-indie-summit-2024
+- digibc-video-game-the-full-indie-summit-is-on-for-2024

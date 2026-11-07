@@ -1,0 +1,30 @@
+id: 2021-06-10-chicory-released
+title: 'Chicory: A Colorful Tale released'
+date: '2021-06-10'
+era: breakout-years
+type: release
+summary: 'Chicory: A Colorful Tale, by Greg Lobanov with lead art by Alexis Dean-Jones and Madeline Berger and music
+  by Lena Raine, is released by Finji. It wins a BAFTA (Family), and Lobanov calls it his biggest success.'
+people:
+- greg-lobanov
+- alexis-dean-jones
+- madeline-berger
+- lena-raine
+games:
+- chicory-a-colorful-tale
+orgs:
+- finji
+- a-shell-in-the-pit
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- source: wikipedia-chicory-a-colorful-tale
+  note: Date, credits, BAFTA
+- source: straight-2024-indie-hub
+  note: Lobanov calls it his biggest success (verified)
+tags:
+- release
+- finji
+- a-shell-in-the-pit
+- bafta

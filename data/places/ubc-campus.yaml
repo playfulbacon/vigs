@@ -1,0 +1,11 @@
+id: ubc-campus
+name: UBC Vancouver campus
+aliases:
+- UBC Life Sciences Centre
+kind: campus
+city: Vancouver
+region: vancouver
+summary: Home of Global Game Jam Vancouver from January 2010; the fifth edition (January 2013), at the UBC Life Sciences Centre, drew about 250 participants.
+status: verified
+sources:
+- straight-2013-global-game-jam

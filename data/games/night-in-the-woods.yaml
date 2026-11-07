@@ -1,0 +1,57 @@
+id: night-in-the-woods
+title: Night in the Woods
+releases:
+  - date: "2017-02-21"
+    kind: release
+    platforms: [Windows, macOS, Linux, PS4]
+    sources: [wikipedia-night-in-the-woods]
+  - date: "2017-12"
+    kind: port
+    platforms: [Xbox One]
+    sources: [wikipedia-night-in-the-woods]
+  - date: "2018-02"
+    kind: port
+    platforms: [Switch]
+    sources: [wikipedia-night-in-the-woods]
+  - date: "2021-09"
+    kind: port
+    platforms: [iOS]
+    sources: [wikipedia-night-in-the-woods]
+release_status: released
+developers: [infinite-fall]
+publishers: [finji]
+credits:
+  - person: alec-holowka
+    role: designer, programmer, composer
+    sources: [wikipedia-night-in-the-woods, wikipedia-alec-holowka]
+  - person: scott-benson
+    role: designer
+    sources: [wikipedia-night-in-the-woods]
+  - person: bethany-hockenberry
+    role: designer
+    sources: [wikipedia-night-in-the-woods]
+audio_by: [a-shell-in-the-pit]
+made_at: [indie-house]
+vancouver_connection: Partly tied to Indie House through Alec Holowka, who lived there; the Georgia Straight counts it among the games that came out of the house. Benson and Hockenberry were based in Pittsburgh, Holowka worked remotely from Winnipeg by the IGF period, and the game's Wikipedia page mentions neither Vancouver nor Indie House.
+region: international
+awards:
+  - name: IGF Seumas McNally Grand Prize
+    year: 2018
+    result: won
+    sources: [wikipedia-night-in-the-woods, igf-night-woods]
+  - name: BAFTA Games Award, Narrative
+    result: won
+    sources: [wikipedia-night-in-the-woods]
+crowdfunding:
+  platform: Kickstarter
+  date: "2013-10-22"
+  raised: more than US$200,000 (US$50,000 goal met in 26 hours)
+  sources: [wikipedia-night-in-the-woods]
+summary: An adventure game by Infinite Fall (Alec Holowka, Scott Benson and Bethany Hockenberry) with Secret Lab, published by Finji on February 21, 2017. It won the IGF 2018 Seumas McNally Grand Prize and a BAFTA for Narrative.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Night_in_the_Woods
+status: verified
+sources: [straight-2024-indie-hub, wikipedia-night-in-the-woods, igf-night-woods, asitp-home, wikipedia-alec-holowka]
+notes: >-
+  Made_at indie-house carries a caveat: the tie runs through Holowka, and no source names which parts were made there. A YouTube video titled "Indie House / Night In The Woods" appeared in October 2013 (cited on Wikipedia). A Shell in the Pit lists the game among its credits; its exact role (likely sound design, since Wikipedia credits the music to Holowka and Benson) is unverified. Co-developer Secret Lab has no org record.
+  In August 2019, per Wikipedia, the team cut ties with Holowka the day after Zoe Quinn publicly accused him of abuse; Holowka died on August 31, 2019. See his person record for the attributed statements.

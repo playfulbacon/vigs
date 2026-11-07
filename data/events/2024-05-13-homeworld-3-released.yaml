@@ -1,0 +1,19 @@
+id: 2024-05-13-homeworld-3-released
+title: Homeworld 3 released
+date: '2024-05-13'
+era: current-era
+type: release
+summary: Blackbird Interactive releases Homeworld 3.
+games:
+- homeworld-3
+- homeworld
+orgs:
+- blackbird-interactive
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-blackbird-interactive
+tags:
+- release
+- blackbird

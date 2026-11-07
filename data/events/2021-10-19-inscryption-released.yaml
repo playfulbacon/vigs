@@ -1,0 +1,30 @@
+id: 2021-10-19-inscryption-released
+title: Inscryption released
+date: '2021-10-19'
+era: breakout-years
+type: release
+summary: Inscryption, by Daniel Mullins Games and published by Devolver Digital, is released on Windows. It grew
+  from Mullins's Ludum Dare 43 game Sacrifices Must Be Made and sells more than 1 million copies by January 2022.
+people:
+- daniel-mullins
+games:
+- inscryption
+orgs:
+- daniel-mullins-games
+- devolver-digital
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- source: wikipedia-inscryption
+  note: Date, sales
+- source: gamedev-how-game-jam-sacrifices-became-inscryption
+  note: Ludum Dare origin
+- source: thumbsticks-magic-myst-pokemon-inspire-inscryption
+  note: Describes Mullins as Vancouver-based
+open_questions:
+- When did you arrive in Vancouver, and why? Did you work at local studios before Pony Island? (Ask Daniel Mullins.)
+tags:
+- release
+- devolver
+- game-jam-origin

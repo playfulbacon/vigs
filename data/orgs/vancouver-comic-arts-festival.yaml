@@ -1,0 +1,13 @@
+id: vancouver-comic-arts-festival
+name: Vancouver Comic Arts Festival
+aliases:
+- VanCAF
+kind: event-series
+location:
+  city: Vancouver
+  region: vancouver
+summary: Vancouver comics festival that hosted the Comics <3 Games showcase with Full Indie in 2018 and inspired Vancouver Game Garden.
+status: verified
+sources:
+- fullindie-about
+- straight-you-nearly-missed-local-indie-games-bloom-at-vancouver-game-g

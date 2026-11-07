@@ -1,0 +1,19 @@
+id: 2018-brace-yourself-acquires-tetragon-works
+title: Brace Yourself Games acquires Tetragon Works
+date: '2018'
+era: breakout-years
+type: acquisition
+summary: Brace Yourself Games acquires Tetragon Works, the team behind Phantom Brigade.
+games:
+- phantom-brigade
+orgs:
+- brace-yourself-games
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-brace-yourself-games
+caveat: Tetragon Works has no registry record.
+tags:
+- acquisition
+- brace-yourself

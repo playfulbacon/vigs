@@ -1,0 +1,36 @@
+id: 2015-red-nexus-games-founded
+title: Dylan Gedig founds Red Nexus Games
+date:
+  value: '2015'
+  note: 2015 or 2016; sources differ
+era: indie-house-era
+type: founding
+summary: Dylan Gedig founds Red Nexus Games, a studio with University of Victoria roots. Sources differ on whether
+  it was founded in 2015 or 2016.
+people:
+- dylan-gedig
+games:
+- peglin
+orgs:
+- red-nexus-games
+- university-of-victoria
+region: victoria
+significance: 1
+status: disputed
+sources:
+- source: shacknews-peglin-developer-talks-making-the-game-with-a-four-person-te
+  note: Snippet
+accounts:
+- summary: Founded in 2015.
+  sources:
+  - source: shacknews-peglin-developer-talks-making-the-game-with-a-four-person-te
+    note: The report cites this snippet for the entry but does not say which source gives which year
+- summary: Founded in 2016.
+  sources:
+  - source: shacknews-peglin-developer-talks-making-the-game-with-a-four-person-te
+    note: The report cites this snippet for the entry but does not say which source gives which year
+caveat: BC-scene context from Vancouver Island and Victoria, not a Vancouver claim. The report says the founding
+  year differs between sources without naming which gives which.
+tags:
+- victoria-sidebar
+- founding

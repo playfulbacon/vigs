@@ -1,0 +1,10 @@
+id: westin-bayshore
+name: The Westin Bayshore
+kind: venue
+city: Vancouver
+region: vancouver
+summary: Hotel venue of the September 20, 2026 Full Indie Summit, with three tracks and 20+ speakers.
+status: verified
+sources:
+- luma-full-indie-summit-2026
+- pocketgamer-full-indie-summit-2026

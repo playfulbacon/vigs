@@ -1,0 +1,48 @@
+id: jamie-cheng
+name: Jamie Cheng
+vancouver:
+  tie: resident
+  note: Founded Klei in Vancouver in 2005; residence details not documented.
+  sources:
+  - straight-2013-bov-games-made-in-vancouver
+  - wikipedia-klei-entertainment
+roles:
+- founder
+- programmer
+- executive
+summary: >-
+  Former Relic AI programmer who bootstrapped Klei Entertainment in July 2005; under him Klei has also
+  published Vancouver peers.
+bio: >-
+  Cheng studied computer science at Simon Fraser University and spent nearly three years as an AI programmer
+  at Relic Entertainment. He left to bootstrap Klei Entertainment in July 2005; Wikipedia adds that he
+  funded it by selling his THQ shares and borrowing $10,000 from his brother. Klei's games include Shank,
+  Mark of the Ninja, Don't Starve, Oxygen Not Included, Griftlands and Rotwood, and it published Crypt
+  of the NecroDancer, Rift of the NecroDancer and Beastieball. When Tencent took a majority stake in January
+  2021, Cheng said Klei would keep full autonomy.
+memberships:
+- org: relic-entertainment
+  role: AI programmer
+  end: "2005"
+  status: single-source
+  sources:
+  - wikipedia-klei-entertainment
+- org: klei-entertainment
+  role: founder; CEO
+  start: "2005-07"
+  sources:
+  - straight-2013-bov-games-made-in-vancouver
+  - wikipedia-klei-entertainment
+current: >-
+  As of the November 2026 report: listed as Klei's CEO in the most recent source found (a 2017 context);
+  not confirmed for 2026.
+consent:
+  status: not-asked
+status: verified
+sources:
+- straight-2013-bov-games-made-in-vancouver
+- wikipedia-klei-entertainment
+- gamedev-road-to-the-igf-klei-entertainment-s-i-eets-i
+notes: >-
+  The THQ-shares-and-loan funding story and the July 2005 month rest on Wikipedia only. SFU and the Relic
+  tenure come from search summaries.

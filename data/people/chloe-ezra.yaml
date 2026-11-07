@@ -1,0 +1,19 @@
+id: chloe-ezra
+name: Chloe Ezra
+roles:
+- organizer
+summary: Current president of Full Indie, as listed on its team page in November 2026.
+bio: >-
+  Full Indie's team page lists Ezra as president, with Miranda (VP), Amelia Wales (Treasurer), Vivan Huang
+  (Secretary) and Demi Montes (Community Manager). When she took over from Aryo Nazaradeh is unknown.
+memberships:
+- org: full-indie
+  role: president
+  sources:
+  - fullindie-about
+current: 'As of November 2026: president of Full Indie.'
+consent:
+  status: not-asked
+status: verified
+sources:
+- fullindie-about

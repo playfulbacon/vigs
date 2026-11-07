@@ -1,0 +1,26 @@
+id: jeff-tangsoc
+name: Jeff Tangsoc
+vancouver:
+  tie: resident
+  note: Power Up Audio works from home offices in Vancouver (EGM).
+  sources:
+  - egm-power-up-audio
+roles:
+- sound-designer
+- founder
+summary: Power Up Audio co-founder.
+bio: >-
+  Tangsoc co-founded Power Up Audio with Kevin Regamey after they met at a large commercial sound studio.
+  He was on stage for Into the Breach at the 2019 BAFTA Games Awards.
+memberships:
+- org: power-up-audio
+  role: co-founder
+  status: single-source
+  sources:
+  - egm-power-up-audio
+consent:
+  status: not-asked
+status: single-source
+sources:
+- egm-power-up-audio
+notes: Rests on the single EGM feature; Power Up Audio's team page returned 404.

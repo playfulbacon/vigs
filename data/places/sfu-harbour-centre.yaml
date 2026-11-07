@@ -1,0 +1,9 @@
+id: sfu-harbour-centre
+name: SFU Harbour Centre
+kind: campus
+city: Vancouver
+region: vancouver
+summary: Simon Fraser University's downtown campus, the Vancouver site of the first Global Game Jam (January 30 – February 1, 2009), with 26 entrants.
+status: verified
+sources:
+- villagegamer-global-game-jam-vancouver-creativity-in-a-box

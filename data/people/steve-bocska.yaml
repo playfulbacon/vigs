@@ -1,0 +1,26 @@
+id: steve-bocska
+name: Steve Bocska
+roles:
+- founder
+summary: Former Radical developer who co-founded Hothead Games in 2006.
+bio: >-
+  Bocska, formerly of Radical Entertainment, co-founded Hothead Games in 2006 with Vlad Ceraldi and Joel
+  DeYoung. Its first releases were the Penny Arcade Adventures episodes (2008).
+memberships:
+- org: radical-entertainment
+  role: developer
+  end: "2006"
+  status: single-source
+  sources:
+  - wikipedia-hothead-games
+- org: hothead-games
+  role: co-founder
+  start: "2006"
+  status: single-source
+  sources:
+  - wikipedia-hothead-games
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-hothead-games

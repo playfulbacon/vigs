@@ -1,0 +1,20 @@
+id: robert-barrett
+name: Robert Barrett
+roles:
+- founder
+summary: Founder of Blue Castle Games in Burnaby (July 4, 2004), later Capcom Vancouver.
+bio: >-
+  Barrett founded Blue Castle Games in Burnaby on July 4, 2004. Capcom later acquired the studio, which
+  became Capcom Vancouver; its closure was announced on September 18, 2018.
+memberships:
+- org: capcom-vancouver
+  role: founder (Blue Castle Games)
+  start: "2004-07-04"
+  status: single-source
+  sources:
+  - wikipedia-capcom-vancouver
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-capcom-vancouver

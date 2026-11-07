@@ -1,0 +1,20 @@
+id: ivy-road
+name: Ivy Road
+kind: indie-studio
+closed:
+  value: "2026-03-31"
+  note: Per Wikipedia only.
+founders:
+- davey-wreden
+- karla-zimonja
+location:
+  note: 'Disputed: MobileSyrup says Vancouver; Wikipedia cites C418 describing a studio based in Austin, Texas.'
+summary: Studio of Davey Wreden and Karla Zimonja that made Wanderstop (March 11, 2025, published by Annapurna), with C418 and concept art by Amora Bettany.
+current: Shut down March 31, 2026, per Wikipedia (◐).
+operating_status: closed
+status: disputed
+sources:
+- mobilesyrup-top-canadian-games-of-2025
+- wikipedia-wanderstop
+- straight-2024-indie-hub
+notes: 'Disputed location. Account 1 (MobileSyrup, 2025): a team "led by Davey Wreden and Karla Zimonja in Vancouver." Account 2 (Wikipedia: Wanderstop, citing C418): a studio "based in Austin, Texas." The Georgia Straight calls Ivy Road an "international studio." Wreden has lived in Vancouver since 2019.'

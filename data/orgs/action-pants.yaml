@@ -1,0 +1,26 @@
+id: action-pants
+name: Action Pants
+aliases:
+- Ubisoft Vancouver
+kind: mid-size-studio
+founded: "2006"
+closed: "2012-01-17"
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: acquired-by
+  org: ubisoft
+  date: "2009-02"
+  note: Became Ubisoft Vancouver.
+  sources:
+  - gameinformer-ubisoft-closes-vancouver-studio
+summary: Vancouver studio founded in 2006 and acquired by Ubisoft in February 2009, becoming Ubisoft Vancouver (Pure Futbol).
+current: Closed by Ubisoft on January 17, 2012; staff were offered positions at other Ubisoft studios.
+operating_status: closed
+status: verified
+sources:
+- gameinformer-ubisoft-closes-vancouver-studio
+notes: Founders not found.
+tags:
+- family-tree

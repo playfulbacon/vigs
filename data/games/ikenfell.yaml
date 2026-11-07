@@ -1,0 +1,24 @@
+id: ikenfell
+title: Ikenfell
+releases:
+  - date: "2020-10-08"
+    kind: release
+    platforms: [Windows, macOS, Switch, PS4, Xbox One]
+    sources: [wikipedia-ikenfell]
+release_status: released
+developers: [happy-ray-games]
+publishers: [humble-games]
+credits:
+  - person: chevy-ray-johnston
+    role: lead developer, artist and writer
+    sources: [wikipedia-ikenfell]
+audio_by: [a-shell-in-the-pit]
+made_at: [indie-house]
+vancouver_connection: The Georgia Straight says it came out of Indie House, which Chevy Ray Johnston suggested and lived in; A Shell in the Pit is credited on it.
+region: vancouver
+summary: Chevy Ray Johnston's tactical RPG from Happy Ray Games, published by Humble Games on October 8, 2020, with music by aivi & surasshu.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Ikenfell
+status: verified
+sources: [straight-2024-indie-hub, wikipedia-ikenfell, asitp-home]
+notes: The release date rests on Wikipedia. Composers aivi & surasshu (with Sabrielle Augustin) have no person records. Reviews were mixed (Metacritic 73 Switch / 69 PC, per research notes).

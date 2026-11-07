@@ -1,0 +1,20 @@
+id: dauntless
+title: Dauntless
+releases:
+  - date: "2018-05"
+    kind: early-access
+    platforms: [PC]
+    note: Open beta.
+    sources: [wikipedia-phoenix-labs]
+  - date: "2019-09-26"
+    kind: full-release
+    note: Full console release.
+    sources: [wikipedia-phoenix-labs]
+release_status: released
+developers: [phoenix-labs]
+vancouver_connection: Made by Vancouver's Phoenix Labs, founded in 2014 by ex-Riot developers.
+region: vancouver
+summary: Phoenix Labs' online monster-hunting action game, in open beta from May 2018 and fully released on consoles on September 26, 2019. Its shutdown was announced in February 2025 and servers closed on May 29, 2025.
+status: single-source
+sources: [wikipedia-phoenix-labs, gamesradar-dauntless-is-dead-after-a-blockchain-company-buyout-a-disas]
+notes: Servers closed May 29, 2025 (GamesRadar+ snippet; Wikipedia). Research notes mention a peak of 6M+ players (search-only).

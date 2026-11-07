@@ -1,0 +1,65 @@
+id: don-mattrick
+name: Don Mattrick
+born:
+  date: "1964-02-13"
+  place: Vancouver
+  sources:
+  - wikipedia-don-mattrick
+origin: Vancouver
+vancouver:
+  tie: resident
+  note: >-
+    Born in Vancouver; co-founded Distinctive Software in Burnaby. A figure of the AAA prehistory, not
+    an indie participant.
+  sources:
+  - wikipedia-don-mattrick
+  - straight-2009-family-tree
+roles:
+- founder
+- executive
+summary: >-
+  Co-founder of Distinctive Software (1982), the studio EA bought in 1991 to form EA Canada, and later
+  a senior executive at EA, Microsoft (Xbox) and Zynga.
+bio: >-
+  Mattrick studied at Simon Fraser University and co-founded Distinctive Software Inc. (DSI) with Jeff
+  Sember in 1982, at age 17, with Tarrnie Williams helping to license their first game, Evolution. Sember
+  sold his stake to him in 1986. EA bought DSI in 1991 and it became EA Canada (later EA Vancouver). Mattrick
+  went on to be president of EA Worldwide Studios, head of Xbox at Microsoft (2007–2013) and CEO of Zynga
+  (2013–2015).
+memberships:
+- org: distinctive-software
+  role: co-founder
+  start: "1982"
+  end: "1991"
+  sources:
+  - straight-2009-family-tree
+  - wikipedia-don-mattrick
+- org: electronic-arts
+  role: president of EA Worldwide Studios (among other roles)
+  start: "1991"
+  status: single-source
+  sources:
+  - wikipedia-don-mattrick
+- org: microsoft
+  role: head of Xbox
+  start: "2007-07"
+  end: "2013-07"
+  status: single-source
+  sources:
+  - wikipedia-don-mattrick
+current: >-
+  As of the November 2026 report: co-president of MdGB Capital; appointed to the Order of British Columbia
+  in 2024.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Don_Mattrick
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-don-mattrick
+- straight-2009-family-tree
+- wikipedia-distinctive-software
+- wikipedia-ea-vancouver
+notes: >-
+  Wikipedia gives two dates for his EA departure (2005 and February 2007) without reconciling them, so
+  the EA membership has no end date.

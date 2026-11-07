@@ -1,0 +1,30 @@
+id: global-game-jam-vancouver
+name: Global Game Jam Vancouver
+kind: event-series
+founded: "2009-01"
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: partnered-with
+  org: igda-vancouver
+  date: "2009-01"
+  note: The 2009 site was organized through IGDA (the report does not specify the chapter).
+  sources:
+  - villagegamer-global-game-jam-vancouver-creativity-in-a-box
+- type: partnered-with
+  org: centre-for-digital-media
+  date: "2010-01"
+  note: Run by Kimberly Voll of the Centre for Digital Media since 2010.
+  sources:
+  - straight-2013-global-game-jam
+summary: Vancouver site of the Global Game Jam, first held January 30 – February 1, 2009 at SFU Harbour Centre with 26 entrants, and run from 2010 at UBC by Kimberly Voll of the Centre for Digital Media. The fifth edition (January 2013) drew about 250 participants, and Power Up Audio's TowerFall sound work started there.
+current: Recent years not researched.
+operating_status: unknown
+status: verified
+sources:
+- villagegamer-global-game-jam-vancouver-creativity-in-a-box
+- straight-2013-global-game-jam
+- egm-power-up-audio
+tags:
+- jam

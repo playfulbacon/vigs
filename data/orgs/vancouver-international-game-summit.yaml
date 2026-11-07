@@ -1,0 +1,15 @@
+id: vancouver-international-game-summit
+name: Vancouver International Game Summit
+kind: event-series
+location:
+  city: Vancouver
+  region: vancouver
+summary: Vancouver industry conference that came before GDC Canada; coverage described GDC Canada 2009's 800+ attendees as double the previous year's summit.
+current: Superseded by GDC Canada in 2009.
+operating_status: closed
+status: single-source
+sources:
+- gamedev-gdc-canada-2009-the-event-round-up
+notes: Years it ran and organizer unknown; Reboot Communications is a guess, not confirmed.
+tags:
+- conference

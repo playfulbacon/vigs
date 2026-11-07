@@ -1,0 +1,22 @@
+id: digibc
+name: DigiBC
+aliases:
+- New Media BC
+- DigiBC – The Digital Media + Wireless Association of BC
+- the Creative Technology Association of BC
+kind: industry-association
+founded: "1997"
+location:
+  city: Vancouver
+  region: vancouver
+summary: BC's creative-technology industry association, founded in 1997 as New Media BC, and credited with lobbying for the 2010 Interactive Digital Media Tax Credit. It lists Full Indie meetups and Summits.
+current: Active (as of November 2026).
+operating_status: active
+status: single-source
+sources:
+- digibc-8144
+- straight-2010-idmtc
+- digibc-video-game-full-indie-game-dev-monthly-meet-up-august-2024
+notes: Founding and the 2009 merger with WinBC rest on a search snippet; the DigiBC site returns 403 to fetchers. WinBC is not in the org registry.
+tags:
+- institution

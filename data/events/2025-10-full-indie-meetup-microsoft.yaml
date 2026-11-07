@@ -1,0 +1,24 @@
+id: 2025-10-full-indie-meetup-microsoft
+title: October Full Indie meetup at Microsoft
+date: 2025-10
+era: current-era
+type: meetup
+summary: Full Indie's October 2025 monthly meetup is also held at Microsoft's Vancouver office.
+orgs:
+- full-indie
+- microsoft
+- digibc
+places:
+- microsoft-vancouver-office
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- source: digibc-full-indie-meetup-october-2025
+  note: Snippet
+open_questions:
+- Why did meetups move from The Gaming Stadium to Microsoft? Was LaSalle a one-off? When did you hand over to Chloe
+  Ezra? (Ask Aryo Nazaradeh and Chloe Ezra.)
+tags:
+- full-indie
+- meetup

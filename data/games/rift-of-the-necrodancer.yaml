@@ -1,0 +1,21 @@
+id: rift-of-the-necrodancer
+title: Rift of the NecroDancer
+releases:
+  - date: "2025-02-05"
+    kind: release
+    platforms: [Steam]
+    sources: [gematsu-rift-of-the-necrodancer-launches-february-5-2025-for-pc-later, mobilesyrup-top-canadian-games-of-2025]
+  - date: "2025-03-27"
+    kind: port
+    platforms: [Switch]
+    sources: [gematsu-rift-of-the-necrodancer-launches-february-5-2025-for-pc-later]
+release_status: released
+developers: [brace-yourself-games]
+publishers: [klei-entertainment]
+audio_by: [power-up-audio]
+vancouver_connection: Made by Vancouver's Brace Yourself Games (with TicToc Games) and published by Vancouver's Klei, with audio by Power Up Audio.
+region: vancouver
+summary: Brace Yourself Games' rhythm game, made with TicToc Games and published by Klei, released on Steam on February 5, 2025 and on Switch on March 27. MobileSyrup listed it among the top Canadian games of 2025.
+status: verified
+sources: [mobilesyrup-top-canadian-games-of-2025, gematsu-rift-of-the-necrodancer-launches-february-5-2025-for-pc-later, wikipedia-klei-entertainment, egm-power-up-audio]
+notes: Exact dates rest on a Gematsu snippet. TicToc Games has no org record. Research notes mention DLC crossovers with Celeste, Super Meat Boy and Shovel Knight, and a 2025 Indie Game Award for music (unsourced in the report).

@@ -1,0 +1,15 @@
+id: liam-berry
+name: Liam Berry
+vancouver:
+  tie: unconfirmed
+roles:
+- designer
+summary: Noel Berry's brother and co-developer of the metroidvania City of None (2027).
+bio: >-
+  Game Informer reported on April 30, 2026 that Noel Berry is co-developing City of None with his brother
+  Liam, for release by Extremely OK Games in 2027.
+consent:
+  status: not-asked
+status: single-source
+sources:
+- gameinformer-city-of-none-is-a-metroidvania-from-a-celeste-co-creator

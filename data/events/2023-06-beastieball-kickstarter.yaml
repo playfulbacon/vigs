@@ -1,0 +1,24 @@
+id: 2023-06-beastieball-kickstarter
+title: Beastieball Kickstarter
+date: 2023-06
+era: current-era
+type: crowdfunding
+summary: Beastieball is Kickstarted after its reveal and passes its goal within days.
+people:
+- greg-lobanov
+games:
+- beastieball
+orgs:
+- wishes-unlimited
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-beastieball
+- source: substack-kickstarter-update-new-stretch-goals
+  note: Snippet; passing goal within days
+open_questions:
+- What are the final figures for the Beastieball Kickstarter, and what is the 1.0 plan? (Ask Greg Lobanov.)
+tags:
+- crowdfunding
+- kickstarter

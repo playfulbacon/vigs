@@ -1,0 +1,14 @@
+id: igda-victoria
+name: IGDA Victoria
+kind: industry-association
+location:
+  city: Victoria
+  region: victoria
+summary: Victoria chapter of the International Game Developers Association, documented by its itch.io page.
+current: Exists as of November 2026; founding date unknown.
+operating_status: active
+status: single-source
+sources:
+- itch-igdavictoria-itch-io
+tags:
+- island

@@ -1,0 +1,29 @@
+id: 2025-09-02-full-indie-meetup-microsoft
+title: Full Indie meetup at Microsoft's Vancouver office
+date: '2025-09-02'
+era: current-era
+type: meetup
+summary: A Full Indie monthly meetup is held at Microsoft's Vancouver office (725 Granville St., 7th floor), with
+  about 183 attendees. LaSalle College Vancouver also hosts a Full Indie event, on an undated page.
+orgs:
+- full-indie
+- microsoft
+- lasalle-college-vancouver
+places:
+- microsoft-vancouver-office
+- lasalle-college-campus
+region: vancouver
+significance: 1
+status: verified
+sources:
+- source: luma-full-indie-meetup-2025-09
+  note: About 183 attendees
+- source: lasalle-game-on-full-indie-takes-over-our-campus
+  note: Undated page (single source)
+caveat: The LaSalle event is undated; it is noted here rather than as its own event.
+open_questions:
+- Why did meetups move from The Gaming Stadium to Microsoft? Was LaSalle a one-off? When did you hand over to Chloe
+  Ezra? (Ask Aryo Nazaradeh and Chloe Ezra.)
+tags:
+- full-indie
+- meetup

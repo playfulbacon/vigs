@@ -1,0 +1,12 @@
+id: vancouver-film-school
+name: Vancouver Film School
+aliases:
+- VFS
+kind: school
+location:
+  city: Vancouver
+  region: vancouver
+summary: Film and media school where Full Indie held demo nights.
+status: verified
+sources:
+- fullindie-about

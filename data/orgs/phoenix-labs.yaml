@@ -1,0 +1,29 @@
+id: phoenix-labs
+name: Phoenix Labs
+kind: mid-size-studio
+founded: "2014-04"
+founders:
+- jesse-houston
+- sean-bender
+- robin-mayne
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: acquired-by
+  org: garena
+  date: "2020-01"
+  note: Reportedly for about US$150M.
+  sources:
+  - wikipedia-phoenix-labs
+summary: Founded in April 2014 by ex-Riot developers Jesse Houston, Sean Bender and Robin Mayne; it made Dauntless and Fae Farm. Garena bought it in 2020, and repeated layoffs from 2023 to 2025 left little of the studio.
+current: Most of the remaining development team laid off in January 2025; Dauntless servers closed May 29, 2025 (as of November 2026).
+operating_status: unknown
+status: single-source
+sources:
+- wikipedia-phoenix-labs
+- geekwire-vancouver-game-studio-phoenix-labs-lays-off-majority-of-emplo
+- gamesradar-dauntless-is-dead-after-a-blockchain-company-buyout-a-disas
+notes: 'Management buyout in February 2023; blockchain firm Forte was later reported to own it (not in the org registry). Layoffs: 9% (May 2023), 34 (December 2023), more than 100 (May 2024), most of the rest (January 2025). Wikipedia describes the studio in the past tense.'
+tags:
+- mid-size

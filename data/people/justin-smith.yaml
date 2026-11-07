@@ -1,0 +1,52 @@
+id: justin-smith
+name: Justin Smith
+vancouver:
+  tie: unconfirmed
+  note: >-
+    Opened sources call him "Canadian" without naming a city. A 2014 Medium profile calls him "Vancouver-based"
+    but returned 403 and was not read.
+  sources:
+  - wikipedia-enviro-bear-2000
+  - wikipedia-desert-golfing
+roles:
+- designer
+- programmer
+- founder
+summary: >-
+  Low-profile Canadian solo developer of Enviro-Bear 2000 (2009), Desert Golfing (2014) and Horsey Game
+  (2026).
+bio: >-
+  Smith made Enviro-Bear 2000 for the TIGSource Cockpit Competition, drawing the art in MS Paint, and
+  released it on Game Jolt on April 4, 2009; it won the most user votes and became a 2010 IGF Nuovo Award
+  finalist. Desert Golfing, which he designed, came out under Blinkbat Games on August 6, 2014. He was
+  operating as Captain Games by July 2020, releasing Golf on Mars and, on February 18, 2026, Horsey Game,
+  rated Overwhelmingly Positive on Steam.
+memberships:
+- org: blinkbat-games
+  role: designer
+  start: "2014"
+  status: single-source
+  sources:
+  - wikipedia-desert-golfing
+- org: captain-games
+  role: solo developer
+  start:
+    value: "2020-07"
+    qualifier: by
+  sources:
+  - wikipedia-desert-golfing
+  - steam-horsey-game
+current: >-
+  As of the November 2026 report: active as Captain Games; Horsey Game released February 18, 2026.
+consent:
+  status: not-asked
+status: verified
+sources:
+- wikipedia-enviro-bear-2000
+- gamedev-road-to-the-igf-justin-smith-s-i-enviro-bear-2000-i
+- gamedev-interview-bear-theft-auto-the-indie-adventures-of-i-enviro-bea
+- wikipedia-desert-golfing
+- gamedev-7-questions-for-i-desert-golfing-i-creator-justin-smith
+- steam-horsey-game
+- giantbomb-horsey-game
+notes: Birth year not found. Who else was in Blinkbat Games is unknown.

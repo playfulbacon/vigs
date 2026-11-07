@@ -1,0 +1,58 @@
+id: colin-northway
+name: Colin Northway
+origin: University of Victoria, where he and Sarah Northway began making games
+vancouver:
+  tie: resident
+  arrived: "2014"
+  note: >-
+    Began at the University of Victoria, then travelled for about five years; settled in Vancouver in
+    2014, where the couple have friends and family. Where he lived when Fantastic Contraption launched
+    in 2008 is undocumented.
+  sources:
+  - straight-2024-indie-hub
+roles:
+- designer
+- programmer
+- founder
+summary: >-
+  Designer of the physics puzzlers Fantastic Contraption (2008) and Incredipede (2012), co-founder of
+  Northway Games, and a Vancouver resident since 2014.
+bio: >-
+  Northway began making games with Sarah Northway at the University of Victoria. He made the Flash game
+  Fantastic Contraption (September 16, 2008) on the side while building websites for lawyers; it drew
+  more than 3.5 million unique users in about three months, and he sold the rights to inXile. The couple
+  then travelled for about five years, during which he made Incredipede (October 25, 2012) with Sarah
+  and artist Thomas Shahan. They settled in Vancouver in 2014. His other games include Deep Under the
+  Sky and Fantastic Contraption VR (2016). In the Georgia Straight he said: "Indie House is huge in the
+  history."
+memberships:
+- org: university-of-victoria
+  role: began making games there
+  start: "2000s"
+  sources:
+  - straight-2024-indie-hub
+- org: northway-games
+  role: co-founder
+  start: "2011"
+  sources:
+  - northway-presskit
+  - wikipedia-northway-games
+current: >-
+  As of the November 2026 report: his site says he has returned to Northway Games and both Northways are
+  working on unannounced games; the press kit names Sarah as the sole active member, and the two statements
+  may be from different dates.
+consent:
+  status: not-asked
+status: verified
+sources:
+- straight-2024-indie-hub
+- wikipedia-fantastic-contraption-2008-video-game
+- gamedev-gdc-austin-how-i-fantastic-contraption-i-became-a-fantastic-hi
+- wikipedia-incredipede
+- wikipedia-northway-games
+- wikipedia-fantastic-contraption-2016-video-game
+- northway-presskit
+- northway-northwaygames-com
+notes: >-
+  Likely witness to the Victoria meetup said to have seeded Full Indie. Northway Games' press kit gives
+  2011 as the founding year.

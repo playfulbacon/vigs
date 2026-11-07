@@ -1,0 +1,24 @@
+id: 2017-full-indie-summit
+title: Full Indie Summit 2017
+date: '2017'
+era: breakout-years
+type: conference
+summary: The Full Indie Summit runs a full weekend, with speakers including Nick Suttner, Dan Adelman, Chet Faliszek
+  and Aaron Leiby.
+orgs:
+- full-indie
+- full-indie-summit
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- source: dailyhive-full-indie-summit
+  note: Search snippet only
+caveat: Rests on a Daily Hive search snippet. The venue is not documented.
+open_questions:
+- What were the venues for the 2017, 2018 and 2019 Summits, and was 2015 at the Convention Centre? Why was 2019
+  billed as the '8th annual'? (Ask Maurice Grela and Alain-Daniel Bourdages.)
+tags:
+- full-indie
+- full-indie-summit
+- conference

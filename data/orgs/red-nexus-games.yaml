@@ -1,0 +1,22 @@
+id: red-nexus-games
+name: Red Nexus Games
+kind: indie-studio
+founded:
+  value: "2015"
+  note: 'Sources disagree: 2015 or 2016.'
+founders:
+- dylan-gedig
+location:
+  city: Victoria
+  region: victoria
+  note: BC-based with University of Victoria roots.
+summary: Dylan Gedig's studio, with University of Victoria roots, which made Peglin from Orca Jam 2019 to its 1.0 release in 2024. A Victoria story, kept in the report's sidebar.
+current: Active (as of November 2026).
+operating_status: active
+status: disputed
+sources:
+- shacknews-peglin-developer-talks-making-the-game-with-a-four-person-te
+- wikipedia-peglin
+notes: 'Disputed founding year: 2015 in some sources, 2016 in others (Shacknews snippet; GDWC search summary).'
+tags:
+- island

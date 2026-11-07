@@ -1,0 +1,25 @@
+id: 2026-03-31-ivy-road-closes
+title: Ivy Road shuts down
+date: '2026-03-31'
+era: current-era
+type: closure
+summary: Ivy Road, the studio behind Wanderstop, shuts down, according to Wikipedia.
+people:
+- davey-wreden
+- karla-zimonja
+games:
+- wanderstop
+orgs:
+- ivy-road
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-wanderstop
+caveat: Ivy Road's location (Vancouver or Austin) is disputed; see the Wanderstop release event.
+open_questions:
+- Was Ivy Road a Vancouver studio or an Austin studio? Why did it close in March 2026? (Ask Davey Wreden and Karla
+  Zimonja.)
+tags:
+- closure
+- location-disputed

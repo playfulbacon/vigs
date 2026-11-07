@@ -1,0 +1,25 @@
+id: 2018-wandersong-released
+title: Wandersong released
+date:
+  value: '2018'
+  note: Expected to be September 27, 2018; exact date unverified
+era: breakout-years
+type: release
+summary: Greg Lobanov releases Wandersong, his musical adventure game.
+people:
+- greg-lobanov
+games:
+- wandersong
+orgs:
+- a-shell-in-the-pit
+region: vancouver
+significance: 2
+status: verified
+sources:
+- straight-2024-indie-hub
+- source: wikipedia-wandersong
+  note: Expected exact date
+caveat: The exact release date (expected September 27, 2018) is unverified.
+tags:
+- release
+- a-shell-in-the-pit

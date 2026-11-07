@@ -1,0 +1,20 @@
+id: dave-davis
+name: Dave Davis
+roles:
+- founder
+summary: Co-founder of Radical Entertainment (September 1991).
+bio: >-
+  Wikipedia names Davis, with Rory Armes and Ian Wilkinson, as a founder of Radical Entertainment in September
+  1991. The Georgia Straight's family tree names only Wilkinson and Armes.
+memberships:
+- org: radical-entertainment
+  role: co-founder
+  start: "1991-09"
+  status: single-source
+  sources:
+  - wikipedia-radical-entertainment
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-radical-entertainment

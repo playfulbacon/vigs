@@ -1,0 +1,16 @@
+id: backbone-entertainment
+name: Backbone Entertainment
+kind: mid-size-studio
+location:
+  city: Vancouver
+  region: vancouver
+  note: Vancouver office of a larger company.
+summary: Its Vancouver office cut most of its staff in September 2008, one of the first local signs of the downturn.
+current: Kept a satellite operation after the 2008 cuts (per research notes); later status unknown.
+operating_status: unknown
+status: verified
+sources:
+- straight-2009-family-tree
+notes: The research notes place Backbone under Foundation 9 and say the Vancouver office grew out of Digital Eclipse Vancouver; neither is in the org registry. Founding date not found.
+tags:
+- family-tree

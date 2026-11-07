@@ -1,0 +1,22 @@
+id: luke-moloney
+name: Luke Moloney
+roles:
+- founder
+summary: >-
+  Co-founder of Relic Entertainment (May 1997), described by the Georgia Straight as coming from EA Canada/Radical.
+bio: >-
+  Moloney co-founded Relic Entertainment in May 1997 with Alex Garden and five others. The Georgia Straight
+  names him and Garden as coming "from EA Canada/Radical."
+memberships:
+- org: relic-entertainment
+  role: co-founder
+  start: "1997-05"
+  sources:
+  - wikipedia-relic-entertainment
+  - straight-2009-family-tree
+consent:
+  status: not-asked
+status: verified
+sources:
+- wikipedia-relic-entertainment
+- straight-2009-family-tree

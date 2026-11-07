@@ -1,0 +1,44 @@
+id: extremely-ok-games
+name: Extremely OK Games
+aliases:
+- EXOK
+- Matt Makes Games
+- Maddy Makes Games
+kind: indie-studio
+founded:
+  value: "2012-11"
+  note: Matt Makes Games Inc. incorporated November 2012 (Wikipedia); EXOK technically founded March 2019 and announced September 5, 2019.
+founders:
+- maddy-thorson
+- noel-berry
+- amora-bettany
+- pedro-medeiros
+- heidy-motta
+- lena-raine
+location:
+  city: Vancouver
+  region: vancouver
+  note: Vancouver offices from 2019.
+lineage:
+- type: partnered-with
+  org: miniboss
+  note: MiniBoss did art for TowerFall and Celeste; its three founders joined the EXOK founding team in 2019.
+  sources:
+  - wikipedia-amora-bettany
+  - gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
+summary: Maddy Thorson's company, incorporated in November 2012 as Matt Makes Games, later renamed Maddy Makes Games, and continued from September 2019 as Extremely OK Games in new Vancouver offices. It made TowerFall, Celeste and Celeste 64; Earthblade was cancelled in January 2025.
+current: Active, run by Thorson and Noel Berry; publishing Berry's City of None, due 2027 (as of November 2026).
+operating_status: active
+status: verified
+sources:
+- wikipedia-maddy-thorson
+- wikipedia-extremely-ok-games
+- gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
+- shacknews-celeste-and-towerfall-devs-form-new-extremely-ok-games-studi
+- shacknews-extremely-ok-games-cancels-earthblade
+- engadget-extremely-ok-games-has-cancelled-its-follow-up-to-celeste-000
+- gameinformer-city-of-none-is-a-metroidvania-from-a-celeste-co-creator
+notes: Name history (Matt Makes Games → Maddy Makes Games → Extremely OK Games) is recorded as aliases because the earlier names have no separate org records, so no renamed-from lineage can point at them. Matt Makes Games was Thorson's company; the six listed founders are the 2019 EXOK founding team (Thorson, Noel Berry, Amora Bettany, Pedro Medeiros, Heidy Motta, Lena Raine). Heidy Motta's tweet supplied the name (◐). EXOK spent its first six months relocating international developers to Canada (◐). Pedro Medeiros left in November 2024 after a dispute over Celeste's IP; outlets disagree on how much that dispute caused Earthblade's cancellation (see the event records).
+tags:
+- indie-house
+- celeste

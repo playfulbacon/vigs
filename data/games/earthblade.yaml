@@ -1,0 +1,23 @@
+id: earthblade
+title: Earthblade
+release_status: cancelled
+developers: [extremely-ok-games]
+credits:
+  - person: maddy-thorson
+    role: co-lead
+    sources: [shacknews-extremely-ok-games-cancels-earthblade]
+  - person: noel-berry
+    role: co-lead
+    sources: [shacknews-extremely-ok-games-cancels-earthblade]
+vancouver_connection: Extremely OK Games' Vancouver-made follow-up to Celeste.
+region: vancouver
+summary: Extremely OK Games' "explor-action" follow-up to Celeste, announced in April 2021, shown at The Game Awards 2022 with a 2024 target and delayed in March 2024. EXOK cancelled it on January 22, 2025, after co-founder Pedro Medeiros left in November 2024 following a dispute over Celeste's IP; published accounts differ on how much that dispute caused the cancellation.
+status: disputed
+sources: [wikipedia-extremely-ok-games, shacknews-extremely-ok-games-cancels-earthblade, engadget-extremely-ok-games-has-cancelled-its-follow-up-to-celeste-000, gamesradar-celeste-developer-abruptly-cancels-new-game-after-5-years-o, gamedev-extremely-ok-games-cancels-earthblade-amid-team-strife-develop, pcgamer-celeste-developer-starts-2025-with-a-huge-heartbreaking-and-ye]
+notes: >-
+  Disputed (the game schema has no accounts field, so the versions are recorded here).
+  (1) Shacknews: "the conflict centered around a disagreement about the IP rights of Celeste" between Thorson and Berry on one side and Medeiros on the other; they "reached a resolution" and agreed to "go our separate ways"; Thorson and Berry decided to cancel in December 2024.
+  (2) GamesRadar+ (snippet): the cancellation followed the founding member's departure "over copyright fracture."
+  (3) Engadget: the split was amicable and "not the reason"; Thorson said the work had "become so exhausting" and "Pedro and the Neverway team aren't the enemy."
+  EXOK said it plans smaller projects. Timeline: announced Apr 2021; TGA Dec 2022; delayed Mar 2024; cancelled Jan 22, 2025 ("Final Earthblade Update").
+tags: [cancelled]

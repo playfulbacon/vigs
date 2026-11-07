@@ -1,0 +1,18 @@
+id: slant-six-games
+name: Slant Six Games
+kind: mid-size-studio
+founded: "2005"
+closed: "2013"
+location:
+  city: Vancouver
+  region: vancouver
+summary: Founded in 2005 with Barking Dog co-founder Brian Thalken as a key person; its Galactic Reign shut down in August 2013 and the studio closed soon after.
+current: Closed in 2013.
+operating_status: closed
+status: single-source
+sources:
+- wikipedia-slant-six-games
+notes: The report names Brian Thalken as a key person ("founded in 2005 with" him), not explicitly as founder, so he is not listed under founders. No parent studio is stated.
+tags:
+- aaa-roots
+- family-tree

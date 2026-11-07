@@ -1,0 +1,26 @@
+id: 2020-celeste-audio-files-released
+title: Power Up Audio releases Celeste's audio project
+date:
+  value: '2020'
+  qualifier: early
+  display: early 2020
+era: breakout-years
+type: publication
+summary: Power Up Audio publicly releases Celeste's FMOD project and source audio for other developers to study.
+people:
+- kevin-regamey
+- jeff-tangsoc
+games:
+- celeste
+orgs:
+- power-up-audio
+- extremely-ok-games
+region: vancouver
+significance: 1
+status: verified
+sources:
+- gamedev-i-celeste-s-i-audio-files-are-now-publicly-available-for-devs
+tags:
+- audio
+- power-up-audio
+- open-resources

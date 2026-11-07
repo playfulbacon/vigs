@@ -1,0 +1,30 @@
+id: 2025-02-05-rift-of-the-necrodancer-released
+title: Rift of the NecroDancer released
+date: '2025-02-05'
+era: current-era
+type: release
+summary: Rift of the NecroDancer, by Brace Yourself Games with TicToc Games and published by Klei, is released on
+  Steam, with the Switch version following on March 27. MobileSyrup lists it among the top Canadian games of 2025.
+people:
+- ryan-clark
+- danny-baranowsky
+games:
+- rift-of-the-necrodancer
+- crypt-of-the-necrodancer
+orgs:
+- brace-yourself-games
+- klei-entertainment
+region: vancouver
+significance: 2
+status: verified
+sources:
+- mobilesyrup-top-canadian-games-of-2025
+- source: gematsu-rift-of-the-necrodancer-launches-february-5-2025-for-pc-later
+  note: Exact dates (snippet)
+caveat: Exact dates rest on a Gematsu snippet. TicToc Games has no registry record.
+open_questions:
+- Is Klei deliberately acting as a patron for the local scene? (Ask Jamie Cheng.)
+tags:
+- release
+- klei-publishing
+- necrodancer

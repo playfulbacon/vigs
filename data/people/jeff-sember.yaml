@@ -1,0 +1,26 @@
+id: jeff-sember
+name: Jeff Sember
+roles:
+- founder
+summary: >-
+  Co-founder, with Don Mattrick, of Distinctive Software Inc. in 1982; sold his stake to Mattrick in 1986.
+bio: >-
+  Sember co-founded Distinctive Software Inc. (DSI) in Burnaby in 1982 with Don Mattrick. He sold his
+  stake to Mattrick in 1986. His age at founding, birth year, later career and current status were not
+  found.
+memberships:
+- org: distinctive-software
+  role: co-founder
+  start: "1982"
+  end: "1986"
+  sources:
+  - straight-2009-family-tree
+  - wikipedia-don-mattrick
+consent:
+  status: not-asked
+status: verified
+sources:
+- straight-2009-family-tree
+- wikipedia-don-mattrick
+- wikipedia-distinctive-software
+notes: Only Mattrick's age (17) at founding is documented; do not apply it to Sember.

@@ -1,0 +1,36 @@
+id: beastieball
+title: Beastieball
+releases:
+  - date: "2024-11-12"
+    kind: early-access
+    platforms: [Windows, macOS]
+    note: Steam Early Access, published by Klei Publishing.
+    sources: [gematsu-beastieball-launches-in-early-access-on-november-12, steam-beastieball, wikipedia-beastieball]
+release_status: early-access
+developers: [wishes-unlimited]
+publishers: [klei-entertainment]
+credits:
+  - person: greg-lobanov
+    role: director
+    sources: [wikipedia-beastieball]
+  - person: alexis-dean-jones
+    role: art
+    sources: [wikipedia-beastieball]
+  - person: lena-raine
+    role: composer
+    sources: [wikipedia-beastieball]
+audio_by: [a-shell-in-the-pit]
+crowdfunding:
+  platform: Kickstarter
+  date: "2023-06"
+  raised: passed its goal within days
+  sources: [substack-kickstarter-update-new-stretch-goals]
+vancouver_connection: Made by Greg Lobanov's Wishes Unlimited (a four-person studio in 2024) and published by Vancouver's Klei, with audio by A Shell in the Pit.
+region: vancouver
+summary: Greg Lobanov's creature-sports RPG, revealed at Day of the Devs (Summer Game Fest) in June 2023 and Kickstarted soon after. It entered Steam Early Access on November 12, 2024 under Klei Publishing and, as of November 2026, remains in Early Access with 1.0 set for early 2027.
+links:
+  steam: https://store.steampowered.com/app/1864950/Beastieball/
+  wikipedia: https://en.wikipedia.org/wiki/Beastieball
+status: verified
+sources: [gematsu-beastieball-launches-in-early-access-on-november-12, steam-beastieball, wikipedia-beastieball, substack-kickstarter-update-new-stretch-goals, straight-2024-indie-hub, asitp-home]
+notes: Steam lists the developer as "Wishes Ultd." The Kickstarter page returned 403, so the final total and backer count are unknown; the "within days" claim rests on a Substack snippet. At launch it was expected to stay in Early Access at least through 2025.

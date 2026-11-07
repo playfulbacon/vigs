@@ -1,0 +1,50 @@
+id: alex-vostrov
+name: Alex Vostrov
+vancouver:
+  tie: resident
+  note: >-
+    Told Game Developer in 2010, "I'm from Vancouver, Canada"; Birkett called him "another Vancouver resident."
+  sources:
+  - gamedev-interview-a-rocket-bear-takes-off-vostrov-on-going-full-time-i
+  - greyalien-first-vancouver-indie-game-developer-meetup-was-a-big-succes
+roles:
+- designer
+- programmer
+- founder
+- organizer
+summary: >-
+  Vancouver solo developer (Rocket Bear Games, Infested Planet) who co-founded Full Indie in 2010 and
+  was its president until 2016.
+bio: >-
+  Vostrov runs the one-person studio Rocket Bear Games, formerly Indiebird; Infested Planet was its first
+  commercial game. He answered Jake Birkett's April 24, 2010 meetup proposal the same day and co-founded
+  the Vancouver Indie Game Developers meetup, which became Full Indie. Game Developer profiled him on
+  July 19, 2010 as he went full-time indie. He was Full Indie's president from 2010 until 2016, when Maurice
+  Grela took over.
+memberships:
+- org: rocket-bear-games
+  role: founder (formerly Indiebird)
+  sources:
+  - gamedev-interview-a-rocket-bear-takes-off-vostrov-on-going-full-time-i
+- org: full-indie
+  role: co-founder
+  start: "2010-04-24"
+  sources:
+  - greyalien-game-industry-meetups-in-vancouver
+  - fullindie-about
+- org: full-indie
+  role: president
+  start: "2010"
+  end: "2016"
+  sources:
+  - fullindie-about
+consent:
+  status: not-asked
+status: verified
+sources:
+- gamedev-interview-a-rocket-bear-takes-off-vostrov-on-going-full-time-i
+- greyalien-game-industry-meetups-in-vancouver
+- greyalien-first-vancouver-indie-game-developer-meetup-was-a-big-succes
+- fullindie-about
+- straight-2024-indie-hub
+notes: Possibly the unnamed Victoria roommate in Sarah Northway's account; this is unconfirmed.

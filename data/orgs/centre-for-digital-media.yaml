@@ -1,0 +1,14 @@
+id: centre-for-digital-media
+name: Centre for Digital Media
+aliases:
+- CDM
+kind: school
+location:
+  city: Vancouver
+  region: vancouver
+summary: Vancouver graduate school whose Kimberly Voll has run Global Game Jam Vancouver since 2010; it hosted the first Full Indie Game Jam (2011) and later Full Indie jams.
+status: verified
+sources:
+- straight-2013-global-game-jam
+- fullindie-about
+- cgm-2014-canadian-scene-part-2

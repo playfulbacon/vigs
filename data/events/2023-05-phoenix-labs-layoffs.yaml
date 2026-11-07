@@ -1,0 +1,21 @@
+id: 2023-05-phoenix-labs-layoffs
+title: Phoenix Labs cuts 9% of staff
+date: 2023-05
+era: current-era
+type: layoff
+summary: Phoenix Labs cuts 9% of its staff.
+games:
+- dauntless
+orgs:
+- phoenix-labs
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-phoenix-labs
+open_questions:
+- Did the 2023-25 layoffs (Relic, Phoenix Labs, Blackbird, Brace Yourself, EA) seed new indie studios? Who left
+  and started something? (Ask Aryo Nazaradeh, Chloe Ezra and Ryan Clark.)
+tags:
+- layoffs
+- phoenix-labs

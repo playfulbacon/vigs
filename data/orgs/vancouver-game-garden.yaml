@@ -1,0 +1,13 @@
+id: vancouver-game-garden
+name: Vancouver Game Garden
+kind: event-series
+founded: "2024"
+location:
+  city: Vancouver
+  region: vancouver
+summary: Annual showcase of 40+ Vancouver-made games, co-organized by Greg Lobanov and inspired by VanCAF; first held in 2024, with the 2025 edition at the Roundhouse Community Centre.
+current: Held its second edition September 27–28, 2025 (as of November 2026).
+operating_status: active
+status: verified
+sources:
+- straight-you-nearly-missed-local-indie-games-bloom-at-vancouver-game-g

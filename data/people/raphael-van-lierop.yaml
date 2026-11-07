@@ -1,0 +1,42 @@
+id: raphael-van-lierop
+name: Raphael van Lierop
+vancouver:
+  tie: former-resident
+  left:
+    value: "2013"
+    approximate: true
+    note: Moved to the Comox Valley around September–October 2013
+  note: >-
+    Moved from Vancouver to the Comox Valley and formed Hinterland there; a Vancouver Island story.
+  sources:
+  - wikipedia-the-long-dark
+roles:
+- founder
+- director
+summary: >-
+  Ex-Relic developer who moved from Vancouver to the Comox Valley in 2013 and founded Hinterland Studio
+  (The Long Dark).
+bio: >-
+  Van Lierop, formerly of Relic, moved from Vancouver to the Comox Valley around September–October 2013
+  and formed Hinterland Studio as a mostly remote team. The Long Dark was announced and Kickstarted with
+  Canada Media Fund seed money, entered Early Access in 2014 and was fully released in 2017. Hinterland
+  announced Blackfrost: The Long Dark 2 at The Game Awards 2024.
+memberships:
+- org: relic-entertainment
+  role: developer
+  status: single-source
+  sources:
+  - wikipedia-the-long-dark
+- org: hinterland-studio
+  role: founder
+  start: "2013"
+  status: single-source
+  sources:
+  - wikipedia-the-long-dark
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-the-long-dark
+tags:
+- vancouver-island

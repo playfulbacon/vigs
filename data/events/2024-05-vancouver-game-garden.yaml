@@ -1,0 +1,24 @@
+id: 2024-05-vancouver-game-garden
+title: First Vancouver Game Garden
+date:
+  value: 2024-05
+  note: 'Report: ''inspired by VanCAF in May 2024''; read as held in May 2024'
+era: current-era
+type: showcase
+summary: The first Vancouver Game Garden showcase is held, co-organized by Greg Lobanov and inspired by the Vancouver
+  Comic Arts Festival.
+people:
+- greg-lobanov
+orgs:
+- vancouver-game-garden
+- vancouver-comic-arts-festival
+region: vancouver
+significance: 2
+status: verified
+sources:
+- source: straight-you-nearly-missed-local-indie-games-bloom-at-vancouver-game-g
+  note: 2025 edition described as its second year
+caveat: The report's phrasing leaves it slightly unclear whether May 2024 is the date of the showcase or of VanCAF.
+tags:
+- showcase
+- vancouver-game-garden

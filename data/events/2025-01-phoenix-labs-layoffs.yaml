@@ -1,0 +1,23 @@
+id: 2025-01-phoenix-labs-layoffs
+title: Phoenix Labs lays off most of its remaining team
+date: 2025-01
+era: current-era
+type: layoff
+summary: Phoenix Labs lays off most of its remaining development team.
+games:
+- dauntless
+orgs:
+- phoenix-labs
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- source: geekwire-vancouver-game-studio-phoenix-labs-lays-off-majority-of-emplo
+  note: Snippet
+- wikipedia-phoenix-labs
+open_questions:
+- Did the 2023-25 layoffs (Relic, Phoenix Labs, Blackbird, Brace Yourself, EA) seed new indie studios? Who left
+  and started something? (Ask Aryo Nazaradeh, Chloe Ezra and Ryan Clark.)
+tags:
+- layoffs
+- phoenix-labs

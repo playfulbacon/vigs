@@ -1,0 +1,85 @@
+id: inscryption
+title: Inscryption
+releases:
+  - date: "2018"
+    kind: jam
+    note: Ludum Dare 43 game Sacrifices Must Be Made.
+    sources: [gamedev-how-game-jam-sacrifices-became-inscryption, wikipedia-inscryption]
+  - date: "2021-10-19"
+    kind: release
+    platforms: [Windows]
+    sources: [wikipedia-inscryption]
+  - date: "2022-03-17"
+    kind: expansion
+    note: Free Kaycee's Mod.
+    sources: [wikipedia-inscryption]
+  - date: "2022-06-23"
+    kind: port
+    platforms: [Linux, macOS]
+    sources: [wikipedia-inscryption]
+  - date: "2022-08-30"
+    kind: port
+    platforms: [PS4, PS5]
+    sources: [wikipedia-inscryption]
+  - date: "2022-12-01"
+    kind: port
+    platforms: [Switch]
+    sources: [wikipedia-inscryption]
+  - date: "2023-04-10"
+    kind: port
+    platforms: [Xbox]
+    sources: [wikipedia-inscryption]
+release_status: released
+developers: [daniel-mullins-games]
+publishers: [devolver-digital]
+credits:
+  - person: daniel-mullins
+    role: creator
+    sources: [wikipedia-inscryption]
+  - person: jonah-senzel
+    role: composer
+    sources: [wikipedia-inscryption]
+vancouver_connection: Daniel Mullins Games was described as Vancouver-based by 2020–2021 (Canadian Game Devs, Thumbsticks); the Inscryption Wikipedia page does not mention Vancouver.
+region: vancouver
+awards:
+  - name: IGF Seumas McNally Grand Prize
+    year: 2022
+    result: won
+    sources: [wikipedia-inscryption]
+  - name: IGF Excellence in Design
+    year: 2022
+    result: won
+    sources: [wikipedia-inscryption]
+  - name: IGF Excellence in Narrative
+    year: 2022
+    result: won
+    sources: [wikipedia-inscryption]
+  - name: IGF Excellence in Audio
+    year: 2022
+    result: won
+    sources: [wikipedia-inscryption]
+  - name: Game Developers Choice Awards, Game of the Year
+    year: 2022
+    result: won
+    sources: [wikipedia-inscryption]
+  - name: BAFTA Games Award, Game Design
+    result: won
+    sources: [wikipedia-inscryption]
+  - name: The Game Awards, Best Independent Game
+    year: 2021
+    result: nominated
+    sources: [wikipedia-inscryption]
+  - name: The Game Awards, Best Sim/Strategy Game
+    year: 2021
+    result: nominated
+    sources: [wikipedia-inscryption]
+sales:
+  - figure: more than 1 million copies
+    as_of: "2022-01"
+    sources: [wikipedia-inscryption]
+summary: Daniel Mullins Games' card-based horror game, published by Devolver Digital on October 19, 2021. It grew from Mullins's Ludum Dare 43 game Sacrifices Must Be Made, sold over a million copies by January 2022, and won both the IGF Grand Prize and GDCA Game of the Year in March 2022.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Inscryption
+status: single-source
+sources: [wikipedia-inscryption, gamedev-how-game-jam-sacrifices-became-inscryption, thumbsticks-magic-myst-pokemon-inspire-inscryption, cgd-inscryption-announced]
+notes: The Ludum Dare 43 jam has no event record, so origin_event is unset. Award details beyond the Grand Prize and GDCA GOTY come from the research notes.

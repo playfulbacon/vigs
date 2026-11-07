@@ -1,0 +1,18 @@
+id: vblank-entertainment
+name: Vblank Entertainment
+aliases:
+- VBlank
+kind: indie-studio
+founders:
+- brian-provinciano
+location:
+  city: Vancouver
+  region: vancouver
+summary: Brian Provinciano's studio, which released Retro City Rampage on October 9, 2012. Provinciano went on to conceive the first Full Indie Summit.
+current: Not researched.
+operating_status: unknown
+status: single-source
+sources:
+- wikipedia-retro-city-rampage
+- vanweekly-2013-full-indie-summit
+notes: Founding date not found.

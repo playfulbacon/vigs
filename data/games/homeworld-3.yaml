@@ -1,0 +1,14 @@
+id: homeworld-3
+title: Homeworld 3
+releases:
+  - date: "2024-05-13"
+    kind: release
+    sources: [wikipedia-blackbird-interactive]
+release_status: released
+developers: [blackbird-interactive]
+publishers: [gearbox-publishing]
+vancouver_connection: Made by Vancouver's Blackbird Interactive.
+region: vancouver
+summary: Blackbird Interactive's Homeworld sequel, published by Gearbox on May 13, 2024.
+status: single-source
+sources: [wikipedia-blackbird-interactive]

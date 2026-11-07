@@ -1,0 +1,27 @@
+id: bethany-hockenberry
+name: Bethany Hockenberry
+origin: Pittsburgh, Pennsylvania
+vancouver:
+  tie: collaborator
+  note: Night in the Woods co-creator based in Pittsburgh; not a Vancouver resident.
+  sources:
+  - igf-night-woods
+roles:
+- designer
+- writer
+summary: Pittsburgh-based co-creator of Night in the Woods (2017).
+bio: >-
+  Hockenberry was designer, writer and researcher on Night in the Woods (Infinite Fall, 2017) and co-wrote
+  Longest Night. She was a member of The Glory Society.
+memberships:
+- org: infinite-fall
+  role: co-creator
+  sources:
+  - wikipedia-night-in-the-woods
+consent:
+  status: not-asked
+status: single-source
+sources:
+- igf-night-woods
+- wikipedia-scott-benson
+- wikipedia-night-in-the-woods

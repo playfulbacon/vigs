@@ -1,0 +1,31 @@
+id: heidy-motta
+name: Heidy Motta
+roles:
+- founder
+- producer
+summary: >-
+  MiniBoss co-founder and Extremely OK Games operations manager whose tweet supplied the studio's name.
+bio: >-
+  Motta co-founded MiniBoss in São Paulo in 2010 with Amora Bettany and Pedro Medeiros. She was on the
+  founding team of Extremely OK Games in 2019 as operations manager, and a tweet of hers supplied the
+  name "Extremely OK Games."
+memberships:
+- org: miniboss
+  role: co-founder
+  start: "2010"
+  status: single-source
+  sources:
+  - wikipedia-amora-bettany
+- org: extremely-ok-games
+  role: operations manager; founding team
+  start: "2019"
+  sources:
+  - gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
+  - wikipedia-maddy-thorson
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-maddy-thorson
+- wikipedia-amora-bettany
+- gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games

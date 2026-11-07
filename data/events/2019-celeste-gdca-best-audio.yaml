@@ -1,0 +1,26 @@
+id: 2019-celeste-gdca-best-audio
+title: Celeste wins Best Audio at the Game Developers Choice Awards
+date: '2019'
+era: breakout-years
+type: award
+summary: Kevin Regamey's audio for Celeste wins Best Audio at the 2019 Game Developers Choice Awards, according
+  to EGM.
+people:
+- kevin-regamey
+- lena-raine
+games:
+- celeste
+orgs:
+- power-up-audio
+- extremely-ok-games
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- source: egm-power-up-audio
+  note: Per EGM
+tags:
+- award
+- gdca
+- audio
+- power-up-audio

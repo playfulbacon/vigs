@@ -1,0 +1,33 @@
+id: black-box-games
+name: Black Box Games
+aliases:
+- EA Black Box
+- Quicklime Games
+kind: aaa-studio
+founded: "1998"
+closed: "2013-04"
+location:
+  city: Burnaby
+  region: lower-mainland
+lineage:
+- type: spun-off-from
+  org: radical-entertainment
+  date: "1998"
+  note: Founded by ex-Radical staff.
+  sources:
+  - wikipedia-ea-black-box
+- type: acquired-by
+  org: electronic-arts
+  date: "2002-06"
+  note: Became EA Black Box.
+  sources:
+  - wikipedia-ea-black-box
+summary: Founded in Burnaby in 1998 by ex-Radical staff and bought by EA in June 2002, becoming EA Black Box (Need for Speed). Ex-Black Box staff founded Next Level Games.
+current: Renamed Quicklime Games in July 2012; closed April 2013.
+operating_status: closed
+status: single-source
+sources:
+- wikipedia-ea-black-box
+tags:
+- aaa-roots
+- family-tree

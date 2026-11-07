@@ -1,0 +1,9 @@
+id: university-of-victoria-campus
+name: University of Victoria campus
+kind: campus
+city: Victoria
+region: victoria
+summary: Campus where Colin and Sarah Northway started making indie games in the 2000s.
+status: verified
+sources:
+- straight-2024-indie-hub

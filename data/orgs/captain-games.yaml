@@ -1,0 +1,23 @@
+id: captain-games
+name: Captain Games
+kind: indie-studio
+founders:
+- justin-smith
+location:
+  region: canada
+  note: Justin Smith's Vancouver residence is unconfirmed.
+lineage:
+- type: successor-of
+  org: blinkbat-games
+  date: "2020-07"
+  note: Smith was operating as Captain Games by July 2020; the formal relationship to Blinkbat is not documented.
+  sources:
+  - wikipedia-desert-golfing
+summary: Justin Smith's current label, which released Golf on Mars and Horsey Game (February 18, 2026).
+current: Active; Horsey Game rated Overwhelmingly Positive on Steam (as of November 2026).
+operating_status: active
+status: verified
+sources:
+- wikipedia-desert-golfing
+- steam-horsey-game
+- giantbomb-horsey-game

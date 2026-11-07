@@ -1,0 +1,30 @@
+id: 2026-neverway-moves-to-2027
+title: Neverway's planned release moves to 2027
+date:
+  value: '2026'
+  qualifier: by
+  display: by November 2026
+  note: Observed on the Steam page; no delay announcement found
+era: current-era
+type: announcement
+summary: 'Neverway''s Steam page now reads "Planned Release Date: 2027," after the October 2026 window announced
+  in April. No delay announcement was found.'
+people:
+- pedro-medeiros
+- isadora-sophia
+games:
+- neverway
+orgs:
+- coldblood-inc
+region: vancouver
+significance: 1
+status: verified
+sources:
+- source: steam-neverway
+  quote: 'Planned Release Date: 2027'
+open_questions:
+- Is Coldblood based in Vancouver? Why did Neverway move from October 2026 to 2027? (Ask Pedro Medeiros and Isadora
+  Sophia.)
+tags:
+- delay
+- 2027-slip

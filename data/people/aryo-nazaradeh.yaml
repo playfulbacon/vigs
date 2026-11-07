@@ -1,0 +1,49 @@
+id: aryo-nazaradeh
+name: Aryo Nazaradeh
+vancouver:
+  tie: resident
+  arrived:
+    value: "2022"
+    note: Returned to Vancouver from Toronto
+  note: Returned to Vancouver from Toronto in 2022.
+  sources:
+  - straight-2024-indie-hub
+roles:
+- organizer
+- community
+summary: >-
+  Full Indie president after the Covid pause, who restarted its meetups; by 2024 they ran at The Gaming
+  Stadium in Richmond.
+bio: >-
+  Nazaradeh returned to Vancouver from Toronto in 2022. He got involved through game audio and networking,
+  restarted Full Indie's meetups and became its president. By March 2024 he was running monthly meetups
+  of 100+ people at The Gaming Stadium in Richmond. He told the Georgia Straight: "The people here are
+  really, really passionate." As of November 2026 he is no longer listed as president.
+memberships:
+- org: full-indie
+  role: president
+  start:
+    value: "2022"
+    qualifier: after
+    note: >-
+      The Straight gives no start year for the presidency; Full Indie's site dates the meetup restart
+      to 2023
+  end:
+    value: "2026-11"
+    qualifier: by
+    note: >-
+      No longer listed on Full Indie's team page as of November 2026; handover date to Chloe Ezra unknown
+  status: disputed
+  sources:
+  - straight-2024-indie-hub
+  - fullindie-about
+consent:
+  status: not-asked
+status: verified
+sources:
+- straight-2024-indie-hub
+- fullindie-about
+notes: >-
+  Dates disputed: the Straight has him returning in 2022 and becoming president; Full Indie says meetups
+  resumed in 2023 "after a five-year hiatus that began during the COVID-19 pandemic," which a 2020 start
+  makes impossible.

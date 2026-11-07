@@ -1,0 +1,29 @@
+id: 2024-12-12-blackfrost-announced
+title: 'Hinterland announces Blackfrost: The Long Dark 2'
+date: '2024-12-12'
+era: current-era
+type: announcement
+summary: 'Hinterland announces Blackfrost: The Long Dark 2 at The Game Awards 2024, with Early Access planned for
+  2026. It later slips to 2027, Steam lists it as "To be announced," and Hinterland shifts developers back to The
+  Long Dark DLC "to survive an uncertain industry."'
+people:
+- raphael-van-lierop
+games:
+- blackfrost
+- the-long-dark
+orgs:
+- hinterland-studio
+region: vancouver-island
+significance: 1
+status: single-source
+sources:
+- wikipedia-the-long-dark
+- source: pcgamer-the-long-dark-will-get-new-dlc-again-as-studio-shifts-devs-awa
+  note: Snippet / search summary; slip to 2027 and shift back to DLC
+caveat: BC-scene context from Vancouver Island and Victoria, not a Vancouver claim. The slip to 2027 rests on a
+  PC Gamer search summary.
+tags:
+- victoria-sidebar
+- announcement
+- the-game-awards
+- 2027-slip

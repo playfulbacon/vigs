@@ -1,0 +1,18 @@
+id: 2022-hardspace-shipbreaker-1-0
+title: 'Hardspace: Shipbreaker 1.0'
+date: '2022'
+era: current-era
+type: release
+summary: 'Blackbird Interactive''s Hardspace: Shipbreaker leaves Early Access with its 1.0 release.'
+games:
+- hardspace-shipbreaker
+orgs:
+- blackbird-interactive
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-blackbird-interactive
+tags:
+- release
+- blackbird

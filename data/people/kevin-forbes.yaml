@@ -1,0 +1,23 @@
+id: kevin-forbes
+name: Kevin Forbes
+roles:
+- designer
+summary: >-
+  Early Klei Entertainment designer who, per a search snippet, co-created the prototype that became Don't
+  Starve.
+bio: >-
+  Search snippets of Wikipedia-derived pages say Forbes and Ju-Lian Kwan made the prototype that became
+  Don't Starve. No source found calls him a Klei co-founder; whether he was a co-founder or an early designer
+  is an open question for interviews.
+memberships:
+- org: klei-entertainment
+  role: early designer
+  status: unverified
+  sources:
+  - wikipedia-klei-entertainment
+consent:
+  status: not-asked
+status: unverified
+sources:
+- source: wikipedia-klei-entertainment
+  note: Search snippet of Wikipedia-derived pages; not independently verified

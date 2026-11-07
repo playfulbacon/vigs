@@ -1,0 +1,21 @@
+id: 2025-bc-budget-idmtc-25-percent
+title: BC Budget 2025 proposes a 25% IDMTC
+date: '2025'
+era: current-era
+type: policy
+summary: BC's Budget 2025 proposes raising the Interactive Digital Media Tax Credit to 25% for wages paid after
+  August 31, 2025, and making it permanent.
+orgs:
+- bc-idmtc
+region: bc
+significance: 2
+status: verified
+sources:
+- bcgov-interactive-digital-media
+- bcgov-2025-backgrounder-3-htm
+open_questions:
+- Has any Vancouver indie ever claimed the IDMTC? Did it matter to solo or house-share developers? (Ask Ryan Clark,
+  Jamie Cheng and Sarah Northway.)
+tags:
+- policy
+- tax-credit

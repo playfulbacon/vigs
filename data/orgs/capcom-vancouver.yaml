@@ -1,0 +1,24 @@
+id: capcom-vancouver
+name: Capcom Vancouver
+aliases:
+- Blue Castle Games
+kind: aaa-studio
+founded: "2004-07-04"
+closed:
+  value: "2018-09-18"
+  note: Date the closure was announced.
+founders:
+- robert-barrett
+location:
+  city: Burnaby
+  region: lower-mainland
+summary: Founded in Burnaby on July 4, 2004 by Robert Barrett as Blue Castle Games, later Capcom Vancouver (Dead Rising 2).
+current: Closure announced September 18, 2018.
+operating_status: closed
+status: single-source
+sources:
+- wikipedia-capcom-vancouver
+notes: Capcom is not in the org registry, so the change of ownership is not recorded as lineage.
+tags:
+- aaa-roots
+- family-tree

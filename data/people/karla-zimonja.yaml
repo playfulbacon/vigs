@@ -1,0 +1,33 @@
+id: karla-zimonja
+name: Karla Zimonja
+vancouver:
+  tie: unconfirmed
+  note: Her residence is unstated; Ivy Road's location is disputed.
+  sources:
+  - straight-2024-indie-hub
+roles:
+- artist
+- writer
+- founder
+summary: Gone Home developer who co-founded Ivy Road with Davey Wreden.
+bio: >-
+  Zimonja, an American artist known for Gone Home (2013), co-founded Ivy Road with Davey Wreden. Its Wanderstop
+  came out on March 11, 2025. Per Wikipedia the studio shut down on March 31, 2026.
+memberships:
+- org: ivy-road
+  role: co-founder
+  end:
+    value: "2026-03-31"
+    note: Closure per Wikipedia only
+  status: disputed
+  sources:
+  - straight-2024-indie-hub
+  - mobilesyrup-top-canadian-games-of-2025
+  - wikipedia-wanderstop
+consent:
+  status: not-asked
+status: verified
+sources:
+- straight-2024-indie-hub
+- mobilesyrup-top-canadian-games-of-2025
+- wikipedia-wanderstop

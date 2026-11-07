@@ -1,0 +1,36 @@
+id: kevin-regamey
+name: Kevin Regamey
+vancouver:
+  tie: resident
+  note: Power Up Audio works from home offices in Vancouver (EGM).
+  sources:
+  - egm-power-up-audio
+roles:
+- sound-designer
+- founder
+summary: >-
+  Power Up Audio co-founder and sound designer of Celeste, whose audio won Best Audio at the 2019 Game
+  Developers Choice Awards.
+bio: >-
+  Regamey co-founded Power Up Audio with Jeff Tangsoc after they met at a large commercial sound studio,
+  which he called "a lifestyle of distrust." At the June 2012 Full Indie Game Jam he met Noel Berry and
+  Chevy Ray Johnston, and the TowerFall team later invited Power Up Audio to Indie House; its TowerFall
+  sound work started at the January 2013 Global Game Jam. The studio went on to NecroDancer and Darkest
+  Dungeon. Regamey did the sound design for Celeste (2018), which won Best Audio at the 2019 GDC Awards,
+  and in early 2020 Power Up Audio released Celeste's FMOD project and source audio.
+memberships:
+- org: power-up-audio
+  role: co-founder; sound designer
+  status: single-source
+  sources:
+  - egm-power-up-audio
+consent:
+  status: not-asked
+status: single-source
+sources:
+- egm-power-up-audio
+- wikipedia-celeste-video-game
+- gamedev-i-celeste-s-i-audio-files-are-now-publicly-available-for-devs
+notes: >-
+  Nearly everything here rests on the single EGM feature; Power Up Audio's own team page returned 404.
+  Founding year (2012 or 2013) unconfirmed.

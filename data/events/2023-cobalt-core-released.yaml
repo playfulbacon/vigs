@@ -1,0 +1,18 @@
+id: 2023-cobalt-core-released
+title: Cobalt Core released
+date: '2023'
+era: current-era
+type: release
+summary: Cobalt Core is released under the Brace Yourself Publishing label.
+games:
+- cobalt-core
+orgs:
+- brace-yourself-games
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-brace-yourself-games
+tags:
+- release
+- brace-yourself

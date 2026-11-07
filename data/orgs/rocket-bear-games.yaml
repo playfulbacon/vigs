@@ -1,0 +1,17 @@
+id: rocket-bear-games
+name: Rocket Bear Games
+aliases:
+- Indiebird
+kind: indie-studio
+founders:
+- alex-vostrov
+location:
+  city: Vancouver
+  region: vancouver
+summary: Alex Vostrov's one-person Vancouver studio, formerly Indiebird, best known for Infested Planet. Vostrov went full-time indie in 2010 and co-founded Full Indie the same year.
+operating_status: unknown
+status: verified
+sources:
+- gamedev-interview-a-rocket-bear-takes-off-vostrov-on-going-full-time-i
+- greyalien-game-industry-meetups-in-vancouver
+notes: The rename from Indiebird is recorded as an alias, because Indiebird has no separate record.

@@ -1,0 +1,19 @@
+id: alain-daniel-bourdages
+name: Alain-Daniel Bourdages
+roles:
+- organizer
+summary: Co-organizer of the 2015 Full Indie Summit who posted its talks online.
+bio: >-
+  Bourdages co-organized Full Indie Summit 2015 (October 31, 2015) and posted the talks online in a Game
+  Developer community blog post on December 11, 2015.
+memberships:
+- org: full-indie-summit
+  role: co-organizer
+  start: "2015"
+  sources:
+  - gamedev-videos-full-indie-summit-2015
+consent:
+  status: not-asked
+status: verified
+sources:
+- gamedev-videos-full-indie-summit-2015

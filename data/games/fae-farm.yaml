@@ -1,0 +1,13 @@
+id: fae-farm
+title: Fae Farm
+releases:
+  - date: "2023"
+    kind: release
+    sources: [wikipedia-phoenix-labs]
+release_status: released
+developers: [phoenix-labs]
+vancouver_connection: Made by Vancouver's Phoenix Labs.
+region: vancouver
+summary: A farming and life sim released by Phoenix Labs in 2023, before the studio's 2024–2025 layoffs.
+status: single-source
+sources: [wikipedia-phoenix-labs]

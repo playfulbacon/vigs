@@ -1,0 +1,79 @@
+id: darkest-dungeon
+title: Darkest Dungeon
+releases:
+  - date: "2015-02-03"
+    kind: early-access
+    platforms: [Steam]
+    sources: [wikipedia-darkest-dungeon]
+  - date: "2016-01-19"
+    kind: full-release
+    platforms: [Windows, OS X]
+    sources: [wikipedia-darkest-dungeon, straight-2024-indie-hub]
+  - date: "2016-04"
+    kind: port
+    platforms: [Linux]
+    sources: [wikipedia-darkest-dungeon]
+  - date: "2016-09"
+    kind: port
+    platforms: [PS4, PS Vita]
+    sources: [wikipedia-darkest-dungeon]
+  - date: "2017-08"
+    kind: port
+    platforms: [iPad]
+    sources: [wikipedia-darkest-dungeon]
+  - date: "2018-01"
+    kind: port
+    platforms: [Switch]
+    sources: [wikipedia-darkest-dungeon]
+  - date: "2018-02"
+    kind: port
+    platforms: [Xbox One]
+    sources: [wikipedia-darkest-dungeon]
+release_status: released
+developers: [red-hook-studios]
+credits:
+  - person: chris-bourassa
+    role: co-creator (Red Hook co-founder)
+    org: red-hook-studios
+    sources: [wikipedia-darkest-dungeon]
+  - person: tyler-sigman
+    role: co-creator (Red Hook co-founder)
+    org: red-hook-studios
+    sources: [wikipedia-darkest-dungeon]
+audio_by: [power-up-audio]
+vancouver_connection: Made by Red Hook Studios, which the Georgia Straight calls "the local team," with sound by Vancouver's Power Up Audio on a royalty deal.
+region: vancouver
+awards:
+  - name: IGF Seumas McNally Grand Prize
+    year: 2016
+    result: nominated
+    sources: [wikipedia-darkest-dungeon]
+  - name: IGF Excellence in Visual Art
+    year: 2016
+    result: nominated
+    sources: [wikipedia-darkest-dungeon]
+  - name: IGF Excellence in Audio
+    year: 2016
+    result: nominated
+    sources: [wikipedia-darkest-dungeon]
+sales:
+  - figure: more than 650,000 copies in its first week
+    as_of: "2016-01"
+    sources: [wikipedia-darkest-dungeon]
+  - figure: 1 million copies
+    as_of: "2016-11"
+    sources: [wikipedia-darkest-dungeon]
+  - figure: 2 million copies
+    as_of: "2017-12"
+    sources: [wikipedia-darkest-dungeon]
+crowdfunding:
+  platform: Kickstarter
+  date: "2014-02"
+  raised: more than US$313,000 from about 10,000 backers
+  sources: [wikipedia-darkest-dungeon]
+summary: Red Hook Studios' gothic roguelike, Kickstarted in February 2014, in Early Access from February 2015 and fully released on January 19, 2016. It sold more than 650,000 copies in its first week and 2 million by December 2017.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Darkest_Dungeon
+status: verified
+sources: [straight-2024-indie-hub, wikipedia-darkest-dungeon, egm-power-up-audio]
+notes: The full release is verified (Georgia Straight); sales, awards, ports and the Kickstarter rest on Wikipedia. EGM says PUA negotiated a royalty deal, voiced many enemies and consulted on narration and playtesting; No individual PUA staff credit is stated. Narrated by Wayne June (no person record).

@@ -1,0 +1,13 @@
+id: cobalt-core
+title: Cobalt Core
+releases:
+  - date: "2023"
+    kind: release
+    sources: [wikipedia-brace-yourself-games]
+release_status: released
+publishers: [brace-yourself-games]
+vancouver_connection: Published under Vancouver's Brace Yourself Publishing label; the developer, Rocket Rat Games, is not documented as Vancouver-based.
+summary: A 2023 game by Rocket Rat Games released under the Brace Yourself Publishing label, launched in 2022. A Shell in the Pit did its trailer audio.
+status: single-source
+sources: [wikipedia-brace-yourself-games, asitp-home]
+notes: Rocket Rat Games has no org record.

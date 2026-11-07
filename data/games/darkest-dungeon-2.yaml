@@ -1,0 +1,25 @@
+id: darkest-dungeon-2
+title: Darkest Dungeon II
+releases:
+  - date: "2023-05"
+    kind: full-release
+    platforms: [Windows]
+    note: 1.0 after about 18 months in Early Access.
+    sources: [wikipedia-darkest-dungeon]
+release_status: released
+developers: [red-hook-studios]
+credits:
+  - person: chris-bourassa
+    role: Red Hook co-founder
+    org: red-hook-studios
+    sources: [wikipedia-darkest-dungeon]
+  - person: tyler-sigman
+    role: Red Hook co-founder
+    org: red-hook-studios
+    sources: [wikipedia-darkest-dungeon]
+audio_by: [power-up-audio]
+vancouver_connection: Made by Red Hook Studios ("the local team," per the Georgia Straight); Power Up Audio lists it among its credits.
+region: vancouver
+summary: Red Hook's sequel to Darkest Dungeon, announced in February 2019 and released in 1.0 on Windows in May 2023 after about 18 months in Early Access.
+status: single-source
+sources: [wikipedia-darkest-dungeon, powerupaudio-home]

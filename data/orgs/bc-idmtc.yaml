@@ -1,0 +1,23 @@
+id: bc-idmtc
+name: BC Interactive Digital Media Tax Credit
+aliases:
+- IDMTC
+- Interactive Digital Media Tax Credit
+kind: government-program
+founded:
+  value: "2010-09-01"
+  note: Announced February 2010; applies to projects starting after August 31, 2010.
+location:
+  region: bc
+summary: Provincial credit introduced in 2010 at 17.5% of BC labour costs, with DigiBC credited for lobbying; Budget 2025 proposed raising it to 25% for wages after August 31, 2025 and making it permanent.
+current: In force (as of November 2026).
+operating_status: active
+status: verified
+sources:
+- straight-2010-idmtc
+- cra-british-columbia-refundable-media-tax-credits-html
+- bcgov-interactive-digital-media
+- bcgov-2025-backgrounder-3-htm
+notes: Whether any Vancouver indie (solo or house-share) ever claimed it is an open interview question.
+tags:
+- policy

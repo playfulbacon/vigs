@@ -1,0 +1,12 @@
+id: microsoft-vancouver-office
+name: Microsoft Vancouver office
+kind: office
+address: 725 Granville St., 7th floor
+city: Vancouver
+region: vancouver
+summary: Microsoft's Vancouver office, which hosted Full Indie's September 2, 2025 monthly meetup (about 183 attendees) and its October 2025 meetup.
+status: verified
+sources:
+- luma-full-indie-meetup-2025-09
+- digibc-full-indie-meetup-october-2025
+notes: The October 2025 meetup rests on a DigiBC snippet. Other 2025 months are unknown.

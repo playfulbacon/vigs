@@ -1,0 +1,26 @@
+id: 2021-01-tencent-majority-stake-klei
+title: Tencent takes majority stake in Klei
+date: 2021-01
+era: breakout-years
+type: acquisition
+summary: Tencent takes a majority stake in Klei Entertainment, which is listed as a subsidiary from January 25,
+  2021. Jamie Cheng says Klei keeps full autonomy.
+people:
+- jamie-cheng
+orgs:
+- tencent
+- klei-entertainment
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- source: wikipedia-klei-entertainment
+  note: Subsidiary from Jan 25, 2021
+- source: gematsu-tencent-to-acquire-majority-stake-in-klei-entertainment
+  note: Snippet
+open_questions:
+- Is Klei deliberately acting as a patron for the local scene? (Ask Jamie Cheng.)
+tags:
+- acquisition
+- klei
+- tencent

@@ -1,0 +1,36 @@
+id: brian-thalken
+name: Brian Thalken
+roles:
+- founder
+summary: >-
+  One of six ex-Radical developers who founded Barking Dog Studios in 1998, and a key figure at Slant
+  Six Games (2005).
+bio: >-
+  Thalken was one of the six former Radical Entertainment developers who founded Barking Dog Studios in
+  May 1998; Take-Two bought it in 2002 and it became Rockstar Vancouver. He is the named key person at
+  Slant Six Games, founded in 2005, which closed in 2013.
+memberships:
+- org: radical-entertainment
+  role: developer
+  end: "1998"
+  status: single-source
+  sources:
+  - wikipedia-rockstar-vancouver
+- org: rockstar-vancouver
+  role: co-founder (Barking Dog Studios)
+  start: "1998-05"
+  status: single-source
+  sources:
+  - wikipedia-rockstar-vancouver
+- org: slant-six-games
+  role: key person
+  start: "2005"
+  status: single-source
+  sources:
+  - wikipedia-slant-six-games
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-rockstar-vancouver
+- wikipedia-slant-six-games

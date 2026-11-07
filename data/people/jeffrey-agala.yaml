@@ -1,0 +1,21 @@
+id: jeffrey-agala
+name: Jeffrey Agala
+roles:
+- founder
+- director
+summary: Co-founder and creative director of Klei Entertainment.
+bio: >-
+  Wikipedia names Agala as Klei Entertainment's co-founder and creative director. Nothing further was
+  found.
+memberships:
+- org: klei-entertainment
+  role: co-founder; creative director
+  start: "2005"
+  status: single-source
+  sources:
+  - wikipedia-klei-entertainment
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-klei-entertainment

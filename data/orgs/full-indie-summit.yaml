@@ -1,0 +1,41 @@
+id: full-indie-summit
+name: Full Indie Summit
+kind: event-series
+founded: "2013-04-20"
+founders:
+- brian-provinciano
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: branch-of
+  org: full-indie
+  date: "2013-04-20"
+  note: Conceived by Brian Provinciano and organized with Full Indie; later organized by the Full Indie Society.
+  sources:
+  - vanweekly-2013-full-indie-summit
+  - engadget-2013-04-10-full-indie-summit-brings-vancouver-dev-industry-to
+- type: successor-of
+  org: gdc-canada
+  date: "2013-04-20"
+  note: Created to fill the gap left by GDC Canada (2009–2010) and the studio closures.
+  sources:
+  - vanweekly-2013-full-indie-summit
+  - engadget-2013-04-10-full-indie-summit-brings-vancouver-dev-industry-to
+summary: Full Indie's annual conference, first held April 20, 2013 at the Rio Theatre to fill the gap left by GDC Canada. It paused during Covid and returned in 2024, at Emily Carr (2024), the Vancouver Playhouse (2025) and the Westin Bayshore (2026).
+current: Annual again since 2024; the September 20, 2026 edition had 1,351 RSVPs on Luma (an RSVP count, not audited attendance) (as of November 2026).
+operating_status: active
+status: verified
+sources:
+- vanweekly-2013-full-indie-summit
+- engadget-2013-04-10-full-indie-summit-brings-vancouver-dev-industry-to
+- meetup-full-indie-summit-2014
+- bcliving-85325
+- meetup-full-indie-summit-2016
+- eventsforgamers-full-indie-summit-2024
+- vancouvercivictheatres-full-indie-summit-2025-sep-13
+- luma-full-indie-summit-2026
+notes: 'Venues: Rio Theatre (2013), Stanley Theatre (2014), Vancouver Convention Centre (2015, snippet only), Vancouver Playhouse (2016), Emily Carr University (2024), Vancouver Playhouse (2025), Westin Bayshore (2026). 2017–2019 venues unknown. The 2019 edition was billed as the "8th annual" with "650+ creators each year," though annual editions from 2013 would make it the seventh. Whether 2026 was one day (Luma) or two (PocketGamer.biz) is unresolved.'
+tags:
+- full-indie
+- conference

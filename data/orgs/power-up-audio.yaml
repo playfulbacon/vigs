@@ -1,0 +1,27 @@
+id: power-up-audio
+name: Power Up Audio
+aliases:
+- PUA
+kind: audio-studio
+founded:
+  value: "2012"
+  approximate: true
+  note: 2012 or 2013; unconfirmed by a primary source.
+founders:
+- kevin-regamey
+- jeff-tangsoc
+location:
+  city: Vancouver
+  region: vancouver
+  note: Works from home offices.
+summary: Audio studio founded by Kevin Regamey and Jeff Tangsoc whose route into games ran from the 2012 Full Indie Game Jam to Indie House to TowerFall, then to Crypt of the NecroDancer, Darkest Dungeon and Celeste. It is one of two local audio houses linking most of the scene's hits.
+current: Active, about five people working from home offices (per EGM).
+operating_status: active
+status: single-source
+sources:
+- egm-power-up-audio
+- gamedev-i-celeste-s-i-audio-files-are-now-publicly-available-for-devs
+notes: Nearly everything rests on the single EGM feature; PUA's own team page returned 404. Regamey's Celeste sound design won Best Audio at the 2019 GDC Awards (per EGM).
+tags:
+- audio
+- indie-house

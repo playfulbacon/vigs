@@ -1,0 +1,38 @@
+id: ryan-clark
+name: Ryan Clark
+vancouver:
+  tie: resident
+  note: Founded Brace Yourself Games in Vancouver in 2013.
+  sources:
+  - wikipedia-brace-yourself-games
+roles:
+- designer
+- programmer
+- director
+- founder
+summary: >-
+  Founder of Brace Yourself Games (Vancouver, 2013) and director of Crypt of the NecroDancer and Cadence
+  of Hyrule.
+bio: >-
+  Clark founded Brace Yourself Games in Vancouver in 2013. Crypt of the NecroDancer, his game with music
+  by Danny Baranowsky, entered Early Access on July 30, 2014 and had its full release, published by Klei,
+  on April 23, 2015. He directed Cadence of Hyrule (Nintendo, June 13, 2019). The studio later released
+  Phantom Brigade and Rift of the NecroDancer (2025), launched a publishing label in 2022 and laid off
+  about half its staff in May 2023.
+memberships:
+- org: brace-yourself-games
+  role: founder; director
+  start: "2013"
+  status: single-source
+  sources:
+  - wikipedia-brace-yourself-games
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-brace-yourself-games
+- wikipedia-crypt-of-the-necrodancer
+- wikipedia-cadence-of-hyrule
+notes: >-
+  Birth year and pre-2013 career not found. Brace Yourself Games' Wikipedia page carries an AI-generated-text
+  flag.

@@ -1,0 +1,40 @@
+id: 2025-03-11-wanderstop-released
+title: Wanderstop released
+date: '2025-03-11'
+era: current-era
+type: release
+summary: Wanderstop, by Ivy Road (Davey Wreden, Karla Zimonja and C418, with concept art by Amora Bettany) and published
+  by Annapurna, is released. Sources disagree on whether Ivy Road was a Vancouver studio.
+people:
+- davey-wreden
+- karla-zimonja
+- amora-bettany
+games:
+- wanderstop
+orgs:
+- ivy-road
+- annapurna-interactive
+region: vancouver
+significance: 2
+status: disputed
+sources:
+- mobilesyrup-top-canadian-games-of-2025
+- wikipedia-wanderstop
+accounts:
+- summary: MobileSyrup calls Ivy Road a team "led by Davey Wreden and Karla Zimonja in Vancouver."
+  sources:
+  - source: mobilesyrup-top-canadian-games-of-2025
+    quote: led by Davey Wreden and Karla Zimonja in Vancouver
+- summary: Wikipedia cites C418 describing a studio "based in Austin, Texas."
+  sources:
+  - source: wikipedia-wanderstop
+    quote: based in Austin, Texas
+caveat: Ivy Road's location is disputed. C418 has no registry record.
+open_questions:
+- Was Ivy Road a Vancouver studio or an Austin studio? Why did it close in March 2026? (Ask Davey Wreden and Karla
+  Zimonja.)
+- Where are you now, and what are you working on? (Ask Amora Bettany.)
+tags:
+- release
+- annapurna
+- location-disputed

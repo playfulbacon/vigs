@@ -1,0 +1,19 @@
+id: 2026-03-03-rotwood-1-0
+title: Rotwood reaches 1.0
+date: '2026-03-03'
+era: current-era
+type: release
+summary: Klei's Rotwood reaches 1.0, alongside a Switch 2 port.
+games:
+- rotwood
+orgs:
+- klei-entertainment
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- source: nichegamer-rotwood-hits-full-release-alongside-switch-2-port
+  note: Snippet
+tags:
+- release
+- klei

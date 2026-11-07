@@ -1,0 +1,13 @@
+id: thomas-shahan
+name: Thomas Shahan
+roles:
+- artist
+summary: Artist on the Northways' Incredipede (2012).
+bio: >-
+  Shahan did the art for Incredipede, designed by Colin and Sarah Northway and released on October 25,
+  2012. Wikipedia says Colin found him through the Wikipedia article on jumping spiders.
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-incredipede

@@ -1,0 +1,8 @@
+id: tencent
+name: Tencent
+kind: publisher
+summary: Took a majority stake in Klei Entertainment in January 2021; Klei says it keeps full autonomy.
+status: single-source
+sources:
+- wikipedia-klei-entertainment
+- gematsu-tencent-to-acquire-majority-stake-in-klei-entertainment

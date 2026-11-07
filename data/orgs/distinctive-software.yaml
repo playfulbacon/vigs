@@ -1,0 +1,35 @@
+id: distinctive-software
+name: Distinctive Software Inc.
+aliases:
+- DSI
+- Distinctive Software
+kind: aaa-studio
+founded: "1982"
+founders:
+- don-mattrick
+- jeff-sember
+location:
+  city: Burnaby
+  region: lower-mainland
+lineage:
+- type: acquired-by
+  org: electronic-arts
+  date: "1991-07"
+  note: 'Deal announced June 18, 1991 and closed July 1991. Wikipedia gives two prices: US$10M (citing the NYT) and $11M (EA Vancouver history section). The NYT article could not be opened.'
+  sources:
+  - wikipedia-distinctive-software
+  - wikipedia-ea-vancouver
+  - nyt-1991-ea-buys-distinctive
+summary: 'Founded in Burnaby in 1982 by Don Mattrick (age 17) and Jeff Sember, with Tarrnie Williams helping to license their first game, Evolution. It is the root of Vancouver''s studio family tree: EA bought it in 1991 and it became EA Canada.'
+current: Became EA Canada (later EA Vancouver) after EA's 1991 purchase; as of November 2026.
+operating_status: acquired
+status: verified
+sources:
+- straight-2009-family-tree
+- wikipedia-don-mattrick
+- wikipedia-distinctive-software
+- wikipedia-ea-vancouver
+notes: Wikipedia's EA Vancouver lead says the studio "opened" in January 1983. Sember sold his stake to Mattrick in 1986. Tarrnie Williams helped license Evolution; he is not documented as a founder.
+tags:
+- aaa-roots
+- family-tree

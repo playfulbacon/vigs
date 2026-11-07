@@ -1,0 +1,7 @@
+id: humble-games
+name: Humble Games
+kind: publisher
+summary: Published Happy Ray Games' Ikenfell (2020).
+status: single-source
+sources:
+- wikipedia-ikenfell

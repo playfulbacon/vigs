@@ -1,0 +1,27 @@
+id: rory-armes
+name: Rory Armes
+roles:
+- founder
+summary: >-
+  Former Distinctive Software developer who co-founded Radical Entertainment in September 1991.
+bio: >-
+  Armes worked at Distinctive Software (DSI) and co-founded Radical Entertainment in September 1991 with
+  Dave Davis and Ian Wilkinson. Radical was first based in Yaletown.
+memberships:
+- org: distinctive-software
+  role: developer
+  end: "1991"
+  sources:
+  - straight-2009-family-tree
+- org: radical-entertainment
+  role: co-founder
+  start: "1991-09"
+  sources:
+  - wikipedia-radical-entertainment
+  - straight-2009-family-tree
+consent:
+  status: not-asked
+status: verified
+sources:
+- wikipedia-radical-entertainment
+- straight-2009-family-tree

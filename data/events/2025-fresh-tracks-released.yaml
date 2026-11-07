@@ -1,0 +1,23 @@
+id: 2025-fresh-tracks-released
+title: Fresh Tracks released
+date: '2025'
+era: current-era
+type: release
+summary: Vancouver studio Buffalo Buffalo self-publishes Fresh Tracks, narrated by Peter Stormare.
+games:
+- fresh-tracks
+orgs:
+- buffalo-buffalo
+region: vancouver
+significance: 1
+status: verified
+sources:
+- mobilesyrup-top-canadian-games-of-2025
+caveat: Release date not given.
+open_questions:
+- Is anyone leaving Vancouver over housing now? (Ask newer developers (Sunset Visitor, Buffalo Buffalo) and Game
+  Garden exhibitors.)
+tags:
+- release
+- self-published
+- new-wave

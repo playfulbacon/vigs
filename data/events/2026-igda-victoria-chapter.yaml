@@ -1,0 +1,21 @@
+id: 2026-igda-victoria-chapter
+title: IGDA Victoria chapter active
+date:
+  value: '2026'
+  qualifier: by
+  display: today (2026)
+  note: Founding date unknown
+era: current-era
+type: other
+summary: An IGDA Victoria chapter exists; its founding date is unknown.
+orgs:
+- igda-victoria
+region: victoria
+significance: 1
+status: single-source
+sources:
+- itch-igdavictoria-itch-io
+caveat: BC-scene context from Vancouver Island and Victoria, not a Vancouver claim.
+tags:
+- victoria-sidebar
+- igda

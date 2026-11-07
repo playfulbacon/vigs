@@ -1,0 +1,30 @@
+id: crypt-of-the-necrodancer
+title: Crypt of the NecroDancer
+aliases: [NecroDancer]
+releases:
+  - date: "2014-07-30"
+    kind: early-access
+    platforms: [Steam]
+    sources: [wikipedia-crypt-of-the-necrodancer]
+  - date: "2015-04-23"
+    kind: full-release
+    sources: [wikipedia-crypt-of-the-necrodancer, wikipedia-klei-entertainment]
+release_status: released
+developers: [brace-yourself-games]
+publishers: [klei-entertainment]
+credits:
+  - person: ryan-clark
+    role: director
+    sources: [wikipedia-crypt-of-the-necrodancer, wikipedia-brace-yourself-games]
+  - person: danny-baranowsky
+    role: composer
+    sources: [wikipedia-crypt-of-the-necrodancer]
+audio_by: [power-up-audio]
+vancouver_connection: Made by Ryan Clark's Vancouver studio Brace Yourself Games and published by Vancouver's Klei, an early case of a local indie publishing another; Power Up Audio did audio work. Where composer Danny Baranowsky was based is unknown.
+region: vancouver
+summary: Brace Yourself Games' rhythm roguelike, directed by Ryan Clark with music by Danny Baranowsky. It entered Steam Early Access on July 30, 2014 and got its full release, published by Klei, on April 23, 2015.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Crypt_of_the_NecroDancer
+status: single-source
+sources: [wikipedia-crypt-of-the-necrodancer, wikipedia-klei-entertainment, egm-power-up-audio]
+notes: PUA's SFX/VO role is from the research notes; A Shell in the Pit did trailer audio (asitp-home).

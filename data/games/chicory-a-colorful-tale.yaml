@@ -1,0 +1,60 @@
+id: chicory-a-colorful-tale
+title: 'Chicory: A Colorful Tale'
+aliases: [Chicory, Drawdog]
+releases:
+  - date: "2021-06-10"
+    kind: release
+    platforms: [Windows, macOS, PS4, PS5]
+    sources: [wikipedia-chicory-a-colorful-tale]
+  - date: "2021-12-15"
+    kind: port
+    platforms: [Switch]
+    sources: [wikipedia-chicory-a-colorful-tale]
+  - date: "2023-05-30"
+    kind: port
+    platforms: [Xbox]
+    sources: [wikipedia-chicory-a-colorful-tale]
+release_status: released
+developers: [wishes-unlimited]
+publishers: [finji]
+credits:
+  - person: greg-lobanov
+    role: design
+    sources: [wikipedia-chicory-a-colorful-tale]
+  - person: alexis-dean-jones
+    role: lead art
+    sources: [wikipedia-chicory-a-colorful-tale]
+  - person: madeline-berger
+    role: art
+    sources: [wikipedia-chicory-a-colorful-tale]
+  - person: lena-raine
+    role: composer
+    sources: [wikipedia-chicory-a-colorful-tale]
+audio_by: [a-shell-in-the-pit]
+crowdfunding:
+  platform: Kickstarter
+  date: "2019-08"
+  sources: [wikipedia-chicory-a-colorful-tale]
+awards:
+  - name: BAFTA Games Award, Family
+    year: 2021
+    result: won
+    sources: [wikipedia-chicory-a-colorful-tale, asitp-press]
+  - name: Pégases Award, Best Foreign Independent Game
+    result: won
+    sources: [wikipedia-chicory-a-colorful-tale]
+  - name: The Game Awards, Games for Impact
+    year: 2021
+    result: nominated
+    sources: [wikipedia-chicory-a-colorful-tale]
+  - name: IGF Seumas McNally Grand Prize
+    result: nominated
+    sources: [wikipedia-chicory-a-colorful-tale]
+vancouver_connection: Made by Greg Lobanov in Vancouver, with audio by Vancouver's A Shell in the Pit; Lobanov calls it his biggest success.
+region: vancouver
+summary: Greg Lobanov's painting adventure game, Kickstarted as Drawdog in August 2019 and released by Finji on June 10, 2021, with lead art by Alexis Dean-Jones and Madeline Berger and music by Lena Raine. It won a BAFTA in the Family category.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Chicory:_A_Colorful_Tale
+status: single-source
+sources: [wikipedia-chicory-a-colorful-tale, straight-2024-indie-hub, asitp-home, asitp-press]
+notes: The BAFTA year (2021) is from A Shell in the Pit's press page. Lena Raine's Vancouver residence is unconfirmed.

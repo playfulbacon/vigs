@@ -1,0 +1,28 @@
+id: full-indie-game-jam
+name: Full Indie Game Jam
+kind: event-series
+founded:
+  value: "2011-06"
+  note: Weekend of June 17, 2011, at the Centre for Digital Media; search snippet of Village Gamer only.
+location:
+  city: Vancouver
+  region: vancouver
+lineage:
+- type: branch-of
+  org: full-indie
+  date: "2011-06"
+  sources:
+  - fullindie-about
+  - cgm-2014-canadian-scene-part-2
+summary: Full Indie's game jam, first held in June 2011 at the Centre for Digital Media. The 48-hour June 2012 edition produced the first TowerFall prototype and introduced Power Up Audio to the Indie House developers.
+current: Editions after 2012 not researched.
+operating_status: unknown
+status: verified
+sources:
+- cgm-2014-canadian-scene-part-2
+- wikipedia-towerfall
+- egm-power-up-audio
+- fullindie-about
+tags:
+- full-indie
+- jam

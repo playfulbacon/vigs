@@ -1,0 +1,23 @@
+id: propaganda-games
+name: Propaganda Games
+aliases:
+- Revolution Interactive
+kind: aaa-studio
+founded: "2005-04"
+closed: "2011-01"
+founders:
+- josh-holmes
+location:
+  city: Vancouver
+  region: vancouver
+summary: 'Founded in April 2005 as Revolution Interactive by Josh Holmes, Howard Donaldson, Daryl Anselmo and Jorge Freitas, and bought by Disney the same year (Turok, Tron: Evolution).'
+current: Closed by Disney in January 2011.
+operating_status: closed
+status: verified
+sources:
+- wikipedia-propaganda-games
+- straight-2011-industry-in-transition
+notes: Howard Donaldson, Daryl Anselmo and Jorge Freitas have no person records. Disney is not in the org registry, so the purchase is not recorded as lineage.
+tags:
+- aaa-roots
+- family-tree

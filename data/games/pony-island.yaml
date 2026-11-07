@@ -1,0 +1,28 @@
+id: pony-island
+title: Pony Island
+releases:
+  - date: "2014-12"
+    kind: jam
+    note: Ludum Dare prototype (theme "Entire Game On One Screen").
+    sources: [wikipedia-pony-island]
+  - date: "2016-01-04"
+    kind: release
+    sources: [wikipedia-pony-island]
+release_status: released
+developers: [daniel-mullins-games]
+publishers: [daniel-mullins-games]
+credits:
+  - person: daniel-mullins
+    role: designer
+    sources: [wikipedia-pony-island]
+  - person: jonah-senzel
+    role: composer
+    sources: [wikipedia-pony-island]
+origin_event: 2014-12-pony-island-ludum-dare
+vancouver_connection: No source dated 2016 places Daniel Mullins in Vancouver; he is documented as Vancouver-based only from 2020.
+summary: Daniel Mullins's meta-horror puzzle game, released January 4, 2016. It began as a December 2014 Ludum Dare prototype, with music by Jonah Senzel.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Pony_Island
+status: single-source
+sources: [wikipedia-pony-island, cgd-inscryption-announced]
+notes: Co-designer Simon Jenkins has no person record. It followed a failed 2014 Kickstarter for Catch Monsters (research notes).

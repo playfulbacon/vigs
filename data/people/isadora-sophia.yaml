@@ -1,0 +1,25 @@
+id: isadora-sophia
+name: Isadora Sophia
+vancouver:
+  tie: unconfirmed
+  note: Co-founder of Coldblood Inc., described as Vancouver-based in a Gematsu snippet.
+  sources:
+  - gematsu-neverway-launches-in-october-prologue-demo-now-available-for-p
+roles:
+- founder
+summary: Co-founder, with Pedro Medeiros, of Coldblood Inc., the studio making Neverway.
+bio: >-
+  Gematsu (snippet) describes Coldblood Inc. as "an independent Vancouver studio founded by Brazilian-Canadian
+  developers Pedro Medeiros and Isadora Sophia." Its Neverway now lists a 2027 release.
+memberships:
+- org: coldblood-inc
+  role: co-founder
+  status: single-source
+  sources:
+  - gematsu-neverway-launches-in-october-prologue-demo-now-available-for-p
+consent:
+  status: not-asked
+status: single-source
+sources:
+- gematsu-neverway-launches-in-october-prologue-demo-now-available-for-p
+- steam-neverway

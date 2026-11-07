@@ -1,0 +1,21 @@
+id: jason-elliot
+name: Jason Elliot
+summary: Co-designer, with Su Skerl, of the Full Indie brand at the 2011 rebrand.
+bio: >-
+  CGM says Elliot and Su Skerl designed the logo and branding when the Vancouver Indie Game Developers
+  meetup rebranded as Full Indie, which CGM dates to March 2011.
+memberships:
+- org: full-indie
+  role: brand designer
+  start:
+    value: "2011-03"
+    note: Month from CGM only
+  status: single-source
+  sources:
+  - cgm-2014-canadian-scene-part-2
+consent:
+  status: not-asked
+status: single-source
+sources:
+- cgm-2014-canadian-scene-part-2
+- fullindie-about

@@ -1,0 +1,84 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: person.yaml
+title: Person
+type: object
+additionalProperties: false
+required: [id, name, status]
+properties:
+  id: { $ref: 'common.yaml#/$defs/id' }
+  name: { type: string, description: Current professional name. }
+  aliases: { type: array, items: { type: string }, description: 'Handles and other names used publicly (e.g. "saint11"). Never deadnames.' }
+  pronouns: { type: string, description: Only if publicly stated by the person. }
+  born:
+    type: object
+    additionalProperties: false
+    properties:
+      date: { $ref: 'common.yaml#/$defs/date' }
+      place: { type: string }
+      sources: { $ref: 'common.yaml#/$defs/citations' }
+  died:
+    type: object
+    additionalProperties: false
+    properties:
+      date: { $ref: 'common.yaml#/$defs/date' }
+      place: { type: string }
+      sources: { $ref: 'common.yaml#/$defs/citations' }
+  age_reported:
+    description: An age stated in a dated source, when no birth date is documented. Used to estimate ages without inventing a birth year.
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [age, as_of]
+      properties:
+        age: { type: integer }
+        as_of: { $ref: 'common.yaml#/$defs/date' }
+        sources: { $ref: 'common.yaml#/$defs/citations' }
+  origin: { type: string, description: Hometown or where they came from before Vancouver. }
+  vancouver:
+    type: object
+    additionalProperties: false
+    properties:
+      tie: { enum: [resident, former-resident, collaborator, visitor, unconfirmed] }
+      arrived: { $ref: 'common.yaml#/$defs/date' }
+      left: { $ref: 'common.yaml#/$defs/date' }
+      note: { type: string }
+      sources: { $ref: 'common.yaml#/$defs/citations' }
+  roles:
+    type: array
+    uniqueItems: true
+    items:
+      enum: [designer, programmer, artist, animator, writer, composer, sound-designer, producer, director, founder, executive, organizer, educator, publisher, journalist, community]
+  summary: { type: string, description: One-line description. }
+  bio: { type: string, description: A short paragraph. Documented facts only. }
+  memberships:
+    description: Time-bounded ties to organizations and places (studios, Full Indie roles, Indie House residency).
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      anyOf: [ { required: [org] }, { required: [place] } ]
+      properties:
+        org: { $ref: 'common.yaml#/$defs/id' }
+        place: { $ref: 'common.yaml#/$defs/id' }
+        role: { type: string, description: 'e.g. "founder", "president", "resident", "lead programmer"' }
+        start: { $ref: 'common.yaml#/$defs/date' }
+        end: { $ref: 'common.yaml#/$defs/date' }
+        status: { $ref: 'common.yaml#/$defs/status' }
+        sources: { $ref: 'common.yaml#/$defs/citations' }
+  current: { type: string, description: 'What they are doing now, with an "as of" in the text.' }
+  photo: { $ref: 'common.yaml#/$defs/image' }
+  links: { $ref: 'common.yaml#/$defs/links' }
+  consent:
+    type: object
+    additionalProperties: false
+    properties:
+      status: { enum: [not-asked, public-sources-only, granted, declined] }
+      date: { $ref: 'common.yaml#/$defs/date' }
+      scope: { type: array, items: { enum: [bio, birth-date, photo, quotes, audio] } }
+      note: { type: string }
+  sensitive_note: { type: string, description: Guidance for handling sensitive history neutrally and with attribution. }
+  status: { $ref: 'common.yaml#/$defs/status' }
+  sources: { $ref: 'common.yaml#/$defs/citations' }
+  notes: { type: string }
+  tags: { type: array, items: { type: string } }

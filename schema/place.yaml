@@ -1,0 +1,35 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: place.yaml
+title: Place
+description: Physical spaces that matter — houses, venues, offices, cafes, campuses.
+type: object
+additionalProperties: false
+required: [id, name, kind, status]
+properties:
+  id: { $ref: 'common.yaml#/$defs/id' }
+  name: { type: string }
+  aliases: { type: array, items: { type: string } }
+  kind: { enum: [house, venue, office, cafe, campus, library, theatre, convention-centre, neighbourhood, other] }
+  address: { type: string, description: Public venues only. Never a private home address. }
+  city: { type: string }
+  region: { $ref: 'common.yaml#/$defs/region' }
+  coordinates:
+    type: object
+    additionalProperties: false
+    required: [lat, lng]
+    properties:
+      lat: { type: number }
+      lng: { type: number }
+      precision: { enum: [exact, neighbourhood, city] }
+  active:
+    type: object
+    additionalProperties: false
+    properties:
+      start: { $ref: 'common.yaml#/$defs/date' }
+      end: { $ref: 'common.yaml#/$defs/date' }
+  summary: { type: string }
+  photo: { $ref: 'common.yaml#/$defs/image' }
+  links: { $ref: 'common.yaml#/$defs/links' }
+  status: { $ref: 'common.yaml#/$defs/status' }
+  sources: { $ref: 'common.yaml#/$defs/citations' }
+  notes: { type: string }

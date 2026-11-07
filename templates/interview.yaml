@@ -1,0 +1,22 @@
+# Copy to data/interviews/<YYYY-MM-DD-person>.yaml
+id: 2026-12-01-firstname-lastname
+interviewees: [firstname-lastname]
+interviewer: ""
+date: "2026-12-01"
+location: ""
+duration_minutes: 0
+archive:
+  transcript: transcripts/2026-12-01-firstname-lastname.md   # path in the private archive repo
+  audio: ""                                                  # Drive/Dropbox ID or path
+  transcription_tool: ""
+consent:
+  status: pending            # pending | granted | partial | declined | withdrawn
+  date: ""
+  scope: []                  # bio, birth-date, photo, quotes, audio-clips, full-transcript
+  quote_review: true         # interviewee approves quotes before they go public
+  form: ""                   # reference to the signed release (kept private)
+restrictions: []             # - { start: "00:41:10", end: "00:44:00", reason: off the record }
+topics: []
+summary: ""
+process_status: recorded     # scheduled | recorded | transcribed | processed | reviewed | published
+follow_ups: []

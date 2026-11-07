@@ -1,0 +1,26 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: source.yaml
+title: Source
+description: Anything we cite — articles, wiki pages, primary posts, store pages, interviews.
+type: object
+additionalProperties: false
+required: [id, title, kind]
+properties:
+  id: { $ref: 'common.yaml#/$defs/id' }
+  title: { type: string }
+  url: { type: string, format: uri }
+  publisher: { type: string, description: 'e.g. "Georgia Straight", "Wikipedia", "Game Developer"' }
+  author: { type: string }
+  published: { $ref: 'common.yaml#/$defs/date' }
+  kind:
+    enum: [article, wiki, primary, blog, press-release, store, database, event-listing, book, video, podcast, social, report, interview]
+  reliability:
+    description: primary = from the people/org involved; secondary = journalism or scholarship; tertiary = wikis and aggregators.
+    enum: [primary, secondary, tertiary]
+  opened:
+    description: True if the page was opened and read when it was cited; false if it rests on a search snippet or failed to load.
+    type: boolean
+  accessed: { $ref: 'common.yaml#/$defs/date' }
+  archive_url: { type: string, format: uri }
+  interview: { $ref: 'common.yaml#/$defs/id', description: 'For kind=interview, the interview record ID.' }
+  notes: { type: string }

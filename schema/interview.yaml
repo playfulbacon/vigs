@@ -1,0 +1,50 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: interview.yaml
+title: Interview
+description: >
+  One recorded interview. The public record holds only metadata and consent; the full
+  transcript and audio live in the private archive (see archive).
+type: object
+additionalProperties: false
+required: [id, interviewees, date, process_status, consent]
+properties:
+  id: { $ref: 'common.yaml#/$defs/id', description: 'Convention: YYYY-MM-DD-interviewee-slug' }
+  interviewees: { $ref: 'common.yaml#/$defs/ids' }
+  interviewer: { type: string }
+  date: { $ref: 'common.yaml#/$defs/date' }
+  location: { type: string }
+  duration_minutes: { type: integer }
+  archive:
+    type: object
+    additionalProperties: false
+    description: Pointers into the private archive. Never put transcript text here.
+    properties:
+      transcript: { type: string, description: 'Path in the private archive repo.' }
+      audio: { type: string, description: 'Path or ID in private audio storage.' }
+      transcription_tool: { type: string }
+  consent:
+    type: object
+    additionalProperties: false
+    required: [status]
+    properties:
+      status: { enum: [pending, granted, partial, declined, withdrawn] }
+      date: { $ref: 'common.yaml#/$defs/date' }
+      scope: { type: array, items: { enum: [bio, birth-date, photo, quotes, audio-clips, full-transcript] } }
+      quote_review: { type: boolean, description: True if the interviewee approves quotes before publication. }
+      form: { type: string, description: 'Reference to the signed release (private).' }
+  restrictions:
+    description: Off-the-record ranges. Claims inside these never leave the private archive.
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [start, end]
+      properties:
+        start: { type: string, pattern: '^\d{1,2}:\d{2}:\d{2}$' }
+        end: { type: string, pattern: '^\d{1,2}:\d{2}:\d{2}$' }
+        reason: { type: string }
+  topics: { type: array, items: { type: string } }
+  summary: { type: string }
+  process_status: { enum: [scheduled, recorded, transcribed, processed, reviewed, published] }
+  follow_ups: { type: array, items: { type: string }, description: Questions raised for this or other interviewees. }
+  notes: { type: string }

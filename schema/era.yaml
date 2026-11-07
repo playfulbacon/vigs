@@ -1,0 +1,14 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: era.yaml
+title: Era
+description: A chapter of the story.
+type: object
+additionalProperties: false
+required: [id, title, start, order]
+properties:
+  id: { $ref: 'common.yaml#/$defs/id' }
+  title: { type: string }
+  start: { $ref: 'common.yaml#/$defs/date' }
+  end: { $ref: 'common.yaml#/$defs/date' }
+  order: { type: integer }
+  summary: { type: string }

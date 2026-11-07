@@ -1,0 +1,18 @@
+# Copy to data/claims/<interview-id>-NNN.yaml
+id: 2026-12-01-firstname-lastname-001
+interview: 2026-12-01-firstname-lastname
+speaker: firstname-lastname
+timestamp: "00:14:32"
+text: One-sentence paraphrase of what was said.
+quote: "Verbatim words, only published once review is public."
+about:
+  events: []
+  people: []
+  games: []
+  orgs: []
+  places: []
+date_referenced: ""
+stance: adds                 # supports | contradicts | adds | new
+kind: memory                 # fact | memory | opinion | anecdote | theme
+themes: []
+review: draft                # draft | approved | public | restricted

@@ -1,0 +1,82 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: game.yaml
+title: Game
+type: object
+additionalProperties: false
+required: [id, title, status]
+properties:
+  id: { $ref: 'common.yaml#/$defs/id' }
+  title: { type: string }
+  aliases: { type: array, items: { type: string } }
+  releases:
+    description: Each notable release, in order. The first is treated as the game's debut.
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [date]
+      properties:
+        date: { $ref: 'common.yaml#/$defs/date' }
+        kind: { enum: [release, early-access, full-release, port, expansion, remaster, prototype, jam] }
+        platforms: { type: array, items: { type: string } }
+        region: { type: string }
+        note: { type: string }
+        sources: { $ref: 'common.yaml#/$defs/citations' }
+  release_status: { enum: [released, early-access, in-development, announced, cancelled, unreleased-prototype] }
+  developers: { $ref: 'common.yaml#/$defs/ids' }
+  publishers: { $ref: 'common.yaml#/$defs/ids' }
+  credits:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [person, role]
+      properties:
+        person: { $ref: 'common.yaml#/$defs/id' }
+        role: { type: string, description: 'e.g. "designer", "lead programmer", "composer", "sound design", "art"' }
+        org: { $ref: 'common.yaml#/$defs/id', description: Credited via this org (e.g. Power Up Audio). }
+        sources: { $ref: 'common.yaml#/$defs/citations' }
+  audio_by: { $ref: 'common.yaml#/$defs/ids', description: Audio studio org IDs. }
+  genres: { type: array, items: { type: string } }
+  platforms: { type: array, items: { type: string } }
+  origin_event: { $ref: 'common.yaml#/$defs/id', description: 'The event where it started, e.g. a game jam.' }
+  made_at: { $ref: 'common.yaml#/$defs/ids', description: Place IDs. }
+  vancouver_connection: { type: string, description: How the game ties to the Vancouver scene, with caveats. }
+  region: { $ref: 'common.yaml#/$defs/region' }
+  awards:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [name, result]
+      properties:
+        name: { type: string }
+        year: { type: integer }
+        result: { enum: [won, nominated, finalist, honorable-mention] }
+        sources: { $ref: 'common.yaml#/$defs/citations' }
+  sales:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [figure, as_of]
+      properties:
+        figure: { type: string, description: 'e.g. "1.7 million copies", "$500K gross"' }
+        as_of: { $ref: 'common.yaml#/$defs/date' }
+        sources: { $ref: 'common.yaml#/$defs/citations' }
+  crowdfunding:
+    type: object
+    additionalProperties: false
+    properties:
+      platform: { type: string }
+      date: { $ref: 'common.yaml#/$defs/date' }
+      raised: { type: string }
+      backers: { type: integer }
+      sources: { $ref: 'common.yaml#/$defs/citations' }
+  summary: { type: string }
+  box_art: { $ref: 'common.yaml#/$defs/image' }
+  links: { $ref: 'common.yaml#/$defs/links' }
+  status: { $ref: 'common.yaml#/$defs/status' }
+  sources: { $ref: 'common.yaml#/$defs/citations' }
+  notes: { type: string }
+  tags: { type: array, items: { type: string } }

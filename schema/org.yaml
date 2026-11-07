@@ -1,0 +1,45 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: org.yaml
+title: Organization
+description: Studios, publishers, collectives, meetups, schools, associations, recurring events, government programs.
+type: object
+additionalProperties: false
+required: [id, name, kind, status]
+properties:
+  id: { $ref: 'common.yaml#/$defs/id' }
+  name: { type: string }
+  aliases: { type: array, items: { type: string } }
+  kind:
+    enum: [aaa-studio, indie-studio, mid-size-studio, audio-studio, publisher, collective, community, event-series, school, industry-association, government-program, platform-holder]
+  founded: { $ref: 'common.yaml#/$defs/date' }
+  closed: { $ref: 'common.yaml#/$defs/date' }
+  founders: { $ref: 'common.yaml#/$defs/ids' }
+  location:
+    type: object
+    additionalProperties: false
+    properties:
+      city: { type: string }
+      region: { $ref: 'common.yaml#/$defs/region' }
+      note: { type: string }
+  lineage:
+    description: How this org relates to others over time.
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [type, org]
+      properties:
+        type: { enum: [spun-off-from, acquired-by, renamed-from, merged-into, successor-of, subsidiary-of, branch-of, partnered-with] }
+        org: { $ref: 'common.yaml#/$defs/id' }
+        date: { $ref: 'common.yaml#/$defs/date' }
+        note: { type: string }
+        sources: { $ref: 'common.yaml#/$defs/citations' }
+  summary: { type: string }
+  current: { type: string, description: 'Status in words, with an "as of".' }
+  logo: { $ref: 'common.yaml#/$defs/image' }
+  links: { $ref: 'common.yaml#/$defs/links' }
+  operating_status: { enum: [active, closed, acquired, merged, dormant, unknown] }
+  status: { $ref: 'common.yaml#/$defs/status' }
+  sources: { $ref: 'common.yaml#/$defs/citations' }
+  notes: { type: string }
+  tags: { type: array, items: { type: string } }

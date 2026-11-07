@@ -1,0 +1,32 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: event.yaml
+title: Event
+description: A plot point in the story.
+type: object
+additionalProperties: false
+required: [id, title, date, era, type, status]
+properties:
+  id: { $ref: 'common.yaml#/$defs/id', description: 'Convention: YYYY-MM-short-slug (or YYYY-short-slug).' }
+  title: { type: string, description: Short headline. }
+  date: { $ref: 'common.yaml#/$defs/date' }
+  end_date: { $ref: 'common.yaml#/$defs/date' }
+  era: { $ref: 'common.yaml#/$defs/id' }
+  type:
+    enum: [founding, closure, acquisition, rename, release, early-access, announcement, cancellation, crowdfunding, jam, meetup, conference, showcase, move, layoff, award, milestone, policy, publication, leadership, other]
+  summary: { type: string, description: 'One to three sentences: what happened and why it matters.' }
+  people: { $ref: 'common.yaml#/$defs/ids' }
+  games: { $ref: 'common.yaml#/$defs/ids' }
+  orgs: { $ref: 'common.yaml#/$defs/ids' }
+  places: { $ref: 'common.yaml#/$defs/ids' }
+  region: { $ref: 'common.yaml#/$defs/region' }
+  significance: { type: integer, minimum: 1, maximum: 3, description: '3 = turning point, 2 = notable, 1 = context.' }
+  status: { $ref: 'common.yaml#/$defs/status' }
+  sources: { $ref: 'common.yaml#/$defs/citations' }
+  accounts:
+    description: For disputed events, each competing version.
+    type: array
+    items: { $ref: 'common.yaml#/$defs/account' }
+  claims: { $ref: 'common.yaml#/$defs/ids', description: Interview claims that bear on this event. }
+  caveat: { type: string, description: 'Geography or sourcing caveat shown with the event.' }
+  open_questions: { type: array, items: { type: string } }
+  tags: { type: array, items: { type: string } }

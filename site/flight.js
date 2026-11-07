@@ -130,28 +130,33 @@
 
     // year rulers on both edges
     const edge = ROAD_W / 2 + 150;
-    let lastLabel = -Infinity, lastTick = -Infinity;
+    // Year marks where there's room for a label; between neighbouring marks, evenly spaced minor
+    // ticks (three when there's room, one when it's tight, none when years are squeezed together).
+    const marks = [];
     for (let y = flight.t0; y <= flight.t1; y++) {
-      for (let q = 0; q < 4; q++) {
-        const t = y + q / 4; if (t > END) break;
-        const tp = W(S(t));
-        if (tp - lastTick < 0.07 && q !== 0) continue;
-        lastTick = tp;
-        for (const side of [-1, 1]) {
-          const tick = document.createElement("div");
-          tick.className = `fl-tick${q === 0 ? " major" : ""}`;
-          world.appendChild(tick);
-          flight.ticks.push({ el: tick, s: W(S(t)), x: side * edge, side });
-        }
-      }
       const yp = W(S(y));
-      if (yp - lastLabel < 0.3) continue;
-      lastLabel = yp;
-      const label = document.createElement("div");
-      label.className = "fl-year"; label.textContent = y;
-      world.appendChild(label);
-      flight.ticks.push({ el: label, s: W(S(y)), x: edge + 40, label: true });
+      if (!marks.length || yp - marks[marks.length - 1].p >= 0.3) marks.push({ y, p: yp });
     }
+    const addTick = (pos, major) => {
+      for (const side of [-1, 1]) {
+        const tick = document.createElement("div");
+        tick.className = `fl-tick${major ? " major" : ""}`;
+        world.appendChild(tick);
+        flight.ticks.push({ el: tick, s: pos, x: side * edge, side });
+      }
+    };
+    marks.forEach((m, i) => {
+      addTick(m.p, true);
+      const label = document.createElement("div");
+      label.className = "fl-year"; label.textContent = m.y;
+      world.appendChild(label);
+      flight.ticks.push({ el: label, s: m.p, x: edge + 40, label: true });
+      const next = marks[i + 1];
+      if (!next) return;
+      const gap = next.p - m.p;
+      const minors = gap >= 0.6 ? 3 : gap >= 0.36 ? 1 : 0;
+      for (let k = 1; k <= minors; k++) addTick(m.p + (gap * k) / (minors + 1), false);
+    });
 
     // era gates
     let lastGate = -Infinity;

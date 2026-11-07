@@ -203,18 +203,25 @@
     const jump = (ev) => {
       const r = bar.getBoundingClientRect();
       const f = Math.min(1, Math.max(0, (ev.clientX - r.left) / r.width));
-      flight.target = Math.max(0, f * S_MAX - 0.3); flight.targetX = 0;
+      const s = Math.min(S_MAX - 1, Math.max(-0.3, f * S_MAX - AHEAD / 2));
+      flight.target = flight.camS = s;            // immediate: no easing while scrubbing
+      flight.targetX = flight.camX = 0;
+      $(".fl-world", flight.el).style.transform = "scale(var(--k, 1))";
+      place();
     };
-    bar.addEventListener("pointerdown", (ev) => { bar.setPointerCapture(ev.pointerId); flight.scrubbing = true; jump(ev); });
+    const stop = () => (flight.scrubbing = false);
+    bar.addEventListener("pointerdown", (ev) => { ev.preventDefault(); bar.setPointerCapture(ev.pointerId); flight.scrubbing = true; jump(ev); });
     bar.addEventListener("pointermove", (ev) => { if (flight.scrubbing) jump(ev); });
-    bar.addEventListener("pointerup", () => (flight.scrubbing = false));
+    bar.addEventListener("pointerup", stop);
+    bar.addEventListener("pointercancel", stop);
+    bar.addEventListener("lostpointercapture", stop);
     updateWindow();
   }
 
   function updateWindow() {
     const w = $(".fl-scrub-window", flight.el);
     if (!w) return;
-    const a = sx(Math.max(0, flight.camS)), b = sx(Math.min(S_MAX, flight.camS + AHEAD));
+    const a = sx(Math.max(0, flight.camS)), b = sx(Math.min(S_MAX, flight.camS + AHEAD));   // the visible stretch of road
     w.style.left = a + "%"; w.style.width = Math.max(0.6, b - a) + "%";
   }
 
@@ -226,13 +233,26 @@
     flight.onWheel = (ev) => { ev.preventDefault(); flight.targetX = 0; flight.target = clamp(flight.target + (ev.deltaY + ev.deltaX) * 0.0022); };
     stage.addEventListener("wheel", flight.onWheel, { passive: false });
     let drag = null;
-    stage.addEventListener("pointerdown", (ev) => { drag = { y: ev.clientY, t: flight.target, moved: 0 }; flight.dragged = false; });
+    stage.addEventListener("dragstart", (ev) => ev.preventDefault());
+    stage.addEventListener("pointerdown", (ev) => {
+      if (ev.button !== 0) return;
+      ev.preventDefault();   // stops text selection and native image dragging; clicks still fire
+      drag = { y: ev.clientY, t: flight.target, moved: 0, id: ev.pointerId };
+      flight.dragged = false;
+    });
     window.addEventListener("pointermove", flight.onMove = (ev) => {
       if (!drag) return;
+      if (!ev.buttons) { drag = null; return; }   // the button was released somewhere we didn't hear about
       const dy = ev.clientY - drag.y; drag.moved = Math.max(drag.moved, Math.abs(dy));
-      if (drag.moved > 6) { flight.dragged = true; flight.targetX = 0; flight.target = clamp(drag.t + dy * 0.012); }
+      if (drag.moved > 6) {
+        if (!flight.dragged) { flight.dragged = true; try { stage.setPointerCapture(drag.id); } catch {} }
+        flight.targetX = 0; flight.target = clamp(drag.t + dy * 0.012);
+      }
     });
-    window.addEventListener("pointerup", flight.onUp = () => { drag = null; setTimeout(() => (flight.dragged = false), 0); });
+    const endDrag = () => { drag = null; setTimeout(() => (flight.dragged = false), 0); };
+    window.addEventListener("pointerup", flight.onUp = endDrag);
+    window.addEventListener("pointercancel", flight.onCancel = endDrag);
+    stage.addEventListener("lostpointercapture", endDrag);
     window.addEventListener("keydown", flight.onKey = (ev) => {
       if (!flight.active || ev.target.closest("input, textarea, select")) return;
       const step = { ArrowUp: 0.5, ArrowDown: -0.5, PageUp: 2, PageDown: -2, ArrowRight: 0.5, ArrowLeft: -0.5 }[ev.key];
@@ -289,6 +309,7 @@
     cancelAnimationFrame(flight.raf);
     window.removeEventListener("pointermove", flight.onMove);
     window.removeEventListener("pointerup", flight.onUp);
+    window.removeEventListener("pointercancel", flight.onCancel);
     window.removeEventListener("keydown", flight.onKey);
     window.removeEventListener("resize", flight.onResize);
     flight.el?.remove(); flight.el = null;

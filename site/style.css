@@ -270,7 +270,7 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .flight-on .panel.empty { display: none; }
 .flight-on .settings { left: auto; right: 16px; top: 16px; bottom: auto; justify-content: flex-end; z-index: 60; }
 
-.flight { position: fixed; inset: 0; z-index: 40; overflow: hidden; background:
+.flight { position: fixed; inset: 0; z-index: 40; overflow: hidden; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; background:
   radial-gradient(120% 80% at 50% 12%, var(--surface) 0%, var(--bg) 55%, color-mix(in srgb, var(--bg) 85%, var(--ink)) 100%); }
 .fl-stage { position: absolute; inset: 0 0 96px 0; perspective: 1400px; perspective-origin: 50% 24%; overflow: hidden; cursor: grab; touch-action: none; }
 .fl-stage:active { cursor: grabbing; }
@@ -296,7 +296,7 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .fl-img { display: block; height: 130px; background: color-mix(in srgb, var(--surface) 75%, var(--lane)); overflow: hidden; }
 .fl-card.sig-3 .fl-img { height: 170px; }
 .fl-card.sig-1 .fl-img { height: 86px; }
-.fl-img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; display: block; }
+.fl-img img { -webkit-user-drag: none; user-drag: none; pointer-events: none; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; display: block; }
 .fl-img.logo { background: #fff; display: flex; align-items: center; justify-content: center; padding: 16px 22px; }
 .fl-img.logo img { object-fit: contain; }
 .fl-img.none, .fl-img.broken { display: flex; align-items: flex-end; padding: 8px 12px; }

@@ -294,7 +294,6 @@
       : `<svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-dasharray="${dash}"/></svg>`;
     const ink = cssVar("--muted"), surf = cssVar("--surface");
     $("#legend").innerHTML =
-      `<span><svg width="26" height="14"><rect x="0" y="4" width="26" height="6" rx="3" fill="${ink}" opacity=".28"/></svg>A span, or an uncertain date</span>` +
       `<span>${dot(ink, ink, "", 1)}<svg width="18" height="18" style="margin-left:-2px">${square ? `<rect x="2" y="2" width="14" height="14" rx="1.5" fill="${ink}"/>` : `<circle cx="9" cy="9" r="7" fill="${ink}"/>`}</svg>Larger dot = bigger turning point</span>`;
   }
 

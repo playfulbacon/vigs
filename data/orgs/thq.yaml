@@ -2,6 +2,11 @@ id: thq
 name: THQ
 kind: publisher
 summary: Announced on April 27, 2004 that it would acquire Relic Entertainment for about US$10M; Jamie Cheng reportedly funded Klei partly by selling his THQ shares.
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/9/96/THQ_logo_2011.svg
+  credit: THQ; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-relic-entertainment

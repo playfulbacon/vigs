@@ -2,6 +2,11 @@ id: nintendo
 name: Nintendo
 kind: platform-holder
 summary: Published Brace Yourself Games' Cadence of Hyrule (2019) and acquired Next Level Games (effective March 31, 2021); Nintendo's Dan Adelman spoke at the first Full Indie Summit in 2013.
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/0/0d/Nintendo.svg
+  credit: Nintendo; image via Wikipedia
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - wikipedia-cadence-of-hyrule

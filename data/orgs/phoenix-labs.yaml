@@ -28,6 +28,11 @@ summary: Founded in April 2014 by ex-Riot developers Jesse Houston, Sean Bender 
 current: Most of the remaining development team laid off in January 2025; Dauntless servers closed May
   29, 2025 (as of November 2026).
 operating_status: unknown
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/en/e/ee/Phoenix_Labs_Logo.png
+  credit: Phoenix Labs; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-phoenix-labs

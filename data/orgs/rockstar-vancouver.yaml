@@ -33,6 +33,11 @@ summary: Founded as Barking Dog Studios in May 1998 by six ex-Radical developers
   August 2002 and it became Rockstar Vancouver, which shipped Bully (2006).
 current: Merged into Rockstar Toronto in July 2012 (announced July 9; 35 staff offered relocation).
 operating_status: merged
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Rockstar_Vancouver_Logo.svg
+  credit: Rockstar Vancouver; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-rockstar-vancouver

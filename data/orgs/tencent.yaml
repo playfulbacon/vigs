@@ -2,6 +2,11 @@ id: tencent
 name: Tencent
 kind: publisher
 summary: Took a majority stake in Klei Entertainment in January 2021; Klei says it keeps full autonomy.
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Tencent_logo_2017.svg
+  credit: Tencent; image via Wikipedia
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - wikipedia-klei-entertainment

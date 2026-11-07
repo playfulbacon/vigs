@@ -6,6 +6,11 @@ kind: industry-association
 location:
   region: canada
 summary: National industry association whose May 30, 2011 report (with Secor Consulting) counted about 16,000 game jobs in Canada at nearly 350 companies, over half in Quebec; its Julien Lavoie told the Straight that Montreal had taken the lead.
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/en/4/40/ESAC_logo.svg
+  credit: Entertainment Software Association of Canada; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: verified
 sources:
 - esac-2011-industry-report

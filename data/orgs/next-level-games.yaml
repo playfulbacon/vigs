@@ -21,6 +21,11 @@ lineage:
 summary: Founded August 22, 2002 by ex-Black Box staff; known for its work for Nintendo, which bought the studio in 2021.
 current: Nintendo-owned since March 31, 2021 (as of November 2026).
 operating_status: acquired
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/en/d/dd/Next_Level_Games_Logo.svg
+  credit: Next Level Games; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-next-level-games

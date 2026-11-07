@@ -9,6 +9,11 @@ location:
 summary: Founded in 2005 with Barking Dog co-founder Brian Thalken as a key person; its Galactic Reign shut down in August 2013 and the studio closed soon after.
 current: Closed in 2013.
 operating_status: closed
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/en/6/6d/Slant_Six_Games_Logo.png
+  credit: Slant Six Games; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-slant-six-games

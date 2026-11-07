@@ -2,6 +2,11 @@ id: ubisoft
 name: Ubisoft
 kind: publisher
 summary: Acquired Action Pants in February 2009, making it Ubisoft Vancouver, and closed that studio on January 17, 2012.
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/7/78/Ubisoft_logo.svg
+  credit: Ubisoft; image via Wikipedia
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - gameinformer-ubisoft-closes-vancouver-studio

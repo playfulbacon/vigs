@@ -4,6 +4,11 @@ aliases:
 - EA
 kind: publisher
 summary: US publisher that bought Distinctive Software in 1991 (creating EA Canada, later EA Vancouver) and Black Box Games in 2002 (EA Black Box).
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/c/c0/Electronic_Arts_Logo_Blue.svg
+  credit: Electronic Arts; image via Wikipedia
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - wikipedia-distinctive-software

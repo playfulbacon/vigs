@@ -2,6 +2,11 @@ id: sega
 name: Sega
 kind: publisher
 summary: Later owner of Relic Entertainment, which became independent of Sega before its 2024 layoffs.
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/1/13/SEGA_logo.svg
+  credit: Sega; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-relic-entertainment

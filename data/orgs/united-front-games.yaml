@@ -33,6 +33,11 @@ lineage:
 summary: Founded in 2007 by about ten veterans of EA Black Box, Rockstar Vancouver, Radical and other studios; it made ModNation Racers and Sleeping Dogs.
 current: Closure announced October 17, 2016.
 operating_status: closed
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/en/e/e7/United_Front_Games.png
+  credit: United Front Games; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: verified
 sources:
 - wikipedia-united-front-games

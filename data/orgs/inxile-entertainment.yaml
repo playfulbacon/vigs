@@ -6,10 +6,10 @@ kind: publisher
 summary: Bought the rights to Fantastic Contraption from Colin Northway and released the iOS version in
   2009.
 logo:
-  source_url: https://upload.wikimedia.org/wikipedia/commons/a/ae/InXile_Entertainment_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original
+  source_url: https://upload.wikimedia.org/wikipedia/commons/a/ae/InXile_Entertainment_Logo.png
   credit: inXile Entertainment; image via Wikipedia
-  license: Non-free; used for identification
-  permission: unknown
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - wikipedia-fantastic-contraption-2008-video-game

@@ -31,6 +31,11 @@ lineage:
 summary: Bootstrapped by Jamie Cheng after he left Relic, with Jeffrey Agala as co-founder and creative director; the clearest early Vancouver indie. It made Shank, Mark of the Ninja, Don't Starve and Rotwood, and acts as a patron of the local scene by publishing Crypt of the NecroDancer, Rift of the NecroDancer and Beastieball.
 current: Active, with a Tencent majority stake since January 2021; Rotwood reached 1.0 on March 3, 2026 and Don't Starve Elsewhere was announced April 9, 2026 (as of November 2026).
 operating_status: active
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Klei_Entertainment.svg
+  credit: Klei Entertainment; image via Wikipedia
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: verified
 sources:
 - straight-2013-bov-games-made-in-vancouver

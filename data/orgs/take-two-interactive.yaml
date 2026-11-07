@@ -4,6 +4,11 @@ aliases:
 - Take-Two
 kind: publisher
 summary: Bought Barking Dog Studios on August 1, 2002 for US$3M, making it Rockstar Vancouver.
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/d/d6/Take-Two_Interactive_Logo.svg
+  credit: Take-Two Interactive; image via Wikipedia
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - wikipedia-rockstar-vancouver

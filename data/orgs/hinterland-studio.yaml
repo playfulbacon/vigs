@@ -23,10 +23,10 @@ summary: Formed by ex-Relic developer Raphael van Lierop after he moved from Van
 current: 'Active; shifted developers back to The Long Dark DLC while Blackfrost: The Long Dark 2 slipped to 2027 (as of November 2026).'
 operating_status: active
 logo:
-  source_url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Hinterland_studio_logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original
+  source_url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Hinterland_studio_logo.jpg
   credit: Hinterland Studio; image via Wikipedia
-  license: Non-free; used for identification
-  permission: unknown
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - wikipedia-the-long-dark

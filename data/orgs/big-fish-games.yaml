@@ -8,10 +8,10 @@ location:
 summary: Casual-games company that brought Jake Birkett from the UK to its Vancouver office, where he worked for about two years and co-founded the meetup that became Full Indie.
 operating_status: unknown
 logo:
-  source_url: https://upload.wikimedia.org/wikipedia/commons/8/81/Big_Fish_Games_logo.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original
+  source_url: https://upload.wikimedia.org/wikipedia/commons/8/81/Big_Fish_Games_logo.svg
   credit: Big Fish Games; image via Wikipedia
-  license: Non-free; used for identification
-  permission: unknown
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: verified
 sources:
 - greyalien-game-industry-meetups-in-vancouver

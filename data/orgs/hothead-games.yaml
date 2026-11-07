@@ -20,10 +20,10 @@ summary: Founded in 2006 by ex-Radical staff; its first releases were the Penny 
 current: 2026 status not researched.
 operating_status: unknown
 logo:
-  source_url: https://upload.wikimedia.org/wikipedia/commons/2/2e/Hothead_games_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original
+  source_url: https://upload.wikimedia.org/wikipedia/commons/2/2e/Hothead_games_logo.png
   credit: Hothead Games; image via Wikipedia
-  license: Non-free; used for identification
-  permission: unknown
+  license: Public domain (simple logo / text, per Wikimedia file page)
+  permission: public-license
 status: single-source
 sources:
 - wikipedia-hothead-games

@@ -209,7 +209,7 @@ def makers_match(orgs_names, people_orgs, theirs):
     if hit(orgs_names):
         return True, None
     if hit(people_orgs):
-        return True, "Steam maker is another studio founded by a credited person"
+        return True, "Steam maker is a credited person, or a studio one of them founded"
     if not orgs_names:
         return True, "no developer on record to cross-check"
     return False, None
@@ -380,8 +380,8 @@ def wiki_image(page):
         local = wiki_raw("File:" + page["file"], section0=False) is not None
     except RuntimeError:
         local = None
-    if local is not None:
-        urls = [u for u in urls if (u[0] == "en") == local]
+    if local is False:
+        urls.reverse()
     for where, url in urls:
         if is_image(url):
             return url, where
@@ -487,6 +487,12 @@ def do_games(games, orgs, people, args, report):
         return (orgs.get(i) or ({},))[0] or {}
 
     titles = {gid: norm(rec["title"]) for gid, (rec, _) in games.items()}
+    held = {}   # Steam app -> record that already has it (links.steam, or Steam box art)
+    for gid, (rec, _) in games.items():
+        art = ((rec.get("box_art") or {}).get("source_url") or "").replace("/apps/", "/app/")
+        a = steam_appid((rec.get("links") or {}).get("steam")) or (steam_appid(art) if "steam" in art else None)
+        if a:
+            held.setdefault(a, gid)
     found = {}
     for gid, (rec, path) in games.items():
         if args.ids and gid not in args.ids:
@@ -501,6 +507,7 @@ def do_games(games, orgs, people, args, report):
             makers += list(org(i).get("aliases") or [])
         credited = {c["person"] for c in rec.get("credits") or []}
         people_orgs = [o.get("name") for o, _ in orgs.values() if credited & set(o.get("founders") or [])]
+        people_orgs += [(people.get(c) or ({},))[0].get("name", "") for c in sorted(credited)]
         other_titles = {t for g, t in titles.items() if g != gid}
         credit_name = makers[0] if makers else rec["title"]
         links = rec.get("links") or {}
@@ -509,6 +516,8 @@ def do_games(games, orgs, people, args, report):
         try:
             if not appid:
                 appid, note = steam_search(rec, makers, people_orgs, other_titles)
+                if appid and held.get(appid, gid) != gid:
+                    appid, note = None, f"Steam app {appid} matched but belongs to {held[appid]}"
                 if appid:
                     flag, note = note, None
             if appid:

@@ -18,7 +18,7 @@
   const SZ = 1300;          // px of depth per (weighted) year
   const Z0 = -120;          // push the scene back so the nearest card isn't in your face
   const LANE_W = 360;       // px between category columns
-  const FLOOR_Y = 330;      // floor, px below the stage centre
+  const FLOOR_Y = 520;      // floor, px below the stage centre
   const AHEAD = 4.2, BEHIND = 0.1, FADE = 1.6;   // visible window, in weighted years
 
   const flight = {
@@ -59,7 +59,7 @@
       const prev = lastInLane[lane];
       // two sub-columns per category: consecutive close events alternate left and right
       let nudge = 0;
-      if (prev && s - prev.s < 0.6) nudge = prev.nudge <= 0 ? 0.24 : -0.24;
+      if (prev && s - prev.s < 0.6) nudge = prev.nudge <= 0 ? 0.36 : -0.36;
       lastInLane[lane] = { s, nudge };
       const img = eventImage(e);
       const color = `var(${LANES[li].color})`;
@@ -76,7 +76,7 @@
       card.querySelector("img")?.addEventListener("error", (ev) => ev.target.closest(".fl-img").classList.add("broken"));
       card.addEventListener("click", (ev) => { if (flight.dragged) return; flight.clicked = e.id; V().showEvent(e.id); });
       world.appendChild(card);
-      flight.cards.push({ el: card, e, s, x: (col[lane] + nudge) * LANE_W, h: 0 });
+      flight.cards.push({ el: card, e, s, nudge, x: (col[lane] + nudge) * LANE_W, h: 0 });
     }
 
     // year rulers on both edges
@@ -132,7 +132,7 @@
       const dz = c.s - cam;
       if (dz < -BEHIND || dz > AHEAD + FADE) { c.el.style.display = "none"; continue; }
       c.el.style.display = "";
-      const z = -dz * SZ + Z0;
+      const z = -dz * SZ + Z0 - (c.nudge > 0 ? 40 : 0);   // stagger side-by-side cards so they never z-fight
       const fade = dz < 0 ? Math.max(0, 1 + dz / BEHIND) : dz > AHEAD ? Math.max(0, 1 - (dz - AHEAD) / FADE) : 1;
       const dim = inFocus(c.e.id) ? 1 : 0.18;
       c.el.style.opacity = (fade * dim).toFixed(3);
@@ -152,7 +152,7 @@
       if (dz < -0.15 || dz > AHEAD + FADE) { g.el.style.display = "none"; continue; }
       g.el.style.display = "";
       g.el.style.opacity = (dz < 0.4 ? Math.max(0, dz / 0.4) : dz > AHEAD ? Math.max(0, 1 - (dz - AHEAD) / FADE) : 1).toFixed(3);
-      g.el.style.transform = `translate3d(0, ${FLOOR_Y - 560}px, ${-dz * SZ + Z0}px) translateX(-50%)`;
+      g.el.style.transform = `translate3d(0, ${FLOOR_Y - 720}px, ${-dz * SZ + Z0}px) translateX(-50%)`;
     }
     updateHud();
   }

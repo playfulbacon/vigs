@@ -272,11 +272,11 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 
 .flight { position: fixed; inset: 0; z-index: 40; overflow: hidden; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; background:
   radial-gradient(120% 80% at 50% 12%, var(--surface) 0%, var(--bg) 55%, color-mix(in srgb, var(--bg) 85%, var(--ink)) 100%); }
-.fl-stage { position: absolute; inset: 0 0 96px 0; perspective: 1400px; perspective-origin: 50% 24%; overflow: hidden; cursor: grab; touch-action: none; }
+.fl-stage { position: absolute; inset: 0; perspective: 1400px; perspective-origin: 50% 24%; overflow: hidden; cursor: grab; touch-action: none; }
 .fl-stage:active { cursor: grabbing; }
-.fl-world { position: absolute; left: 50%; top: 27%; width: 0; height: 0; transform-style: preserve-3d; transform: scale(var(--k, 1)); }
+.fl-world { position: absolute; left: 50%; top: 28%; width: 0; height: 0; transform-style: preserve-3d; transform: scale(var(--k, 1)); }
 
-.fl-floor { position: absolute; left: -1150px; top: 330px; width: 2300px; height: 12000px; transform-origin: 50% 0; transform: translateZ(500px) rotateX(-90deg);
+.fl-floor { position: absolute; left: -1150px; top: 520px; width: 2300px; height: 13000px; transform-origin: 50% 0; transform: translateZ(1300px) rotateX(-90deg);
   background: repeating-linear-gradient(to right, transparent 0 calc(20% - 1px), color-mix(in srgb, var(--rule-strong) 45%, transparent) calc(20% - 1px) 20%), linear-gradient(to bottom, color-mix(in srgb, var(--era-b) 85%, var(--ink)) 0%, var(--era-b) 25%, transparent 70%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%); }
 
@@ -323,9 +323,9 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .fl-toggles .toggle-group { gap: 6px; }
 .fl-toggles .toggle-label { min-width: 0; width: 100%; }
 .fl-toggles .toggle { background: color-mix(in srgb, var(--surface) 80%, transparent); }
-.fl-hint { position: absolute; left: 50%; bottom: 104px; transform: translateX(-50%); margin: 0; font-size: 12px; color: var(--muted); pointer-events: none; white-space: nowrap; }
+.fl-hint { position: absolute; left: 50%; bottom: 86px; transform: translateX(-50%); margin: 0; font-size: 12px; color: var(--muted); pointer-events: none; white-space: nowrap; }
 
-.fl-scrub { position: absolute; left: 16px; right: 16px; bottom: 16px; height: 72px; z-index: 45; overflow: hidden; cursor: pointer; touch-action: none; }
+.fl-scrub { position: absolute; left: 0; right: 0; bottom: 0; height: 76px; z-index: 45; overflow: hidden; cursor: pointer; touch-action: none; border-radius: 0 !important; border-left: 0 !important; border-right: 0 !important; border-bottom: 0 !important; box-shadow: 0 -10px 30px -12px rgba(0,0,0,.25) !important; }
 .fl-scrub-svg { position: absolute; left: 0; right: 0; top: 0; width: 100%; height: 46px; pointer-events: none; }
 .fl-scrub-era { position: absolute; bottom: 0; height: 26px; border: 0; border-left: 3px solid var(--accent); background: transparent; color: var(--ink); text-align: left; padding: 0 0 0 6px; cursor: pointer; overflow: hidden; }
 .fl-scrub-era span { font: 700 10px/26px var(--text); text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; }
@@ -344,8 +344,12 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
   .flight-on .setting-label { display: none; }
   .flight-on .setting-seg button { padding: 4px 8px; font-size: 11px; }
   .fl-toggles, .fl-hint { display: none; }
+}
+@media (max-aspect-ratio: 4/5) {
+  .fl-world { top: 44%; }
+  .fl-stage { perspective-origin: 50% 40%; }
   .flight-on .panel { left: 0; right: 0; top: auto; bottom: 0; width: auto; max-height: 70vh; }
-  .flight-on .settings { top: auto; bottom: 96px; left: 16px; right: auto; }
+  .flight-on .settings { top: auto; bottom: 88px; left: 16px; right: auto; }
   .fl-scrub-era span { font-size: 9px; }
   .fl-scrub-year.minor { display: none; }
 }

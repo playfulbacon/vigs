@@ -24,6 +24,12 @@
     --disputed: #eda650; --verified: #8cbf7f;
   }
 }
+:root[data-style="archive"][data-theme="dark"] {
+    --bg: #1a1714; --surface: #221e1a; --surface-2: #1e1a16; --ink: #efe6d8; --muted: #a99c89; --rule: #3a332b; --rule-strong: #4d4439;
+    --era-a: #1f1b17; --era-b: #26211c; --accent: #e07a58; --accent-ink: #1a1714;
+    --lane-community: #79aecd; --lane-games: #d488a9; --lane-studios: #8cbf7f; --lane-industry: #d9a865; --lane-context: #9d9486;
+    --disputed: #eda650; --verified: #8cbf7f;
+}
 
 /* ---------- B · Coast: Pacific Northwest calm. Fog, sea and cedar; soft rounded cards. */
 :root[data-style="coast"] {
@@ -46,6 +52,13 @@
     --card-shadow: none;
   }
 }
+:root[data-style="coast"][data-theme="dark"] {
+    --bg: #0c1a1d; --surface: #122529; --surface-2: #0f2023; --ink: #e4efee; --muted: #8ea6a8; --rule: #22393d; --rule-strong: #2f4a4f;
+    --era-a: #10221f; --era-b: #142a2d; --accent: #4fc1cc; --accent-ink: #0c1a1d;
+    --lane-community: #4fb8cb; --lane-games: #f29a80; --lane-studios: #6fc292; --lane-industry: #97a9c6; --lane-context: #8a9897;
+    --disputed: #f0ac4c; --verified: #6fc292;
+    --card-shadow: none;
+}
 
 /* ---------- C · Arcade: a restrained nod to game culture. Crisp black rules, square pixels, mono dates. */
 :root[data-style="arcade"] {
@@ -66,6 +79,12 @@
     --lane-community: #6c8fff; --lane-games: #b07dff; --lane-studios: #2fd196; --lane-industry: #ffc23d; --lane-context: #9a9a9a;
     --disputed: #ffa53d; --verified: #2fd196;
   }
+}
+:root[data-style="arcade"][data-theme="dark"] {
+    --bg: #111111; --surface: #1a1a1a; --surface-2: #161616; --ink: #f1f1f1; --muted: #a3a3a3; --rule: #2d2d2d; --rule-strong: #f1f1f1;
+    --era-a: #1a1a1a; --era-b: #202020; --accent: #ff6a4a; --accent-ink: #111111;
+    --lane-community: #6c8fff; --lane-games: #b07dff; --lane-studios: #2fd196; --lane-industry: #ffc23d; --lane-context: #9a9a9a;
+    --disputed: #ffa53d; --verified: #2fd196;
 }
 
 /* ========================================================================== base */
@@ -233,6 +252,7 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .style-switcher span { padding: 0 8px 0 10px; opacity: .7; }
 .style-switcher button { font: 500 12px var(--text); border: 0; border-radius: 999px; padding: 5px 11px; background: transparent; color: var(--bg); cursor: pointer; }
 .style-switcher button[aria-pressed="true"] { background: var(--bg); color: var(--ink); }
+.style-switcher .sep { width: 1px; align-self: stretch; margin: 4px 4px; background: var(--bg); opacity: .25; padding: 0; }
 
 /* ========================================================================== signature touches */
 

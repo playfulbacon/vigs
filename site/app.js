@@ -766,10 +766,27 @@
     const bar = document.createElement("div");
     bar.className = "style-switcher";
     bar.innerHTML = `<span>Style</span>` + STYLES.map(([k, label]) => `<button data-style="${k}" aria-pressed="${k === style}">${label}</button>`).join("");
+    // Light / Dark / Auto, remembered on this device
+    let theme = "auto";
+    try { theme = localStorage.getItem("vigs-theme") || "auto"; } catch {}
+    const applyTheme = (t) => {
+      if (t === "auto") delete document.documentElement.dataset.theme;
+      else document.documentElement.dataset.theme = t;
+    };
+    applyTheme(theme);
+    bar.insertAdjacentHTML("beforeend", `<span class="sep"></span>` + [["light", "Light"], ["dark", "Dark"], ["auto", "Auto"]]
+      .map(([k, l]) => `<button data-theme-choice="${k}" aria-pressed="${k === theme}">${l}</button>`).join(""));
     document.body.appendChild(bar);
-    bar.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
+    bar.querySelectorAll("[data-theme-choice]").forEach((b) => b.addEventListener("click", () => {
+      const t = b.dataset.themeChoice;
+      applyTheme(t);
+      try { localStorage.setItem("vigs-theme", t); } catch {}
+      bar.querySelectorAll("[data-theme-choice]").forEach((x) => x.setAttribute("aria-pressed", x === b));
+      legend(); render();
+    }));
+    bar.querySelectorAll("button[data-style]").forEach((b) => b.addEventListener("click", () => {
       document.documentElement.dataset.style = b.dataset.style;
-      bar.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b));
+      bar.querySelectorAll("button[data-style]").forEach((x) => x.setAttribute("aria-pressed", x === b));
       const u = new URL(location.href); u.searchParams.set("style", b.dataset.style); history.replaceState(null, "", u);
       legend(); render();
     }));

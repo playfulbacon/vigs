@@ -1,0 +1,51 @@
+id: the-long-dark
+title: The Long Dark
+releases:
+  - date: "2014-09"
+    kind: early-access
+    platforms: [Steam]
+    sources: [wikipedia-the-long-dark]
+  - date: "2017-08-01"
+    kind: full-release
+    sources: [wikipedia-the-long-dark]
+  - date: "2020-09-17"
+    kind: port
+    platforms: [Switch]
+    sources: [wikipedia-the-long-dark]
+  - date: "2025-06-19"
+    kind: port
+    platforms: [Xbox Series]
+    sources: [wikipedia-the-long-dark]
+  - date: "2025-11-11"
+    kind: port
+    platforms: [PS5]
+    sources: [wikipedia-the-long-dark]
+  - date: "2026-03-30"
+    kind: expansion
+    note: Final Wintermute story episode, The Light at the End of All Things.
+    sources: [wikipedia-the-long-dark]
+release_status: released
+developers: [hinterland-studio]
+credits:
+  - person: raphael-van-lierop
+    role: creator (Hinterland founder)
+    org: hinterland-studio
+    sources: [wikipedia-the-long-dark]
+crowdfunding:
+  platform: Kickstarter
+  date: { value: "2013-09", note: "Announced and Kickstarted September–October 2013, with Canada Media Fund seed money." }
+  sources: [wikipedia-the-long-dark]
+sales:
+  - figure: 3.3 million copies
+    as_of: "2019-09"
+    sources: [wikipedia-the-long-dark]
+  - figure: 5 million copies
+    as_of: "2021"
+    sources: [wikipedia-the-long-dark]
+vancouver_connection: Not a Vancouver game. Ex-Relic developer Raphael van Lierop moved from Vancouver to the Comox Valley and formed Hinterland as a mostly remote team; the report places it in its Vancouver Island sidebar.
+region: vancouver-island
+summary: Hinterland Studio's survival game, in Early Access from September 2014 and fully released on August 1, 2017. It sold 3.3 million copies by September 2019 and 5 million by 2021.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/The_Long_Dark
+status: single-source
+sources: [wikipedia-the-long-dark]

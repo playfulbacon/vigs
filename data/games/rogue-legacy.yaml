@@ -1,0 +1,17 @@
+id: rogue-legacy
+title: Rogue Legacy
+releases:
+  - date: "2013"
+    kind: release
+    sources: [straight-2024-indie-hub, asitp-press]
+release_status: released
+credits:
+  - person: gordon-mcgladdery
+    role: sound and music
+    sources: [asitp-press]
+vancouver_connection: Not a Vancouver game. It is included only as A Shell in the Pit's entry point; the studio says it "grew out of" Gordon McGladdery's sound and music work on Rogue Legacy.
+summary: The game on which Gordon McGladdery started in game audio, doing sound and music; A Shell in the Pit dates itself to 2014 and says it grew out of that work. The studio lists Rogue Legacy 1 and 2 among its highlighted credits.
+status: single-source
+sources: [asitp-press, straight-2024-indie-hub]
+notes: The developer is not named in the report or notes, so no developer is recorded. The 2013 year comes from the report's A Shell in the Pit entry.
+tags: [context-only]

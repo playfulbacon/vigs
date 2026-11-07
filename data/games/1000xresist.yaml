@@ -1,0 +1,42 @@
+id: 1000xresist
+title: 1000xRESIST
+aliases: [1000xResist]
+releases:
+  - date: "2024-05-09"
+    kind: release
+    platforms: [Switch, PC]
+    sources: [wikipedia-1000xresist]
+  - date: "2025-11-04"
+    kind: port
+    platforms: [PS5, Xbox]
+    sources: [wikipedia-1000xresist]
+  - date: "2026-08-20"
+    kind: port
+    platforms: [Switch 2]
+    sources: [wikipedia-1000xresist]
+release_status: released
+developers: [sunset-visitor]
+publishers: [fellow-traveller]
+credits:
+  - person: remy-siu
+    role: director
+    sources: [wikipedia-1000xresist]
+  - person: kodai-yanagawa
+    role: director
+    sources: [wikipedia-1000xresist]
+awards:
+  - name: Peabody Award (Interactive & Immersive)
+    year: 2024
+    result: won
+    sources: [wikipedia-1000xresist]
+  - name: IGF Seumas McNally Grand Prize
+    year: 2024
+    result: nominated
+    sources: [wikipedia-1000xresist]
+vancouver_connection: Made by Sunset Visitor, a four-person Vancouver team from outside the Indie House lineage.
+region: vancouver
+summary: Sunset Visitor's narrative game, led by Remy Siu and Kodai Yanagawa and published by Fellow Traveller on May 9, 2024. It won a 2024 Peabody Award and was an IGF Grand Prize nominee.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/1000xResist
+status: single-source
+sources: [wikipedia-1000xresist, mobilesyrup-1000xresist-vancouver-sunset-visitor-remy-siu-interview]

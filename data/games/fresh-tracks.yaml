@@ -1,0 +1,15 @@
+id: fresh-tracks
+title: Fresh Tracks
+releases:
+  - date: "2025"
+    kind: release
+    note: Exact release date not given.
+    sources: [mobilesyrup-top-canadian-games-of-2025]
+release_status: released
+developers: [buffalo-buffalo]
+publishers: [buffalo-buffalo]
+vancouver_connection: Self-published by Vancouver studio Buffalo Buffalo, per MobileSyrup.
+region: vancouver
+summary: A 2025 game self-published by Vancouver's Buffalo Buffalo and narrated by Peter Stormare, listed by MobileSyrup among the top Canadian games of 2025.
+status: verified
+sources: [mobilesyrup-top-canadian-games-of-2025]

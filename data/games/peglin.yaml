@@ -1,0 +1,48 @@
+id: peglin
+title: Peglin
+releases:
+  - date: "2019"
+    kind: jam
+    note: Made at Orca Jam 2019.
+    sources: [wikipedia-peglin, gamedev-from-game-jam-to-winning-best-design-the-story-behind-peglin]
+  - date: "2022-04-25"
+    kind: early-access
+    platforms: [Steam]
+    sources: [wikipedia-peglin]
+  - date: "2023-04-11"
+    kind: early-access
+    platforms: [mobile]
+    sources: [wikipedia-peglin]
+  - date: "2024-08-27"
+    kind: full-release
+    note: 1.0, alongside the Switch release.
+    sources: [wikipedia-peglin]
+  - date: "2024-08-27"
+    kind: port
+    platforms: [Switch]
+    sources: [wikipedia-peglin]
+release_status: released
+developers: [red-nexus-games]
+publishers: [red-nexus-games]
+credits:
+  - person: dylan-gedig
+    role: Red Nexus founder
+    org: red-nexus-games
+    sources: [shacknews-peglin-developer-talks-making-the-game-with-a-four-person-te]
+origin_event: 2019-orca-jam-peglin
+awards:
+  - name: Indie Game Awards, Best Design
+    result: won
+    sources: [gamedev-from-game-jam-to-winning-best-design-the-story-behind-peglin]
+sales:
+  - figure: about 400,000 Early Access copies in its first year
+    as_of: "2023-04"
+    sources: [wikipedia-peglin]
+vancouver_connection: Not a Vancouver game; Red Nexus Games has University of Victoria roots, and the report places it in its Victoria sidebar.
+region: victoria
+summary: A pachinko roguelike from Red Nexus Games that began at Orca Jam 2019, entered Steam Early Access on April 25, 2022 and reached 1.0 with a Switch release on August 27, 2024.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Peglin
+status: single-source
+sources: [wikipedia-peglin, gamedev-from-game-jam-to-winning-best-design-the-story-behind-peglin, shacknews-peglin-developer-talks-making-the-game-with-a-four-person-te]
+notes: Co-publishers IndieArk and BlitWorks have no org records. The "Victoria" region is the report's sidebar placement; the studio is described as BC-based with UVic roots.

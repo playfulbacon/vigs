@@ -48,6 +48,8 @@
     flight.cards = []; flight.ticks = []; flight.eras = [];
 
     // event cards
+    const shown = LANES.filter((l) => !V().hiddenLanes.has(l.id));
+    const col = Object.fromEntries(shown.map((l, i) => [l.id, i - (shown.length - 1) / 2]));
     const laneIndex = Object.fromEntries(LANES.map((l, i) => [l.id, i]));
     const lastInLane = {};
     const events = G.timeline.map((id) => G.event[id]).filter(passes);
@@ -72,13 +74,13 @@
         `<span class="fl-body"><span class="fl-title">${esc(e.title)}</span><span class="fl-date">${esc(dlabel(e.date))}</span>` +
         (e.summary ? `<span class="fl-sum">${esc(e.summary)}</span>` : "") + `</span>`;
       card.querySelector("img")?.addEventListener("error", (ev) => ev.target.closest(".fl-img").classList.add("broken"));
-      card.addEventListener("click", (ev) => { if (flight.dragged) return; V().showEvent(e.id); });
+      card.addEventListener("click", (ev) => { if (flight.dragged) return; flight.clicked = e.id; V().showEvent(e.id); });
       world.appendChild(card);
-      flight.cards.push({ el: card, e, s, x: (li - (LANES.length - 1) / 2 + nudge) * LANE_W, h: 0 });
+      flight.cards.push({ el: card, e, s, x: (col[lane] + nudge) * LANE_W, h: 0 });
     }
 
     // year rulers on both edges
-    const edge = ((LANES.length - 1) / 2) * LANE_W + 230;
+    const edge = Math.max(1, (shown.length - 1) / 2) * LANE_W + 230;
     for (let y = START; y <= 2027; y++) {
       for (let q = 0; q < 4; q++) {
         const t = y + q / 4; if (t > END) break;
@@ -130,7 +132,7 @@
       const dz = c.s - cam;
       if (dz < -BEHIND || dz > AHEAD + FADE) { c.el.style.display = "none"; continue; }
       c.el.style.display = "";
-      const z = -dz * SZ + Z0 + (c.sel ? 260 : 0);   // the selected card steps forward
+      const z = -dz * SZ + Z0;
       const fade = dz < 0 ? Math.max(0, 1 + dz / BEHIND) : dz > AHEAD ? Math.max(0, 1 - (dz - AHEAD) / FADE) : 1;
       const dim = inFocus(c.e.id) ? 1 : 0.18;
       c.el.style.opacity = (fade * dim).toFixed(3);
@@ -298,7 +300,7 @@
     }));
     fit(); build(); wire(); flight.sig = null;
     const sel = V().selected && V().G.event[V().selected];
-    if (sel) { flight.target = flight.camS = Math.max(0, S(tOf(sel.date)) - 0.12); const c = flight.cards.find((x) => x.e.id === sel.id); flight.targetX = c ? c.x * 0.8 : 0; }
+    if (sel) flight.target = flight.camS = Math.max(0, S(tOf(sel.date)) - 0.12);
     flight.force = true; flight.lastYear = null; place();
     flight.raf = requestAnimationFrame(frame);
   };
@@ -332,9 +334,13 @@
   flight.flyTo = function (id) {
     const e = V().G.event[id];
     if (!e || !flight.active) return;
-    flight.target = Math.max(0, S(tOf(e.date)) - 0.12);
-    const c = flight.cards.find((x) => x.e.id === id);
-    flight.targetX = c ? c.x * 0.8 : 0;
+    // a card clicked in the 3D view stays where it is; anything chosen elsewhere glides into view (in time only)
+    if (flight.clicked === id) flight.clicked = null;
+    else {
+      const c = flight.cards.find((x) => x.e.id === id);
+      const dz = c ? c.s - flight.camS : 99;
+      if (dz < 0 || dz > AHEAD * 0.6) flight.target = Math.max(0, S(tOf(e.date)) - 0.12);
+    }
     markSelected();
   };
 

@@ -885,7 +885,7 @@
     }
     try { CITIES = await (await fetch("cities.json")).json(); } catch {}
     window.VIGS = {
-      get G() { return G; }, LANES, laneOf, passes, inFocus, drange, dval, dlabel, sortKey, esc, cssVar, nameOf,
+      get G() { return G; }, LANES, hiddenLanes, laneOf, passes, inFocus, drange, dval, dlabel, sortKey, esc, cssVar, nameOf,
       showEvent, closePanel, get selected() { return selected; },
     };
     legend(); setupTabs(); setupLaneToggles(); setupSearch(); renderQuestions(); render();

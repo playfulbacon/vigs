@@ -61,8 +61,6 @@
     for (const id of e.orgs || []) { const u = G.org[id]?.logo?.source_url; if (u) return { url: u, kind: "logo" }; }
     return null;
   }
-  function firstRelease(g) { return (g.releases || []).map((r) => tOf(r.date)).sort((a, b) => a - b)[0]; }
-  const STUDIO = new Set(["indie-studio", "mid-size-studio", "audio-studio"]);
 
   // ---------------------------------------------------------------- build
 
@@ -219,27 +217,9 @@
     updateHud();
   }
 
-  // ---------------------------------------------------------------- HUD: running totals + scrubber
+  // ---------------------------------------------------------------- scrubber
 
-  function updateHud() {
-    const { G, esc } = V();
-    const year = Math.min(flight.t1, Math.max(flight.t0, Math.floor(T(Winv(flight.camS + 0.2)))));
-    if (year === flight.lastYear) return updateWindow();
-    flight.lastYear = year;
-    const end = year + 1;
-    const games = Object.values(G.game).filter((g) => firstRelease(g) < end).length;
-    const studios = Object.values(G.org).filter((o) => STUDIO.has(o.kind) && o.founded && tOf(o.founded) < end).length;
-    const community = G.timeline.filter((id) => tOf(G.event[id].date) < end && V().laneOf(G.event[id]) === "community").length;
-    const events = G.timeline.filter((id) => tOf(G.event[id].date) < end).length;
-    const era = Object.values(G.era).sort((a, b) => a.order - b.order).filter((x) => tOf(x.start) < end).pop();
-    $(".fl-stats", flight.el).innerHTML =
-      `<div class="fl-stats-head">The story so far</div>` +
-      `<div class="fl-stats-era">${esc(era?.title || "")}</div>` +
-      `<dl><div><dt>Events</dt><dd>${events}</dd></div><div><dt>Games released</dt><dd>${games}</dd></div>` +
-      `<div><dt>Indie studios founded</dt><dd>${studios}</dd></div><div><dt>Community moments</dt><dd>${community}</dd></div></dl>` +
-      `<div class="fl-stats-year">Year: ${year}</div>`;
-    updateWindow();
-  }
+  function updateHud() { updateWindow(); }
 
   function sx(p) { return ((p - flight.p0) / (flight.p1 - flight.p0)) * 100; }
 
@@ -265,7 +245,7 @@
     const span = flight.t1 - flight.t0, step = span > 30 ? 4 : span > 16 ? 2 : 1;
     const years = []; for (let y = Math.ceil(flight.t0 / step) * step; y <= flight.t1; y += step) years.push(y);
     let lastX = -99;
-    h += years.map((y, i) => { const x = sx(W(S(y))); if (x - lastX < 3.2) return ""; lastX = x; return `<span class="fl-scrub-year${i % 2 ? " minor" : ""}" style="left:${x}%">${y}</span>`; }).join("");
+    h += years.map((y, i) => { const x = sx(W(S(y))); if (x - lastX < Math.max(3.2, 4600 / window.innerWidth)) return ""; lastX = x; return `<span class="fl-scrub-year${i % 2 ? " minor" : ""}" style="left:${x}%">${y}</span>`; }).join("");
     h += `<div class="fl-scrub-window"></div>`;
     const bar = $(".fl-scrub", flight.el);
     bar.innerHTML = h;
@@ -353,7 +333,6 @@
     flight.el = document.createElement("div");
     flight.el.className = "flight";
     flight.el.innerHTML = `<div class="fl-stage"><div class="fl-world"></div></div>
-      <aside class="fl-stats card"></aside>
       <div class="fl-toggles"></div>
       <p class="fl-hint">Scroll, drag or use the arrow keys to travel through time. Click a card for its story.</p>
       <div class="fl-scrub card"></div>`;
@@ -361,6 +340,7 @@
     // category toggles mirror the classic ones (clicking them drives the same state)
     const tg = $(".fl-toggles", flight.el);
     tg.innerHTML = document.querySelector("#lane-toggles .toggle-group")?.outerHTML || "";
+    tg.querySelector(".toggle-label")?.remove();
     tg.querySelectorAll(".toggle").forEach((b) => b.addEventListener("click", () => {
       document.querySelector(`#lane-toggles .toggle[data-lane="${b.dataset.lane}"]`)?.click();
       b.setAttribute("aria-pressed", document.querySelector(`#lane-toggles .toggle[data-lane="${b.dataset.lane}"]`)?.getAttribute("aria-pressed"));

@@ -266,9 +266,9 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .flight-on { overflow: hidden; }
 .flight-on .topbar, .flight-on main { display: none; }
 .flight-on .layout { display: block; padding: 0; }
-.flight-on .panel { position: fixed; top: 64px; right: 16px; left: auto; bottom: auto; width: 380px; max-height: calc(100vh - 190px); z-index: 55; border-radius: var(--radius); }
+.flight-on .panel { position: fixed; top: 16px; right: 16px; left: auto; bottom: auto; width: 380px; max-height: calc(100vh - 112px); z-index: 55; border-radius: var(--radius); }
 .flight-on .panel.empty { display: none; }
-.flight-on .settings { left: auto; right: 16px; top: 16px; bottom: auto; justify-content: flex-end; z-index: 60; }
+.flight-on .settings { left: 16px; right: auto; top: auto; bottom: 92px; z-index: 60; }
 
 .flight { position: fixed; inset: 0; z-index: 40; overflow: hidden; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; background:
   radial-gradient(120% 80% at 50% 12%, var(--surface) 0%, var(--bg) 55%, color-mix(in srgb, var(--bg) 85%, var(--ink)) 100%); }
@@ -310,20 +310,12 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .fl-sum { font-size: 12.5px; line-height: 1.4; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-top: 3px; }
 .fl-card.sig-1 .fl-sum { -webkit-line-clamp: 2; font-size: 12px; }
 
-.fl-stats { position: absolute; left: 16px; top: 16px; width: 250px; padding: 14px 16px 0; z-index: 45; overflow: hidden; }
-.fl-stats-head { font: 800 20px/1.1 var(--display); color: var(--accent); letter-spacing: -.01em; }
-.fl-stats-era { font-size: 13px; color: var(--muted); margin: 4px 0 10px; }
-.fl-stats dl { margin: 0 0 12px; display: grid; gap: 4px; }
-.fl-stats dl div { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
-.fl-stats dt { font-size: 14px; }
-.fl-stats dd { margin: 0; font: 600 18px var(--mono); color: var(--accent); }
-.fl-stats-year { margin: 0 -16px; padding: 8px 16px; background: var(--accent); color: var(--accent-ink); font: 700 15px var(--display); }
 
-.fl-toggles { position: absolute; left: 16px; top: 262px; z-index: 45; max-width: 260px; }
-.fl-toggles .toggle-group { gap: 6px; }
-.fl-toggles .toggle-label { min-width: 0; width: 100%; }
-.fl-toggles .toggle { background: color-mix(in srgb, var(--surface) 80%, transparent); }
-.fl-hint { position: absolute; left: 50%; bottom: 86px; transform: translateX(-50%); margin: 0; font-size: 12px; color: var(--muted); pointer-events: none; white-space: nowrap; }
+.fl-toggles { position: absolute; left: 50%; top: 16px; transform: translateX(-50%); z-index: 45; max-width: calc(100vw - 32px); }
+.fl-toggles .toggle-group { flex-wrap: nowrap; gap: 4px; padding: 4px; background: color-mix(in srgb, var(--surface) 88%, transparent); border: var(--card-border); border-radius: var(--radius-pill); box-shadow: var(--card-shadow); overflow-x: auto; scrollbar-width: none; }
+.fl-toggles .toggle { white-space: nowrap; }
+.flight-on:has(.panel:not(.empty)) .fl-toggles { left: calc(50% - 206px); max-width: calc(100vw - 440px); }
+.fl-hint { position: absolute; right: 16px; bottom: 86px; margin: 0; font-size: 12px; color: var(--muted); pointer-events: none; white-space: nowrap; }
 
 .fl-scrub { position: absolute; left: 0; right: 0; bottom: 0; height: 76px; z-index: 45; overflow: hidden; cursor: pointer; touch-action: none; border-radius: 0 !important; border-left: 0 !important; border-right: 0 !important; border-bottom: 0 !important; box-shadow: 0 -10px 30px -12px rgba(0,0,0,.25) !important; }
 .fl-scrub-svg { position: absolute; left: 0; right: 0; top: 0; width: 100%; height: 46px; pointer-events: none; }
@@ -333,25 +325,19 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .fl-scrub-window { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--accent) 16%, transparent); border-left: 2px solid var(--accent); border-right: 2px solid var(--accent); pointer-events: none; }
 
 @media (max-width: 760px) {
-  .fl-stats { width: auto; right: 16px; padding: 8px 12px 0; }
-  .fl-stats-head { font-size: 15px; }
-  .fl-stats-era { margin: 2px 0 6px; font-size: 12px; }
-  .fl-stats dl { grid-template-columns: 1fr 1fr; column-gap: 14px; gap: 0 14px; margin-bottom: 8px; }
-  .fl-stats dt { font-size: 12px; }
-  .fl-stats dd { font-size: 14px; }
-  .fl-stats-year { margin: 0 -12px; padding: 5px 12px; font-size: 13px; }
-  .flight-on .settings { gap: 6px; }
+  .flight-on .settings { gap: 6px; bottom: 88px; }
   .flight-on .setting-label { display: none; }
   .flight-on .setting-seg button { padding: 4px 8px; font-size: 11px; }
-  .fl-toggles, .fl-hint { display: none; }
+  .flight-on .panel { left: 0; right: 0; top: auto; bottom: 0; width: auto; max-height: 70vh; }
+  .fl-hint { display: none; }
+  .fl-toggles { top: 10px; }
+  .fl-toggles .toggle { padding: 4px 9px 4px 7px; font-size: 12px; }
+  .fl-scrub-era span { font-size: 9px; }
+  .fl-scrub-year.minor { display: none; }
 }
 @media (max-aspect-ratio: 4/5) {
   .fl-world { top: 44%; }
   .fl-stage { perspective-origin: 50% 40%; }
-  .flight-on .panel { left: 0; right: 0; top: auto; bottom: 0; width: auto; max-height: 70vh; }
-  .flight-on .settings { top: auto; bottom: 88px; left: 16px; right: auto; }
-  .fl-scrub-era span { font-size: 9px; }
-  .fl-scrub-year.minor { display: none; }
 }
 
 /* ========================================================================== signature touches */

@@ -2,7 +2,7 @@ name: Publish site
 
 on:
   push:
-    branches: [main, claude/quirky-goodall-bmry53]
+    branches: [main]
   workflow_dispatch:
 
 permissions:

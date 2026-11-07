@@ -14,6 +14,7 @@
   let selected = null;          // selected event id
   let query = "";               // free-text search shared by every tab
   const hiddenLanes = new Set();
+  let orientation = "horizontal";  // or "vertical"
 
   const LANES = [
     { id: "community", label: "Community", color: "--lane-community" },
@@ -144,6 +145,10 @@
   function cssVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
 
   function render() {
+    $("#timeline-card").hidden = orientation !== "horizontal";
+    $("#vtimeline").hidden = orientation !== "vertical";
+    $(".zoom").hidden = orientation !== "horizontal";
+    if (orientation === "vertical") return renderVertical();
     const svg = $("#timeline");
     svg.innerHTML = "";
     const width = xOf(END) + 40;
@@ -221,6 +226,7 @@
     }
 
     // events
+    const square = cssVar("--dot-shape") === "square";
     for (const p of placed) {
       const { e } = p;
       const color = cssVar(LANES.find((l) => l.id === p.lane).color);
@@ -230,13 +236,15 @@
       if (selected === e.id) g.classList.add("selected");
       if (p.fuzzy) el("rect", { x: p.cx, y: cy - 3, width: p.x1 - p.cx, height: 6, rx: 3, fill: color, class: "span" }, g);
       const hollow = e.status !== "verified";
-      el("circle", {
-        cx: p.cx, cy, r: p.rad, class: "dot",
+      const shape = square ? el("rect", { x: p.cx - p.rad, y: cy - p.rad, width: p.rad * 2, height: p.rad * 2, rx: 1.5 }, g) : el("circle", { cx: p.cx, cy, r: p.rad }, g);
+      const dotAttrs = {
+        class: "dot",
         fill: hollow ? cssVar("--surface") : color,
         stroke: e.status === "disputed" ? cssVar("--disputed") : color,
         "stroke-width": e.status === "disputed" ? 2.5 : 1.5,
         "stroke-dasharray": e.status === "unverified" || e.status === "interview-only" ? "2 2" : "",
-      }, g);
+      };
+      for (const [k, v] of Object.entries(dotAttrs)) shape.setAttribute(k, v);
       if (p.label) { const t = el("text", { x: p.cx + p.rad + 4, y: cy + 4, class: "ev-label" }, g); t.textContent = p.label; }
       const tip = el("title", {}, g); tip.textContent = `${dlabel(e.date)} · ${e.title}`;
       const open = () => showEvent(e.id);
@@ -247,6 +255,37 @@
     pinLaneLabels();
   }
 
+  // Vertical timeline: a spine running down the page, grouped by era and year.
+  function renderVertical() {
+    const box = $("#vtimeline");
+    const events = G.timeline.map((id) => G.event[id]).filter(passes);
+    const square = cssVar("--dot-shape") === "square";
+    const laneOfId = Object.fromEntries(LANES.map((l) => [l.id, l]));
+    const eras = Object.values(G.era).sort((a, b) => a.order - b.order);
+    let h = "";
+    for (const era of eras) {
+      const evs = events.filter((e) => e.era === era.id);
+      if (!evs.length) continue;
+      h += `<section class="v-era"><header class="v-era-head"><button data-era="${esc(era.id)}">${esc(era.title)}</button><span class="tag">${esc(dlabel(era.start))} – ${esc(era.end ? dlabel(era.end) : "now")}</span></header>`;
+      let year = null;
+      for (const e of evs) {
+        const y = dval(e.date).slice(0, 4);
+        if (y !== year) { year = y; h += `<div class="v-year">${esc(dval(e.date).endsWith("s") ? dval(e.date) : y)}</div>`; }
+        const lane = laneOfId[laneOf(e)];
+        const cls = ["v-ev", `sig-${e.significance || 1}`, `st-${e.status}`, square ? "sq" : "", inFocus(e.id) ? "" : "dim", selected === e.id ? "selected" : ""].join(" ");
+        h += `<button class="${cls}" data-id="${esc(e.id)}" style="--lane:var(${lane.color})">
+          <span class="v-dot" aria-hidden="true"></span>
+          <span class="v-body"><span class="v-title">${esc(e.title)}</span>
+          <span class="v-meta">${dateTag(e.date)} <span class="v-lane">${esc(lane.label)}</span> ${e.status !== "verified" ? badge(e.status) : ""}</span></span>
+        </button>`;
+      }
+      h += `</section>`;
+    }
+    box.innerHTML = h || `<p class="empty-note">No events match these filters.</p>`;
+    box.querySelectorAll(".v-ev").forEach((b) => b.addEventListener("click", () => showEvent(b.dataset.id)));
+    box.querySelectorAll("[data-era]").forEach((b) => b.addEventListener("click", () => showEra(b.dataset.era)));
+  }
+
   function short(s) { return s.length > 46 ? s.slice(0, 44) + "…" : s; }
 
   function pinLaneLabels() {
@@ -255,8 +294,10 @@
   }
 
   function legend() {
-    const dot = (fill, stroke, dash = "", sw = 1.5) =>
-      `<svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-dasharray="${dash}"/></svg>`;
+    const square = cssVar("--dot-shape") === "square";
+    const dot = (fill, stroke, dash = "", sw = 1.5) => square
+      ? `<svg width="14" height="14"><rect x="2" y="2" width="10" height="10" rx="1.5" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-dasharray="${dash}"/></svg>`
+      : `<svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-dasharray="${dash}"/></svg>`;
     const ink = cssVar("--muted"), surf = cssVar("--surface");
     $("#legend").innerHTML =
       `<span>${dot(ink, ink)}Verified</span><span>${dot(surf, ink)}Single source</span>` +
@@ -269,14 +310,17 @@
 
   function openPanel(html, hash) {
     $("#panel-body").innerHTML = html;
-    $("#panel").hidden = false;
+    $("#panel").classList.remove("empty");
     $("#panel").scrollTop = 0;
     if (hash && location.hash !== hash) history.replaceState(null, "", hash);
     wirePanel();
   }
 
+  const EMPTY_PANEL = `<p class="empty-note">Select an event, person, game, studio or era to see its story here.</p>`;
+
   function closePanel() {
-    $("#panel").hidden = true;
+    $("#panel").classList.add("empty");
+    $("#panel-body").innerHTML = EMPTY_PANEL;
     selected = null;
     history.replaceState(null, "", location.pathname + location.search);
     render();
@@ -342,7 +386,10 @@
       if (e[k]?.length) h += `<h4>${label}</h4>${chips(t, e[k])}`;
     h += sourceList(e.sources);
     openPanel(h, `#event/${id}`);
-    render();
+    if (orientation === "vertical") {
+      document.querySelectorAll(".v-ev.selected").forEach((b) => b.classList.remove("selected"));
+      document.querySelector(`.v-ev[data-id="${CSS.escape(id)}"]`)?.classList.add("selected");
+    } else render();
   }
 
   function showPerson(id) {
@@ -710,7 +757,28 @@
 
   // ------------------------------------------------------------ boot
 
+  const STYLES = [["archive", "A · Archive"], ["coast", "B · Coast"], ["arcade", "C · Arcade"]];
+
+  function setupStyles() {
+    const want = new URLSearchParams(location.search).get("style");
+    const style = STYLES.some(([k]) => k === want) ? want : "archive";
+    document.documentElement.dataset.style = style;
+    const bar = document.createElement("div");
+    bar.className = "style-switcher";
+    bar.innerHTML = `<span>Style</span>` + STYLES.map(([k, label]) => `<button data-style="${k}" aria-pressed="${k === style}">${label}</button>`).join("");
+    document.body.appendChild(bar);
+    bar.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
+      document.documentElement.dataset.style = b.dataset.style;
+      bar.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b));
+      const u = new URL(location.href); u.searchParams.set("style", b.dataset.style); history.replaceState(null, "", u);
+      legend(); render();
+    }));
+  }
+
   async function boot() {
+    setupStyles();
+    $("#panel").classList.add("empty");
+    $("#panel-body").innerHTML = EMPTY_PANEL;
     try {
       G = await (await fetch("graph.json", { cache: "no-cache" })).json();
     } catch (err) {
@@ -721,10 +789,17 @@
     $("#timeline-scroll").addEventListener("scroll", pinLaneLabels, { passive: true });
     $("#timeline-scroll").scrollLeft = xOf(2008) - LEFT;
     document.querySelectorAll("[data-filter], #region, #significance").forEach((i) => i.addEventListener("change", render));
+    document.querySelectorAll("[data-orient]").forEach((b) => b.addEventListener("click", () => {
+      orientation = b.dataset.orient;
+      document.querySelectorAll("[data-orient]").forEach((x) => x.setAttribute("aria-pressed", x === b));
+      const u = new URL(location.href); u.searchParams.set("layout", orientation); history.replaceState(null, "", u);
+      render();
+    }));
+    if (new URLSearchParams(location.search).get("layout") === "vertical") document.querySelector('[data-orient="vertical"]').click();
     $("#zoom-in").addEventListener("click", () => rezoom(1.4));
     $("#zoom-out").addEventListener("click", () => rezoom(1 / 1.4));
     $("#panel-close").addEventListener("click", closePanel);
-    document.addEventListener("keydown", (k) => { if (k.key === "Escape" && !$("#panel").hidden) closePanel(); });
+    document.addEventListener("keydown", (k) => { if (k.key === "Escape" && !$("#panel").classList.contains("empty")) closePanel(); });
     window.addEventListener("hashchange", route);
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { legend(); render(); });
     route();

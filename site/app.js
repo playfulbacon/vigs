@@ -14,12 +14,12 @@
   let selected = null;          // selected event id
   let query = "";               // free-text search shared by every tab
   const hiddenLanes = new Set();
-  let orientation = "horizontal";  // or "vertical"
+  let orientation = "vertical";  // or "horizontal"
 
   const LANES = [
-    { id: "community", label: "Community", color: "--lane-community" },
     { id: "games", label: "Games", color: "--lane-games" },
     { id: "studios", label: "Studios & People", color: "--lane-studios" },
+    { id: "community", label: "Community", color: "--lane-community" },
     { id: "industry", label: "AAA & Industry", color: "--lane-industry" },
     { id: "context", label: "Policy & Press", color: "--lane-context" },
   ];
@@ -632,7 +632,6 @@
         { label: "Events", sort: (e) => -gapsFor(e).events, html: (e) => num(gapsFor(e).events) },
       ],
     },
-    community: { label: "Community", rows: evLane("community"), type: "event", columns: EVENT_COLUMNS },
     games: {
       label: "Games", type: "game",
       rows: () => Object.values(G.game),
@@ -672,6 +671,7 @@
         { label: "Events", sort: (p) => -gapsFor(p).events, html: (p) => num(gapsFor(p).events), default: true },
       ],
     },
+    community: { label: "Community", rows: evLane("community"), type: "event", columns: EVENT_COLUMNS },
     industry: { label: "AAA & Industry", rows: evLane("industry"), type: "event", columns: EVENT_COLUMNS },
     context: { label: "Policy & Press", rows: evLane("context"), type: "event", columns: EVENT_COLUMNS },
   };
@@ -754,7 +754,7 @@
 
   // ------------------------------------------------------------ boot
 
-  const STYLES = [["archive", "Archive"], ["coast", "Coast"], ["arcade", "Arcade"]];
+  const STYLES = [["arcade", "Arcade"], ["archive", "Archive"], ["coast", "Coast"]];
 
   // Bottom-left display settings. Each setting is its own labelled pill; add more with addGroup().
   function setupStyles() {
@@ -778,7 +778,7 @@
 
     // Style
     const want = new URLSearchParams(location.search).get("style");
-    const style = STYLES.some(([k]) => k === want) ? want : "archive";
+    const style = STYLES.some(([k]) => k === want) ? want : "arcade";
     document.documentElement.dataset.style = style;
     addGroup("Style", STYLES, style, (v) => {
       document.documentElement.dataset.style = v;
@@ -815,7 +815,7 @@
       const u = new URL(location.href); u.searchParams.set("layout", orientation); history.replaceState(null, "", u);
       render();
     }));
-    if (new URLSearchParams(location.search).get("layout") === "vertical") document.querySelector('[data-orient="vertical"]').click();
+    if (new URLSearchParams(location.search).get("layout") === "horizontal") document.querySelector('[data-orient="horizontal"]').click();
     $("#zoom-in").addEventListener("click", () => rezoom(1.4));
     $("#zoom-out").addEventListener("click", () => rezoom(1 / 1.4));
     $("#panel-close").addEventListener("click", closePanel);

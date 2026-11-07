@@ -1,0 +1,9 @@
+id: vivendi
+name: Vivendi Universal Games
+aliases:
+- Vivendi
+kind: publisher
+summary: Bought Radical Entertainment in 2005.
+status: single-source
+sources:
+- wikipedia-radical-entertainment

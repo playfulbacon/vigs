@@ -1,0 +1,9 @@
+id: disney
+name: Disney Interactive
+aliases:
+- Disney
+kind: publisher
+summary: Bought Propaganda Games in 2005 and closed it in January 2011.
+status: single-source
+sources:
+- wikipedia-propaganda-games

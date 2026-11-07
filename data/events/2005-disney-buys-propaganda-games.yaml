@@ -1,11 +1,12 @@
 id: 2005-disney-buys-propaganda-games
 title: Disney buys Propaganda Games
-date: "2005"
+date: '2005'
 era: aaa-roots
 type: acquisition
 summary: Disney buys the newly founded Propaganda Games in the same year it was founded.
 orgs:
 - propaganda-games
+- disney
 region: vancouver
 significance: 1
 status: single-source

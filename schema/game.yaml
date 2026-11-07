@@ -76,6 +76,11 @@ properties:
   summary: { type: string }
   box_art: { $ref: 'common.yaml#/$defs/image' }
   links: { $ref: 'common.yaml#/$defs/links' }
+  accounts:
+    description: For disputed records, each competing version.
+    type: array
+    items: { $ref: 'common.yaml#/$defs/account' }
+  sensitive_note: { type: string, description: Guidance for handling sensitive history neutrally and with attribution. }
   status: { $ref: 'common.yaml#/$defs/status' }
   sources: { $ref: 'common.yaml#/$defs/citations' }
   notes: { type: string }

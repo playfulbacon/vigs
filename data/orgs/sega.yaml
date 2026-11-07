@@ -1,0 +1,8 @@
+id: sega
+name: Sega
+kind: publisher
+summary: Later owner of Relic Entertainment, which became independent of Sega before its 2024 layoffs.
+status: single-source
+sources:
+- wikipedia-relic-entertainment
+- gamedev-relic-is-laying-off-41-staff-after-independence-from-sega

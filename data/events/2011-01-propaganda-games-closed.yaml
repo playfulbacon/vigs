@@ -1,6 +1,6 @@
 id: 2011-01-propaganda-games-closed
 title: Disney closes Propaganda Games
-date: "2011-01"
+date: 2011-01
 era: first-indies
 type: closure
 summary: Disney closes Propaganda Games, part of a decline in console work at Vancouver's larger studios.
@@ -8,6 +8,7 @@ people:
 - josh-holmes
 orgs:
 - propaganda-games
+- disney
 region: vancouver
 significance: 1
 status: verified

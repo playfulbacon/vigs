@@ -1,6 +1,6 @@
 id: 2009-01-fantastic-contraption-ios
 title: Fantastic Contraption comes to iOS via inXile
-date: "2009-01-26"
+date: '2009-01-26'
 era: first-indies
 type: release
 summary: After Colin Northway sells the rights to inXile, Fantastic Contraption is released on iOS.
@@ -20,3 +20,5 @@ tags:
 - indie
 - release
 - mobile
+orgs:
+- inxile-entertainment

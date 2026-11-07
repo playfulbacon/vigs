@@ -6,10 +6,6 @@ aliases:
 kind: house
 city: Richmond
 region: lower-mainland
-coordinates:
-  lat: 49.125
-  lng: -123.18
-  precision: neighbourhood
 active:
   start:
     value: "2012-10"
@@ -30,4 +26,4 @@ sources:
 - gamedev-looking-back-at-what-it-felt-like-to-launch-i-towerfall-ascens
 - psblog-procedurally-generated-adventure-skytorn-announced-ps4
 - egm-power-up-audio
-notes: 'Private home: located only to "near Steveston, Richmond"; no address is recorded. Coordinates are a rough neighbourhood point for Steveston, not the house. 2014 sources (PlayStation Blog, CGM, Polygon via Game Developer) just say "Vancouver." Games tied to it include TowerFall, Celeste, Night in the Woods (through Holowka), Skytorn and Ikenfell. Open questions: address, move-in and move-out dates, the seven residents at the peak, and why it ended.'
+notes: 'Private home: located only to "near Steveston, Richmond"; no address is recorded. 2014 sources (PlayStation Blog, CGM, Polygon via Game Developer) just say "Vancouver." Games tied to it include TowerFall, Celeste, Night in the Woods (through Holowka), Skytorn and Ikenfell. Open questions: address, move-in and move-out dates, the seven residents at the peak, and why it ended.'

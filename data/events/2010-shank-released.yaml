@@ -1,16 +1,17 @@
 id: 2010-shank-released
 title: Klei ships Shank
-date: "2010"
+date: '2010'
 era: first-indies
 type: release
-summary: Klei Entertainment ships Shank. Klei had earlier declined to make N+ for Toronto's Metanet, though it is
-  credited with engine work on it.
+summary: Klei Entertainment ships Shank. Klei had earlier declined to make N+ for Toronto's Metanet, though
+  it is credited with engine work on it.
 people:
 - jamie-cheng
 games:
 - shank
 orgs:
 - klei-entertainment
+- metanet-software
 region: vancouver
 significance: 2
 status: verified

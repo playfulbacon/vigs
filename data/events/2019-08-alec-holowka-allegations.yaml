@@ -3,9 +3,10 @@ title: Allegations against Alec Holowka; Night in the Woods team cuts ties
 date: 2019-08
 era: breakout-years
 type: other
-summary: According to Wikipedia, Zoë Quinn publicly accused Alec Holowka of physical and emotional abuse in August
-  2019, and the next day the Night in the Woods team cut ties with him. Scott Benson wrote, "We take such allegations
-  seriously as a team," and said corroborating evidence had been presented to them; Finji backed the decision.
+summary: According to Wikipedia, Zoë Quinn publicly accused Alec Holowka of physical and emotional abuse
+  in August 2019, and the next day the Night in the Woods team cut ties with him. Scott Benson wrote,
+  "We take such allegations seriously as a team," and said corroborating evidence had been presented to
+  them; Finji backed the decision.
 people:
 - alec-holowka
 - scott-benson
@@ -17,14 +18,14 @@ orgs:
 - finji
 region: canada
 significance: 2
+sensitive_note: Sensitive. Recorded neutrally and attributed to Wikipedia's account, the only source in
+  the report. The allegations are those made publicly by Zoë Quinn; they were not tested in any proceeding
+  recorded here. Zoë Quinn has no registry record.
 status: single-source
 sources:
 - source: wikipedia-alec-holowka
   note: Allegations, team statement, Finji's support
   quote: We take such allegations seriously as a team
-caveat: Sensitive. Recorded neutrally and attributed to Wikipedia's account, the only source in the report. The
-  allegations are those made publicly by Zoë Quinn; they were not tested in any proceeding recorded here. Zoë Quinn
-  has no registry record.
 tags:
 - sensitive
 - night-in-the-woods

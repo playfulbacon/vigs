@@ -3,11 +3,13 @@ title: Phantom Brigade released
 date: '2020'
 era: breakout-years
 type: release
-summary: Brace Yourself Games releases Phantom Brigade through Tetragon Works, a studio it acquired in 2018.
+summary: Brace Yourself Games releases Phantom Brigade through Tetragon Works, a studio it acquired in
+  2018.
 games:
 - phantom-brigade
 orgs:
 - brace-yourself-games
+- tetragon-works
 region: vancouver
 significance: 1
 status: single-source

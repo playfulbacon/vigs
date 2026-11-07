@@ -1,0 +1,11 @@
+id: tetragon-works
+name: Tetragon Works
+kind: indie-studio
+lineage:
+- type: acquired-by
+  org: brace-yourself-games
+  date: '2018'
+summary: Developer of Phantom Brigade, acquired by Brace Yourself Games in 2018.
+status: single-source
+sources:
+- wikipedia-brace-yourself-games

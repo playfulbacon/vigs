@@ -6,6 +6,7 @@ type: layoff
 summary: Relic Entertainment, now independent of Sega, lays off about 41 staff.
 orgs:
 - relic-entertainment
+- sega
 region: vancouver
 significance: 1
 status: single-source
@@ -14,8 +15,8 @@ sources:
   note: Snippet
 caveat: Sega has no registry record.
 open_questions:
-- Did the 2023-25 layoffs (Relic, Phoenix Labs, Blackbird, Brace Yourself, EA) seed new indie studios? Who left
-  and started something? (Ask Aryo Nazaradeh, Chloe Ezra and Ryan Clark.)
+- Did the 2023-25 layoffs (Relic, Phoenix Labs, Blackbird, Brace Yourself, EA) seed new indie studios?
+  Who left and started something? (Ask Aryo Nazaradeh, Chloe Ezra and Ryan Clark.)
 tags:
 - layoffs
 - aaa

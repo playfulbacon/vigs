@@ -1,0 +1,10 @@
+id: rockstar-toronto
+name: Rockstar Toronto
+kind: aaa-studio
+location:
+  city: Toronto
+  region: canada
+summary: Rockstar Vancouver was merged into it in July 2012.
+status: single-source
+sources:
+- wikipedia-rockstar-vancouver

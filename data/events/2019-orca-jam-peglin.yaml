@@ -10,6 +10,7 @@ games:
 - peglin
 orgs:
 - red-nexus-games
+- orca-jam
 region: victoria
 significance: 2
 status: single-source
@@ -17,7 +18,8 @@ sources:
 - wikipedia-peglin
 - source: gamedev-from-game-jam-to-winning-best-design-the-story-behind-peglin
   note: Press release on the game-jam origin
-caveat: BC-scene context from Vancouver Island and Victoria, not a Vancouver claim. Orca Jam has no registry record.
+caveat: BC-scene context from Vancouver Island and Victoria, not a Vancouver claim. Orca Jam has no registry
+  record.
 tags:
 - victoria-sidebar
 - game-jam

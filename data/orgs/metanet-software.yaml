@@ -1,0 +1,12 @@
+id: metanet-software
+name: Metanet Software
+aliases:
+- Metanet
+kind: indie-studio
+location:
+  city: Toronto
+  region: canada
+summary: Toronto studio behind N+; Klei is credited with engine work on it after declining to make it.
+status: single-source
+sources:
+- cgm-2014-canadian-scene-part-2

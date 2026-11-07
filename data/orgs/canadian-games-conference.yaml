@@ -1,0 +1,7 @@
+id: canadian-games-conference
+name: Canadian Games Conference
+kind: event-series
+summary: Conference that replaced GDC Canada in 2011.
+status: single-source
+sources:
+- straight-2011-gdc-canada-finished

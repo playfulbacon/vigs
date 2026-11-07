@@ -1,12 +1,13 @@
 id: 2011-05-gdc-canada-ends
 title: GDC Canada "seems to be finished" after two years
-date: "2011-05-10"
+date: '2011-05-10'
 era: first-indies
 type: closure
-summary: The Georgia Straight reports that GDC Canada "seems to be finished" after two editions and is being replaced
-  by the Canadian Games Conference.
+summary: The Georgia Straight reports that GDC Canada "seems to be finished" after two editions and is
+  being replaced by the Canadian Games Conference.
 orgs:
 - gdc-canada
+- canadian-games-conference
 region: vancouver
 significance: 2
 status: verified

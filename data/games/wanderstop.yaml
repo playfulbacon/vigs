@@ -21,10 +21,18 @@ vancouver_connection: Disputed. MobileSyrup calls Ivy Road a team "led by Davey 
 summary: A game by Ivy Road (Davey Wreden, Karla Zimonja and C418), with concept art by Amora Bettany, published by Annapurna on March 11, 2025. Ivy Road shut down on March 31, 2026, per Wikipedia.
 links:
   wikipedia: https://en.wikipedia.org/wiki/Wanderstop
+accounts:
+- summary: Made by Ivy Road, a global team led by Davey Wreden and Karla Zimonja in Vancouver.
+  sources:
+  - mobilesyrup-top-canadian-games-of-2025
+- summary: Made by Ivy Road, a studio based in Austin, Texas.
+  sources:
+  - source: wikipedia-wanderstop
+    note: Citing C418
 status: disputed
 sources: [wikipedia-wanderstop, mobilesyrup-top-canadian-games-of-2025, straight-2024-indie-hub]
 notes: >-
-  Disputed location (the game schema has no accounts field, so versions are recorded here).
+  Disputed location.
   (1) MobileSyrup (Dec 29, 2025): Ivy Road is "a global team led by Davey Wreden and Karla Zimonja in Vancouver, B.C."
   (2) Wikipedia: cites C418 describing a studio "based in Austin, Texas"; Ivy Road closed March 31, 2026 (single-source).
   The Georgia Straight (2024) includes Wreden and Zimonja in its Vancouver story and calls Ivy Road an "international studio." Zimonja's residence is unstated. C418 has no person record.

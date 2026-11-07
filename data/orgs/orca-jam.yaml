@@ -1,0 +1,10 @@
+id: orca-jam
+name: Orca Jam
+kind: event-series
+location:
+  city: Victoria
+  region: victoria
+summary: Game jam where Peglin began in 2019.
+status: single-source
+sources:
+- wikipedia-peglin

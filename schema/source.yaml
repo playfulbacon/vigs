@@ -23,4 +23,5 @@ properties:
   accessed: { $ref: 'common.yaml#/$defs/date' }
   archive_url: { type: string, format: uri }
   interview: { $ref: 'common.yaml#/$defs/id', description: 'For kind=interview, the interview record ID.' }
+  reading_list: { type: boolean, description: True for further-reading items that no record cites yet. }
   notes: { type: string }

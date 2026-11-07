@@ -46,6 +46,16 @@ date: { value: "2012-10", approximate: true, note: "Month rests on Wikipedia onl
 | `unverified` | Not checked yet |
 | `interview-only` | Rests only on oral testimony |
 
+**Significance** (events only) is a 1–3 editorial weight. It sets the dot size on the timeline and decides which events get a label:
+
+| significance | meaning |
+|---|---|
+| `3` | Turning point: the story changes direction (Klei founded, first meetup, TowerFall prototyped, Indie House opens, Celeste released) |
+| `2` | Notable: a meaningful step or milestone |
+| `1` | Context: background that helps explain the rest |
+
+It is a judgement call, set when the event is entered. Revisit it as interviews change what mattered.
+
 **Citations** are a source ID, or an object with detail:
 
 ```yaml

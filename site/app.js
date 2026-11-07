@@ -14,7 +14,6 @@
   let selected = null;          // selected event id
   let query = "";               // free-text search shared by every tab
   const hiddenLanes = new Set();
-  const hiddenStatuses = new Set();
   let orientation = "horizontal";  // or "vertical"
 
   const LANES = [
@@ -24,6 +23,8 @@
     { id: "industry", label: "AAA & Industry", color: "--lane-industry" },
     { id: "context", label: "Policy & Press", color: "--lane-context" },
   ];
+  const SIGNIFICANCE = { 3: "Turning point", 2: "Notable", 1: "Context" };
+  const sigTag = (n) => `<span class="tag sig" title="Significance ${n || 1} of 3">${esc(SIGNIFICANCE[n || 1])} · ${n || 1}/3</span>`;
   const STATUS_LABEL = { verified: "Verified", "single-source": "Single source", disputed: "Disputed", unverified: "Unverified", "interview-only": "Interview only" };
   const TIE_LABEL = { resident: "Resident", "former-resident": "Former resident", collaborator: "Collaborator", visitor: "Visitor", unconfirmed: "Unconfirmed" };
   const TYPE_NAMES = { person: "people", game: "games", org: "orgs", place: "places" };
@@ -103,7 +104,6 @@
 
   function passes(e) {
     if (hiddenLanes.has(laneOf(e))) return false;
-    if (hiddenStatuses.has(e.status === "interview-only" ? "unverified" : e.status)) return false;
     return true;
   }
 
@@ -230,14 +230,12 @@
       if (!inFocus(e.id)) g.classList.add("dim");
       if (selected === e.id) g.classList.add("selected");
       if (p.fuzzy) el("rect", { x: p.cx, y: cy - 3, width: p.x1 - p.cx, height: 6, rx: 3, fill: color, class: "span" }, g);
-      const hollow = e.status !== "verified";
       const shape = square ? el("rect", { x: p.cx - p.rad, y: cy - p.rad, width: p.rad * 2, height: p.rad * 2, rx: 1.5 }, g) : el("circle", { cx: p.cx, cy, r: p.rad }, g);
       const dotAttrs = {
         class: "dot",
-        fill: hollow ? cssVar("--surface") : color,
-        stroke: e.status === "disputed" ? cssVar("--disputed") : color,
-        "stroke-width": e.status === "disputed" ? 2.5 : 1.5,
-        "stroke-dasharray": e.status === "unverified" || e.status === "interview-only" ? "2 2" : "",
+        fill: color,
+        stroke: color,
+        "stroke-width": 1.5,
       };
       for (const [k, v] of Object.entries(dotAttrs)) shape.setAttribute(k, v);
       if (p.label) { const t = el("text", { x: p.cx + p.rad + 4, y: cy + 4, class: "ev-label" }, g); t.textContent = p.label; }
@@ -267,7 +265,7 @@
         const y = dval(e.date).slice(0, 4);
         if (y !== year) { year = y; h += `<div class="v-year">${esc(dval(e.date).endsWith("s") ? dval(e.date) : y)}</div>`; }
         const lane = laneOfId[laneOf(e)];
-        const cls = ["v-ev", `sig-${e.significance || 1}`, `st-${e.status}`, square ? "sq" : "", inFocus(e.id) ? "" : "dim", selected === e.id ? "selected" : ""].join(" ");
+        const cls = ["v-ev", `sig-${e.significance || 1}`, square ? "sq" : "", inFocus(e.id) ? "" : "dim", selected === e.id ? "selected" : ""].join(" ");
         h += `<button class="${cls}" data-id="${esc(e.id)}" style="--lane:var(${lane.color})">
           <span class="v-dot" aria-hidden="true"></span>
           <span class="v-body"><span class="v-title">${esc(e.title)}</span>
@@ -371,7 +369,7 @@
     selected = id;
     const era = G.era[e.era];
     let h = `<p class="meta">Event · ${esc(era?.title || "")}</p>`;
-    h += `<h3>${esc(e.title)}</h3><p>${dateTag(e.date)}${e.end_date ? ` → ${dateTag(e.end_date)}` : ""} ${badge(e.status)} <span class="tag">${esc(e.type)}</span></p>`;
+    h += `<h3>${esc(e.title)}</h3><p>${dateTag(e.date)}${e.end_date ? ` → ${dateTag(e.end_date)}` : ""} ${sigTag(e.significance)} ${badge(e.status)} <span class="tag">${esc(e.type)}</span></p>`;
     if (e.summary) h += `<p>${esc(e.summary)}</p>`;
     if (e._ages) h += `<p class="meta">Ages at the time: ${Object.entries(e._ages).map(([p, a]) => `${esc(nameOf("person", p))} ${esc(a)}`).join(", ")}</p>`;
     h += common(e);
@@ -613,6 +611,7 @@
     { label: "Event", sort: (e) => e.title.toLowerCase(), html: (e) => `<strong>${esc(e.title)}</strong>` },
     { label: "Date", sort: (e) => sortKey(e.date), html: (e) => dateTag(e.date), default: true },
     { label: "Type", sort: (e) => e.type, html: (e) => esc(e.type) },
+    { label: "Significance", sort: (e) => -(e.significance || 1), html: (e) => sigTag(e.significance) },
     { label: "Confidence", sort: (e) => e.status, html: (e) => badge(e.status) },
     { label: "People", sort: (e) => names("person", e.people), html: (e) => esc(names("person", e.people)), narrow: true },
     { label: "Studios & orgs", sort: (e) => names("org", e.orgs), html: (e) => esc(names("org", e.orgs)), narrow: true },
@@ -734,30 +733,15 @@
     if (v === "questions") renderQuestions();
   }
 
-  const STATUS_TOGGLES = [["verified", "Verified"], ["single-source", "Single source"], ["disputed", "Disputed"], ["unverified", "Unverified"]];
-
-  function statusSwatch(st) {
-    const sq = cssVar("--dot-shape") === "square";
-    const ink = cssVar("--muted"), surf = cssVar("--surface");
-    const [fill, stroke, dash, sw] = {
-      verified: [ink, ink, "", 1.5], "single-source": [surf, ink, "", 1.5],
-      disputed: [surf, cssVar("--disputed"), "", 2.5], unverified: [surf, ink, "2 2", 1.5],
-    }[st];
-    const shape = sq ? `<rect x="2" y="2" width="10" height="10" rx="1.5"` : `<circle cx="7" cy="7" r="5"`;
-    return `<svg class="swatch-svg" width="14" height="14">${shape} fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-dasharray="${dash}"/></svg>`;
-  }
-
   function setupLaneToggles() {
     $("#lane-toggles").innerHTML =
       `<div class="toggle-group"><span class="toggle-label">Category</span>` +
       LANES.map((l) => `<button class="toggle" data-lane="${l.id}" aria-pressed="${!hiddenLanes.has(l.id)}"><span class="swatch" style="background:var(${l.color})"></span>${esc(l.label)}</button>`).join("") +
-      `</div><div class="toggle-group"><span class="toggle-label">Confidence</span>` +
-      STATUS_TOGGLES.map(([k, l]) => `<button class="toggle" data-status="${k}" aria-pressed="${!hiddenStatuses.has(k)}">${statusSwatch(k)}${esc(l)}</button>`).join("") +
       `</div>`;
     $("#lane-toggles").querySelectorAll(".toggle").forEach((btn) => btn.addEventListener("click", () => {
-      const [set, key] = btn.dataset.lane ? [hiddenLanes, btn.dataset.lane] : [hiddenStatuses, btn.dataset.status];
-      set.has(key) ? set.delete(key) : set.add(key);
-      btn.setAttribute("aria-pressed", !set.has(key));
+      const key = btn.dataset.lane;
+      hiddenLanes.has(key) ? hiddenLanes.delete(key) : hiddenLanes.add(key);
+      btn.setAttribute("aria-pressed", !hiddenLanes.has(key));
       render();
     }));
   }

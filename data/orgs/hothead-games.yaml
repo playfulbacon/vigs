@@ -19,6 +19,11 @@ lineage:
 summary: Founded in 2006 by ex-Radical staff; its first releases were the Penny Arcade Adventures episodes (2008). It cut staff in December 2008 after failing to find a publisher for Swarm.
 current: 2026 status not researched.
 operating_status: unknown
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/2/2e/Hothead_games_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original
+  credit: Hothead Games; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-hothead-games

@@ -22,6 +22,11 @@ lineage:
 summary: Formed by ex-Relic developer Raphael van Lierop after he moved from Vancouver to the Comox Valley; it made The Long Dark. It is a Vancouver Island story, kept in the report's sidebar.
 current: 'Active; shifted developers back to The Long Dark DLC while Blackfrost: The Long Dark 2 slipped to 2027 (as of November 2026).'
 operating_status: active
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Hinterland_studio_logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original
+  credit: Hinterland Studio; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-the-long-dark

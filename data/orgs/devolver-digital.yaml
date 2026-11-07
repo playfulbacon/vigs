@@ -2,6 +2,11 @@ id: devolver-digital
 name: Devolver Digital
 kind: publisher
 summary: Published Daniel Mullins Games' Inscryption (2021).
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/4/42/Devolver_Digital_logo.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original
+  credit: Devolver Digital; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-inscryption

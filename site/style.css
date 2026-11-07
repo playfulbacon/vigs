@@ -255,6 +255,101 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .setting-seg button:hover { opacity: 1; }
 .setting-seg button[aria-pressed="true"] { background: var(--bg); color: var(--ink); opacity: 1; }
 
+/* ---------- map in the details panel */
+.map-fig { margin: 4px 0 14px; }
+.map { height: 190px; border-radius: var(--radius); border: 1px solid var(--rule); overflow: hidden; background: var(--surface-2); }
+.map-fig figcaption { font-size: 12px; color: var(--muted); padding-top: 6px; }
+.leaflet-container { font: 12px var(--text); }
+.map.dark .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.9); }
+
+/* ========================================================================== 3D view */
+.flight-on { overflow: hidden; }
+.flight-on .topbar, .flight-on main { display: none; }
+.flight-on .layout { display: block; padding: 0; }
+.flight-on .panel { position: fixed; top: 64px; right: 16px; left: auto; bottom: auto; width: 380px; max-height: calc(100vh - 190px); z-index: 55; border-radius: var(--radius); }
+.flight-on .panel.empty { display: none; }
+.flight-on .settings { left: auto; right: 16px; top: 16px; bottom: auto; justify-content: flex-end; z-index: 60; }
+
+.flight { position: fixed; inset: 0; z-index: 40; overflow: hidden; background:
+  radial-gradient(120% 80% at 50% 12%, var(--surface) 0%, var(--bg) 55%, color-mix(in srgb, var(--bg) 85%, var(--ink)) 100%); }
+.fl-stage { position: absolute; inset: 0 0 96px 0; perspective: 1400px; perspective-origin: 50% 24%; overflow: hidden; cursor: grab; touch-action: none; }
+.fl-stage:active { cursor: grabbing; }
+.fl-world { position: absolute; left: 50%; top: 27%; width: 0; height: 0; transform-style: preserve-3d; transform: scale(var(--k, 1)); }
+
+.fl-floor { position: absolute; left: -1150px; top: 330px; width: 2300px; height: 12000px; transform-origin: 50% 0; transform: translateZ(500px) rotateX(-90deg);
+  background: repeating-linear-gradient(to right, transparent 0 calc(20% - 1px), color-mix(in srgb, var(--rule-strong) 45%, transparent) calc(20% - 1px) 20%), linear-gradient(to bottom, color-mix(in srgb, var(--era-b) 85%, var(--ink)) 0%, var(--era-b) 25%, transparent 70%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%); }
+
+.fl-tick { position: absolute; left: 0; top: 0; width: 34px; height: 2px; background: var(--muted); opacity: .6; }
+.fl-tick.major { width: 90px; height: 3px; background: var(--ink); }
+.fl-year { position: absolute; left: 0; top: 0; font: 600 64px/1 var(--display); color: var(--ink); letter-spacing: -.02em; white-space: nowrap; }
+.fl-era { position: absolute; left: 0; top: 0; white-space: nowrap; pointer-events: none; }
+.fl-era span { display: block; font: 800 96px/1 var(--display); letter-spacing: -.03em; color: var(--ink); opacity: .1; }
+
+.fl-card { position: absolute; left: 0; top: auto; bottom: 0; width: 250px; display: flex; flex-direction: column; text-align: left; padding: 0; cursor: pointer; color: var(--ink);
+  background: var(--surface); border: var(--card-border); border-radius: var(--radius); box-shadow: var(--card-shadow), 0 30px 40px -20px rgba(0,0,0,.35); overflow: hidden; font: inherit; will-change: transform, opacity; backface-visibility: hidden; }
+.fl-card.sig-3 { width: 320px; }
+.fl-card.sig-1 { width: 210px; }
+.fl-card:hover, .fl-card:focus-visible { outline: 3px solid var(--lane); outline-offset: 0; }
+.fl-card.selected { outline: 4px solid var(--accent); outline-offset: 0; }
+.fl-cat { display: block; padding: 5px 10px; font: 600 10px var(--text); letter-spacing: .1em; text-transform: uppercase; color: var(--lane); background: color-mix(in srgb, var(--surface) 88%, var(--lane)); border-bottom: 1px solid var(--rule); }
+.fl-img { display: block; height: 130px; background: color-mix(in srgb, var(--surface) 75%, var(--lane)); overflow: hidden; }
+.fl-card.sig-3 .fl-img { height: 170px; }
+.fl-card.sig-1 .fl-img { height: 86px; }
+.fl-img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; display: block; }
+.fl-img.logo { background: #fff; display: flex; align-items: center; justify-content: center; padding: 16px 22px; }
+.fl-img.logo img { object-fit: contain; }
+.fl-img.none, .fl-img.broken { display: flex; align-items: flex-end; padding: 8px 12px; }
+.fl-img.broken img { display: none; }
+.fl-img.none span { font: 800 46px/1 var(--display); color: color-mix(in srgb, var(--lane) 70%, var(--ink)); opacity: .55; letter-spacing: -.03em; }
+.fl-body { display: flex; flex-direction: column; gap: 3px; padding: 10px 12px 12px; }
+.fl-title { font: 700 16px/1.2 var(--display); letter-spacing: -.01em; }
+.fl-card.sig-3 .fl-title { font-size: 20px; }
+.fl-card.sig-1 .fl-title { font-size: 14px; font-weight: 600; }
+.fl-date { font: 500 11px var(--mono); color: var(--muted); }
+.fl-sum { font-size: 12.5px; line-height: 1.4; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-top: 3px; }
+.fl-card.sig-1 .fl-sum { -webkit-line-clamp: 2; font-size: 12px; }
+
+.fl-stats { position: absolute; left: 16px; top: 16px; width: 250px; padding: 14px 16px 0; z-index: 45; overflow: hidden; }
+.fl-stats-head { font: 800 20px/1.1 var(--display); color: var(--accent); letter-spacing: -.01em; }
+.fl-stats-era { font-size: 13px; color: var(--muted); margin: 4px 0 10px; }
+.fl-stats dl { margin: 0 0 12px; display: grid; gap: 4px; }
+.fl-stats dl div { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.fl-stats dt { font-size: 14px; }
+.fl-stats dd { margin: 0; font: 600 18px var(--mono); color: var(--accent); }
+.fl-stats-year { margin: 0 -16px; padding: 8px 16px; background: var(--accent); color: var(--accent-ink); font: 700 15px var(--display); }
+
+.fl-toggles { position: absolute; left: 16px; top: 262px; z-index: 45; max-width: 260px; }
+.fl-toggles .toggle-group { gap: 6px; }
+.fl-toggles .toggle-label { min-width: 0; width: 100%; }
+.fl-toggles .toggle { background: color-mix(in srgb, var(--surface) 80%, transparent); }
+.fl-hint { position: absolute; left: 50%; bottom: 104px; transform: translateX(-50%); margin: 0; font-size: 12px; color: var(--muted); pointer-events: none; white-space: nowrap; }
+
+.fl-scrub { position: absolute; left: 16px; right: 16px; bottom: 16px; height: 72px; z-index: 45; overflow: hidden; cursor: pointer; touch-action: none; }
+.fl-scrub-svg { position: absolute; left: 0; right: 0; top: 0; width: 100%; height: 46px; pointer-events: none; }
+.fl-scrub-era { position: absolute; bottom: 0; height: 26px; border: 0; border-left: 3px solid var(--accent); background: transparent; color: var(--ink); text-align: left; padding: 0 0 0 6px; cursor: pointer; overflow: hidden; }
+.fl-scrub-era span { font: 700 10px/26px var(--text); text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; }
+.fl-scrub-year { position: absolute; top: 2px; font: 500 10px var(--mono); color: var(--muted); transform: translateX(-50%); pointer-events: none; }
+.fl-scrub-window { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--accent) 16%, transparent); border-left: 2px solid var(--accent); border-right: 2px solid var(--accent); pointer-events: none; }
+
+@media (max-width: 760px) {
+  .fl-stats { width: auto; right: 16px; padding: 8px 12px 0; }
+  .fl-stats-head { font-size: 15px; }
+  .fl-stats-era { margin: 2px 0 6px; font-size: 12px; }
+  .fl-stats dl { grid-template-columns: 1fr 1fr; column-gap: 14px; gap: 0 14px; margin-bottom: 8px; }
+  .fl-stats dt { font-size: 12px; }
+  .fl-stats dd { font-size: 14px; }
+  .fl-stats-year { margin: 0 -12px; padding: 5px 12px; font-size: 13px; }
+  .flight-on .settings { gap: 6px; }
+  .flight-on .setting-label { display: none; }
+  .flight-on .setting-seg button { padding: 4px 8px; font-size: 11px; }
+  .fl-toggles, .fl-hint { display: none; }
+  .flight-on .panel { left: 0; right: 0; top: auto; bottom: 0; width: auto; max-height: 70vh; }
+  .flight-on .settings { top: auto; bottom: 96px; left: 16px; right: auto; }
+  .fl-scrub-era span { font-size: 9px; }
+  .fl-scrub-year.minor { display: none; }
+}
+
 /* ========================================================================== signature touches */
 
 /* Archive: italic serif era names, small-caps tabs, a hairline double rule under the bar */

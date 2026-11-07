@@ -3,7 +3,13 @@ name: University of Victoria campus
 kind: campus
 city: Victoria
 region: victoria
+coordinates:
+  lat: 48.46206
+  lng: -123.31142
+  precision: neighbourhood
 summary: Campus where Colin and Sarah Northway started making indie games in the 2000s.
 status: verified
 sources:
 - straight-2024-indie-hub
+- source: osm-nominatim
+  note: Coordinates

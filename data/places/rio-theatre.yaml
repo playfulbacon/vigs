@@ -3,7 +3,13 @@ name: Rio Theatre
 kind: theatre
 city: Vancouver
 region: vancouver
+coordinates:
+  lat: 49.26209
+  lng: -123.07049
+  precision: exact
 summary: Venue of the first Full Indie Summit on April 20, 2013.
 status: verified
 sources:
 - vanweekly-2013-full-indie-summit
+- source: osm-nominatim
+  note: Coordinates

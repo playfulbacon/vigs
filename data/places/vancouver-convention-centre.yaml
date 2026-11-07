@@ -3,10 +3,17 @@ name: Vancouver Convention Centre
 kind: convention-centre
 city: Vancouver
 region: vancouver
-summary: Venue of GDC Canada in 2009 and May 6–7, 2010, and, according to a snippet of an East Side Games post, of Full Indie Summit 2015.
+coordinates:
+  lat: 49.28891
+  lng: -123.11608
+  precision: exact
+summary: Venue of GDC Canada in 2009 and May 6–7, 2010, and, according to a snippet of an East Side Games
+  post, of Full Indie Summit 2015.
 status: verified
 sources:
 - gamedev-gdc-canada-2009-the-event-round-up
 - newswire-canadian-game-development-community-to-reconvene-at-the-secon
 - medium-east-side-indie-love-from-a-summit-filled-with-indies-5bbbda79e
+- source: osm-nominatim
+  note: Coordinates
 notes: The 2015 Summit venue is unconfirmed (snippet of an unopened page).

@@ -3,9 +3,16 @@ name: Centre for Digital Media
 kind: campus
 city: Vancouver
 region: vancouver
-summary: Campus where the first Full Indie Game Jam was held in June 2011 and where later Full Indie jams took place.
+coordinates:
+  lat: 49.26732
+  lng: -123.08995
+  precision: exact
+summary: Campus where the first Full Indie Game Jam was held in June 2011 and where later Full Indie jams
+  took place.
 status: verified
 sources:
 - fullindie-about
 - cgm-2014-canadian-scene-part-2
+- source: osm-nominatim
+  note: Coordinates
 notes: The 2011 jam location rests on a search snippet of Village Gamer.

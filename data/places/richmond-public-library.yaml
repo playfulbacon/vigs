@@ -3,7 +3,14 @@ name: Richmond Public Library
 kind: library
 city: Richmond
 region: lower-mainland
-summary: Where Full Indie and Hand Eye Society ran Game Curious in 2017, with drop-in arcades and a six-week game-making program.
+coordinates:
+  lat: 49.16408
+  lng: -123.14134
+  precision: exact
+summary: Where Full Indie and Hand Eye Society ran Game Curious in 2017, with drop-in arcades and a six-week
+  game-making program.
 status: verified
 sources:
 - fullindie-about
+- source: osm-nominatim
+  note: Coordinates

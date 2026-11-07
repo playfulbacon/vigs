@@ -3,8 +3,15 @@ name: Vancouver Playhouse
 kind: theatre
 city: Vancouver
 region: vancouver
-summary: Venue of Full Indie Summit 2016 (October 22, 550+ attendees) and of the 2025 Summit (September 13).
+coordinates:
+  lat: 49.28069
+  lng: -123.11256
+  precision: exact
+summary: Venue of Full Indie Summit 2016 (October 22, 550+ attendees) and of the 2025 Summit (September
+  13).
 status: verified
 sources:
 - meetup-full-indie-summit-2016
 - vancouvercivictheatres-full-indie-summit-2025-sep-13
+- source: osm-nominatim
+  note: Coordinates

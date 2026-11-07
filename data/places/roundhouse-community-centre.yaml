@@ -3,7 +3,13 @@ name: Roundhouse Community Centre
 kind: venue
 city: Vancouver
 region: vancouver
+coordinates:
+  lat: 49.27341
+  lng: -123.12195
+  precision: exact
 summary: Venue of Vancouver Game Garden 2025 (September 27–28), with 40+ Vancouver-made games.
 status: verified
 sources:
 - straight-you-nearly-missed-local-indie-games-bloom-at-vancouver-game-g
+- source: osm-nominatim
+  note: Coordinates

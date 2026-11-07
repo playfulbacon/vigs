@@ -3,7 +3,14 @@ name: The Gaming Stadium
 kind: venue
 city: Richmond
 region: lower-mainland
-summary: Richmond venue where Aryo Nazaradeh ran Full Indie meetups after the Covid hiatus, with 100+ people a month as of March 2024.
+coordinates:
+  lat: 49.18297
+  lng: -123.13742
+  precision: exact
+summary: Richmond venue where Aryo Nazaradeh ran Full Indie meetups after the Covid hiatus, with 100+
+  people a month as of March 2024.
 status: verified
 sources:
 - straight-2024-indie-hub
+- source: osm-nominatim
+  note: Coordinates

@@ -1,0 +1,10 @@
+id: osm-nominatim
+title: OpenStreetMap Nominatim geocoding (coordinates of public venues)
+url: https://nominatim.openstreetmap.org/
+publisher: OpenStreetMap contributors
+kind: database
+reliability: tertiary
+opened: true
+accessed: '2026-11-07'
+notes: Coordinates looked up from public venue names and addresses. Data © OpenStreetMap
+  contributors, ODbL.

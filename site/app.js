@@ -140,6 +140,7 @@
   function cssVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
 
   function render() {
+    if (window.Flight?.active) window.Flight.refresh();
     $("#timeline-card").hidden = orientation !== "horizontal";
     $("#vtimeline").hidden = orientation !== "vertical";
     $(".zoom").hidden = orientation !== "horizontal";
@@ -297,6 +298,68 @@
       `<span>${dot(ink, ink, "", 1)}<svg width="18" height="18" style="margin-left:-2px">${square ? `<rect x="2" y="2" width="14" height="14" rx="1.5" fill="${ink}"/>` : `<circle cx="9" cy="9" r="7" fill="${ink}"/>`}</svg>Larger dot = bigger turning point</span>`;
   }
 
+  // ------------------------------------------------------------ map
+  // Where did it happen? Exact venue pins when an event names a place with coordinates,
+  // otherwise a shaded area for the city of the studios involved, otherwise the region.
+  let CITIES = {};
+  let leafletMap = null;
+  const REGION_CITY = { vancouver: "Vancouver", "lower-mainland": "Vancouver", victoria: "Victoria", "vancouver-island": "Comox Valley", bc: "Vancouver" };
+
+  function locate(rec, type) {
+    if (type === "place") {
+      if (rec.coordinates) return { pins: [{ ...rec.coordinates, label: rec.name }], precision: rec.coordinates.precision };
+      if (CITIES[rec.city]) return { area: { ...CITIES[rec.city], label: rec.city }, radius: 3500 };
+      return null;
+    }
+    const pins = (rec.places || []).map((id) => G.place[id]).filter((pl) => pl?.coordinates)
+      .map((pl) => ({ ...pl.coordinates, label: pl.name }));
+    if (pins.length) return { pins, precision: pins.some((x) => x.precision !== "exact") ? "neighbourhood" : "exact" };
+    const cities = [...new Set((rec.orgs || []).map((o) => G.org[o]?.location?.city).filter((c) => CITIES[c]))];
+    const local = cities.filter((c) => !["Toronto", "São Paulo"].includes(c));
+    const city = local[0] || REGION_CITY[rec.region];
+    if (city && CITIES[city]) return { area: { ...CITIES[city], label: city }, radius: rec.region === "vancouver-island" ? 25000 : 4500, cityLevel: true };
+    return null;
+  }
+
+  function mapBlock(loc) {
+    if (!loc || !window.L) return "";
+    const cap = loc.pins
+      ? loc.pins.map((x) => x.label).join(" · ") + (loc.precision === "neighbourhood" ? " (neighbourhood, approximate)" : "")
+      : `${loc.area.label} (city-level: no venue recorded yet)`;
+    return `<figure class="map-fig"><div class="map" id="panel-map"></div><figcaption>${esc(cap)}</figcaption></figure>`;
+  }
+
+  function drawMap(loc) {
+    if (leafletMap) { leafletMap.remove(); leafletMap = null; }
+    const el = document.getElementById("panel-map");
+    if (!el || !loc || !window.L) return;
+    const dark = matchMedia("(prefers-color-scheme: dark)").matches && document.documentElement.dataset.theme !== "light" || document.documentElement.dataset.theme === "dark";
+    leafletMap = L.map(el, { zoomControl: false, attributionControl: true, scrollWheelZoom: false });
+    el.classList.toggle("dark", dark);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19,
+    }).addTo(leafletMap);
+    L.control.zoom({ position: "bottomright" }).addTo(leafletMap);
+    const accent = cssVar("--accent");
+    // start wide on the region, then fly in
+    leafletMap.setView([49.25, -123.1], 9, { animate: false });
+    let target, zoom;
+    if (loc.pins) {
+      for (const pt of loc.pins) {
+        const exact = loc.precision === "exact";
+        (exact ? L.circleMarker([pt.lat, pt.lng], { radius: 8, color: accent, weight: 3, fillColor: accent, fillOpacity: 0.85 })
+               : L.circle([pt.lat, pt.lng], { radius: 700, color: accent, weight: 2, fillColor: accent, fillOpacity: 0.18 }))
+          .addTo(leafletMap).bindTooltip(pt.label);
+      }
+      if (loc.pins.length > 1) { const b = L.latLngBounds(loc.pins.map((x) => [x.lat, x.lng])); target = b.getCenter(); zoom = Math.min(15, leafletMap.getBoundsZoom(b.pad(0.4))); }
+      else { target = [loc.pins[0].lat, loc.pins[0].lng]; zoom = loc.precision === "exact" ? 15 : 13; }
+    } else {
+      L.circle([loc.area.lat, loc.area.lng], { radius: loc.radius, color: accent, weight: 2, dashArray: "4 4", fillColor: accent, fillOpacity: 0.12 }).addTo(leafletMap).bindTooltip(loc.area.label);
+      target = [loc.area.lat, loc.area.lng]; zoom = loc.radius > 10000 ? 9 : 11;
+    }
+    setTimeout(() => leafletMap && leafletMap.flyTo(target, zoom, { duration: 1.1 }), 150);
+  }
+
   // ------------------------------------------------------------ panel
 
   function openPanel(html, hash) {
@@ -370,6 +433,8 @@
     const era = G.era[e.era];
     let h = `<p class="meta">Event · ${esc(era?.title || "")}</p>`;
     h += `<h3>${esc(e.title)}</h3><p>${dateTag(e.date)}${e.end_date ? ` → ${dateTag(e.end_date)}` : ""} ${sigTag(e.significance)} ${badge(e.status)} <span class="tag">${esc(e.type)}</span></p>`;
+    const loc = locate(e, "event");
+    h += mapBlock(loc);
     if (e.summary) h += `<p>${esc(e.summary)}</p>`;
     if (e._ages) h += `<p class="meta">Ages at the time: ${Object.entries(e._ages).map(([p, a]) => `${esc(nameOf("person", p))} ${esc(a)}`).join(", ")}</p>`;
     h += common(e);
@@ -377,6 +442,8 @@
       if (e[k]?.length) h += `<h4>${label}</h4>${chips(t, e[k])}`;
     h += sourceList(e.sources);
     openPanel(h, `#event/${id}`);
+    drawMap(loc);
+    if (window.Flight?.active) window.Flight.flyTo(id);
     if (orientation === "vertical") {
       document.querySelectorAll(".v-ev.selected").forEach((b) => b.classList.remove("selected"));
       document.querySelector(`.v-ev[data-id="${CSS.escape(id)}"]`)?.classList.add("selected");
@@ -461,6 +528,8 @@
     if (p.address) h += `<p class="meta">${esc(p.address)}</p>`;
     if (span) h += `<p class="meta">${esc(span)}</p>`;
     if (p.summary) h += `<p>${esc(p.summary)}</p>`;
+    const loc = locate(p, "place");
+    h += mapBlock(loc);
     h += followButton("place", id);
     if (p._links?.people?.length) h += `<h4>People</h4>${chips("person", p._links.people)}`;
     if (p._links?.games?.length) h += `<h4>Games made here</h4>${chips("game", p._links.games)}`;
@@ -468,6 +537,7 @@
     if (p._links?.events?.length) h += `<h4>On the timeline</h4>${eventList(p._links.events)}`;
     h += linksBlock(p.links) + sourceList(p.sources);
     openPanel(h, `#place/${id}`);
+    drawMap(loc);
   }
 
   function showEra(id) {
@@ -775,6 +845,14 @@
       bar.appendChild(g);
     }
 
+    // View: the classic page, or the 3D flight through time
+    const wantView = new URLSearchParams(location.search).get("view") === "3d" ? "3d" : "classic";
+    addGroup("View", [["classic", "Classic"], ["3d", "3D"]], wantView, (v) => {
+      const u = new URL(location.href); u.searchParams.set("view", v); history.replaceState(null, "", u);
+      if (!window.Flight) return;
+      v === "3d" ? window.Flight.enter() : window.Flight.exit();
+    });
+
     // Style
     const want = new URLSearchParams(location.search).get("style");
     const style = STYLES.some(([k]) => k === want) ? want : "arcade";
@@ -805,7 +883,13 @@
       document.body.insertAdjacentHTML("afterbegin", "<p class='wrap'>Couldn't load graph.json. Run <code>python3 tools/vigs.py build</code> first.</p>");
       return;
     }
+    try { CITIES = await (await fetch("cities.json")).json(); } catch {}
+    window.VIGS = {
+      get G() { return G; }, LANES, laneOf, passes, inFocus, drange, dval, dlabel, sortKey, esc, cssVar, nameOf,
+      showEvent, closePanel, get selected() { return selected; },
+    };
     legend(); setupTabs(); setupLaneToggles(); setupSearch(); renderQuestions(); render();
+    if (new URLSearchParams(location.search).get("view") === "3d") window.Flight?.enter();
     $("#timeline-scroll").addEventListener("scroll", pinLaneLabels, { passive: true });
     $("#timeline-scroll").scrollLeft = xOf(2008) - LEFT;
     document.querySelectorAll("[data-orient]").forEach((b) => b.addEventListener("click", () => {

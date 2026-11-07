@@ -27,7 +27,18 @@
     <div class="controls">
       <div class="lane-toggles" id="lane-toggles" aria-label="Show categories"></div>
     </div>
-    <div class="controls">
+    <div class="controls zoom-row">
+      <div class="seg" role="group" aria-label="Timeline layout">
+        <button data-orient="horizontal" aria-pressed="true">Horizontal</button>
+        <button data-orient="vertical" aria-pressed="false">Vertical</button>
+      </div>
+      <div class="zoom">
+        <button id="zoom-out" aria-label="Zoom out">−</button>
+        <button id="zoom-in" aria-label="Zoom in">+</button>
+      </div>
+      <button class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">Filters <span class="filter-count" id="filter-count" hidden></span></button>
+    </div>
+    <div class="card filter-panel" id="filter-panel" hidden>
       <div class="filters">
         <label><input type="checkbox" data-filter="status" value="verified" checked> Verified</label>
         <label><input type="checkbox" data-filter="status" value="single-source" checked> Single source</label>
@@ -44,24 +55,15 @@
           <option value="3">Turning points only</option>
         </select>
       </div>
+      <button class="filter-reset" id="filter-reset">Reset</button>
     </div>
-    <div class="controls zoom-row">
-      <div class="seg" role="group" aria-label="Timeline layout">
-        <button data-orient="horizontal" aria-pressed="true">Horizontal</button>
-        <button data-orient="vertical" aria-pressed="false">Vertical</button>
-      </div>
-      <div class="zoom">
-        <button id="zoom-out" aria-label="Zoom out">−</button>
-        <button id="zoom-in" aria-label="Zoom in">+</button>
-      </div>
-    </div>
+    <div class="legend" id="legend"></div>
     <div class="card timeline-card" id="timeline-card">
       <div class="timeline-scroll" id="timeline-scroll">
         <svg id="timeline" role="img" aria-label="Timeline of events"></svg>
       </div>
     </div>
     <div class="card vtimeline" id="vtimeline" hidden></div>
-    <div class="legend" id="legend"></div>
   </section>
 
   <section id="view-list" class="view" hidden>

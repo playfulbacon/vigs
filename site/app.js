@@ -755,6 +755,14 @@
     if (SHOW[type] && id) SHOW[type](decodeURIComponent(id));
   }
 
+  // How many filters differ from the defaults, shown on the Filters button.
+  function updateFilterCount() {
+    const n = document.querySelectorAll('[data-filter="status"]:not(:checked)').length +
+      ($("#region").value !== "all") + ($("#significance").value !== "1");
+    $("#filter-count").hidden = !n;
+    $("#filter-count").textContent = n;
+  }
+
   // ------------------------------------------------------------ boot
 
   const STYLES = [["archive", "Archive"], ["coast", "Coast"], ["arcade", "Arcade"]];
@@ -812,7 +820,17 @@
     legend(); setupTabs(); setupLaneToggles(); setupSearch(); renderQuestions(); render();
     $("#timeline-scroll").addEventListener("scroll", pinLaneLabels, { passive: true });
     $("#timeline-scroll").scrollLeft = xOf(2008) - LEFT;
-    document.querySelectorAll("[data-filter], #region, #significance").forEach((i) => i.addEventListener("change", render));
+    document.querySelectorAll("[data-filter], #region, #significance").forEach((i) => i.addEventListener("change", () => { updateFilterCount(); render(); }));
+    $("#filter-toggle").addEventListener("click", () => {
+      const open = $("#filter-panel").hidden;
+      $("#filter-panel").hidden = !open;
+      $("#filter-toggle").setAttribute("aria-expanded", open);
+    });
+    $("#filter-reset").addEventListener("click", () => {
+      document.querySelectorAll('[data-filter="status"]').forEach((i) => (i.checked = true));
+      $("#region").value = "all"; $("#significance").value = "1";
+      updateFilterCount(); render();
+    });
     document.querySelectorAll("[data-orient]").forEach((b) => b.addEventListener("click", () => {
       orientation = b.dataset.orient;
       document.querySelectorAll("[data-orient]").forEach((x) => x.setAttribute("aria-pressed", x === b));

@@ -12,14 +12,15 @@
   let zoom = 1;
   let focus = null;             // { type, id } entity being followed
   let selected = null;          // selected event id
+  let query = "";               // free-text search shared by every tab
   const hiddenLanes = new Set();
 
   const LANES = [
     { id: "community", label: "Community", color: "--lane-community" },
     { id: "games", label: "Games", color: "--lane-games" },
-    { id: "studios", label: "Studios & people", color: "--lane-studios" },
-    { id: "industry", label: "AAA & industry", color: "--lane-industry" },
-    { id: "context", label: "Policy & press", color: "--lane-context" },
+    { id: "studios", label: "Studios & People", color: "--lane-studios" },
+    { id: "industry", label: "AAA & Industry", color: "--lane-industry" },
+    { id: "context", label: "Policy & Press", color: "--lane-context" },
   ];
   const STATUS_LABEL = { verified: "Verified", "single-source": "Single source", disputed: "Disputed", unverified: "Unverified", "interview-only": "Interview only" };
   const TIE_LABEL = { resident: "Resident", "former-resident": "Former resident", collaborator: "Collaborator", visitor: "Visitor", unconfirmed: "Unconfirmed" };
@@ -110,8 +111,23 @@
     return true;
   }
 
+  // Text that a search can match: the record's own words plus the names of everything it links to.
+  const hayCache = new Map();
+  function hay(rec) {
+    if (hayCache.has(rec)) return hayCache.get(rec);
+    const parts = [rec.title, rec.name, rec.summary, rec.type, rec.kind, ...(rec.aliases || []), ...(rec.tags || [])];
+    const linked = { people: "person", orgs: "org", games: "game", places: "place", developers: "org", publishers: "org", founders: "person", audio_by: "org" };
+    for (const [k, t] of Object.entries(linked)) for (const id of rec[k] || []) parts.push(nameOf(t, id));
+    for (const c of rec.credits || []) parts.push(nameOf("person", c.person));
+    for (const m of rec.memberships || []) parts.push(nameOf(m.org ? "org" : "place", m.org || m.place));
+    const h = parts.filter(Boolean).join(" ").toLowerCase();
+    hayCache.set(rec, h);
+    return h;
+  }
+  const matches = (rec) => !query || hay(rec).includes(query.toLowerCase());
+
   function inFocus(eid) {
-    if (!focus) return true;
+    if (!focus) return matches(G.event[eid]);
     const ent = G[focus.type][focus.id];
     return (ent?._links?.events || []).includes(eid) || (focus.type === "era" && G.event[eid].era === focus.id);
   }
@@ -149,7 +165,7 @@
       const rad = 3 + (e.significance || 1) * 1.6;
       const fuzzy = uncertain && x1 - x0 > 6;
       const cx = fuzzy ? x0 : (x0 + x1) / 2;
-      const showLabel = (e.significance || 1) >= 3 || (focus && inFocus(e.id));
+      const showLabel = (e.significance || 1) >= 3 || ((focus || query) && inFocus(e.id));
       const label = showLabel ? short(e.title) : "";
       const right = Math.max(x1, cx + rad) + (label ? label.length * 6 + 10 : 4);
       const rows = laneRows[laneOf(e)];
@@ -439,31 +455,66 @@
 
   function setFocus(f) {
     focus = f;
-    const bar = $("#focus-bar");
+    if (f) query = "";
+    updateFocusBar();
     if (f) {
-      const n = (G[f.type][f.id]._links?.events || []).length || G.era[f.id]?._links?.events?.length || 0;
-      bar.innerHTML = `<span>Following <strong>${esc(nameOf(f.type, f.id))}</strong> · ${n} events</span><button id="unfollow">Clear</button>`;
-      bar.hidden = false;
-      $("#unfollow").addEventListener("click", () => setFocus(null));
-      // scroll to the first event
+      // scroll the timeline to the first event
       const first = (G[f.type][f.id]._links?.events || []).map((id) => G.event[id]).filter(Boolean).sort((a, b) => sortKey(a.date) - sortKey(b.date))[0];
       if (first) $("#timeline-scroll").scrollTo({ left: Math.max(0, xOf(drange(first.date)[0]) - 200), behavior: "smooth" });
-    } else {
-      bar.hidden = true;
-      $("#search").value = "";
+      $("#search").value = nameOf(f.type, f.id);
     }
+    refresh();
+  }
+
+  function updateFocusBar() {
+    const bar = $("#focus-bar");
+    if (focus) {
+      const n = (G[focus.type][focus.id]._links?.events || []).length;
+      bar.innerHTML = `<span>Following <strong>${esc(nameOf(focus.type, focus.id))}</strong> · ${n} events</span><button id="unfollow">Clear</button>`;
+    } else if (query) {
+      const n = G.timeline.filter((id) => matches(G.event[id])).length;
+      bar.innerHTML = `<span>Events matching <strong>“${esc(query)}”</strong> · ${n}</span><button id="unfollow">Clear</button>`;
+    }
+    bar.hidden = !(focus || query);
+    if (!bar.hidden) $("#unfollow").addEventListener("click", clearSearch);
+  }
+
+  function clearSearch() {
+    focus = null; query = "";
+    $("#search").value = "";
+    updateFocusBar();
+    refresh();
+  }
+
+  // Re-render whatever the current tab shows.
+  function refresh() {
     render();
+    if (LISTS[currentView]) renderList(currentView);
+    if (currentView === "questions") renderQuestions();
   }
 
   function setupSearch() {
     const opts = [];
     for (const [type, key] of [["person", "name"], ["game", "title"], ["org", "name"], ["place", "name"]])
-      for (const r of Object.values(G[type])) if (r._links?.events?.length) opts.push({ label: `${r[key]} (${TYPE_NAMES[type].replace(/s$/, "").replace("org", "studio/org")})`, type, id: r.id });
+      for (const r of Object.values(G[type])) if (r._links?.events?.length) opts.push({ label: r[key], hint: TYPE_NAMES[type].replace(/s$/, "").replace("org", "studio/org"), type, id: r.id });
     opts.sort((a, b) => a.label.localeCompare(b.label));
-    $("#entities").innerHTML = opts.map((o) => `<option value="${esc(o.label)}"></option>`).join("");
+    $("#entities").innerHTML = opts.map((o) => `<option value="${esc(o.label)}">${esc(o.hint)}</option>`).join("");
+    let t;
+    $("#search").addEventListener("input", () => {
+      clearTimeout(t);
+      t = setTimeout(() => {
+        const v = $("#search").value.trim();
+        const o = opts.find((x) => x.label.toLowerCase() === v.toLowerCase());
+        if (o) { focus = { type: o.type, id: o.id }; query = ""; }
+        else { focus = null; query = v; }
+        updateFocusBar();
+        refresh();
+      }, 120);
+    });
     $("#search").addEventListener("change", () => {
-      const o = opts.find((x) => x.label === $("#search").value);
-      if (o) { setFocus({ type: o.type, id: o.id }); SHOW[o.type](o.id); }
+      const v = $("#search").value.trim();
+      const o = opts.find((x) => x.label.toLowerCase() === v.toLowerCase());
+      if (o && currentView === "timeline") { setFocus({ type: o.type, id: o.id }); SHOW[o.type](o.id); }
     });
   }
 
@@ -489,7 +540,7 @@
     const byEra = {};
     for (const id of G.timeline) {
       const e = G.event[id];
-      if (e.open_questions?.length) (byEra[e.era] ||= []).push(e);
+      if (e.open_questions?.length && inFocus(id)) (byEra[e.era] ||= []).push(e);
     }
     $("#questions").innerHTML = Object.values(G.era).sort((a, b) => a.order - b.order).filter((era) => byEra[era.id]).map((era) =>
       `<div class="qgroup"><h3>${esc(era.title)}</h3>${byEra[era.id].map((e) =>
@@ -529,6 +580,18 @@
   ];
 
   const LISTS = {
+    eras: {
+      label: "Eras", type: "era",
+      rows: () => Object.values(G.era),
+      columns: [
+        { label: "Era", sort: (e) => e.order, html: (e) => `<strong>${esc(e.title)}</strong>`, default: true },
+        { label: "Years", sort: (e) => sortKey(e.start), html: (e) => `<span class="nowrap">${dateTag(e.start)} → ${e.end ? dateTag(e.end) : '<span class="tag">now</span>'}</span>` },
+        { label: "Summary", sort: (e) => e.summary || "", html: (e) => esc(e.summary || ""), narrow: true },
+        { label: "Questions", sort: (e) => -gapsFor(e).questions, html: (e) => num(gapsFor(e).questions) },
+        { label: "Disputed", sort: (e) => -gapsFor(e).disputed, html: (e) => num(gapsFor(e).disputed) },
+        { label: "Events", sort: (e) => -gapsFor(e).events, html: (e) => num(gapsFor(e).events) },
+      ],
+    },
     community: { label: "Community", rows: evLane("community"), type: "event", columns: EVENT_COLUMNS },
     games: {
       label: "Games", type: "game",
@@ -562,8 +625,6 @@
       rows: () => Object.values(G.person),
       columns: [
         { label: "Person", sort: (p) => p.name.toLowerCase(), html: (p) => `<strong>${esc(p.name)}</strong>` },
-        { label: "Vancouver tie", sort: (p) => p.vancouver?.tie || "z", html: (p) => esc(TIE_LABEL[p.vancouver?.tie] || "") },
-        { label: "Arrived", sort: (p) => sortKey(p.vancouver?.arrived), html: (p) => dateTag(p.vancouver?.arrived), narrow: true },
         { label: "Affiliations", sort: (p) => names("org", (p.memberships || []).map((m) => m.org)), html: (p) => esc(names("org", [...new Set((p.memberships || []).map((m) => m.org).filter(Boolean))], 2)), narrow: true },
         { label: "Questions", sort: (p) => -gapsFor(p).questions, html: (p) => num(gapsFor(p).questions) },
         { label: "Disputed", sort: (p) => -gapsFor(p).disputed, html: (p) => num(gapsFor(p).disputed) },
@@ -571,8 +632,8 @@
         { label: "Events", sort: (p) => -gapsFor(p).events, html: (p) => num(gapsFor(p).events), default: true },
       ],
     },
-    industry: { label: "AAA & industry", rows: evLane("industry"), type: "event", columns: EVENT_COLUMNS },
-    context: { label: "Policy & press", rows: evLane("context"), type: "event", columns: EVENT_COLUMNS },
+    industry: { label: "AAA & Industry", rows: evLane("industry"), type: "event", columns: EVENT_COLUMNS },
+    context: { label: "Policy & Press", rows: evLane("context"), type: "event", columns: EVENT_COLUMNS },
   };
 
   let listState = { key: null, col: null, dir: 1 };
@@ -582,12 +643,17 @@
     if (listState.key !== key) {
       const di = L.columns.findIndex((c) => c.default);
       listState = { key, col: di < 0 ? 0 : di, dir: 1 };
-      $("#list-filter").value = "";
     }
     const col = L.columns[listState.col];
-    const q = $("#list-filter").value.trim().toLowerCase();
     let rows = L.rows();
-    if (q) rows = rows.filter((r) => JSON.stringify([r.title, r.name, r.summary, r.aliases, r.people, r.orgs, r.games]).toLowerCase().includes(q));
+    if (focus) {
+      const ent = G[focus.type][focus.id];
+      const linked = new Set(ent?._links?.events || []);
+      const fname = nameOf(focus.type, focus.id).toLowerCase();
+      // the entity itself, its events, and anything that shares an event with it
+      rows = rows.filter((r) => r.id === focus.id || linked.has(r.id) || hay(r).includes(fname) ||
+        (r._links?.events || []).some((id) => linked.has(id)));
+    } else if (query) rows = rows.filter(matches);
     rows.sort((a, b) => {
       const x = col.sort(a), y = col.sort(b);
       return (x < y ? -1 : x > y ? 1 : 0) * listState.dir;
@@ -610,13 +676,12 @@
 
   // ------------------------------------------------------------ tabs, lane toggles, routing
 
-  const TABS = [["timeline", "Timeline"], ...Object.entries(LISTS).map(([k, v]) => [k, v.label]), ["questions", "Open questions"]];
+  const TABS = [["timeline", "Timeline"], ...Object.entries(LISTS).map(([k, v]) => [k, v.label]), ["questions", "Open Questions"]];
   let currentView = "timeline";
 
   function setupTabs() {
     $("#tabs").innerHTML = TABS.map(([k, label]) => `<button role="tab" data-view="${k}" aria-selected="${k === currentView}">${esc(label)}</button>`).join("");
     $("#tabs").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
-    $("#list-filter").addEventListener("input", () => LISTS[currentView] && renderList(currentView));
   }
 
   function setView(v) {
@@ -626,6 +691,7 @@
     $("#view-questions").hidden = v !== "questions";
     $("#view-list").hidden = !LISTS[v];
     if (LISTS[v]) renderList(v);
+    if (v === "questions") renderQuestions();
   }
 
   function setupLaneToggles() {

@@ -8,21 +8,18 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="wrap topsearch">
+  <label class="search">
+    <span class="visually-hidden">Search people, games, studios, places and events</span>
+    <input id="search" type="search" list="entities" placeholder="Search people, games, studios, places, events…" autocomplete="off">
+    <datalist id="entities"></datalist>
+  </label>
+  <div class="focus-bar" id="focus-bar" hidden></div>
+</div>
 <nav class="tabs wrap" role="tablist" id="tabs"></nav>
 
 <main>
   <section id="view-timeline" class="view">
-    <div class="controls wrap">
-      <label class="search">
-        <span class="visually-hidden">Follow a person, game, studio or place</span>
-        <input id="search" type="search" list="entities" placeholder="Follow a person, game, studio or place…" autocomplete="off">
-        <datalist id="entities"></datalist>
-      </label>
-      <div class="zoom">
-        <button id="zoom-out" aria-label="Zoom out">−</button>
-        <button id="zoom-in" aria-label="Zoom in">+</button>
-      </div>
-    </div>
     <div class="controls wrap">
       <div class="lane-toggles" id="lane-toggles" aria-label="Show categories"></div>
     </div>
@@ -44,7 +41,12 @@
         </select>
       </div>
     </div>
-    <div class="focus-bar wrap" id="focus-bar" hidden></div>
+    <div class="controls wrap zoom-row">
+      <div class="zoom">
+        <button id="zoom-out" aria-label="Zoom out">−</button>
+        <button id="zoom-in" aria-label="Zoom in">+</button>
+      </div>
+    </div>
     <div class="timeline-scroll" id="timeline-scroll">
       <svg id="timeline" role="img" aria-label="Timeline of events"></svg>
     </div>
@@ -53,7 +55,6 @@
 
   <section id="view-list" class="view wrap" hidden>
     <div class="list-head">
-      <input id="list-filter" type="search" placeholder="Filter…" autocomplete="off" aria-label="Filter this list">
       <span class="count" id="list-count"></span>
     </div>
     <div class="table-scroll"><table class="list"><thead id="list-head"></thead><tbody id="list-body"></tbody></table></div>

@@ -1,0 +1,13 @@
+id: homeworld
+title: Homeworld
+releases:
+  - date: "1999-09-28"
+    kind: release
+    sources: [wikipedia-relic-entertainment]
+release_status: released
+developers: [relic-entertainment]
+vancouver_connection: Relic Entertainment's first game, made by the Vancouver studio founded in May 1997; it belongs to the AAA-roots era rather than the indie scene.
+region: vancouver
+summary: Relic Entertainment's debut, released in September 1999. Relic founding members Rob Cunningham and Aaron Kambeitz later co-founded Blackbird Interactive, which made the Homeworld sequels Deserts of Kharak and Homeworld 3.
+status: single-source
+sources: [wikipedia-relic-entertainment, wikipedia-blackbird-interactive]

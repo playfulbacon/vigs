@@ -1,0 +1,19 @@
+id: 2009-first-gdc-canada
+title: First GDC Canada held at the Vancouver Convention Centre
+date: "2009"
+era: first-indies
+type: conference
+summary: The first GDC Canada, produced by Think Services and Reboot Communications, is held at the Vancouver Convention
+  Centre with more than 800 attendees. It succeeds the Vancouver International Game Summit.
+orgs:
+- gdc-canada
+- vancouver-international-game-summit
+places:
+- vancouver-convention-centre
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- gamedev-gdc-canada-2009-the-event-round-up
+tags:
+- conference

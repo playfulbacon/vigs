@@ -1,0 +1,24 @@
+id: 2000s-vancouver-international-game-summit
+title: Vancouver International Game Summit runs before GDC Canada
+date:
+  value: "2000s"
+  qualifier: before
+  display: before 2009 (years unknown)
+  note: Ran in years before 2009; exact years unknown
+era: aaa-roots
+type: conference
+summary: Vancouver hosts the Vancouver International Game Summit, the industry conference that preceded GDC Canada.
+orgs:
+- vancouver-international-game-summit
+- gdc-canada
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- gamedev-gdc-canada-2009-the-event-round-up
+open_questions:
+- Which years did the Vancouver International Game Summit run, and who organized it? Was it Reboot Communications?
+  (Ask DigiBC and GDC Canada alumni.)
+tags:
+- conference
+- aaa

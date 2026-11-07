@@ -1,0 +1,18 @@
+id: invisible-inc
+title: Invisible, Inc.
+releases:
+  - date: "2014-01"
+    kind: early-access
+    sources: [wikipedia-invisible-inc]
+  - date: "2015-05-12"
+    kind: full-release
+    sources: [wikipedia-invisible-inc]
+release_status: released
+developers: [klei-entertainment]
+vancouver_connection: Made by Vancouver's Klei Entertainment.
+region: vancouver
+summary: Klei's tactical stealth game. It entered Early Access in January 2014 and got its full release on May 12, 2015, the same day as TowerFall Ascension's Dark World expansion.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Invisible,_Inc.
+status: single-source
+sources: [wikipedia-invisible-inc]

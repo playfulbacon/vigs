@@ -1,0 +1,28 @@
+id: 2013-10-indie-house-night-in-the-woods-video
+title: '"Indie House / Night In The Woods" video'
+date: "2013-10"
+era: indie-house-era
+type: publication
+summary: A YouTube video titled "Indie House / Night In The Woods" appears, cited on Wikipedia, linking the game's
+  development to the house.
+people:
+- alec-holowka
+games:
+- night-in-the-woods
+orgs:
+- infinite-fall
+places:
+- indie-house
+region: lower-mainland
+significance: 1
+status: single-source
+sources:
+- source: wikipedia-night-in-the-woods
+  note: Cites the YouTube video
+- wikipedia-alec-holowka
+open_questions:
+- How long did Alec Holowka live at Indie House, and when did he return to Winnipeg? Which parts of Night in the
+  Woods were made there?
+tags:
+- indie-house
+- night-in-the-woods

@@ -1,0 +1,14 @@
+id: griftlands
+title: Griftlands
+releases:
+  - date: "2021-06"
+    kind: release
+    sources: [wikipedia-klei-entertainment]
+release_status: released
+developers: [klei-entertainment]
+audio_by: [power-up-audio]
+vancouver_connection: Made by Vancouver's Klei Entertainment; Power Up Audio lists it among its credits.
+region: vancouver
+summary: Klei's deck-building role-playing game, released in June 2021.
+status: single-source
+sources: [wikipedia-klei-entertainment, powerupaudio-home]

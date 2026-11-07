@@ -1,0 +1,18 @@
+id: 2011-05-esac-jobs-report
+title: ESAC counts about 16,000 game jobs in Canada
+date: "2011-05-30"
+era: first-indies
+type: publication
+summary: The Entertainment Software Association of Canada, citing a Secor Consulting report, counts about 16,000
+  game jobs in Canada at nearly 350 companies, with Quebec holding over half.
+orgs:
+- esac
+region: canada
+significance: 1
+status: verified
+sources:
+- esac-2011-industry-report
+caveat: Figures quoted elsewhere put BC at 3,882 employees in 83 companies; that rests on a search snippet only.
+tags:
+- industry-data
+- downturn

@@ -1,0 +1,14 @@
+id: oxygen-not-included
+title: Oxygen Not Included
+releases:
+  - date: "2019"
+    kind: full-release
+    note: 1.0 release; month unverified.
+    sources: [wikipedia-klei-entertainment]
+release_status: released
+developers: [klei-entertainment]
+vancouver_connection: Made by Vancouver's Klei Entertainment.
+region: vancouver
+summary: Klei's colony simulation, which reached 1.0 in 2019. The month is unverified.
+status: single-source
+sources: [wikipedia-klei-entertainment]

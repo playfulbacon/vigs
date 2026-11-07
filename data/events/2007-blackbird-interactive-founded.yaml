@@ -1,0 +1,27 @@
+id: 2007-blackbird-interactive-founded
+title: Blackbird Interactive founded by Relic veterans
+date:
+  value: "2007"
+  note: An earlier brief gave 2010; Wikipedia says 2007
+era: aaa-roots
+type: founding
+summary: Relic founding members Rob Cunningham and Aaron Kambeitz, with other ex-Relic and ex-EA staff, found Blackbird
+  Interactive.
+people:
+- rob-cunningham
+- aaron-kambeitz
+orgs:
+- blackbird-interactive
+- relic-entertainment
+- ea-vancouver
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-blackbird-interactive
+caveat: An earlier brief gave the founding year as 2010; Wikipedia says 2007.
+tags:
+- aaa
+- spin-off
+- founding
+- family-tree

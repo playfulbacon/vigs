@@ -1,0 +1,25 @@
+id: 2016-01-celeste-development-begins
+title: Full development of Celeste begins
+date:
+  value: "2016-01"
+  approximate: true
+  display: c. January 2016
+era: indie-house-era
+type: milestone
+summary: Full development of Celeste begins, building on the 2015 PICO-8 jam game.
+people:
+- maddy-thorson
+- noel-berry
+games:
+- celeste
+- celeste-classic
+orgs:
+- extremely-ok-games
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- wikipedia-celeste-video-game
+- wikipedia-extremely-ok-games
+tags:
+- celeste

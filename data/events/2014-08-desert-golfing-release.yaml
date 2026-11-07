@@ -1,0 +1,26 @@
+id: 2014-08-desert-golfing-release
+title: Desert Golfing released
+date: "2014-08-06"
+era: indie-house-era
+type: release
+summary: Desert Golfing, designed by Justin Smith and released under Blinkbat Games, comes out on iOS and Android.
+  PC and Mac versions follow on December 19, 2017.
+people:
+- justin-smith
+games:
+- desert-golfing
+orgs:
+- blinkbat-games
+region: canada
+significance: 2
+status: single-source
+sources:
+- wikipedia-desert-golfing
+- gamedev-7-questions-for-i-desert-golfing-i-creator-justin-smith
+caveat: The opened sources call Blinkbat "Canadian" without naming a city. A 2014 Medium profile calling Smith "Vancouver-based"
+  returned 403 and was not read.
+open_questions:
+- Were you living in Vancouver when you made Enviro-Bear 2000 and Desert Golfing? Who else was in Blinkbat Games?
+tags:
+- release
+- mobile

@@ -1,0 +1,27 @@
+id: 2016-01-darkest-dungeon-release
+title: Red Hook releases Darkest Dungeon
+date: "2016-01-19"
+era: indie-house-era
+type: release
+summary: Red Hook Studios, "the local team," releases Darkest Dungeon in full. It sells more than 650K copies in
+  its first week, 1M by November 2016 and 2M by December 2017.
+people:
+- chris-bourassa
+- tyler-sigman
+games:
+- darkest-dungeon
+orgs:
+- red-hook-studios
+- power-up-audio
+region: vancouver
+significance: 2
+status: verified
+sources:
+- source: straight-2024-indie-hub
+  quote: the local team
+- source: wikipedia-darkest-dungeon
+  note: Sales figures (single source)
+caveat: Sales figures rest on Wikipedia alone.
+tags:
+- release
+- red-hook

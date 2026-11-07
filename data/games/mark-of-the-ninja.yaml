@@ -1,0 +1,29 @@
+id: mark-of-the-ninja
+title: Mark of the Ninja
+releases:
+  - date: "2012-09-07"
+    kind: release
+    platforms: [Xbox 360 (Xbox Live Arcade)]
+    sources: [wikipedia-mark-of-the-ninja]
+  - date: "2012-10-16"
+    kind: port
+    platforms: [Windows]
+    sources: [wikipedia-mark-of-the-ninja]
+  - date: "2018"
+    kind: remaster
+    note: Mark of the Ninja Remastered.
+    sources: [wikipedia-klei-entertainment]
+release_status: released
+developers: [klei-entertainment]
+publishers: [microsoft]
+credits:
+  - person: nels-anderson
+    role: lead designer
+    sources: [vanweekly-2013-full-indie-summit]
+vancouver_connection: Made by Vancouver's Klei Entertainment; lead designer Nels Anderson spoke at the 2013 Full Indie Summit.
+region: vancouver
+summary: Klei's stealth game, released on Xbox Live Arcade on September 7, 2012, published by Microsoft Studios, with a PC release on October 16. Nels Anderson was lead designer.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Mark_of_the_Ninja
+status: single-source
+sources: [wikipedia-mark-of-the-ninja, vanweekly-2013-full-indie-summit]

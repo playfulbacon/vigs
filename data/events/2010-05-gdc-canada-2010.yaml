@@ -1,0 +1,21 @@
+id: 2010-05-gdc-canada-2010
+title: Second GDC Canada offers free passes to laid-off developers
+date: "2010-05-06"
+end_date: "2010-05-07"
+era: first-indies
+type: conference
+summary: GDC Canada returns to the Vancouver Convention Centre for its second and final edition, offering free passes
+  to laid-off developers.
+orgs:
+- gdc-canada
+places:
+- vancouver-convention-centre
+region: vancouver
+significance: 2
+status: verified
+sources:
+- newswire-canadian-game-development-community-to-reconvene-at-the-secon
+- gamedev-2010-gdc-canada-offers-free-passes-for-laid-off-developers
+tags:
+- conference
+- downturn

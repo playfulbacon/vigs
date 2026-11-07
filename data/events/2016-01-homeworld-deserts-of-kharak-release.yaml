@@ -1,0 +1,19 @@
+id: 2016-01-homeworld-deserts-of-kharak-release
+title: 'Blackbird releases Homeworld: Deserts of Kharak'
+date: "2016-01-20"
+era: indie-house-era
+type: release
+summary: 'Blackbird Interactive releases Homeworld: Deserts of Kharak, published by Gearbox.'
+games:
+- homeworld-deserts-of-kharak
+- homeworld
+orgs:
+- blackbird-interactive
+- gearbox-publishing
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- wikipedia-blackbird-interactive
+tags:
+- release

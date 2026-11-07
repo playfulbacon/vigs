@@ -1,0 +1,35 @@
+id: 2012-a-shell-in-the-pit-begins
+title: A Shell in the Pit begins
+date:
+  value: "2012"
+  note: 'Disputed: 2012 (Georgia Straight) or 2014 (studio press page)'
+era: indie-house-era
+type: founding
+summary: Gordon McGladdery's audio studio A Shell in the Pit begins making game sound. Sources disagree on whether
+  that was 2012 or 2014; the likeliest reconciliation is that McGladdery worked solo from 2012 and the studio formed
+  in 2014.
+people:
+- gordon-mcgladdery
+games:
+- rogue-legacy
+orgs:
+- a-shell-in-the-pit
+region: vancouver
+significance: 2
+status: disputed
+sources:
+- straight-2024-indie-hub
+- asitp-press
+accounts:
+- summary: The company started making game sound in 2012.
+  sources:
+  - straight-2024-indie-hub
+- summary: The studio formed in 2014 and "grew out of" Gordon McGladdery's Rogue Legacy (2013) work.
+  sources:
+  - source: asitp-press
+    quote: grew out of
+open_questions:
+- Did A Shell in the Pit start in 2012 or 2014? What was its exact role on Night in the Woods, sound or music?
+tags:
+- audio
+- a-shell-in-the-pit

@@ -1,0 +1,20 @@
+id: retro-city-rampage
+title: Retro City Rampage
+releases:
+  - date: "2012-10-09"
+    kind: release
+    platforms: [PC, PS3, PS Vita]
+    sources: [wikipedia-retro-city-rampage]
+release_status: released
+developers: [vblank-entertainment]
+credits:
+  - person: brian-provinciano
+    role: creator
+    sources: [wikipedia-retro-city-rampage]
+vancouver_connection: Made by Brian Provinciano, whom Vancouver Weekly called "one of the biggest local names"; he conceived the first Full Indie Summit (2013).
+region: vancouver
+summary: Brian Provinciano's retro open-world action game from Vblank Entertainment, released October 9, 2012 on PC, PS3 and Vita.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Retro_City_Rampage
+status: single-source
+sources: [wikipedia-retro-city-rampage, vanweekly-2013-full-indie-summit]

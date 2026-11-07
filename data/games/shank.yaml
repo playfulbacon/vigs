@@ -1,0 +1,13 @@
+id: shank
+title: Shank
+releases:
+  - date: "2010"
+    kind: release
+    sources: [cgm-2014-canadian-scene-part-2, wikipedia-klei-entertainment]
+release_status: released
+developers: [klei-entertainment]
+vancouver_connection: Made by Vancouver's Klei Entertainment.
+region: vancouver
+summary: Klei's 2010 action game. CGM notes that Klei had earlier declined to make N+ for Toronto's Metanet, though it is credited with engine work on it. A sequel, Shank 2, followed in 2012.
+status: verified
+sources: [cgm-2014-canadian-scene-part-2, wikipedia-klei-entertainment]

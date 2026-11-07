@@ -1,0 +1,26 @@
+id: dont-starve
+title: Don't Starve
+releases:
+  - date: "2013-04-23"
+    kind: release
+    platforms: [Windows, OS X, Linux]
+    sources: [wikipedia-don-t-starve]
+release_status: released
+developers: [klei-entertainment]
+credits:
+  - person: kevin-forbes
+    role: prototype co-creator
+    sources: [wikipedia-klei-entertainment]
+awards:
+  - name: IGF Seumas McNally Grand Prize
+    year: 2014
+    result: finalist
+    sources: [cgm-2014-canadian-scene-part-2]
+vancouver_connection: Made by Vancouver's Klei Entertainment.
+region: vancouver
+summary: Klei's survival game, released on April 23, 2013 for Windows, OS X and Linux. It grew from a prototype by Kevin Forbes and Ju-Lian Kwan, and CGM lists it as an IGF 2014 Grand Prize finalist.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Don%27t_Starve
+status: single-source
+sources: [wikipedia-don-t-starve, cgm-2014-canadian-scene-part-2, wikipedia-klei-entertainment]
+notes: The Kevin Forbes / Ju-Lian Kwan prototype detail is from the research notes (early_history_1980s_2011.md); Ju-Lian Kwan has no person record.

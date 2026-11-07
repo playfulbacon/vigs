@@ -1,0 +1,26 @@
+id: 2015-08-celeste-classic-jam
+title: Celeste Classic made in a four-day jam
+date: "2015-08"
+era: indie-house-era
+type: jam
+summary: Maddy Thorson and Noel Berry make the PICO-8 game Celeste (later Celeste Classic) in a four-day jam, the
+  seed of the full Celeste.
+people:
+- maddy-thorson
+- noel-berry
+games:
+- celeste-classic
+- celeste
+orgs:
+- extremely-ok-games
+region: vancouver
+significance: 3
+status: single-source
+sources:
+- wikipedia-extremely-ok-games
+- wikipedia-celeste-video-game
+tags:
+- celeste
+- game-jam
+- origin
+- pico-8

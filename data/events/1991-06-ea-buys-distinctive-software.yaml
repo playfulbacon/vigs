@@ -1,0 +1,41 @@
+id: 1991-06-ea-buys-distinctive-software
+title: EA buys Distinctive Software, which becomes EA Canada
+date:
+  value: "1991-06-18"
+  note: Announced June 18, 1991; deal closed July 1991
+end_date: "1991-07"
+era: aaa-roots
+type: acquisition
+summary: Electronic Arts buys DSI, which becomes EA Canada (later EA Vancouver) in Burnaby. The studio becomes the
+  anchor of the region's AAA industry and the source of many later spin-offs.
+people:
+- don-mattrick
+orgs:
+- electronic-arts
+- distinctive-software
+- ea-vancouver
+region: lower-mainland
+significance: 2
+status: disputed
+sources:
+- wikipedia-distinctive-software
+- wikipedia-ea-vancouver
+- source: nyt-1991-ea-buys-distinctive
+  note: Not opened; cited by Wikipedia for the US$10M price
+accounts:
+- summary: The price was US$10M.
+  sources:
+  - source: wikipedia-distinctive-software
+    note: Cites the NYT, June 18, 1991
+  - source: nyt-1991-ea-buys-distinctive
+    note: Not opened
+- summary: The price was $11M.
+  sources:
+  - source: wikipedia-ea-vancouver
+    note: History section
+caveat: Wikipedia's claim that EA Vancouver is EA's "largest and oldest studio" has no citation; a documented alternative
+  is "one of EA's largest studios, about 1,300 staff (2013)."
+tags:
+- aaa
+- acquisition
+- family-tree

@@ -1,0 +1,46 @@
+id: 2012-10-indie-house-opens
+title: Indie House opens near Steveston
+date:
+  value: "2012-10"
+  approximate: true
+  display: c. October 2012
+  note: Month rests on Wikipedia only
+era: indie-house-era
+type: founding
+summary: Maddy Thorson and Chevy Ray Johnston take "a literal house near Steveston" in Richmond, at Johnston's suggestion,
+  and fill it with indie developers. Documented residents include Thorson, Johnston, Alec Holowka, Noel Berry and,
+  from 2015, Greg Lobanov; at one point four of its seven residents were working on TowerFall. It remains the scene's
+  physical centre until late 2016.
+people:
+- maddy-thorson
+- chevy-ray-johnston
+- alec-holowka
+- noel-berry
+- greg-lobanov
+games:
+- towerfall
+places:
+- indie-house
+region: lower-mainland
+significance: 3
+status: verified
+sources:
+- source: straight-2024-indie-hub
+  note: House near Steveston; residents; Johnston suggested it; ran to late 2016
+  quote: a literal house near Steveston
+- source: wikipedia-maddy-thorson
+  note: October 2012 month
+- source: wikipedia-towerfall
+  note: Four of seven residents working on TowerFall
+caveat: The house's existence and residents are verified, but the October 2012 month rests on Wikipedia alone. Location
+  is recorded only as near Steveston, Richmond.
+open_questions:
+- What was the address, and when did each person move in and out? Who was the fifth roommate in 2014, and who were
+  the seven residents at the peak? Did Amora Bettany, Pedro Medeiros or Justin Smith ever live there?
+- How long did Alec Holowka live at Indie House, and when did he return to Winnipeg? Which parts of Night in the
+  Woods were made there?
+- What did the Indie House Tumblr document?
+- Did shared housing outside the core (Richmond, Steveston) make indie life affordable?
+tags:
+- indie-house
+- richmond

@@ -1,0 +1,20 @@
+id: 2013-04-red-hook-studios-founded
+title: Red Hook Studios founded
+date: "2013-04"
+era: indie-house-era
+type: founding
+summary: Chris Bourassa and Tyler Sigman, both former AAA developers, form Red Hook Studios.
+people:
+- chris-bourassa
+- tyler-sigman
+orgs:
+- red-hook-studios
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- wikipedia-darkest-dungeon
+- straight-2024-indie-hub
+tags:
+- founding
+- red-hook

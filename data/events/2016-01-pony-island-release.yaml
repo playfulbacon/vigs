@@ -1,0 +1,26 @@
+id: 2016-01-pony-island-release
+title: Daniel Mullins releases Pony Island
+date: "2016-01-04"
+era: indie-house-era
+type: release
+summary: Daniel Mullins releases Pony Island, which began as a December 2014 Ludum Dare prototype, with music by
+  Jonah Senzel.
+people:
+- daniel-mullins
+- jonah-senzel
+games:
+- pony-island
+orgs:
+- daniel-mullins-games
+significance: 2
+status: single-source
+sources:
+- wikipedia-pony-island
+- source: cgd-inscryption-announced
+  note: Mullins Vancouver-based by 2020
+caveat: No source dated 2016 places Mullins in Vancouver; he is documented as Vancouver-based only by 2020.
+open_questions:
+- When did you arrive in Vancouver, and why? Did you work at local studios before Pony Island?
+tags:
+- release
+- pony-island

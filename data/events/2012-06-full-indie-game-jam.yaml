@@ -1,0 +1,32 @@
+id: 2012-06-full-indie-game-jam
+title: TowerFall prototyped at the Full Indie Game Jam
+date: "2012-06"
+era: indie-house-era
+type: jam
+summary: TowerFall starts as a single-player Flash prototype at the 48-hour Full Indie Game Jam. The idea came from
+  Maddy Thorson's visit with Alec Holowka at the jam; Holowka stepped back from the project soon after.
+people:
+- maddy-thorson
+- alec-holowka
+- noel-berry
+- chevy-ray-johnston
+- kevin-regamey
+games:
+- towerfall
+orgs:
+- full-indie
+- full-indie-game-jam
+- extremely-ok-games
+- power-up-audio
+region: vancouver
+significance: 3
+status: verified
+sources:
+- cgm-2014-canadian-scene-part-2
+- wikipedia-towerfall
+- source: egm-power-up-audio
+  note: 'Same jam: Kevin Regamey meets Noel Berry and Chevy Ray Johnston'
+tags:
+- towerfall
+- game-jam
+- origin

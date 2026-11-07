@@ -1,0 +1,20 @@
+id: 2011-true-crime-hong-kong-cancelled
+title: 'True Crime: Hong Kong cancelled'
+date:
+  value: "2011-01"
+  approximate: true
+  display: around January 2011
+  note: Reported as around the same time as the Propaganda closure
+era: first-indies
+type: cancellation
+summary: 'Around the time Propaganda Games closes, True Crime: Hong Kong is cancelled, another sign of the decline
+  in Vancouver''s console work.'
+region: vancouver
+significance: 1
+status: verified
+sources:
+- straight-2011-industry-in-transition
+tags:
+- downturn
+- cancellation
+- aaa

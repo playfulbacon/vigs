@@ -1,0 +1,29 @@
+id: 2011-06-first-full-indie-game-jam
+title: First Full Indie Game Jam at the Centre for Digital Media
+date:
+  value: "2011-06-17"
+  approximate: true
+  display: weekend of June 17, 2011
+  note: Weekend of June 17; from a Village Gamer search snippet only
+era: first-indies
+type: jam
+summary: Full Indie holds its first game jam at the Centre for Digital Media, with 30 spots. The jam series later
+  produces TowerFall's prototype in 2012.
+orgs:
+- full-indie-game-jam
+- full-indie
+- centre-for-digital-media
+places:
+- centre-for-digital-media-campus
+region: vancouver
+significance: 3
+status: single-source
+sources:
+- source: cgm-2014-canadian-scene-part-2
+  note: Date rests on a Village Gamer search snippet only
+caveat: Global Game Jams had already run in Vancouver in 2009, 2010 and 2011, so CGM's reference to the "first two"
+  Global Game Jams is loose wording.
+tags:
+- jam
+- community
+- full-indie

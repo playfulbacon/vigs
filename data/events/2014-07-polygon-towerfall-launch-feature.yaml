@@ -1,0 +1,27 @@
+id: 2014-07-polygon-towerfall-launch-feature
+title: Polygon feature describes TowerFall house-share
+date: "2014-07-02"
+era: indie-house-era
+type: publication
+summary: Polygon's TowerFall Ascension launch feature, summarized by Game Developer, finds Thorson sharing the house
+  with "four fellow game creators, all of whom contributed to the production and playtesting of TowerFall."
+people:
+- maddy-thorson
+games:
+- towerfall
+orgs:
+- extremely-ok-games
+places:
+- indie-house
+region: lower-mainland
+significance: 2
+status: verified
+sources:
+- source: gamedev-looking-back-at-what-it-felt-like-to-launch-i-towerfall-ascens
+  quote: four fellow game creators, all of whom contributed to the production and playtesting of TowerFall
+open_questions:
+- What was the address, and when did each person move in and out? Who was the fifth roommate in 2014, and who were
+  the seven residents at the peak? Did Amora Bettany, Pedro Medeiros or Justin Smith ever live there?
+tags:
+- indie-house
+- towerfall

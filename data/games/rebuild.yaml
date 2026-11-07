@@ -1,0 +1,18 @@
+id: rebuild
+title: Rebuild
+releases:
+  - date: "2011"
+    kind: release
+    sources: [wikipedia-northway-games]
+release_status: released
+developers: [northway-games]
+credits:
+  - person: sarah-northway
+    role: creator
+    sources: [wikipedia-northway-games]
+vancouver_connection: Made by Sarah Northway in 2011, while the Northways were travelling; they settled in Vancouver only in 2014.
+summary: Sarah Northway's narrative strategy game, released in 2011 alongside Rebuild 2. Northway Games' press kit gives 2011 as the studio's founding year.
+status: single-source
+sources: [wikipedia-northway-games, northway-presskit, straight-2024-indie-hub]
+notes: Rebuild 2 (2011) and Rebuild 3 Gangs of Deadsville (2015, per research notes) are not separate records.
+tags: [series]

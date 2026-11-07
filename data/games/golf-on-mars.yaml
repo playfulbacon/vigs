@@ -1,0 +1,17 @@
+id: golf-on-mars
+title: Golf on Mars
+releases:
+  - date: "2020-07"
+    kind: release
+    sources: [wikipedia-desert-golfing]
+release_status: released
+developers: [captain-games]
+credits:
+  - person: justin-smith
+    role: creator
+    sources: [wikipedia-desert-golfing]
+vancouver_connection: Justin Smith's follow-up to Desert Golfing; his Vancouver residence is unconfirmed.
+region: canada
+summary: Justin Smith's follow-up to Desert Golfing, released in July 2020 under the studio name Captain Games.
+status: single-source
+sources: [wikipedia-desert-golfing]

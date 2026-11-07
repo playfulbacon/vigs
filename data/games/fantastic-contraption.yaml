@@ -1,0 +1,24 @@
+id: fantastic-contraption
+title: Fantastic Contraption
+releases:
+  - date: "2008-09-16"
+    kind: release
+    platforms: [Flash (web)]
+    sources: [wikipedia-fantastic-contraption-2008-video-game, straight-2024-indie-hub]
+  - date: "2009-01-26"
+    kind: port
+    platforms: [iOS]
+    note: After Colin Northway sold the rights to inXile.
+    sources: [wikipedia-fantastic-contraption-2008-video-game]
+release_status: released
+credits:
+  - person: colin-northway
+    role: creator
+    sources: [straight-2024-indie-hub, wikipedia-fantastic-contraption-2008-video-game]
+vancouver_connection: Not a Vancouver release as such. The Northways began at the University of Victoria and then travelled for about five years, settling in Vancouver only in 2014; where Colin lived in 2008 is undocumented.
+summary: Colin Northway's Flash physics-construction game, made on the side while he built websites for lawyers. It drew more than 3.5 million unique users in about three months, and he sold the rights to inXile, which released an iOS version in January 2009.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Fantastic_Contraption_(2008_video_game)
+status: verified
+sources: [straight-2024-indie-hub, wikipedia-fantastic-contraption-2008-video-game, gamedev-gdc-austin-how-i-fantastic-contraption-i-became-a-fantastic-hi]
+notes: The 3.5M unique-users figure is web reach, not sales (GDC Austin 2009 talk, snippet). Fantastic Contraption 2 followed on July 27, 2010 (research notes, Wikipedia). inXile has no org record.

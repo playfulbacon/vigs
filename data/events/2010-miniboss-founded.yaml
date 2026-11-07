@@ -1,0 +1,25 @@
+id: 2010-miniboss-founded
+title: MiniBoss founded in São Paulo
+date: "2010"
+era: first-indies
+type: founding
+summary: Amora Bettany, Pedro Medeiros and Heidy Motta found MiniBoss in São Paulo. The studio later does art for
+  TowerFall and Celeste.
+people:
+- amora-bettany
+- pedro-medeiros
+- heidy-motta
+games:
+- towerfall
+- celeste
+orgs:
+- miniboss
+region: international
+significance: 1
+status: single-source
+sources:
+- wikipedia-amora-bettany
+tags:
+- founding
+- art
+- collaborator

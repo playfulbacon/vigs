@@ -1,0 +1,39 @@
+id: 2015-10-full-indie-summit
+title: Full Indie Summit 2015
+date: "2015-10-31"
+era: indie-house-era
+type: conference
+summary: Full Indie Summit 2015 draws about 500 attendees. Speakers include Zach Barth, the Darkest Dungeon developers,
+  Indie Megabooth's Christopher Floyd and Maddy Thorson; co-organizer Alain-Daniel Bourdages later posts the talks
+  online.
+people:
+- maddy-thorson
+- alain-daniel-bourdages
+- chris-bourassa
+- tyler-sigman
+games:
+- darkest-dungeon
+orgs:
+- full-indie
+- full-indie-summit
+- red-hook-studios
+- east-side-games
+places:
+- vancouver-convention-centre
+region: vancouver
+significance: 2
+status: verified
+sources:
+- bcliving-85325
+- source: gamedev-videos-full-indie-summit-2015
+  note: Talks and speakers; about 500 attendees (single source)
+- source: medium-east-side-indie-love-from-a-summit-filled-with-indies-5bbbda79e
+  note: Venue, from a search snippet; page not opened
+caveat: The attendance (about 500) is single-source, and the Vancouver Convention Centre venue rests only on a search
+  snippet of an East Side Games post.
+open_questions:
+- What were the venues for the 2017, 2018 and 2019 Summits, and was 2015 at the Convention Centre? Why was 2019
+  billed as the '8th annual'?
+tags:
+- full-indie-summit
+- conference

@@ -1,0 +1,25 @@
+id: desert-golfing
+title: Desert Golfing
+releases:
+  - date: "2014-08-06"
+    kind: release
+    platforms: [iOS, Android]
+    sources: [wikipedia-desert-golfing]
+  - date: "2017-12-19"
+    kind: port
+    platforms: [Windows, macOS]
+    sources: [wikipedia-desert-golfing]
+release_status: released
+developers: [blinkbat-games]
+publishers: [blinkbat-games]
+credits:
+  - person: justin-smith
+    role: designer
+    sources: [wikipedia-desert-golfing]
+vancouver_connection: The Vancouver tie is unverified. Opened sources call Blinkbat "Canadian" without a city; a 2014 Medium profile reportedly calls Smith "Vancouver-based" but could not be read.
+region: canada
+summary: A minimalist mobile golf game designed by Justin Smith and released by Blinkbat Games on August 6, 2014, with a PC and Mac release in December 2017.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Desert_Golfing
+status: single-source
+sources: [wikipedia-desert-golfing, gamedev-7-questions-for-i-desert-golfing-i-creator-justin-smith]

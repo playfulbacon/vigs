@@ -1,0 +1,43 @@
+id: 2010-05-first-indie-meetup
+title: First Vancouver Indie Game Developers meetup at Soho Cafe and Billiards
+date:
+  value: "2010-05"
+  note: Meetup.com group set up by May 10; Birkett's write-up of the first meeting is dated May 22. The exact meeting
+    date is unknown.
+era: first-indies
+type: meetup
+summary: Jake Birkett and Alex Vostrov (Rocket Bear Games, formerly Indiebird) hold the first Vancouver Indie Game
+  Developers meetup at Soho Cafe and Billiards in Yaletown, with 40+ attendees from a group of 60+ members. The
+  meetup becomes Full Indie.
+people:
+- jake-birkett
+- alex-vostrov
+- sarah-northway
+orgs:
+- full-indie
+- big-fish-games
+- rocket-bear-games
+- victoria-indie-meetup
+places:
+- soho-cafe-billiards
+region: vancouver
+significance: 3
+status: verified
+sources:
+- greyalien-game-industry-meetups-in-vancouver
+- greyalien-first-vancouver-indie-game-developer-meetup-was-a-big-succes
+- fullindie-about
+- source: straight-2024-indie-hub
+  note: Sarah Northway's account of a Victoria meetup that a former roommate "brought with him"
+caveat: 'Victoria roots are unresolved: Sarah Northway says a former Victoria roommate "started a meet-up in Victoria
+  for indie devs" and "brought it with him," but Jake Birkett''s accounts do not mention Victoria. See the Victoria
+  sidebar.'
+open_questions:
+- Who was the Victoria roommate who started an indie meetup and 'brought it with him'? When and where did the Victoria
+  meetup run? (Ask Sarah and Colin Northway and Alex Vostrov.)
+- What was the date of the first meetup at Soho Cafe and Billiards? (Ask Jake Birkett, Alex Vostrov, Su Skerl and
+  Jason Elliot.)
+tags:
+- community
+- meetup
+- full-indie

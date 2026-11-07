@@ -1,0 +1,21 @@
+id: 2010-02-idmtc-announced
+title: BC announces the Interactive Digital Media Tax Credit
+date: "2010-02"
+era: first-indies
+type: policy
+summary: British Columbia announces the Interactive Digital Media Tax Credit, a 17.5% credit on BC labour costs.
+  DigiBC is credited with lobbying for it.
+orgs:
+- bc-idmtc
+- digibc
+region: bc
+significance: 2
+status: verified
+sources:
+- straight-2010-idmtc
+open_questions:
+- Has any Vancouver indie ever claimed the IDMTC? Did it matter to solo or house-share developers? (Ask Ryan Clark,
+  Jamie Cheng and Sarah Northway.)
+tags:
+- policy
+- tax-credit

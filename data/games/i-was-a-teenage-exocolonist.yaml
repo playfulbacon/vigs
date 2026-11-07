@@ -1,0 +1,52 @@
+id: i-was-a-teenage-exocolonist
+title: I Was a Teenage Exocolonist
+aliases: [Exocolonist]
+releases:
+  - date: "2022-08-25"
+    kind: release
+    platforms: [Windows, macOS, Linux, Switch, PS4, PS5]
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+release_status: released
+developers: [northway-games]
+publishers: [finji]
+credits:
+  - person: sarah-northway
+    role: designer
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+  - person: meilee-chao
+    role: art
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+awards:
+  - name: Canadian Screen Award for Best Video Game
+    result: won
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+  - name: Games for Change Award, Best Gameplay
+    result: won
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+  - name: The Game Awards, Games for Impact
+    year: 2022
+    result: nominated
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+  - name: IGF Excellence in Visual Art
+    result: honorable-mention
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+  - name: BAFTA Game Beyond Entertainment
+    result: nominated
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+  - name: Game Developers Choice Awards (Best Narrative / Social Impact)
+    result: nominated
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+  - name: D.I.C.E. Award (Story)
+    result: nominated
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+  - name: GLAAD Media Award
+    result: nominated
+    sources: [wikipedia-i-was-a-teenage-exocolonist]
+vancouver_connection: Made by Northway Games after the Northways settled in Vancouver in 2014.
+region: vancouver
+summary: Sarah Northway's narrative card-based life sim with art by Meilee Chao, published by Finji on August 25, 2022. It won the Canadian Screen Award for Best Video Game and the Games for Change Best Gameplay award.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/I_Was_a_Teenage_Exocolonist
+status: single-source
+sources: [wikipedia-i-was-a-teenage-exocolonist, northway-northwaygames-com]
+notes: The infobox also lists Switch 2. In August 2026 Northway Games marked the fourth "Exoversary" with Steam Workshop modding (build 6602). Award details beyond the CSA, Games for Change and TGA come from the research notes.

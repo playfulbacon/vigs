@@ -1,0 +1,31 @@
+id: 2011-03-full-indie-rebrand
+title: Vancouver indie meetup rebrands as Full Indie
+date:
+  value: "2011-03"
+  note: The month comes from CGM alone
+era: first-indies
+type: rename
+summary: After nine meetings, the Vancouver Indie Game Developers group rebrands as Full Indie, launches FullIndie.com
+  and moves to a venue for about 100 people. Su Skerl and Jason Elliot design the brand.
+people:
+- su-skerl
+- jason-elliot
+- jake-birkett
+- alex-vostrov
+orgs:
+- full-indie
+region: vancouver
+significance: 3
+status: single-source
+sources:
+- source: cgm-2014-canadian-scene-part-2
+  note: Only source for the March month
+- fullindie-about
+- wikipedia-full-indie
+open_questions:
+- Was the rebrand in March 2011, and why 'Full Indie'? (Ask Jake Birkett, Alex Vostrov, Su Skerl and Jason Elliot.)
+- When did Full Indie register as a nonprofit society? (Ask the current board, Chloe Ezra.)
+tags:
+- community
+- full-indie
+- rebrand

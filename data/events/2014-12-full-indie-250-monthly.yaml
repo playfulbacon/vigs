@@ -1,0 +1,20 @@
+id: 2014-12-full-indie-250-monthly
+title: Full Indie hosts 250+ developers a month
+date: "2014-12"
+era: indie-house-era
+type: milestone
+summary: CGM reports that Full Indie "now hosts upwards of 250 developers every month." Wikipedia gives more than
+  2,000 members in 2014.
+orgs:
+- full-indie
+region: vancouver
+significance: 2
+status: verified
+sources:
+- source: cgm-2014-canadian-scene-part-2
+  quote: now hosts upwards of 250 developers every month
+- source: wikipedia-full-indie
+  note: More than 2,000 members in 2014 (single source)
+tags:
+- full-indie
+- community

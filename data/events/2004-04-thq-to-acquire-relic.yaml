@@ -1,0 +1,17 @@
+id: 2004-04-thq-to-acquire-relic
+title: THQ announces it will acquire Relic
+date: "2004-04-27"
+era: aaa-roots
+type: acquisition
+summary: THQ announces it will acquire Relic Entertainment for about US$10M.
+orgs:
+- thq
+- relic-entertainment
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-relic-entertainment
+tags:
+- aaa
+- acquisition

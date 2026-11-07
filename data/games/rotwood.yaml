@@ -1,0 +1,22 @@
+id: rotwood
+title: Rotwood
+releases:
+  - date: "2024-04-24"
+    kind: early-access
+    platforms: [Steam]
+    sources: [gematsu-rotwood-now-available-in-early-access]
+  - date: "2026-03-03"
+    kind: full-release
+    sources: [nichegamer-rotwood-hits-full-release-alongside-switch-2-port]
+  - date: "2026-03-03"
+    kind: port
+    platforms: [Switch 2]
+    sources: [nichegamer-rotwood-hits-full-release-alongside-switch-2-port]
+release_status: released
+developers: [klei-entertainment]
+vancouver_connection: Made by Vancouver's Klei Entertainment.
+region: vancouver
+summary: Klei's co-op hack-and-slash game, announced in June 2022. It entered Early Access on April 24, 2024 and reached 1.0 on March 3, 2026 alongside a Switch 2 port.
+status: single-source
+sources: [gematsu-klei-announces-co-op-hack-and-slash-game-rotwood-for-pc, gematsu-rotwood-now-available-in-early-access, nichegamer-rotwood-hits-full-release-alongside-switch-2-port]
+notes: All three dates rest on search snippets (Gematsu, Niche Gamer).

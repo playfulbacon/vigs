@@ -1,0 +1,30 @@
+id: 2013-06-towerfall-ouya-launch
+title: TowerFall launches as an Ouya exclusive
+date: "2013-06-25"
+era: indie-house-era
+type: release
+summary: TowerFall launches as an Ouya exclusive on the console's public launch day and becomes its "killer app."
+  It sells about 7,000 copies there in its first year, about $105K gross.
+people:
+- maddy-thorson
+games:
+- towerfall
+orgs:
+- ouya
+- extremely-ok-games
+places:
+- indie-house
+region: vancouver
+significance: 3
+status: verified
+sources:
+- source: rollingstone-maddy-thorson
+  quote: killer app
+- source: wikipedia-towerfall
+  note: First-year Ouya sales of about 7,000 copies, about $105K gross (single source)
+- wikipedia-ouya
+caveat: The first-year sales figure (about 7,000 copies, $105K gross) rests on Wikipedia alone.
+tags:
+- towerfall
+- release
+- ouya

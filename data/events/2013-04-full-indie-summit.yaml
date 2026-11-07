@@ -1,0 +1,34 @@
+id: 2013-04-full-indie-summit
+title: First Full Indie Summit at the Rio Theatre
+date: "2013-04-20"
+era: indie-house-era
+type: conference
+summary: The first Full Indie Summit is held at the Rio Theatre, conceived by Brian Provinciano and organized with
+  Full Indie, with speakers including Nels Anderson, Jake Kazdal, Adam Boyes (Sony) and Dan Adelman (Nintendo).
+  It fills the gap left by GDC Canada (2009–2010) and the AAA studio closures. It reportedly sold out at about 400
+  attendees.
+people:
+- brian-provinciano
+- nels-anderson
+orgs:
+- full-indie
+- full-indie-summit
+- gdc-canada
+- nintendo
+places:
+- rio-theatre
+region: vancouver
+significance: 3
+status: verified
+sources:
+- vanweekly-2013-full-indie-summit
+- engadget-2013-04-10-full-indie-summit-brings-vancouver-dev-industry-to
+- source: dailyhive-full-indie-summit
+  note: Sold out at about 400 attendees (single source)
+caveat: The sell-out at about 400 attendees rests on a single source.
+open_questions:
+- Did the first Summit sell out at about 400? How much did GDC Canada's end drive it? What did the BetaKit piece
+  get right?
+tags:
+- full-indie-summit
+- conference

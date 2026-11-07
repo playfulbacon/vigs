@@ -1,0 +1,19 @@
+id: 2014-04-phoenix-labs-founded
+title: Phoenix Labs founded
+date: "2014-04"
+era: indie-house-era
+type: founding
+summary: Ex-Riot developers Jesse Houston, Sean Bender and Robin Mayne found Phoenix Labs.
+people:
+- jesse-houston
+- sean-bender
+- robin-mayne
+orgs:
+- phoenix-labs
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- wikipedia-phoenix-labs
+tags:
+- founding

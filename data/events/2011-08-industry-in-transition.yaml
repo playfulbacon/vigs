@@ -1,0 +1,22 @@
+id: 2011-08-industry-in-transition
+title: 'Georgia Straight: Vancouver industry in transition'
+date: "2011-08-31"
+era: first-indies
+type: publication
+summary: The Georgia Straight's "Vancouver video-game industry in transition" reports that "Montreal has taken the
+  lead when it comes to employment" (ESAC's Julien Lavoie), while East Side Games' Jason Bailey says momentum is
+  in social and mobile.
+orgs:
+- esac
+- east-side-games
+- propaganda-games
+region: vancouver
+significance: 2
+status: verified
+sources:
+- source: straight-2011-industry-in-transition
+  quote: Montreal has taken the lead when it comes to employment
+tags:
+- press
+- downturn
+- mobile

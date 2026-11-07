@@ -1,0 +1,27 @@
+id: 2010-01-enviro-bear-igf-nuovo-finalist
+title: Enviro-Bear 2000 is a 2010 IGF Nuovo Award finalist
+date: "2010-01-12"
+era: first-indies
+type: award
+summary: Game Developer runs a "Road to the IGF" feature on Enviro-Bear 2000, a finalist for the 2010 IGF Nuovo
+  Award.
+people:
+- justin-smith
+games:
+- enviro-bear-2000
+region: international
+significance: 2
+status: verified
+sources:
+- gamedev-road-to-the-igf-justin-smith-s-i-enviro-bear-2000-i
+- source: gamedev-interview-bear-theft-auto-the-indie-adventures-of-i-enviro-bea
+  note: '"Bear Theft Auto" interview, Nov 19, 2010'
+caveat: 'Geography caveat: the opened sources call Justin Smith "Canadian" without naming a city; his Vancouver
+  residence is not documented.'
+open_questions:
+- Were you living in Vancouver when you made Enviro-Bear 2000 and Desert Golfing? Who else was in Blinkbat Games?
+  (Ask Justin Smith.)
+tags:
+- indie
+- award
+- igf

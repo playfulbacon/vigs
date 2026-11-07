@@ -1,0 +1,31 @@
+id: 1982-distinctive-software-founded
+title: Distinctive Software founded in Burnaby
+date:
+  value: "1982"
+  note: Wikipedia's EA Vancouver lead says the studio "opened" in January 1983
+era: aaa-roots
+type: founding
+summary: Don Mattrick, then 17, and Jeff Sember found Distinctive Software Inc. (DSI) in Burnaby, with Tarrnie Williams
+  helping to license their first game, Evolution. DSI is the root of the Vancouver studio family tree.
+people:
+- don-mattrick
+- jeff-sember
+- tarrnie-williams
+orgs:
+- distinctive-software
+region: lower-mainland
+significance: 2
+status: verified
+sources:
+- straight-2009-family-tree
+- wikipedia-don-mattrick
+- wikipedia-distinctive-software
+- source: wikipedia-ea-vancouver
+  note: Gives January 1983 as the opening
+open_questions:
+- Was there a Vancouver indie scene before 2008? Think of demoscene, mods, shareware, Flash. Who made games outside
+  the studios? (Ask Jamie Cheng, the Northways, Alex Vostrov and Kimberly Voll.)
+tags:
+- aaa
+- founding
+- family-tree

@@ -1,0 +1,22 @@
+id: 2012-10-retro-city-rampage-release
+title: Brian Provinciano releases Retro City Rampage
+date: "2012-10-09"
+era: indie-house-era
+type: release
+summary: Brian Provinciano's Vblank Entertainment releases Retro City Rampage on PC, PS3 and Vita. Vancouver Weekly
+  later calls him "one of the biggest local names."
+people:
+- brian-provinciano
+games:
+- retro-city-rampage
+orgs:
+- vblank-entertainment
+region: vancouver
+significance: 2
+status: single-source
+sources:
+- wikipedia-retro-city-rampage
+- source: vanweekly-2013-full-indie-summit
+  quote: one of the biggest local names
+tags:
+- release

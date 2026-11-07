@@ -1,0 +1,21 @@
+id: 2010-09-idmtc-takes-effect
+title: BC Interactive Digital Media Tax Credit takes effect
+date: "2010-09-01"
+era: first-indies
+type: policy
+summary: The 17.5% BC Interactive Digital Media Tax Credit takes effect for projects starting after August 31, 2010.
+orgs:
+- bc-idmtc
+- digibc
+region: bc
+significance: 2
+status: verified
+sources:
+- straight-2010-idmtc
+- cra-british-columbia-refundable-media-tax-credits-html
+open_questions:
+- Has any Vancouver indie ever claimed the IDMTC? Did it matter to solo or house-share developers? (Ask Ryan Clark,
+  Jamie Cheng and Sarah Northway.)
+tags:
+- policy
+- tax-credit

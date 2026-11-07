@@ -1,0 +1,19 @@
+id: 2006-action-pants-founded
+title: Action Pants founded
+date: "2006"
+era: aaa-roots
+type: founding
+summary: Action Pants is founded; it later becomes Ubisoft Vancouver.
+orgs:
+- action-pants
+region: vancouver
+significance: 1
+status: verified
+sources:
+- gameinformer-ubisoft-closes-vancouver-studio
+open_questions:
+- When did Action Pants form, and what came of Digital Eclipse/Backbone Vancouver? (Ask former Action Pants or Backbone
+  staff.)
+tags:
+- aaa
+- founding

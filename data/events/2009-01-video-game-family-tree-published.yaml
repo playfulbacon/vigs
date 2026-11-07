@@ -1,0 +1,33 @@
+id: 2009-01-video-game-family-tree-published
+title: Georgia Straight maps Vancouver's video game family tree
+date: "2009-01-28"
+era: first-indies
+type: publication
+summary: 'Blaine Kyllo''s "Vancouver''s video game family tree" in the Georgia Straight maps the spin-offs from
+  EA and Radical and the 2008 layoffs. Alex Garden is quoted: "There''s probably 50 companies that have started
+  up and failed that I''ve never even heard of."'
+people:
+- alex-garden
+- don-mattrick
+- jeff-sember
+- tarrnie-williams
+- rory-armes
+- luke-moloney
+orgs:
+- distinctive-software
+- ea-vancouver
+- radical-entertainment
+- relic-entertainment
+- united-front-games
+- backbone-entertainment
+- hothead-games
+region: vancouver
+significance: 2
+status: verified
+sources:
+- source: straight-2009-family-tree
+  quote: There's probably 50 companies that have started up and failed that I've never even heard of.
+tags:
+- press
+- family-tree
+- downturn

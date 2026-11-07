@@ -45,8 +45,14 @@ awards:
 vancouver_connection: Made by Northway Games after the Northways settled in Vancouver in 2014.
 region: vancouver
 summary: Sarah Northway's narrative card-based life sim with art by Meilee Chao, published by Finji on August 25, 2022. It won the Canadian Screen Award for Best Video Game and the Games for Change Best Gameplay award.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1148760/library_600x900.jpg
+  credit: Northway Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/I_Was_a_Teenage_Exocolonist
+  steam: https://store.steampowered.com/app/1148760/
 status: single-source
 sources: [wikipedia-i-was-a-teenage-exocolonist, northway-northwaygames-com]
 notes: The infobox also lists Switch 2. In August 2026 Northway Games marked the fourth "Exoversary" with Steam Workshop modding (build 6602). Award details beyond the CSA, Games for Change and TGA come from the research notes.

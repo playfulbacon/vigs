@@ -14,5 +14,12 @@ developers: [klei-entertainment]
 vancouver_connection: Made by Vancouver's Klei Entertainment.
 region: vancouver
 summary: The multiplayer follow-up to Don't Starve. It entered Steam Early Access in December 2014; Klei's game list dates it to 2016.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/322330/library_600x900.jpg
+  credit: Klei Entertainment; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/322330/
 status: single-source
 sources: [wikipedia-don-t-starve, wikipedia-klei-entertainment]

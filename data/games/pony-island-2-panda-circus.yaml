@@ -10,6 +10,13 @@ credits:
 vancouver_connection: From Daniel Mullins Games, described as Vancouver-based since about 2020.
 region: vancouver
 summary: Daniel Mullins's sequel to Pony Island, announced at The Game Awards on December 7, 2023 and dated at Gamescom Opening Night Live on August 25, 2026 for April 27, 2027.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/2017940/library_600x900.jpg
+  credit: Daniel Mullins Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/2017940/
 status: verified
 sources: [gamespot-pony-island-2-announced, gamesbeat-pony-island-2-panda-circus-launches-on-april-27-2027]
 notes: Planned release April 27, 2027 (PC/Steam per research notes). The announcement source is a snippet; the dating is verified by GamesBeat.

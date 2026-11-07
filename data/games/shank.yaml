@@ -9,5 +9,12 @@ developers: [klei-entertainment]
 vancouver_connection: Made by Vancouver's Klei Entertainment.
 region: vancouver
 summary: Klei's 2010 action game. CGM notes that Klei had earlier declined to make N+ for Toronto's Metanet, though it is credited with engine work on it. A sequel, Shank 2, followed in 2012.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/6120/library_600x900.jpg
+  credit: Klei Entertainment; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/6120/
 status: verified
 sources: [cgm-2014-canadian-scene-part-2, wikipedia-klei-entertainment]

@@ -17,6 +17,13 @@ developers: [klei-entertainment]
 vancouver_connection: Made by Vancouver's Klei Entertainment.
 region: vancouver
 summary: Klei's co-op hack-and-slash game, announced in June 2022. It entered Early Access on April 24, 2024 and reached 1.0 on March 3, 2026 alongside a Switch 2 port.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/2015270/library_600x900.jpg
+  credit: Klei Entertainment; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/2015270/
 status: single-source
 sources: [gematsu-klei-announces-co-op-hack-and-slash-game-rotwood-for-pc, gematsu-rotwood-now-available-in-early-access, nichegamer-rotwood-hits-full-release-alongside-switch-2-port]
 notes: All three dates rest on search snippets (Gematsu, Niche Gamer).

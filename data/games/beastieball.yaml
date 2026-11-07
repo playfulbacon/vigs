@@ -28,6 +28,11 @@ crowdfunding:
 vancouver_connection: Made by Greg Lobanov's Wishes Unlimited (a four-person studio in 2024) and published by Vancouver's Klei, with audio by A Shell in the Pit.
 region: vancouver
 summary: Greg Lobanov's creature-sports RPG, revealed at Day of the Devs (Summer Game Fest) in June 2023 and Kickstarted soon after. It entered Steam Early Access on November 12, 2024 under Klei Publishing and, as of November 2026, remains in Early Access with 1.0 set for early 2027.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1864950/library_600x900.jpg
+  credit: Wishes Unlimited; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   steam: https://store.steampowered.com/app/1864950/Beastieball/
   wikipedia: https://en.wikipedia.org/wiki/Beastieball

@@ -79,8 +79,14 @@ sales:
     as_of: "2025-01"
     sources: [wikipedia-celeste-video-game]
 summary: Maddy Thorson's mountain-climbing platformer, grown from the 2015 PICO-8 jam game and released on January 25, 2018. It won Best Independent Game and Games for Impact at The Game Awards 2018 and had sold 1.7 million copies by January 2025.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/504230/library_600x900.jpg
+  credit: Extremely OK Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Celeste_(video_game)
+  steam: https://store.steampowered.com/app/504230/
 status: single-source
 sources: [wikipedia-celeste-video-game, egm-power-up-audio, wikipedia-the-game-awards-2018, straight-2024-indie-hub, pcgamer-celeste-developer-starts-2025-with-a-huge-heartbreaking-and-ye, gamedev-i-celeste-s-i-audio-files-are-now-publicly-available-for-devs]
 notes: Wikipedia credits Kevin Regamey by name, not Power Up Audio as a company; EGM says PUA did all sound design plus some music support. PUA released the game's FMOD project and source audio in early 2020. The 1.7M figure appears in PC Gamer's Earthblade coverage, whose body could not be read. The Straight's Indie House tie is not otherwise detailed, so made_at is left empty.

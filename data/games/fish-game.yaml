@@ -9,5 +9,12 @@ developers: [a-shell-in-the-pit]
 vancouver_connection: The first own game from Vancouver audio studio A Shell in the Pit.
 region: vancouver
 summary: An aquarium simulator launched in 2023 by A Shell in the Pit, the Vancouver audio studio best known for sound and music on other developers' games.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1372150/library_600x900.jpg
+  credit: A Shell in the Pit; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/1372150/
 status: verified
 sources: [asitp-press, straight-2024-indie-hub]

@@ -21,5 +21,12 @@ audio_by: [power-up-audio]
 vancouver_connection: Made by Red Hook Studios ("the local team," per the Georgia Straight); Power Up Audio lists it among its credits.
 region: vancouver
 summary: Red Hook's sequel to Darkest Dungeon, announced in February 2019 and released in 1.0 on Windows in May 2023 after about 18 months in Early Access.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1940340/library_600x900.jpg
+  credit: Red Hook Studios; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/1940340/
 status: single-source
 sources: [wikipedia-darkest-dungeon, powerupaudio-home]

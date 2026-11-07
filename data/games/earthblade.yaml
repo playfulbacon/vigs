@@ -12,6 +12,13 @@ credits:
 vancouver_connection: Extremely OK Games' Vancouver-made follow-up to Celeste.
 region: vancouver
 summary: Extremely OK Games' "explor-action" follow-up to Celeste, announced in April 2021, shown at The Game Awards 2022 with a 2024 target and delayed in March 2024. EXOK cancelled it on January 22, 2025, after co-founder Pedro Medeiros left in November 2024 following a dispute over Celeste's IP; published accounts differ on how much that dispute caused the cancellation.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/2239640/library_600x900.jpg
+  credit: Extremely OK Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/2239640/
 accounts:
 - summary: The cancellation centred on a disagreement over the IP rights of Celeste between Thorson and
     Berry on one side and Medeiros on the other.

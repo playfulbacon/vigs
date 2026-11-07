@@ -12,7 +12,13 @@ developers: [klei-entertainment]
 vancouver_connection: Made by Vancouver's Klei Entertainment.
 region: vancouver
 summary: Klei's tactical stealth game. It entered Early Access in January 2014 and got its full release on May 12, 2015, the same day as TowerFall Ascension's Dark World expansion.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/243970/library_600x900.jpg
+  credit: Klei Entertainment; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Invisible,_Inc.
+  steam: https://store.steampowered.com/app/243970/
 status: single-source
 sources: [wikipedia-invisible-inc]

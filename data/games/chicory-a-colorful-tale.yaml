@@ -53,8 +53,14 @@ awards:
 vancouver_connection: Made by Greg Lobanov in Vancouver, with audio by Vancouver's A Shell in the Pit; Lobanov calls it his biggest success.
 region: vancouver
 summary: Greg Lobanov's painting adventure game, Kickstarted as Drawdog in August 2019 and released by Finji on June 10, 2021, with lead art by Alexis Dean-Jones and Madeline Berger and music by Lena Raine. It won a BAFTA in the Family category.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1123450/library_600x900.jpg
+  credit: Wishes Unlimited; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Chicory:_A_Colorful_Tale
+  steam: https://store.steampowered.com/app/1123450/
 status: single-source
 sources: [wikipedia-chicory-a-colorful-tale, straight-2024-indie-hub, asitp-home, asitp-press]
 notes: The BAFTA year (2021) is from A Shell in the Pit's press page. Lena Raine's Vancouver residence is unconfirmed.

@@ -36,7 +36,13 @@ awards:
 vancouver_connection: Made by Sunset Visitor, a four-person Vancouver team from outside the Indie House lineage.
 region: vancouver
 summary: Sunset Visitor's narrative game, led by Remy Siu and Kodai Yanagawa and published by Fellow Traveller on May 9, 2024. It won a 2024 Peabody Award and was an IGF Grand Prize nominee.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1675830/library_600x900.jpg
+  credit: Sunset Visitor; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/1000xResist
+  steam: https://store.steampowered.com/app/1675830/
 status: single-source
 sources: [wikipedia-1000xresist, mobilesyrup-1000xresist-vancouver-sunset-visitor-remy-siu-interview]

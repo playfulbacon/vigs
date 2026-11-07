@@ -10,5 +10,12 @@ audio_by: [power-up-audio]
 vancouver_connection: Made by Vancouver's Klei Entertainment; Power Up Audio lists it among its credits.
 region: vancouver
 summary: Klei's deck-building role-playing game, released in June 2021.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/601840/library_600x900.jpg
+  credit: Klei Entertainment; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/601840/
 status: single-source
 sources: [wikipedia-klei-entertainment, powerupaudio-home]

@@ -11,5 +11,12 @@ publishers: [buffalo-buffalo]
 vancouver_connection: Self-published by Vancouver studio Buffalo Buffalo, per MobileSyrup.
 region: vancouver
 summary: A 2025 game self-published by Vancouver's Buffalo Buffalo and narrated by Peter Stormare, listed by MobileSyrup among the top Canadian games of 2025.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/3202950/library_600x900.jpg
+  credit: Buffalo Buffalo; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/3202950/
 status: verified
 sources: [mobilesyrup-top-canadian-games-of-2025]

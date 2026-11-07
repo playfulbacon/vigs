@@ -24,8 +24,14 @@ awards:
 vancouver_connection: Released in 2016, after the Northways settled in Vancouver in 2014; audio by Gordon McGladdery of Vancouver's A Shell in the Pit, which lists Fantastic Contraption among its credits.
 region: vancouver
 summary: A VR remake of Fantastic Contraption by Northway Games with Radial Games, launched bundled with the HTC Vive on April 5, 2016.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/386690/library_600x900.jpg
+  credit: Northway Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Fantastic_Contraption_(2016_video_game)
+  steam: https://store.steampowered.com/app/386690/
 status: single-source
 sources: [wikipedia-fantastic-contraption-2016-video-game, asitp-home]
 notes: Co-developer Radial Games has no org record. Colin Northway's credit (report people card) and the IGF Nuovo nomination come from the research notes (people_bios.md); the award year is not given. Whether ASITP's "Fantastic Contraption" credit refers to this version is not stated.

@@ -78,8 +78,14 @@ sales:
     as_of: "2022-01"
     sources: [wikipedia-inscryption]
 summary: Daniel Mullins Games' card-based horror game, published by Devolver Digital on October 19, 2021. It grew from Mullins's Ludum Dare 43 game Sacrifices Must Be Made, sold over a million copies by January 2022, and won both the IGF Grand Prize and GDCA Game of the Year in March 2022.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1092790/library_600x900.jpg
+  credit: Daniel Mullins Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Inscryption
+  steam: https://store.steampowered.com/app/1092790/
 status: single-source
 sources: [wikipedia-inscryption, gamedev-how-game-jam-sacrifices-became-inscryption, thumbsticks-magic-myst-pokemon-inspire-inscryption, cgd-inscryption-announced]
 notes: The Ludum Dare 43 jam has no event record, so origin_event is unset. Award details beyond the Grand Prize and GDCA GOTY come from the research notes.

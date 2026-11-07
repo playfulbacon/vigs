@@ -10,5 +10,12 @@ publishers: [gearbox-publishing]
 vancouver_connection: Made by Vancouver's Blackbird Interactive.
 region: vancouver
 summary: Blackbird Interactive's Homeworld sequel, published by Gearbox on May 13, 2024.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1840080/library_600x900.jpg
+  credit: Blackbird Interactive; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/1840080/
 status: single-source
 sources: [wikipedia-blackbird-interactive]

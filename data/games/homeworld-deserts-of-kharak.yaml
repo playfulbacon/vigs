@@ -10,5 +10,12 @@ publishers: [gearbox-publishing]
 vancouver_connection: Made by Vancouver's Blackbird Interactive, founded by Relic veterans who worked on the original Homeworld.
 region: vancouver
 summary: Blackbird Interactive's Homeworld prequel, published by Gearbox on January 20, 2016.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/281610/library_600x900.jpg
+  credit: Blackbird Interactive; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/281610/
 status: single-source
 sources: [wikipedia-blackbird-interactive]

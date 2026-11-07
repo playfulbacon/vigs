@@ -19,8 +19,14 @@ credits:
     sources: [wikipedia-amora-bettany]
 vancouver_connection: Disputed. MobileSyrup calls Ivy Road a team "led by Davey Wreden and Karla Zimonja in Vancouver," and Wreden has lived in Vancouver since 2019; Wikipedia cites C418 describing a studio "based in Austin, Texas."
 summary: A game by Ivy Road (Davey Wreden, Karla Zimonja and C418), with concept art by Amora Bettany, published by Annapurna on March 11, 2025. Ivy Road shut down on March 31, 2026, per Wikipedia.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1299460/library_600x900.jpg
+  credit: Ivy Road; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Wanderstop
+  steam: https://store.steampowered.com/app/1299460/
 accounts:
 - summary: Made by Ivy Road, a global team led by Davey Wreden and Karla Zimonja in Vancouver.
   sources:

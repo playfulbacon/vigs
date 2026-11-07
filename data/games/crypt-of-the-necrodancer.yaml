@@ -23,8 +23,14 @@ audio_by: [power-up-audio]
 vancouver_connection: Made by Ryan Clark's Vancouver studio Brace Yourself Games and published by Vancouver's Klei, an early case of a local indie publishing another; Power Up Audio did audio work. Where composer Danny Baranowsky was based is unknown.
 region: vancouver
 summary: Brace Yourself Games' rhythm roguelike, directed by Ryan Clark with music by Danny Baranowsky. It entered Steam Early Access on July 30, 2014 and got its full release, published by Klei, on April 23, 2015.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/247080/library_600x900.jpg
+  credit: Brace Yourself Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Crypt_of_the_NecroDancer
+  steam: https://store.steampowered.com/app/247080/
 status: single-source
 sources: [wikipedia-crypt-of-the-necrodancer, wikipedia-klei-entertainment, egm-power-up-audio]
 notes: PUA's SFX/VO role is from the research notes; A Shell in the Pit did trailer audio (asitp-home).

@@ -66,8 +66,14 @@ sales:
     as_of: "2014-04-28"
     sources: [gamedev-i-towerfall-i-grosses-500-000-after-launching-on-pc-playstatio]
 summary: Maddy Thorson's local-multiplayer archery game, begun as a Flash prototype at the June 2012 Full Indie Game Jam after a visit with Alec Holowka. It launched as an Ouya exclusive in June 2013, becoming the console's "killer app," and as TowerFall Ascension on PS4 and Steam in March 2014.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/251470/library_600x900.jpg
+  credit: Extremely OK Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/TowerFall
+  steam: https://store.steampowered.com/app/251470/
 status: verified
 sources: [cgm-2014-canadian-scene-part-2, wikipedia-towerfall, rollingstone-maddy-thorson, psblog-word-mouth-hit-towerfall-ascension-made-way-ps4, gamedev-i-towerfall-i-grosses-500-000-after-launching-on-pc-playstatio, gamedev-looking-back-at-what-it-felt-like-to-launch-i-towerfall-ascens, egm-power-up-audio, straight-2024-indie-hub]
 notes: Holowka stepped back from the project soon after the jam. Wikipedia credits the TowerFall sound effects to Power Up Audio; EGM says PUA's TowerFall SFX work started at the January 2013 Global Game Jam. CGM calls the IGF 2014 result a "finalist"; Wikipedia says nominee (lost to Papers, Please). Research notes (people_bios.md) also credit Holowka with music for TowerFall Ascension. MiniBoss finished the graphics.

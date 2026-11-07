@@ -12,6 +12,13 @@ developers: [blackbird-interactive]
 vancouver_connection: Made by Vancouver's Blackbird Interactive.
 region: vancouver
 summary: Blackbird Interactive's spaceship-salvage game, in Early Access from June 16, 2020 and at 1.0 in 2022. In August 2025 Blackbird bought the Hardspace IP from publisher Focus and signed with Lyrical Games.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1161580/library_600x900.jpg
+  credit: Blackbird Interactive; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/1161580/
 status: single-source
 sources: [wikipedia-blackbird-interactive]
 notes: Publisher Focus and Lyrical Games have no org records.

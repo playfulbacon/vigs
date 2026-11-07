@@ -15,6 +15,11 @@ credits:
 vancouver_connection: Coldblood Inc. is described by Gematsu (snippet) as "an independent Vancouver studio"; Pedro Medeiros's own residence is unconfirmed.
 region: vancouver
 summary: A life-sim from Coldblood Inc., founded by Pedro Medeiros and Isadora Sophia, backed by Outersloth and scored by Disasterpeace. A free prologue came out and an October 2026 window was announced in April 2026; the Steam page now lists a planned 2027 release.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/2318330/library_600x900.jpg
+  credit: Coldblood Inc.; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   steam: https://store.steampowered.com/app/2318330/Neverway/
 status: verified

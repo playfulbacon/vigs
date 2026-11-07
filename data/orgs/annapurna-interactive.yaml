@@ -4,6 +4,11 @@ aliases:
 - Annapurna
 kind: publisher
 summary: Published Ivy Road's Wanderstop (2025).
+logo:
+  source_url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Annapurna_Interactive_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original
+  credit: Annapurna Interactive; image via Wikipedia
+  license: Non-free; used for identification
+  permission: unknown
 status: single-source
 sources:
 - wikipedia-wanderstop

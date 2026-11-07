@@ -9,5 +9,12 @@ developers: [phoenix-labs]
 vancouver_connection: Made by Vancouver's Phoenix Labs.
 region: vancouver
 summary: A farming and life sim released by Phoenix Labs in 2023, before the studio's 2024–2025 layoffs.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/2230110/library_600x900.jpg
+  credit: Phoenix Labs; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/2230110/
 status: single-source
 sources: [wikipedia-phoenix-labs]

@@ -41,8 +41,14 @@ sales:
 vancouver_connection: Not a Vancouver game; Red Nexus Games has University of Victoria roots, and the report places it in its Victoria sidebar.
 region: victoria
 summary: A pachinko roguelike from Red Nexus Games that began at Orca Jam 2019, entered Steam Early Access on April 25, 2022 and reached 1.0 with a Switch release on August 27, 2024.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1296610/library_600x900.jpg
+  credit: Red Nexus Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Peglin
+  steam: https://store.steampowered.com/app/1296610/
 status: single-source
 sources: [wikipedia-peglin, gamedev-from-game-jam-to-winning-best-design-the-story-behind-peglin, shacknews-peglin-developer-talks-making-the-game-with-a-four-person-te]
 notes: Co-publishers IndieArk and BlitWorks have no org records. The "Victoria" region is the report's sidebar placement; the studio is described as BC-based with UVic roots.

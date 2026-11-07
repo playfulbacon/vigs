@@ -10,5 +10,12 @@ developers: [klei-entertainment]
 vancouver_connection: Klei Entertainment's first game, made by Jamie Cheng's Vancouver studio, founded July 2005.
 region: vancouver
 summary: Klei Entertainment's first game, released for Windows on March 27, 2006. Game Developer ran a "Road to the IGF" feature on it. Klei later released Eets Munchies (2014).
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/6100/header.jpg
+  credit: Klei Entertainment; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/6100/
 status: single-source
 sources: [wikipedia-klei-entertainment, gamedev-road-to-the-igf-klei-entertainment-s-i-eets-i]

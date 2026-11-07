@@ -48,8 +48,14 @@ crowdfunding:
   raised: more than US$200,000 (US$50,000 goal met in 26 hours)
   sources: [wikipedia-night-in-the-woods]
 summary: An adventure game by Infinite Fall (Alec Holowka, Scott Benson and Bethany Hockenberry) with Secret Lab, published by Finji on February 21, 2017. It won the IGF 2018 Seumas McNally Grand Prize and a BAFTA for Narrative.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/481510/library_600x900.jpg
+  credit: Infinite Fall; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Night_in_the_Woods
+  steam: https://store.steampowered.com/app/481510/
 status: verified
 sources: [straight-2024-indie-hub, wikipedia-night-in-the-woods, igf-night-woods, asitp-home, wikipedia-alec-holowka]
 notes: >-

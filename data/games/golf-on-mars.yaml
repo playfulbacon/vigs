@@ -13,5 +13,12 @@ credits:
 vancouver_connection: Justin Smith's follow-up to Desert Golfing; his Vancouver residence is unconfirmed.
 region: canada
 summary: Justin Smith's follow-up to Desert Golfing, released in July 2020 under the studio name Captain Games.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/1340570/library_600x900.jpg
+  credit: Captain Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/1340570/
 status: single-source
 sources: [wikipedia-desert-golfing]

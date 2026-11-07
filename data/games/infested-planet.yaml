@@ -9,6 +9,13 @@ credits:
 vancouver_connection: Made by Vancouver solo developer Alex Vostrov, Full Indie co-founder and president 2010–2016, at Rocket Bear Games (formerly Indiebird).
 region: vancouver
 summary: The first commercial game from Alex Vostrov's one-man studio Rocket Bear Games. No release date is recorded in the research.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/204530/library_600x900.jpg
+  credit: Rocket Bear Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/204530/
 status: single-source
 sources: [gamedev-interview-a-rocket-bear-takes-off-vostrov-on-going-full-time-i]
 notes: Release date and platforms not found in the report or notes.

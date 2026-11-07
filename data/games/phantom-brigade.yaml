@@ -9,6 +9,13 @@ developers: [brace-yourself-games]
 audio_by: [power-up-audio]
 vancouver_connection: Released by Vancouver's Brace Yourself Games through Tetragon Works, which it acquired in 2018; Power Up Audio lists it among its credits.
 summary: A mech tactics game Brace Yourself Games released in 2020 through Tetragon Works, a developer it acquired in 2018.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/553540/library_600x900.jpg
+  credit: Brace Yourself Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/553540/
 status: single-source
 sources: [wikipedia-brace-yourself-games, powerupaudio-home]
 notes: Tetragon Works has no org record and its location is not stated, so no region is set. BYG's Wikipedia page carries an AI-generated-text flag.

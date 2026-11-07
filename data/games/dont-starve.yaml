@@ -19,8 +19,14 @@ awards:
 vancouver_connection: Made by Vancouver's Klei Entertainment.
 region: vancouver
 summary: Klei's survival game, released on April 23, 2013 for Windows, OS X and Linux. It grew from a prototype by Kevin Forbes and Ju-Lian Kwan, and CGM lists it as an IGF 2014 Grand Prize finalist.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/219740/library_600x900.jpg
+  credit: Klei Entertainment; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Don%27t_Starve
+  steam: https://store.steampowered.com/app/219740/
 status: single-source
 sources: [wikipedia-don-t-starve, cgm-2014-canadian-scene-part-2, wikipedia-klei-entertainment]
 notes: The Kevin Forbes / Ju-Lian Kwan prototype detail is from the research notes (early_history_1980s_2011.md); Ju-Lian Kwan has no person record.

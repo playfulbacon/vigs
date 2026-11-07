@@ -10,5 +10,12 @@ developers: [klei-entertainment]
 vancouver_connection: Made by Vancouver's Klei Entertainment.
 region: vancouver
 summary: Klei's colony simulation, which reached 1.0 in 2019. The month is unverified.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/457140/library_600x900.jpg
+  credit: Klei Entertainment; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/457140/
 status: single-source
 sources: [wikipedia-klei-entertainment]

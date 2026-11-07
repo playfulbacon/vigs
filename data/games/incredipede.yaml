@@ -23,8 +23,14 @@ awards:
     sources: [wikipedia-incredipede]
 vancouver_connection: Made while the Northways were travelling, before they settled in Vancouver in 2014; it is part of their story but not a Vancouver-made game.
 summary: A creature-building physics puzzle game designed by Colin and Sarah Northway with art by Thomas Shahan, released October 25, 2012. It was a 2013 IGF finalist and was developed while the couple visited numerous countries.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/230150/library_600x900.jpg
+  credit: Northway Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/Incredipede
+  steam: https://store.steampowered.com/app/230150/
 status: verified
 sources: [straight-2024-indie-hub, wikipedia-incredipede]
 notes: Research notes add that Colin found Shahan through the Wikipedia article on jumping spiders, that it was greenlit on Steam in January 2013, and that it appeared at TGS Sense of Wonder Night 2011 and was an IGF Excellence in Visual Art nominee.

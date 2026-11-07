@@ -16,6 +16,13 @@ audio_by: [power-up-audio]
 vancouver_connection: Made by Vancouver's Brace Yourself Games (with TicToc Games) and published by Vancouver's Klei, with audio by Power Up Audio.
 region: vancouver
 summary: Brace Yourself Games' rhythm game, made with TicToc Games and published by Klei, released on Steam on February 5, 2025 and on Switch on March 27. MobileSyrup listed it among the top Canadian games of 2025.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/2073250/library_600x900.jpg
+  credit: Brace Yourself Games; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
+links:
+  steam: https://store.steampowered.com/app/2073250/
 status: verified
 sources: [mobilesyrup-top-canadian-games-of-2025, gematsu-rift-of-the-necrodancer-launches-february-5-2025-for-pc-later, wikipedia-klei-entertainment, egm-power-up-audio]
 notes: Exact dates rest on a Gematsu snippet. TicToc Games has no org record. Research notes mention DLC crossovers with Celeste, Super Meat Boy and Shovel Knight, and a 2025 Indie Game Award for music (unsourced in the report).

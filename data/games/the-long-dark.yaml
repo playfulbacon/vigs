@@ -45,7 +45,13 @@ sales:
 vancouver_connection: Not a Vancouver game. Ex-Relic developer Raphael van Lierop moved from Vancouver to the Comox Valley and formed Hinterland as a mostly remote team; the report places it in its Vancouver Island sidebar.
 region: vancouver-island
 summary: Hinterland Studio's survival game, in Early Access from September 2014 and fully released on August 1, 2017. It sold 3.3 million copies by September 2019 and 5 million by 2021.
+box_art:
+  source_url: https://cdn.cloudflare.steamstatic.com/steam/apps/305620/library_600x900.jpg
+  credit: Hinterland Studio; image via Steam
+  license: Non-free; used for identification
+  permission: unknown
 links:
   wikipedia: https://en.wikipedia.org/wiki/The_Long_Dark
+  steam: https://store.steampowered.com/app/305620/
 status: single-source
 sources: [wikipedia-the-long-dark]

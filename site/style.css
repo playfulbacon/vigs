@@ -38,15 +38,10 @@ a { color: var(--accent); }
 .wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 
-.masthead { padding: 40px 0 20px; border-bottom: 1px solid var(--rule); }
-.kicker { text-transform: uppercase; letter-spacing: .12em; font-size: 12px; color: var(--muted); margin: 0 0 6px; }
-h1 { font: 600 clamp(30px, 5vw, 46px)/1.1 var(--serif); margin: 0 0 14px; }
 h2 { font: 600 26px/1.2 var(--serif); margin: 24px 0 8px; }
-.lede { font: 19px/1.55 var(--serif); max-width: 46em; margin: 0 0 12px; }
-.stats { color: var(--muted); font-size: 14px; margin: 0; }
 .note { color: var(--muted); max-width: 46em; }
 
-.tabs { display: flex; gap: 4px; margin-top: 16px; border-bottom: 1px solid var(--rule); overflow-x: auto; }
+.tabs { display: flex; gap: 4px; margin-top: 8px; border-bottom: 1px solid var(--rule); overflow-x: auto; }
 .tabs button { font: 15px var(--sans); background: none; border: 0; padding: 10px 14px; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; }
 .tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
 
@@ -105,17 +100,34 @@ h2 { font: 600 26px/1.2 var(--serif); margin: 24px 0 8px; }
 .linklist li { padding-left: 0; }
 .linklist button { font: inherit; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
 
-table.planner { width: 100%; border-collapse: collapse; font-size: 15px; }
-.planner th { text-align: left; font: 600 12px var(--sans); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid var(--rule); padding: 8px 6px; }
-.planner td { border-bottom: 1px solid var(--rule); padding: 8px 6px; }
-.planner td:nth-child(n+3) { font-variant-numeric: tabular-nums; }
-.planner tr { cursor: pointer; }
-.planner tr:hover td { background: var(--surface); }
-@media (max-width: 640px) { .planner th:nth-child(2), .planner td:nth-child(2) { display: none; } }
 
 .qgroup h3 { font: 600 18px var(--serif); margin: 24px 0 6px; }
 .q { border-bottom: 1px solid var(--rule); padding: 10px 0; }
 .q p { margin: 0 0 4px; }
 .q button { font: 14px var(--sans); color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
 
-.footer { color: var(--muted); font-size: 14px; padding-top: 30px; padding-bottom: 40px; }
+
+.tag { display: inline-block; font-size: 12px; line-height: 1.5; padding: 0 7px; border-radius: 4px; background: var(--bg); border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; vertical-align: 1px; }
+
+.lane-toggles { display: flex; flex-wrap: wrap; gap: 8px; }
+.lane-toggle { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; padding: 4px 12px 4px 8px; border: 1px solid var(--rule); border-radius: 999px; background: var(--surface); cursor: pointer; user-select: none; }
+.lane-toggle input { position: absolute; opacity: 0; pointer-events: none; }
+.lane-toggle .swatch { width: 11px; height: 11px; border-radius: 50%; }
+.lane-toggle:has(input:not(:checked)) { color: var(--muted); background: transparent; }
+.lane-toggle:has(input:not(:checked)) .swatch { background: transparent !important; outline: 1.5px solid var(--muted); outline-offset: -1.5px; }
+.lane-toggle:has(input:focus-visible) { outline: 2px solid var(--accent); }
+
+.list-head { display: flex; align-items: center; gap: 12px; padding: 16px 0 10px; }
+.list-head input { flex: 0 1 320px; font: 15px var(--sans); padding: 7px 12px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); color: var(--ink); }
+.list-head .count { color: var(--muted); font-size: 14px; }
+.table-scroll { overflow-x: auto; }
+table.list { width: 100%; border-collapse: collapse; font-size: 15px; }
+.list th { text-align: left; font: 600 12px var(--sans); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid var(--rule); padding: 8px 8px; cursor: pointer; white-space: nowrap; user-select: none; }
+.list th[aria-sort="ascending"], .list th[aria-sort="descending"] { color: var(--ink); }
+.list td { border-bottom: 1px solid var(--rule); padding: 9px 8px; vertical-align: top; }
+.list td strong { font-weight: 600; }
+.list tbody tr { cursor: pointer; }
+.list tbody tr:hover td, .list tbody tr:focus td { background: var(--surface); }
+.list tbody tr:focus { outline: none; }
+.list .zero { color: var(--rule); }
+@media (max-width: 760px) { .list .narrow { display: none; } }

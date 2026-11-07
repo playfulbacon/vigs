@@ -1,6 +1,6 @@
 /* Vancouver Indie Games Story: interactive timeline.
    Reads graph.json (built by `python3 tools/vigs.py build`) and renders a timeline,
-   detail panels, an interview planner and a list of open questions. No dependencies. */
+   detail panels, a list view per category and a list of open questions. No dependencies. */
 (() => {
   "use strict";
 
@@ -12,6 +12,7 @@
   let zoom = 1;
   let focus = null;             // { type, id } entity being followed
   let selected = null;          // selected event id
+  const hiddenLanes = new Set();
 
   const LANES = [
     { id: "community", label: "Community", color: "--lane-community" },
@@ -98,6 +99,7 @@
   // ------------------------------------------------------------ filters
 
   function passes(e) {
+    if (hiddenLanes.has(laneOf(e))) return false;
     const statuses = [...document.querySelectorAll('[data-filter="status"]:checked')].map((i) => i.value);
     if (!statuses.includes(e.status === "interview-only" ? "unverified" : e.status)) return false;
     const region = $("#region").value;
@@ -135,6 +137,7 @@
     const ROW = 18, AXIS = 46, LANE_GAP = 14;
     const placed = [];
     const laneRows = {};
+    const lanes = LANES.filter((l) => !hiddenLanes.has(l.id));
     for (const lane of LANES) laneRows[lane.id] = [];
     for (const e of events) {
       const r = drange(e.date); if (!r) continue;
@@ -159,7 +162,7 @@
     // lane geometry
     let y = AXIS;
     const laneY = {};
-    for (const lane of LANES) {
+    for (const lane of lanes) {
       const n = Math.max(1, laneRows[lane.id].length);
       laneY[lane.id] = { top: y, height: n * ROW + 16 };
       y += n * ROW + 16 + LANE_GAP;
@@ -193,7 +196,7 @@
 
     // lane labels (pinned to the visible left edge by a scroll handler)
     const labels = el("g", { id: "lane-labels" }, svg);
-    for (const lane of LANES) {
+    for (const lane of lanes) {
       const L = laneY[lane.id];
       el("line", { x1: 0, x2: width, y1: L.top - LANE_GAP / 2, y2: L.top - LANE_GAP / 2, stroke: cssVar("--rule") }, svg);
       el("rect", { x: 0, y: L.top, width: lane.label.length * 7.4 + 14, height: 17, fill: cssVar("--surface"), opacity: 0.92 }, labels);
@@ -240,7 +243,6 @@
       `<svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-dasharray="${dash}"/></svg>`;
     const ink = cssVar("--muted"), surf = cssVar("--surface");
     $("#legend").innerHTML =
-      LANES.map((l) => `<span>${dot(cssVar(l.color), cssVar(l.color))}${l.label}</span>`).join("") +
       `<span>${dot(ink, ink)}Verified</span><span>${dot(surf, ink)}Single source</span>` +
       `<span>${dot(surf, cssVar("--disputed"), "", 2.5)}Disputed</span><span>${dot(surf, ink, "2 2")}Unverified</span>` +
       `<span><svg width="26" height="14"><rect x="0" y="4" width="26" height="6" rx="3" fill="${ink}" opacity=".28"/></svg>A span, or an uncertain date</span>` +
@@ -267,6 +269,7 @@
   const nameOf = (type, id) => { const r = G[type]?.[id]; return r ? (r.name || r.title) : id; };
   const chip = (type, id) => G[type]?.[id] ? `<button class="chip" data-type="${type}" data-id="${esc(id)}">${esc(nameOf(type, id))}</button>` : "";
   const chips = (type, ids) => (ids || []).filter((id) => G[type]?.[id]).length ? `<div class="chips">${ids.map((id) => chip(type, id)).join("")}</div>` : "";
+  const dateTag = (d) => d ? `<span class="tag">${esc(dlabel(d))}</span>` : "";
   const badge = (s) => s ? `<span class="badge ${esc(s)}">${esc(STATUS_LABEL[s] || s)}</span>` : "";
 
   function sourceList(cites) {
@@ -287,7 +290,7 @@
   function eventList(ids) {
     const evs = (ids || []).map((id) => G.event[id]).filter(Boolean).sort((a, b) => sortKey(a.date) - sortKey(b.date));
     if (!evs.length) return "";
-    return `<ul class="linklist">${evs.map((e) => `<li><button data-type="event" data-id="${esc(e.id)}">${esc(dlabel(e.date))}: ${esc(e.title)}</button> ${e.status !== "verified" ? badge(e.status) : ""}</li>`).join("")}</ul>`;
+    return `<ul class="linklist">${evs.map((e) => `<li><button data-type="event" data-id="${esc(e.id)}">${esc(e.title)}</button> ${dateTag(e.date)} ${e.status !== "verified" ? badge(e.status) : ""}</li>`).join("")}</ul>`;
   }
 
   function linksBlock(links) {
@@ -314,8 +317,8 @@
     const e = G.event[id]; if (!e) return;
     selected = id;
     const era = G.era[e.era];
-    let h = `<p class="meta">${esc(dlabel(e.date))}${e.end_date ? " – " + esc(dlabel(e.end_date)) : ""} · ${esc(era?.title || "")}</p>`;
-    h += `<h3>${esc(e.title)}</h3><p>${badge(e.status)} <span class="meta">${esc(e.type)}</span></p>`;
+    let h = `<p class="meta">Event · ${esc(era?.title || "")}</p>`;
+    h += `<h3>${esc(e.title)}</h3><p>${dateTag(e.date)}${e.end_date ? ` → ${dateTag(e.end_date)}` : ""} ${badge(e.status)} <span class="tag">${esc(e.type)}</span></p>`;
     if (e.summary) h += `<p>${esc(e.summary)}</p>`;
     if (e._ages) h += `<p class="meta">Ages at the time: ${Object.entries(e._ages).map(([p, a]) => `${esc(nameOf("person", p))} ${esc(a)}`).join(", ")}</p>`;
     h += common(e);
@@ -464,18 +467,12 @@
     });
   }
 
-  // ------------------------------------------------------------ planner and questions
+  // ------------------------------------------------------------ questions
 
-  function personGaps(pid) {
+  const personGaps = (pid) => {
     const evs = (G.person[pid]._links?.events || []).map((id) => G.event[id]).filter(Boolean);
-    return {
-      questions: evs.reduce((n, e) => n + (e.open_questions?.length || 0), 0),
-      disputed: evs.filter((e) => e.status === "disputed").length,
-      thin: evs.filter((e) => e.status === "single-source" || e.status === "unverified").length,
-      events: evs.length,
-      evs,
-    };
-  }
+    return { evs };
+  };
 
   function askBlock(pid) {
     const { evs } = personGaps(pid);
@@ -483,20 +480,9 @@
     const disputed = evs.filter((e) => e.status === "disputed");
     if (!qs.length && !disputed.length) return "";
     let h = `<h4>Things to ask</h4>`;
-    if (qs.length) h += `<ul>${qs.flatMap((e) => e.open_questions.map((q) => `<li>${esc(q)} <span class="linklist"><button data-type="event" data-id="${esc(e.id)}">(${esc(dlabel(e.date))})</button></span></li>`)).join("")}</ul>`;
+    if (qs.length) h += `<ul>${qs.flatMap((e) => e.open_questions.map((q) => `<li>${esc(q)} <span class="linklist"><button data-type="event" data-id="${esc(e.id)}">${esc(e.title)}</button></span></li>`)).join("")}</ul>`;
     if (disputed.length) h += `<p class="meta">Disputed events they were part of:</p>${eventList(disputed.map((e) => e.id))}`;
     return h;
-  }
-
-  function renderPlanner() {
-    const rows = Object.values(G.person).map((p) => ({ p, ...personGaps(p.id) }))
-      .filter((r) => r.events)
-      .sort((a, b) => (b.questions * 3 + b.disputed * 2 + b.thin) - (a.questions * 3 + a.disputed * 2 + a.thin));
-    $("#planner-rows").innerHTML = rows.map((r) => `<tr data-id="${esc(r.p.id)}" tabindex="0"><td>${esc(r.p.name)}</td><td>${esc(TIE_LABEL[r.p.vancouver?.tie] || "")}</td><td>${r.questions}</td><td>${r.disputed}</td><td>${r.thin}</td><td>${r.events}</td></tr>`).join("");
-    $("#planner-rows").querySelectorAll("tr").forEach((tr) => {
-      tr.addEventListener("click", () => showPerson(tr.dataset.id));
-      tr.addEventListener("keydown", (k) => { if (k.key === "Enter") showPerson(tr.dataset.id); });
-    });
   }
 
   function renderQuestions() {
@@ -507,15 +493,148 @@
     }
     $("#questions").innerHTML = Object.values(G.era).sort((a, b) => a.order - b.order).filter((era) => byEra[era.id]).map((era) =>
       `<div class="qgroup"><h3>${esc(era.title)}</h3>${byEra[era.id].map((e) =>
-        `<div class="q">${e.open_questions.map((q) => `<p>${esc(q)}</p>`).join("")}<button data-id="${esc(e.id)}">${esc(dlabel(e.date))}: ${esc(e.title)}</button></div>`).join("")}</div>`).join("");
+        `<div class="q">${e.open_questions.map((q) => `<p>${esc(q)}</p>`).join("")}<button data-id="${esc(e.id)}">${esc(e.title)}</button> ${dateTag(e.date)}</div>`).join("")}</div>`).join("");
     $("#questions").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => showEvent(b.dataset.id)));
   }
 
-  // ------------------------------------------------------------ tabs, routing, boot
+  // ------------------------------------------------------------ list views (one tab per category)
+
+  const evLane = (lane) => () => G.timeline.map((id) => G.event[id]).filter((e) => laneOf(e) === lane);
+  const names = (type, ids, n = 3) => {
+    const all = (ids || []).filter((id) => G[type]?.[id]).map((id) => nameOf(type, id));
+    return all.slice(0, n).join(", ") + (all.length > n ? ` +${all.length - n}` : "");
+  };
+  const firstRelease = (g) => (g.releases || []).map((r) => r.date).sort((a, b) => sortKey(a) - sortKey(b))[0];
+  const STUDIO_KINDS = new Set(["indie-studio", "mid-size-studio", "audio-studio", "aaa-studio"]);
+
+  function gapsFor(ent) {
+    const evs = (ent?._links?.events || []).map((id) => G.event[id]).filter(Boolean);
+    return {
+      questions: evs.reduce((n, e) => n + (e.open_questions?.length || 0), 0),
+      disputed: evs.filter((e) => e.status === "disputed").length,
+      thin: evs.filter((e) => e.status === "single-source" || e.status === "unverified").length,
+      events: evs.length,
+    };
+  }
+  const num = (n) => (n ? String(n) : `<span class="zero">0</span>`);
+
+  const EVENT_COLUMNS = [
+    { label: "Event", sort: (e) => e.title.toLowerCase(), html: (e) => `<strong>${esc(e.title)}</strong>` },
+    { label: "Date", sort: (e) => sortKey(e.date), html: (e) => dateTag(e.date), default: true },
+    { label: "Type", sort: (e) => e.type, html: (e) => esc(e.type) },
+    { label: "Confidence", sort: (e) => e.status, html: (e) => badge(e.status) },
+    { label: "People", sort: (e) => names("person", e.people), html: (e) => esc(names("person", e.people)), narrow: true },
+    { label: "Studios & orgs", sort: (e) => names("org", e.orgs), html: (e) => esc(names("org", e.orgs)), narrow: true },
+    { label: "Questions", sort: (e) => -(e.open_questions?.length || 0), html: (e) => num(e.open_questions?.length) },
+  ];
+
+  const LISTS = {
+    community: { label: "Community", rows: evLane("community"), type: "event", columns: EVENT_COLUMNS },
+    games: {
+      label: "Games", type: "game",
+      rows: () => Object.values(G.game),
+      columns: [
+        { label: "Game", sort: (g) => g.title.toLowerCase(), html: (g) => `<strong>${esc(g.title)}</strong>` },
+        { label: "Released", sort: (g) => sortKey(firstRelease(g)), html: (g) => dateTag(firstRelease(g)), default: true },
+        { label: "Developer", sort: (g) => names("org", g.developers), html: (g) => esc(names("org", g.developers, 2)) },
+        { label: "Publisher", sort: (g) => names("org", g.publishers), html: (g) => esc(names("org", g.publishers, 2)), narrow: true },
+        { label: "Status", sort: (g) => g.release_status || "", html: (g) => esc((g.release_status || "").replace(/-/g, " ")) },
+        { label: "Confidence", sort: (g) => g.status, html: (g) => badge(g.status) },
+        { label: "Events", sort: (g) => -gapsFor(g).events, html: (g) => num(gapsFor(g).events) },
+      ],
+    },
+    studios: {
+      label: "Studios", type: "org",
+      rows: () => Object.values(G.org).filter((o) => STUDIO_KINDS.has(o.kind)),
+      columns: [
+        { label: "Studio", sort: (o) => o.name.toLowerCase(), html: (o) => `<strong>${esc(o.name)}</strong>` },
+        { label: "Kind", sort: (o) => o.kind, html: (o) => esc(o.kind.replace(/-studio$/, "").replace(/-/g, " ")) },
+        { label: "Founded", sort: (o) => sortKey(o.founded), html: (o) => dateTag(o.founded), default: true },
+        { label: "Where", sort: (o) => o.location?.city || "", html: (o) => esc(o.location?.city || ""), narrow: true },
+        { label: "Status", sort: (o) => o.operating_status || "", html: (o) => esc(o.operating_status || "") },
+        { label: "Questions", sort: (o) => -gapsFor(o).questions, html: (o) => num(gapsFor(o).questions) },
+        { label: "Disputed", sort: (o) => -gapsFor(o).disputed, html: (o) => num(gapsFor(o).disputed) },
+        { label: "Events", sort: (o) => -gapsFor(o).events, html: (o) => num(gapsFor(o).events) },
+      ],
+    },
+    people: {
+      label: "People", type: "person",
+      rows: () => Object.values(G.person),
+      columns: [
+        { label: "Person", sort: (p) => p.name.toLowerCase(), html: (p) => `<strong>${esc(p.name)}</strong>` },
+        { label: "Vancouver tie", sort: (p) => p.vancouver?.tie || "z", html: (p) => esc(TIE_LABEL[p.vancouver?.tie] || "") },
+        { label: "Arrived", sort: (p) => sortKey(p.vancouver?.arrived), html: (p) => dateTag(p.vancouver?.arrived), narrow: true },
+        { label: "Affiliations", sort: (p) => names("org", (p.memberships || []).map((m) => m.org)), html: (p) => esc(names("org", [...new Set((p.memberships || []).map((m) => m.org).filter(Boolean))], 2)), narrow: true },
+        { label: "Questions", sort: (p) => -gapsFor(p).questions, html: (p) => num(gapsFor(p).questions) },
+        { label: "Disputed", sort: (p) => -gapsFor(p).disputed, html: (p) => num(gapsFor(p).disputed) },
+        { label: "Thin sourcing", sort: (p) => -gapsFor(p).thin, html: (p) => num(gapsFor(p).thin) },
+        { label: "Events", sort: (p) => -gapsFor(p).events, html: (p) => num(gapsFor(p).events), default: true },
+      ],
+    },
+    industry: { label: "AAA & industry", rows: evLane("industry"), type: "event", columns: EVENT_COLUMNS },
+    context: { label: "Policy & press", rows: evLane("context"), type: "event", columns: EVENT_COLUMNS },
+  };
+
+  let listState = { key: null, col: null, dir: 1 };
+
+  function renderList(key) {
+    const L = LISTS[key];
+    if (listState.key !== key) {
+      const di = L.columns.findIndex((c) => c.default);
+      listState = { key, col: di < 0 ? 0 : di, dir: 1 };
+      $("#list-filter").value = "";
+    }
+    const col = L.columns[listState.col];
+    const q = $("#list-filter").value.trim().toLowerCase();
+    let rows = L.rows();
+    if (q) rows = rows.filter((r) => JSON.stringify([r.title, r.name, r.summary, r.aliases, r.people, r.orgs, r.games]).toLowerCase().includes(q));
+    rows.sort((a, b) => {
+      const x = col.sort(a), y = col.sort(b);
+      return (x < y ? -1 : x > y ? 1 : 0) * listState.dir;
+    });
+    $("#list-count").textContent = `${rows.length} ${rows.length === 1 ? "item" : "items"}`;
+    $("#list-head").innerHTML = `<tr>${L.columns.map((c, i) => `<th class="${c.narrow ? "narrow" : ""}" data-col="${i}" aria-sort="${i === listState.col ? (listState.dir > 0 ? "ascending" : "descending") : "none"}">${esc(c.label)}${i === listState.col ? (listState.dir > 0 ? " ↑" : " ↓") : ""}</th>`).join("")}</tr>`;
+    $("#list-body").innerHTML = rows.map((r) => `<tr tabindex="0" data-id="${esc(r.id)}">${L.columns.map((c) => `<td class="${c.narrow ? "narrow" : ""}">${c.html(r)}</td>`).join("")}</tr>`).join("");
+    $("#list-head").querySelectorAll("th").forEach((th) => th.addEventListener("click", () => {
+      const i = +th.dataset.col;
+      listState.dir = listState.col === i ? -listState.dir : 1;
+      listState.col = i;
+      renderList(key);
+    }));
+    $("#list-body").querySelectorAll("tr").forEach((tr) => {
+      const open = () => SHOW[L.type](tr.dataset.id);
+      tr.addEventListener("click", open);
+      tr.addEventListener("keydown", (k) => { if (k.key === "Enter") open(); });
+    });
+  }
+
+  // ------------------------------------------------------------ tabs, lane toggles, routing
+
+  const TABS = [["timeline", "Timeline"], ...Object.entries(LISTS).map(([k, v]) => [k, v.label]), ["questions", "Open questions"]];
+  let currentView = "timeline";
+
+  function setupTabs() {
+    $("#tabs").innerHTML = TABS.map(([k, label]) => `<button role="tab" data-view="${k}" aria-selected="${k === currentView}">${esc(label)}</button>`).join("");
+    $("#tabs").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
+    $("#list-filter").addEventListener("input", () => LISTS[currentView] && renderList(currentView));
+  }
 
   function setView(v) {
-    document.querySelectorAll(".tabs button").forEach((b) => b.setAttribute("aria-selected", b.dataset.view === v));
-    document.querySelectorAll(".view").forEach((s) => (s.hidden = s.id !== `view-${v}`));
+    currentView = v;
+    $("#tabs").querySelectorAll("button").forEach((b) => b.setAttribute("aria-selected", b.dataset.view === v));
+    $("#view-timeline").hidden = v !== "timeline";
+    $("#view-questions").hidden = v !== "questions";
+    $("#view-list").hidden = !LISTS[v];
+    if (LISTS[v]) renderList(v);
+  }
+
+  function setupLaneToggles() {
+    $("#lane-toggles").innerHTML = LANES.map((l) =>
+      `<label class="lane-toggle"><input type="checkbox" value="${l.id}" checked><span class="swatch" style="background:var(${l.color})"></span>${esc(l.label)}</label>`).join("");
+    $("#lane-toggles").querySelectorAll("input").forEach((i) => i.addEventListener("change", () => {
+      i.checked ? hiddenLanes.delete(i.value) : hiddenLanes.add(i.value);
+      render();
+    }));
   }
 
   function route() {
@@ -523,20 +642,16 @@
     if (SHOW[type] && id) SHOW[type](decodeURIComponent(id));
   }
 
-  function stats() {
-    const c = G.counts, ev = Object.values(G.event);
-    const v = ev.filter((e) => e.status === "verified").length;
-    $("#stats").textContent = `${c.event} events · ${c.person} people · ${c.game} games · ${c.org} studios and organizations · ${c.source} sources · ${Math.round((v / ev.length) * 100)}% of events verified against an opened source · data as of ${G.generated}`;
-  }
+  // ------------------------------------------------------------ boot
 
   async function boot() {
     try {
       G = await (await fetch("graph.json", { cache: "no-cache" })).json();
     } catch (err) {
-      $("#stats").textContent = "Couldn't load graph.json. Run `python3 tools/vigs.py build` first.";
+      document.body.insertAdjacentHTML("afterbegin", "<p class='wrap'>Couldn't load graph.json. Run <code>python3 tools/vigs.py build</code> first.</p>");
       return;
     }
-    stats(); legend(); setupSearch(); renderPlanner(); renderQuestions(); render();
+    legend(); setupTabs(); setupLaneToggles(); setupSearch(); renderQuestions(); render();
     $("#timeline-scroll").addEventListener("scroll", pinLaneLabels, { passive: true });
     $("#timeline-scroll").scrollLeft = xOf(2008) - LEFT;
     document.querySelectorAll("[data-filter], #region, #significance").forEach((i) => i.addEventListener("change", render));
@@ -544,7 +659,6 @@
     $("#zoom-out").addEventListener("click", () => rezoom(1 / 1.4));
     $("#panel-close").addEventListener("click", closePanel);
     document.addEventListener("keydown", (k) => { if (k.key === "Escape" && !$("#panel").hidden) closePanel(); });
-    document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
     window.addEventListener("hashchange", route);
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { legend(); render(); });
     route();

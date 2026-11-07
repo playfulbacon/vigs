@@ -192,7 +192,7 @@ button, input, select { font-family: var(--text); }
 .v-era-head button { font: 600 20px/1.2 var(--display); color: var(--ink); background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
 .v-era-head button:hover { color: var(--accent); }
 .v-year { font: 600 12px var(--mono); color: var(--muted); letter-spacing: .06em; padding: 14px 0 4px 0; margin-left: 2px; }
-.v-ev { position: relative; display: flex; gap: 14px; width: 100%; text-align: left; background: none; border: 0; padding: 7px 8px 7px 0; margin: 0; cursor: pointer; color: var(--ink); font: inherit; border-radius: var(--radius); }
+.v-ev { position: relative; display: flex; align-items: flex-start; gap: 12px; width: 100%; text-align: left; background: none; border: 0; padding: 7px 8px 7px 0; margin: 0; cursor: pointer; color: var(--ink); font: inherit; border-radius: var(--radius); }
 .v-ev::before { content: ""; position: absolute; left: 9px; top: 0; bottom: 0; width: 2px; background: var(--rule); }
 .v-ev:hover { background: var(--surface-2); }
 .v-ev.selected { background: color-mix(in srgb, var(--surface) 88%, var(--accent)); }
@@ -207,7 +207,9 @@ button, input, select { font-family: var(--text); }
 .v-ev.sig-3 .v-title { font: 600 17px/1.3 var(--display); }
 .v-ev.sig-1 .v-title { color: var(--muted); font-size: 14px; }
 .v-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 12px; }
-.v-lane { color: var(--lane); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+.v-lane { flex: 0 0 132px; color: var(--lane); font-weight: 600; font-size: 11px; line-height: 1.3; text-transform: uppercase; letter-spacing: .08em; padding-top: 4px; }
+.v-ev.sig-3 .v-lane { padding-top: 5px; }
+@media (max-width: 600px) { .v-lane { flex-basis: 84px; font-size: 10px; letter-spacing: .05em; } .v-ev { gap: 10px; } }
 
 /* ---------- pills, tags, chips */
 .badge { display: inline-block; white-space: nowrap; line-height: 1.5; font-size: 11px; font-weight: 500; padding: 1px 8px; border-radius: var(--radius-pill); border: 1px solid currentColor; }

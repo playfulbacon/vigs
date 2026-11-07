@@ -268,8 +268,9 @@
         const cls = ["v-ev", `sig-${e.significance || 1}`, square ? "sq" : "", inFocus(e.id) ? "" : "dim", selected === e.id ? "selected" : ""].join(" ");
         h += `<button class="${cls}" data-id="${esc(e.id)}" style="--lane:var(${lane.color})">
           <span class="v-dot" aria-hidden="true"></span>
+          <span class="v-lane">${esc(lane.label)}</span>
           <span class="v-body"><span class="v-title">${esc(e.title)}</span>
-          <span class="v-meta">${dateTag(e.date)} <span class="v-lane">${esc(lane.label)}</span> ${e.status !== "verified" ? badge(e.status) : ""}</span></span>
+          <span class="v-meta">${dateTag(e.date)}</span></span>
         </button>`;
       }
       h += `</section>`;

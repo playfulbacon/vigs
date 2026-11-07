@@ -247,12 +247,14 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .q p { margin: 0 0 4px; }
 .q button { font-size: 14px; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
 
-/* ---------- style switcher (temporary, for comparing the looks) */
-.style-switcher { position: fixed; left: 16px; bottom: 16px; z-index: 30; display: flex; align-items: center; gap: 4px; padding: 5px; background: var(--ink); color: var(--bg); border-radius: 999px; font-size: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.2); }
-.style-switcher span { padding: 0 8px 0 10px; opacity: .7; }
-.style-switcher button { font: 500 12px var(--text); border: 0; border-radius: 999px; padding: 5px 11px; background: transparent; color: var(--bg); cursor: pointer; }
-.style-switcher button[aria-pressed="true"] { background: var(--bg); color: var(--ink); }
-.style-switcher .sep { width: 1px; align-self: stretch; margin: 4px 4px; background: var(--bg); opacity: .25; padding: 0; }
+/* ---------- display settings (bottom left): one labelled pill per setting */
+.settings { position: fixed; left: 16px; bottom: 16px; z-index: 30; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; max-width: calc(100vw - 32px); }
+.setting { display: flex; align-items: center; gap: 8px; }
+.setting-label { font: 600 11px var(--text); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); background: var(--bg); padding: 2px 6px; border-radius: 4px; }
+.setting-seg { display: flex; gap: 2px; padding: 3px; background: var(--ink); border-radius: 999px; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
+.setting-seg button { font: 500 12px var(--text); border: 0; border-radius: 999px; padding: 5px 11px; background: transparent; color: var(--bg); cursor: pointer; opacity: .8; }
+.setting-seg button:hover { opacity: 1; }
+.setting-seg button[aria-pressed="true"] { background: var(--bg); color: var(--ink); opacity: 1; }
 
 /* ========================================================================== signature touches */
 

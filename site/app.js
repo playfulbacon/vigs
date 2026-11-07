@@ -757,39 +757,46 @@
 
   // ------------------------------------------------------------ boot
 
-  const STYLES = [["archive", "A · Archive"], ["coast", "B · Coast"], ["arcade", "C · Arcade"]];
+  const STYLES = [["archive", "Archive"], ["coast", "Coast"], ["arcade", "Arcade"]];
 
+  // Bottom-left display settings. Each setting is its own labelled pill; add more with addGroup().
   function setupStyles() {
+    const bar = document.createElement("div");
+    bar.className = "settings";
+    bar.setAttribute("aria-label", "Display settings");
+    document.body.appendChild(bar);
+
+    function addGroup(label, options, current, onPick) {
+      const g = document.createElement("div");
+      g.className = "setting";
+      g.innerHTML = `<span class="setting-label">${esc(label)}</span><div class="setting-seg" role="group" aria-label="${esc(label)}">` +
+        options.map(([k, l]) => `<button data-v="${esc(k)}" aria-pressed="${k === current}">${esc(l)}</button>`).join("") + `</div>`;
+      g.querySelectorAll("button").forEach((btn) => btn.addEventListener("click", () => {
+        g.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === btn));
+        onPick(btn.dataset.v);
+        if (G) { legend(); render(); }
+      }));
+      bar.appendChild(g);
+    }
+
+    // Style
     const want = new URLSearchParams(location.search).get("style");
     const style = STYLES.some(([k]) => k === want) ? want : "archive";
     document.documentElement.dataset.style = style;
-    const bar = document.createElement("div");
-    bar.className = "style-switcher";
-    bar.innerHTML = `<span>Style</span>` + STYLES.map(([k, label]) => `<button data-style="${k}" aria-pressed="${k === style}">${label}</button>`).join("");
+    addGroup("Style", STYLES, style, (v) => {
+      document.documentElement.dataset.style = v;
+      const u = new URL(location.href); u.searchParams.set("style", v); history.replaceState(null, "", u);
+    });
+
     // Light / Dark / Auto, remembered on this device
     let theme = "auto";
     try { theme = localStorage.getItem("vigs-theme") || "auto"; } catch {}
-    const applyTheme = (t) => {
-      if (t === "auto") delete document.documentElement.dataset.theme;
-      else document.documentElement.dataset.theme = t;
-    };
+    const applyTheme = (t) => { if (t === "auto") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = t; };
     applyTheme(theme);
-    bar.insertAdjacentHTML("beforeend", `<span class="sep"></span>` + [["light", "Light"], ["dark", "Dark"], ["auto", "Auto"]]
-      .map(([k, l]) => `<button data-theme-choice="${k}" aria-pressed="${k === theme}">${l}</button>`).join(""));
-    document.body.appendChild(bar);
-    bar.querySelectorAll("[data-theme-choice]").forEach((b) => b.addEventListener("click", () => {
-      const t = b.dataset.themeChoice;
-      applyTheme(t);
-      try { localStorage.setItem("vigs-theme", t); } catch {}
-      bar.querySelectorAll("[data-theme-choice]").forEach((x) => x.setAttribute("aria-pressed", x === b));
-      legend(); render();
-    }));
-    bar.querySelectorAll("button[data-style]").forEach((b) => b.addEventListener("click", () => {
-      document.documentElement.dataset.style = b.dataset.style;
-      bar.querySelectorAll("button[data-style]").forEach((x) => x.setAttribute("aria-pressed", x === b));
-      const u = new URL(location.href); u.searchParams.set("style", b.dataset.style); history.replaceState(null, "", u);
-      legend(); render();
-    }));
+    addGroup("Mode", [["light", "Light"], ["dark", "Dark"], ["auto", "Auto"]], theme, (v) => {
+      applyTheme(v);
+      try { localStorage.setItem("vigs-theme", v); } catch {}
+    });
   }
 
   async function boot() {

@@ -120,7 +120,7 @@
         `<span class="fl-cat">${esc(LANES[li].label)}</span>` +
         (img ? `<span class="fl-img ${img.kind}"><img src="${esc(img.url)}" alt="" loading="lazy" referrerpolicy="no-referrer"></span>`
              : `<span class="fl-img none"><span>${esc(String(Math.floor(tOf(e.date))))}</span></span>`) +
-        `<span class="fl-body"><span class="fl-title">${esc(e.title)}</span><span class="fl-date">${esc(dlabel(e.date))}</span>` +
+        `<span class="fl-body"><span class="fl-title">${esc(V().evTitle(e))}</span><span class="fl-date">${esc(dlabel(e.date))}${V().LAUNCH[e.id] ? ` · ${esc(V().LAUNCH[e.id].tag)}` : ""}</span>` +
         (e.summary ? `<span class="fl-sum">${esc(e.summary)}</span>` : "") + `</span>`;
       card.querySelector("img")?.addEventListener("error", (ev) => ev.target.closest(".fl-img").classList.add("broken"));
       card.addEventListener("click", () => { if (flight.dragged) return; flight.clicked = e.id; V().showEvent(e.id); });

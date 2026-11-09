@@ -92,6 +92,31 @@
 
   const LAUNCH_TYPES = new Set(["release", "early-access"]);
 
+  // Game launches are shown under the game's own name. Each game's launches, in date order, are tagged
+  // Early access / Launch / Full release (first release after early access) / Later release (ports, chapters...).
+  let LAUNCH = {};
+  function buildLaunchNames() {
+    LAUNCH = {};
+    const byGame = {};
+    for (const id of G.timeline) {
+      const e = G.event[id];
+      if (!LAUNCH_TYPES.has(e.type) || !(e.games || []).length || !G.game[e.games[0]]) continue;
+      (byGame[e.games[0]] ||= []).push(e);
+    }
+    for (const [gid, evs] of Object.entries(byGame)) {
+      let released = false, earlyAccess = false;
+      for (const e of evs) {
+        let tag;
+        if (e.type === "early-access") { tag = "Early access"; earlyAccess = true; }
+        else if (!released) { tag = earlyAccess ? "Full release" : "Launch"; released = true; }
+        else tag = "Later release";
+        LAUNCH[e.id] = { title: G.game[gid].title, tag };
+      }
+    }
+  }
+  const evTitle = (e) => LAUNCH[e.id]?.title || e.title;
+  const launchTag = (e) => (LAUNCH[e.id] ? `<span class="tag launch">${esc(LAUNCH[e.id].tag)}</span>` : "");
+
   function laneOf(e) {
     if (e.type === "policy" || e.type === "publication") return "context";
     if (LAUNCH_TYPES.has(e.type) && (e.games || []).length) return "launches";
@@ -171,7 +196,7 @@
       const fuzzy = uncertain && x1 - x0 > 6;
       const cx = fuzzy ? x0 : (x0 + x1) / 2;
       const showLabel = (e.significance || 1) >= 3 || ((focus || query) && inFocus(e.id));
-      const label = showLabel ? short(e.title) : "";
+      const label = showLabel ? short(evTitle(e)) : "";
       const right = Math.max(x1, cx + rad) + (label ? label.length * 6 + 10 : 4);
       const rows = laneRows[laneOf(e)];
       let row = rows.findIndex((endX) => endX < cx - rad - 2);
@@ -231,7 +256,7 @@
       const { e } = p;
       const color = cssVar(LANES.find((l) => l.id === p.lane).color);
       const cy = laneY[p.lane].top + 14 + p.row * ROW;
-      const g = el("g", { class: "ev", tabindex: 0, role: "button", "aria-label": `${dlabel(e.date)}: ${e.title}` }, svg);
+      const g = el("g", { class: "ev", tabindex: 0, role: "button", "aria-label": `${dlabel(e.date)}: ${evTitle(e)}` }, svg);
       if (!inFocus(e.id)) g.classList.add("dim");
       if (selected === e.id) g.classList.add("selected");
       if (p.fuzzy) el("rect", { x: p.cx, y: cy - 3, width: p.x1 - p.cx, height: 6, rx: 3, fill: color, class: "span" }, g);
@@ -244,7 +269,7 @@
       };
       for (const [k, v] of Object.entries(dotAttrs)) shape.setAttribute(k, v);
       if (p.label) { const t = el("text", { x: p.cx + p.rad + 4, y: cy + 4, class: "ev-label" }, g); t.textContent = p.label; }
-      const tip = el("title", {}, g); tip.textContent = `${dlabel(e.date)} · ${e.title}`;
+      const tip = el("title", {}, g); tip.textContent = `${dlabel(e.date)} · ${evTitle(e)}`;
       const open = () => showEvent(e.id);
       g.addEventListener("click", open);
       g.addEventListener("keydown", (k) => { if (k.key === "Enter" || k.key === " ") { k.preventDefault(); open(); } });
@@ -274,8 +299,8 @@
         h += `<button class="${cls}" data-id="${esc(e.id)}" style="--lane:var(${lane.color})">
           <span class="v-dot" aria-hidden="true"></span>
           <span class="v-lane">${esc(lane.label)}</span>
-          <span class="v-body"><span class="v-title">${esc(e.title)}</span>
-          <span class="v-meta">${dateTag(e.date)}</span></span>
+          <span class="v-body"><span class="v-title">${esc(evTitle(e))}</span>
+          <span class="v-meta">${dateTag(e.date)} ${launchTag(e)}</span></span>
         </button>`;
       }
       h += `</section>`;
@@ -408,7 +433,7 @@
   function eventList(ids) {
     const evs = (ids || []).map((id) => G.event[id]).filter(Boolean).sort((a, b) => sortKey(a.date) - sortKey(b.date));
     if (!evs.length) return "";
-    return `<ul class="linklist">${evs.map((e) => `<li><button data-type="event" data-id="${esc(e.id)}">${esc(e.title)}</button> ${dateTag(e.date)} ${e.status !== "verified" ? badge(e.status) : ""}</li>`).join("")}</ul>`;
+    return `<ul class="linklist">${evs.map((e) => `<li><button data-type="event" data-id="${esc(e.id)}">${esc(evTitle(e))}</button> ${dateTag(e.date)} ${launchTag(e)} ${e.status !== "verified" ? badge(e.status) : ""}</li>`).join("")}</ul>`;
   }
 
   function linksBlock(links) {
@@ -436,7 +461,9 @@
     selected = id;
     const era = G.era[e.era];
     let h = `<p class="meta">Event · ${esc(era?.title || "")}</p>`;
-    h += `<h3>${esc(e.title)}</h3><p>${dateTag(e.date)}${e.end_date ? ` → ${dateTag(e.end_date)}` : ""} ${sigTag(e.significance)} ${badge(e.status)} <span class="tag">${esc(e.type)}</span></p>`;
+    h += `<h3>${esc(evTitle(e))}</h3>`;
+    if (LAUNCH[e.id] && e.title !== LAUNCH[e.id].title) h += `<p class="meta">${esc(e.title)}</p>`;
+    h += `<p>${dateTag(e.date)}${e.end_date ? ` → ${dateTag(e.end_date)}` : ""} ${launchTag(e)} ${sigTag(e.significance)} ${badge(e.status)} ${LAUNCH[e.id] ? "" : `<span class="tag">${esc(e.type)}</span>`}</p>`;
     const loc = locate(e, "event");
     h += mapBlock(loc);
     if (e.summary) h += `<p>${esc(e.summary)}</p>`;
@@ -643,7 +670,7 @@
     const disputed = evs.filter((e) => e.status === "disputed");
     if (!qs.length && !disputed.length) return "";
     let h = `<h4>Things to ask</h4>`;
-    if (qs.length) h += `<ul>${qs.flatMap((e) => e.open_questions.map((q) => `<li>${esc(q)} <span class="linklist"><button data-type="event" data-id="${esc(e.id)}">${esc(e.title)}</button></span></li>`)).join("")}</ul>`;
+    if (qs.length) h += `<ul>${qs.flatMap((e) => e.open_questions.map((q) => `<li>${esc(q)} <span class="linklist"><button data-type="event" data-id="${esc(e.id)}">${esc(evTitle(e))}</button></span></li>`)).join("")}</ul>`;
     if (disputed.length) h += `<p class="meta">Disputed events they were part of:</p>${eventList(disputed.map((e) => e.id))}`;
     return h;
   }
@@ -656,7 +683,7 @@
     }
     $("#questions").innerHTML = Object.values(G.era).sort((a, b) => a.order - b.order).filter((era) => byEra[era.id]).map((era) =>
       `<div class="qgroup"><h3>${esc(era.title)}</h3>${byEra[era.id].map((e) =>
-        `<div class="q">${e.open_questions.map((q) => `<p>${esc(q)}</p>`).join("")}<button data-id="${esc(e.id)}">${esc(e.title)}</button> ${dateTag(e.date)}</div>`).join("")}</div>`).join("");
+        `<div class="q">${e.open_questions.map((q) => `<p>${esc(q)}</p>`).join("")}<button data-id="${esc(e.id)}">${esc(evTitle(e))}</button> ${dateTag(e.date)}</div>`).join("")}</div>`).join("");
     $("#questions").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => showEvent(b.dataset.id)));
   }
 
@@ -682,7 +709,7 @@
   const num = (n) => (n ? String(n) : `<span class="zero">0</span>`);
 
   const EVENT_COLUMNS = [
-    { label: "Event", sort: (e) => e.title.toLowerCase(), html: (e) => `<strong>${esc(e.title)}</strong>` },
+    { label: "Event", sort: (e) => evTitle(e).toLowerCase(), html: (e) => `<strong>${esc(evTitle(e))}</strong> ${launchTag(e)}` },
     { label: "Date", sort: (e) => sortKey(e.date), html: (e) => dateTag(e.date), default: true },
     { label: "Type", sort: (e) => e.type, html: (e) => esc(e.type) },
     { label: "Significance", sort: (e) => -(e.significance || 1), html: (e) => sigTag(e.significance) },
@@ -888,9 +915,10 @@
       return;
     }
     try { CITIES = await (await fetch("cities.json")).json(); } catch {}
+    buildLaunchNames();
     window.VIGS = {
       get G() { return G; }, LANES, hiddenLanes, laneOf, passes, inFocus, drange, dval, dlabel, sortKey, esc, cssVar, nameOf,
-      showEvent, closePanel, get selected() { return selected; },
+      showEvent, closePanel, evTitle, get LAUNCH() { return LAUNCH; }, get selected() { return selected; },
     };
     legend(); setupTabs(); setupLaneToggles(); setupSearch(); renderQuestions(); render();
     if (new URLSearchParams(location.search).get("view") !== "classic") window.Flight?.enter();

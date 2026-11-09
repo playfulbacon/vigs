@@ -217,6 +217,7 @@ button, input, select { font-family: var(--text); }
 .badge.single-source { color: var(--muted); }
 .badge.disputed { color: var(--disputed); }
 .badge.unverified, .badge.interview-only { color: var(--lane-games); }
+.tag.launch { color: var(--lane-launches); border-color: color-mix(in srgb, var(--lane-launches) 45%, var(--rule)); }
 .tag { display: inline-block; font: 500 11px/1.6 var(--mono); padding: 0 7px; border-radius: calc(var(--radius) / 2 + 2px); background: var(--surface-2); border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; vertical-align: 1px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { font-size: 13px; border: 1px solid var(--rule-strong); background: var(--surface-2); color: var(--ink); border-radius: var(--radius-pill); padding: 3px 10px; cursor: pointer; }

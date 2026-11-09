@@ -345,7 +345,8 @@
     document.body.appendChild(flight.el);
     // category toggles mirror the classic ones (clicking them drives the same state)
     const tg = $(".fl-toggles", flight.el);
-    tg.innerHTML = document.querySelector("#lane-toggles .toggle-group")?.outerHTML || "";
+    tg.innerHTML = `<div class="fl-toggles-head">Categories</div><p class="fl-toggles-hint">Click to show or hide</p>` +
+      (document.querySelector("#lane-toggles .toggle-group")?.outerHTML || "");
     tg.querySelector(".toggle-label")?.remove();
     tg.querySelectorAll(".toggle").forEach((b) => b.addEventListener("click", () => {
       document.querySelector(`#lane-toggles .toggle[data-lane="${b.dataset.lane}"]`)?.click();

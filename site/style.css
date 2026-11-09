@@ -315,10 +315,11 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .fl-card.sig-1 .fl-sum { -webkit-line-clamp: 2; font-size: 12px; }
 
 
-.fl-toggles { position: absolute; left: 50%; top: 16px; transform: translateX(-50%); z-index: 45; max-width: calc(100vw - 32px); }
-.fl-toggles .toggle-group { flex-wrap: nowrap; gap: 4px; padding: 4px; background: color-mix(in srgb, var(--surface) 88%, transparent); border: var(--card-border); border-radius: var(--radius-pill); box-shadow: var(--card-shadow); overflow-x: auto; scrollbar-width: none; }
-.fl-toggles .toggle { white-space: nowrap; }
-.flight-on:has(.panel:not(.empty)) .fl-toggles { left: calc(50% - 206px); max-width: calc(100vw - 440px); }
+.fl-toggles { position: absolute; left: 16px; top: 16px; z-index: 45; width: 210px; padding: 12px 12px 10px; background: color-mix(in srgb, var(--surface) 92%, transparent); border: var(--card-border); border-radius: var(--radius); box-shadow: var(--card-shadow); }
+.fl-toggles-head { font: 600 11px var(--text); text-transform: uppercase; letter-spacing: .1em; color: var(--ink); }
+.fl-toggles-hint { margin: 2px 0 8px; font-size: 12px; color: var(--muted); }
+.fl-toggles .toggle-group { flex-direction: column; align-items: stretch; flex-wrap: nowrap; gap: 4px; }
+.fl-toggles .toggle { white-space: nowrap; justify-content: flex-start; }
 .fl-hint { position: absolute; right: 16px; bottom: 86px; margin: 0; font-size: 12px; color: var(--muted); pointer-events: none; white-space: nowrap; }
 
 .fl-scrub { position: absolute; left: 0; right: 0; bottom: 0; height: 76px; z-index: 45; overflow: hidden; cursor: pointer; touch-action: none; border-radius: 0 !important; border-left: 0 !important; border-right: 0 !important; border-bottom: 0 !important; box-shadow: 0 -10px 30px -12px rgba(0,0,0,.25) !important; }
@@ -334,8 +335,10 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
   .flight-on .setting-seg button { padding: 4px 8px; font-size: 11px; }
   .flight-on .panel { left: 0; right: 0; top: auto; bottom: 0; width: auto; max-height: 70vh; }
   .fl-hint { display: none; }
-  .fl-toggles { top: 10px; }
-  .fl-toggles .toggle { padding: 4px 9px 4px 7px; font-size: 12px; }
+  .fl-toggles { top: 10px; left: 10px; width: auto; padding: 8px; }
+  .fl-toggles-hint { display: none; }
+  .fl-toggles-head { margin-bottom: 6px; }
+  .fl-toggles .toggle { padding: 3px 9px 3px 7px; font-size: 12px; }
   .fl-scrub-era span { font-size: 9px; }
   .fl-scrub-year.minor { display: none; }
 }

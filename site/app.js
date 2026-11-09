@@ -110,11 +110,17 @@
         if (e.type === "early-access") { tag = "Early access"; earlyAccess = true; }
         else if (!released) { tag = earlyAccess ? "Full release" : "Launch"; released = true; }
         else tag = "Later release";
-        LAUNCH[e.id] = { title: G.game[gid].title, tag };
+        // a hand-written display_title wins; otherwise early access gets "(Early Access)" when the game launched more than once
+        const title = e.display_title || (tag === "Early access" && evs.length > 1 ? `${G.game[gid].title} (Early Access)` : G.game[gid].title);
+        LAUNCH[e.id] = { title, tag };
       }
     }
+    // anything still sharing a name gets its tag in parentheses
+    const seen = {};
+    for (const [id, x] of Object.entries(LAUNCH)) (seen[x.title] ||= []).push(id);
+    for (const ids of Object.values(seen)) if (ids.length > 1) for (const id of ids) LAUNCH[id].title += ` (${LAUNCH[id].tag})`;
   }
-  const evTitle = (e) => LAUNCH[e.id]?.title || e.title;
+  const evTitle = (e) => LAUNCH[e.id]?.title || e.display_title || e.title;
   const launchTag = (e) => (LAUNCH[e.id] ? `<span class="tag launch">${esc(LAUNCH[e.id].tag)}</span>` : "");
 
   function laneOf(e) {

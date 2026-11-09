@@ -56,6 +56,8 @@ date: { value: "2012-10", approximate: true, note: "Month rests on Wikipedia onl
 
 It is a judgement call, set when the event is entered. Revisit it as interviews change what mattered.
 
+**Display titles.** Game launches (release and early-access events) are shown under the game's name. When a game launches more than once, give the event a `display_title` with the difference in parentheses, e.g. `"Fantastic Contraption (iOS)"` or `"TowerFall Ascension: Dark World (expansion)"`. Early-access launches get "(Early Access)" automatically.
+
 **Citations** are a source ID, or an object with detail:
 
 ```yaml

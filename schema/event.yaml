@@ -8,6 +8,7 @@ required: [id, title, date, era, type, status]
 properties:
   id: { $ref: 'common.yaml#/$defs/id', description: 'Convention: YYYY-MM-short-slug (or YYYY-short-slug).' }
   title: { type: string, description: Short headline. }
+  display_title: { type: string, description: 'Short name shown on cards when the headline is too long or ambiguous, e.g. a launch shown as "Fantastic Contraption (iOS)".' }
   date: { $ref: 'common.yaml#/$defs/date' }
   end_date: { $ref: 'common.yaml#/$defs/date' }
   era: { $ref: 'common.yaml#/$defs/id' }

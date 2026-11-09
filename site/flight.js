@@ -45,7 +45,7 @@
     const span = P[hi] - P[lo];
     return span ? R[lo] + (R[hi] - R[lo]) * (p - P[lo]) / span : R[hi];
   }
-  const clampCam = (p) => Math.min(flight.p1 - 0.6, Math.max(flight.p0 - 0.3, p));
+  const clampCam = (p) => Math.min(flight.p1 - 0.6, Math.max(flight.p0, p));
 
   const flight = {
     active: false, camS: 0, target: 0, p0: 0, p1: 1, camX: 0, targetX: 0, cards: [], ticks: [], eras: [], raf: 0, el: null,
@@ -161,7 +161,10 @@
     // era gates
     let lastGate = -Infinity;
     for (const era of Object.values(G.era).sort((a, b) => a.order - b.order)) {
-      const es = W(S(V().drange(era.start)[0]));
+      let es = W(S(V().drange(era.start)[0]));
+      // the era the road starts in shows its title at the start of the road, even if the era began earlier
+      const eraEnd = era.end ? S(V().drange(era.end)[1]) : Infinity;
+      if (es < flight.p0 - 0.5 && eraEnd >= warp.R[0]) es = warp.P[0] - 0.2;
       if (es < flight.p0 - 0.5 || es > flight.p1 || es - lastGate < 1.2) continue;
       lastGate = es;
       const gate = document.createElement("div");
@@ -169,6 +172,8 @@
       world.appendChild(gate);
       flight.eras.push({ el: gate, s: es });
     }
+    // start the road far enough back that the first era title is in full view
+    if (flight.eras.length) flight.p0 = Math.min(flight.p0, flight.eras[0].s - 0.45);
 
     buildScrubber();
     markSelected();
@@ -216,7 +221,7 @@
       const dz = g.s - cam;
       if (dz < -0.15 || dz > AHEAD + FADE) { g.el.style.display = "none"; continue; }
       g.el.style.display = "";
-      g.el.style.opacity = (dz < 0.4 ? Math.max(0, dz / 0.4) : dz > AHEAD ? Math.max(0, 1 - (dz - AHEAD) / FADE) : 1).toFixed(3);
+      g.el.style.opacity = (dz < 0.25 ? Math.max(0, dz / 0.25) : dz > AHEAD ? Math.max(0, 1 - (dz - AHEAD) / FADE) : 1).toFixed(3);
       g.el.style.transform = `translate3d(0, ${FLOOR_Y - 720}px, ${-dz * SZ + Z0}px) translateX(-50%)`;
     }
     updateHud();

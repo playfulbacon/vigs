@@ -1,4 +1,4 @@
-/* Vancouver Indie Games Story: 3D view.
+/* Vancouver Indie Game Scene: 3D view.
    A road through time drawn with CSS 3D transforms. Event cards stand on the road in one
    column per category, sized by significance. Scroll, drag, use the arrow keys, or scrub
    the overview strip at the bottom. Clicking a card flies to it and opens its details.

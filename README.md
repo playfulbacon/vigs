@@ -1,6 +1,6 @@
-# VIGS: Vancouver Indie Games Story
+# VIGS: Vancouver Indie Game Scene
 
-An oral history of the Vancouver indie game scene, built as a linked dataset so it can be explored as timelines, studio family trees, people pages and networks.
+VIGS (Vancouver Indie Game Scene) is an oral history of the Vancouver indie game scene, built as a linked dataset so it can be explored as timelines, studio family trees, people pages and networks.
 
 ## What's here
 

@@ -1,4 +1,4 @@
-/* Vancouver Indie Games Story: interactive timeline.
+/* Vancouver Indie Game Scene: interactive timeline.
    Reads graph.json (built by `python3 tools/vigs.py build`) and renders a timeline,
    detail panels, a list view per category and a list of open questions. No dependencies. */
 (() => {
@@ -18,6 +18,7 @@
 
   const LANES = [
     { id: "games", label: "Games", color: "--lane-games" },
+    { id: "launches", label: "Game Launches", color: "--lane-launches" },
     { id: "studios", label: "Studios & People", color: "--lane-studios" },
     { id: "community", label: "Community", color: "--lane-community" },
     { id: "industry", label: "AAA & Industry", color: "--lane-industry" },
@@ -89,8 +90,11 @@
   const COMMUNITY_KINDS = new Set(["community", "event-series", "industry-association", "school"]);
   const AAA_KINDS = new Set(["aaa-studio", "publisher", "platform-holder"]);
 
+  const LAUNCH_TYPES = new Set(["release", "early-access"]);
+
   function laneOf(e) {
     if (e.type === "policy" || e.type === "publication") return "context";
+    if (LAUNCH_TYPES.has(e.type) && (e.games || []).length) return "launches";
     const kinds = (e.orgs || []).map((o) => G.org[o]?.kind).filter(Boolean);
     if (COMMUNITY_TYPES.has(e.type) || kinds.some((k) => COMMUNITY_KINDS.has(k)) && !kinds.some((k) => INDIE_KINDS.has(k))) return "community";
     if (kinds.length && kinds.every((k) => AAA_KINDS.has(k)) && !(e.games || []).length) return "industry";
@@ -846,8 +850,8 @@
     }
 
     // View: the classic page, or the 3D flight through time
-    const wantView = new URLSearchParams(location.search).get("view") === "3d" ? "3d" : "classic";
-    addGroup("View", [["classic", "Classic"], ["3d", "3D"]], wantView, (v) => {
+    const wantView = new URLSearchParams(location.search).get("view") === "classic" ? "classic" : "3d";
+    addGroup("View", [["3d", "3D"], ["classic", "Classic"]], wantView, (v) => {
       const u = new URL(location.href); u.searchParams.set("view", v); history.replaceState(null, "", u);
       if (!window.Flight) return;
       v === "3d" ? window.Flight.enter() : window.Flight.exit();
@@ -889,7 +893,7 @@
       showEvent, closePanel, get selected() { return selected; },
     };
     legend(); setupTabs(); setupLaneToggles(); setupSearch(); renderQuestions(); render();
-    if (new URLSearchParams(location.search).get("view") === "3d") window.Flight?.enter();
+    if (new URLSearchParams(location.search).get("view") !== "classic") window.Flight?.enter();
     $("#timeline-scroll").addEventListener("scroll", pinLaneLabels, { passive: true });
     $("#timeline-scroll").scrollLeft = xOf(2008) - LEFT;
     document.querySelectorAll("[data-orient]").forEach((b) => b.addEventListener("click", () => {

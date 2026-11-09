@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Vancouver Indie Games Story: styles
+   Vancouver Indie Game Scene: styles
    One layout, three looks (html[data-style] = archive | coast | arcade).
    Each look only sets tokens plus a few signature touches at the bottom.
    ========================================================================== */
@@ -10,7 +10,7 @@
   --ink: #221d17; --muted: #6f6556; --rule: #e0d6c4; --rule-strong: #c9bba3;
   --era-a: #f7f2e7; --era-b: #efe8da;
   --accent: #b0452a; --accent-ink: #fffcf5;
-  --lane-community: #2b5f7e; --lane-games: #8b3a5e; --lane-studios: #3f6b3a; --lane-industry: #9a6b2f; --lane-context: #8a8173;
+  --lane-community: #2b5f7e; --lane-games: #8b3a5e; --lane-launches: #1f7a72; --lane-studios: #3f6b3a; --lane-industry: #9a6b2f; --lane-context: #8a8173;
   --disputed: #c97a1c; --verified: #3f6b3a;
   --display: "Fraunces", Georgia, serif; --text: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
   --radius: 4px; --radius-pill: 999px; --card-shadow: none; --card-border: 1px solid var(--rule);
@@ -20,14 +20,14 @@
   :root:not([data-theme="light"]), :root[data-style="archive"]:not([data-theme="light"]) {
     --bg: #1a1714; --surface: #221e1a; --surface-2: #1e1a16; --ink: #efe6d8; --muted: #a99c89; --rule: #3a332b; --rule-strong: #4d4439;
     --era-a: #1f1b17; --era-b: #26211c; --accent: #e07a58; --accent-ink: #1a1714;
-    --lane-community: #79aecd; --lane-games: #d488a9; --lane-studios: #8cbf7f; --lane-industry: #d9a865; --lane-context: #9d9486;
+    --lane-community: #79aecd; --lane-games: #d488a9; --lane-launches: #6cc7bd; --lane-studios: #8cbf7f; --lane-industry: #d9a865; --lane-context: #9d9486;
     --disputed: #eda650; --verified: #8cbf7f;
   }
 }
 :root[data-style="archive"][data-theme="dark"] {
     --bg: #1a1714; --surface: #221e1a; --surface-2: #1e1a16; --ink: #efe6d8; --muted: #a99c89; --rule: #3a332b; --rule-strong: #4d4439;
     --era-a: #1f1b17; --era-b: #26211c; --accent: #e07a58; --accent-ink: #1a1714;
-    --lane-community: #79aecd; --lane-games: #d488a9; --lane-studios: #8cbf7f; --lane-industry: #d9a865; --lane-context: #9d9486;
+    --lane-community: #79aecd; --lane-games: #d488a9; --lane-launches: #6cc7bd; --lane-studios: #8cbf7f; --lane-industry: #d9a865; --lane-context: #9d9486;
     --disputed: #eda650; --verified: #8cbf7f;
 }
 
@@ -37,7 +37,7 @@
   --ink: #0f2a2e; --muted: #557073; --rule: #d6e2e1; --rule-strong: #b9cdcc;
   --era-a: #f4f8f7; --era-b: #e6efee;
   --accent: #0e6e79; --accent-ink: #ffffff;
-  --lane-community: #1d7f92; --lane-games: #df7356; --lane-studios: #3b8a5b; --lane-industry: #61779a; --lane-context: #9aa7a6;
+  --lane-community: #1d7f92; --lane-games: #df7356; --lane-launches: #8e4fb5; --lane-studios: #3b8a5b; --lane-industry: #61779a; --lane-context: #9aa7a6;
   --disputed: #d98a1f; --verified: #3b8a5b;
   --display: "Bricolage Grotesque", system-ui, sans-serif; --text: "Figtree", system-ui, sans-serif; --mono: "Figtree", system-ui, sans-serif;
   --radius: 14px; --radius-pill: 999px; --card-shadow: 0 1px 2px rgba(15,42,46,.06), 0 8px 24px rgba(15,42,46,.06); --card-border: 1px solid var(--rule);
@@ -47,7 +47,7 @@
   :root[data-style="coast"]:not([data-theme="light"]) {
     --bg: #0c1a1d; --surface: #122529; --surface-2: #0f2023; --ink: #e4efee; --muted: #8ea6a8; --rule: #22393d; --rule-strong: #2f4a4f;
     --era-a: #10221f; --era-b: #142a2d; --accent: #4fc1cc; --accent-ink: #0c1a1d;
-    --lane-community: #4fb8cb; --lane-games: #f29a80; --lane-studios: #6fc292; --lane-industry: #97a9c6; --lane-context: #8a9897;
+    --lane-community: #4fb8cb; --lane-games: #f29a80; --lane-launches: #c19ae0; --lane-studios: #6fc292; --lane-industry: #97a9c6; --lane-context: #8a9897;
     --disputed: #f0ac4c; --verified: #6fc292;
     --card-shadow: none;
   }
@@ -55,7 +55,7 @@
 :root[data-style="coast"][data-theme="dark"] {
     --bg: #0c1a1d; --surface: #122529; --surface-2: #0f2023; --ink: #e4efee; --muted: #8ea6a8; --rule: #22393d; --rule-strong: #2f4a4f;
     --era-a: #10221f; --era-b: #142a2d; --accent: #4fc1cc; --accent-ink: #0c1a1d;
-    --lane-community: #4fb8cb; --lane-games: #f29a80; --lane-studios: #6fc292; --lane-industry: #97a9c6; --lane-context: #8a9897;
+    --lane-community: #4fb8cb; --lane-games: #f29a80; --lane-launches: #c19ae0; --lane-studios: #6fc292; --lane-industry: #97a9c6; --lane-context: #8a9897;
     --disputed: #f0ac4c; --verified: #6fc292;
     --card-shadow: none;
 }
@@ -66,7 +66,7 @@
   --ink: #121212; --muted: #5e5e5e; --rule: #e2e0d8; --rule-strong: #121212;
   --era-a: #ffffff; --era-b: #f3f2ec;
   --accent: #ff4f2b; --accent-ink: #ffffff;
-  --lane-community: #2f62ff; --lane-games: #8a3cf5; --lane-studios: #00a06a; --lane-industry: #e8a000; --lane-context: #8e8e8e;
+  --lane-community: #2f62ff; --lane-games: #8a3cf5; --lane-launches: #ff2e88; --lane-studios: #00a06a; --lane-industry: #e8a000; --lane-context: #8e8e8e;
   --disputed: #ff8a00; --verified: #00a06a;
   --display: "Archivo", system-ui, sans-serif; --text: "Archivo", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
   --radius: 0px; --radius-pill: 0px; --card-shadow: 4px 4px 0 var(--ink); --card-border: 2px solid var(--ink);
@@ -76,14 +76,14 @@
   :root[data-style="arcade"]:not([data-theme="light"]) {
     --bg: #111111; --surface: #1a1a1a; --surface-2: #161616; --ink: #f1f1f1; --muted: #a3a3a3; --rule: #2d2d2d; --rule-strong: #f1f1f1;
     --era-a: #1a1a1a; --era-b: #202020; --accent: #ff6a4a; --accent-ink: #111111;
-    --lane-community: #6c8fff; --lane-games: #b07dff; --lane-studios: #2fd196; --lane-industry: #ffc23d; --lane-context: #9a9a9a;
+    --lane-community: #6c8fff; --lane-games: #b07dff; --lane-launches: #ff6aa9; --lane-studios: #2fd196; --lane-industry: #ffc23d; --lane-context: #9a9a9a;
     --disputed: #ffa53d; --verified: #2fd196;
   }
 }
 :root[data-style="arcade"][data-theme="dark"] {
     --bg: #111111; --surface: #1a1a1a; --surface-2: #161616; --ink: #f1f1f1; --muted: #a3a3a3; --rule: #2d2d2d; --rule-strong: #f1f1f1;
     --era-a: #1a1a1a; --era-b: #202020; --accent: #ff6a4a; --accent-ink: #111111;
-    --lane-community: #6c8fff; --lane-games: #b07dff; --lane-studios: #2fd196; --lane-industry: #ffc23d; --lane-context: #9a9a9a;
+    --lane-community: #6c8fff; --lane-games: #b07dff; --lane-launches: #ff6aa9; --lane-studios: #2fd196; --lane-industry: #ffc23d; --lane-context: #9a9a9a;
     --disputed: #ffa53d; --verified: #2fd196;
 }
 

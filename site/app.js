@@ -917,6 +917,7 @@
     try {
       G = await (await fetch("graph.json", { cache: "no-cache" })).json();
     } catch (err) {
+      document.documentElement.classList.remove("boot-3d");
       document.body.insertAdjacentHTML("afterbegin", "<p class='wrap'>Couldn't load graph.json. Run <code>python3 tools/vigs.py build</code> first.</p>");
       return;
     }
@@ -928,6 +929,7 @@
     };
     legend(); setupTabs(); setupLaneToggles(); setupSearch(); renderQuestions(); render();
     if (new URLSearchParams(location.search).get("view") !== "classic") window.Flight?.enter();
+    document.documentElement.classList.remove("boot-3d");
     $("#timeline-scroll").addEventListener("scroll", pinLaneLabels, { passive: true });
     $("#timeline-scroll").scrollLeft = xOf(2008) - LEFT;
     document.querySelectorAll("[data-orient]").forEach((b) => b.addEventListener("click", () => {

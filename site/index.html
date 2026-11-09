@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>
+  // Decide the view, style and mode before the first paint, so the classic page never flashes before 3D.
+  (function () {
+    var q = new URLSearchParams(location.search), d = document.documentElement;
+    if (q.get("view") !== "classic") d.classList.add("boot-3d");
+    var st = q.get("style"); d.dataset.style = ["arcade", "archive", "coast"].indexOf(st) >= 0 ? st : "arcade";
+    try { var m = localStorage.getItem("vigs-theme"); if (m === "light" || m === "dark") d.dataset.theme = m; } catch (e) {}
+  })();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vancouver Indie Game Scene</title>
 <meta name="description" content="Vancouver Indie Game Scene (VIGS): a working timeline of the Vancouver indie game scene, the foundation for an oral history in progress.">

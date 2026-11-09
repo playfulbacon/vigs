@@ -335,6 +335,7 @@
     if (flight.active || !V()) return;
     flight.active = true;
     document.body.classList.add("flight-on");
+    document.documentElement.classList.remove("boot-3d");
     flight.el = document.createElement("div");
     flight.el.className = "flight";
     flight.el.innerHTML = `<div class="fl-stage"><div class="fl-world"></div></div>

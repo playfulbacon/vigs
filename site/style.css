@@ -264,6 +264,9 @@ table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
 .map.dark .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.9); }
 
 /* ========================================================================== 3D view */
+/* while the 3D view is loading, keep the classic page hidden (no flash) */
+.boot-3d .topbar, .boot-3d .layout, .boot-3d .settings { visibility: hidden; }
+.boot-3d body { background: radial-gradient(120% 80% at 50% 12%, var(--surface) 0%, var(--bg) 55%, color-mix(in srgb, var(--bg) 85%, var(--ink)) 100%); min-height: 100vh; }
 .flight-on { overflow: hidden; }
 .flight-on .topbar, .flight-on main { display: none; }
 .flight-on .layout { display: block; padding: 0; }

@@ -17,12 +17,12 @@
   let orientation = "vertical";  // or "horizontal"
 
   const LANES = [
-    { id: "games", label: "Games", color: "--lane-games" },
     { id: "launches", label: "Game Launches", color: "--lane-launches" },
-    { id: "studios", label: "Studios & People", color: "--lane-studios" },
+    { id: "games", label: "Game News", color: "--lane-games" },
+    { id: "studios", label: "People & Studios", color: "--lane-studios" },
     { id: "community", label: "Community", color: "--lane-community" },
-    { id: "industry", label: "AAA & Industry", color: "--lane-industry" },
-    { id: "context", label: "Policy & Press", color: "--lane-context" },
+    { id: "industry", label: "Industry & AAA", color: "--lane-industry" },
+    { id: "context", label: "Press & Policy", color: "--lane-context" },
   ];
   const SIGNIFICANCE = { 3: "Turning point", 2: "Notable", 1: "Context" };
   const sigTag = (n) => `<span class="tag sig" title="Significance ${n || 1} of 3">${esc(SIGNIFICANCE[n || 1])} · ${n || 1}/3</span>`;
@@ -778,8 +778,8 @@
       ],
     },
     community: { label: "Community", rows: evLane("community"), type: "event", columns: EVENT_COLUMNS },
-    industry: { label: "AAA & Industry", rows: evLane("industry"), type: "event", columns: EVENT_COLUMNS },
-    context: { label: "Policy & Press", rows: evLane("context"), type: "event", columns: EVENT_COLUMNS },
+    industry: { label: "Industry & AAA", rows: evLane("industry"), type: "event", columns: EVENT_COLUMNS },
+    context: { label: "Press & Policy", rows: evLane("context"), type: "event", columns: EVENT_COLUMNS },
   };
 
   let listState = { key: null, col: null, dir: 1 };

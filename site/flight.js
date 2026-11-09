@@ -57,8 +57,12 @@
   const tOf = (d) => { const r = V().drange(d) || [2000, 2000]; return (r[0] + r[1]) / 2; };
   function eventImage(e) {
     const G = V().G;
-    for (const id of e.games || []) { const u = G.game[id]?.box_art?.source_url; if (u) return { url: u, kind: "art" }; }
-    for (const id of e.orgs || []) { const u = G.org[id]?.logo?.source_url; if (u) return { url: u, kind: "logo" }; }
+    // Only the event's main subject: its first-listed game's box art, else its first-listed org's logo.
+    // (Never borrow a logo from a sponsor, publisher or speaker's employer further down the list.)
+    const art = G.game[(e.games || [])[0]]?.box_art?.source_url;
+    if (art) return { url: art, kind: "art" };
+    const logo = G.org[(e.orgs || [])[0]]?.logo?.source_url;
+    if (logo) return { url: logo, kind: "logo" };
     return null;
   }
 

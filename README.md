@@ -14,6 +14,7 @@ VIGS (Vancouver Indie Game Scene) is an oral history of the Vancouver indie game
 | `glossary/` | Name lists for transcription tools |
 | `templates/` | Templates for interviews, claims and transcripts |
 | `docs/interview-workflow.md` | How a recording becomes data |
+| `docs/interview-leads.md` | Unconfirmed leads to follow up in interviews (not shown on the site) |
 | `media/` | Photos and box art (with credit and license recorded on each record) |
 | `site/` | The interactive timeline (static HTML/JS, published to GitHub Pages) |
 

@@ -41,3 +41,20 @@ To confirm:
 Ask: Maddy Thorson, Noel Berry, Davey Wreden, Danny Baranowsky.
 
 Web search on November 10, 2026 found nothing published about either house.
+
+### Goblin Town (Victoria)
+
+*Lead noted November 2026.*
+
+- Victoria indie developers started their own shared indie house, **Goblin Town**, inspired by Vancouver's Indie House.
+- **Dylan** was part of it. This is probably **Dylan Gedig** (Red Nexus Games, Peglin; University of Victoria roots), but that's unconfirmed.
+
+To confirm:
+- Which Dylan, and who else lived there?
+- When did it start and end, and what was made there? Did Peglin's start at Orca Jam 2019, or Red Nexus Games itself, overlap with it?
+- How directly was it inspired by Indie House? Did anyone visit, or know the residents?
+- Where (neighbourhood only), and how did it fit with IGDA Victoria and the Victoria meetup that may have seeded Full Indie?
+
+Ask: Dylan Gedig, the Northways (University of Victoria), IGDA Victoria organizers.
+
+Web search on November 10, 2026 found nothing published about Goblin Town; most results were about Victoria, Australia.

@@ -8,6 +8,15 @@ When a lead is confirmed, turn it into records: a `data/places/` entry for the h
 
 A recurring pattern worth asking about directly: shared houses that passed from one group of developers to the next, and kept being where the scene gathered. Indie House (Richmond, 2012–2016) is the documented example.
 
+### Indie House (Richmond, 2012–2016)
+
+The documented house. Leads that add to it:
+
+- *Lead noted November 2026.* **The Northways are still growing plants that came from Indie House.** They aren't documented as residents, so the plants were passed on to them, which makes this a lovely object to anchor a story.
+  - To ask: which plants, who grew them at Indie House, when and how they reached the Northways (when the house ended in late 2016?), and whether anyone else kept something from the house.
+  - A possible photo for the project, with permission.
+  - Ask: Sarah and Colin Northway; the Indie House residents.
+
 ### Kramer's house (party house)
 
 *Lead noted November 2026.*

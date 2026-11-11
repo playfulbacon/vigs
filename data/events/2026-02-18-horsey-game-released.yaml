@@ -17,9 +17,8 @@ status: verified
 sources:
 - steam-horsey-game
 - giantbomb-horsey-game
-caveat: Justin Smith's Vancouver residence is not documented in any opened source.
-open_questions:
-- Were you living in Vancouver when you made Enviro-Bear 2000 and Desert Golfing? Who else was in Blinkbat Games?
-  (Ask Justin Smith.)
+- source: 2026-11-11-justin-smith
+  note: Smith's Vancouver residence since 2007
+caveat: Justin Smith's Vancouver residence rests on his 2026 VIGS interview.
 tags:
 - release

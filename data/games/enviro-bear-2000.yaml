@@ -26,8 +26,8 @@ awards:
     year: 2010
     result: finalist
     sources: [gamedev-road-to-the-igf-justin-smith-s-i-enviro-bear-2000-i]
-vancouver_connection: Often counted in the Vancouver story, but Justin Smith's Vancouver residence is unconfirmed; the opened sources call him "Canadian" without naming a city.
-region: canada
+vancouver_connection: Made in Vancouver. Justin Smith says he moved to the city in 2007 (2026 VIGS interview); published sources call him "Canadian" without naming a city.
+region: vancouver
 summary: Justin Smith's driving game about a bear, made for the TIGSource Cockpit Competition with art drawn in MS Paint, where it won the most user votes. It was a 2010 IGF Nuovo Award finalist.
 box_art:
   source_url: https://upload.wikimedia.org/wikipedia/en/e/ea/Enviro-Bear_2000_Cover.gif
@@ -37,5 +37,5 @@ box_art:
 links:
   wikipedia: https://en.wikipedia.org/wiki/Enviro-Bear_2000
 status: single-source
-sources: [wikipedia-enviro-bear-2000, gamedev-road-to-the-igf-justin-smith-s-i-enviro-bear-2000-i, gamedev-interview-bear-theft-auto-the-indie-adventures-of-i-enviro-bea]
+sources: [wikipedia-enviro-bear-2000, gamedev-road-to-the-igf-justin-smith-s-i-enviro-bear-2000-i, gamedev-interview-bear-theft-auto-the-indie-adventures-of-i-enviro-bea, 2026-11-11-justin-smith]
 notes: The release dates rest on Wikipedia; the IGF finalist status is verified by Game Developer (Jan 12, 2010).

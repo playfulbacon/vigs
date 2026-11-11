@@ -1,11 +1,14 @@
 id: justin-smith
 name: Justin Smith
 vancouver:
-  tie: unconfirmed
+  tie: resident
+  arrived: "2007"
   note: >-
-    Opened sources call him "Canadian" without naming a city. A 2014 Medium profile calls him "Vancouver-based"
-    but returned 403 and was not read.
+    In his 2026 interview he says he moved to Vancouver in 2007 to join Deep Fried Entertainment. Opened
+    published sources call him "Canadian" without naming a city; a 2014 Medium profile calling him
+    "Vancouver-based" returned 403 and was not read.
   sources:
+  - 2026-11-11-justin-smith
   - wikipedia-enviro-bear-2000
   - wikipedia-desert-golfing
 roles:
@@ -13,15 +16,25 @@ roles:
 - programmer
 - founder
 summary: >-
-  Low-profile Canadian solo developer of Enviro-Bear 2000 (2009), Desert Golfing (2014) and Horsey Game
+  Former AAA programmer turned low-profile Vancouver solo developer of Enviro-Bear 2000 (2009), Desert Golfing (2014) and Horsey Game
   (2026).
 bio: >-
-  Smith made Enviro-Bear 2000 for the TIGSource Cockpit Competition, drawing the art in MS Paint, and
+  By his own account, Smith started at BioWare around 1999, spent about six years at Digital Extremes in
+  London, Ontario, and moved to Vancouver in 2007 to join Deep Fried Entertainment, a new studio founded by
+  a friend from BioWare, making indie games at home on the side. Smith made Enviro-Bear 2000 for the TIGSource Cockpit Competition, drawing the art in MS Paint, and
   released it on Game Jolt on April 4, 2009; it won the most user votes and became a 2010 IGF Nuovo Award
   finalist. Desert Golfing, which he designed, came out under Blinkbat Games on August 6, 2014. He was
   operating as Captain Games by July 2020, releasing Golf on Mars and, on February 18, 2026, Horsey Game,
-  rated Overwhelmingly Positive on Steam.
+  rated Overwhelmingly Positive on Steam. In 2009 he invited Chevy Ray Johnston down from Kamloops to port
+  Johnston's Skullpogo to iPhone; Johnston soon moved to Vancouver and brought Maddy Thorson, the start of
+  the line that led to Indie House. Smith was at the first indie meetup in May 2010 and visited Indie House
+  often but did not live there.
 memberships:
+- org: deep-fried-entertainment
+  start: "2007"
+  status: interview-only
+  sources:
+  - 2026-11-11-justin-smith
 - org: blinkbat-games
   role: designer
   start: "2014"
@@ -40,6 +53,7 @@ current: >-
   As of the November 2026 report: active as Captain Games; Horsey Game released February 18, 2026.
 consent:
   status: not-asked
+  note: Interviewed November 11, 2026 (2026-11-11-justin-smith); release form pending.
 status: verified
 sources:
 - wikipedia-enviro-bear-2000
@@ -49,4 +63,7 @@ sources:
 - gamedev-7-questions-for-i-desert-golfing-i-creator-justin-smith
 - steam-horsey-game
 - giantbomb-horsey-game
-notes: Birth year not found. Who else was in Blinkbat Games is unknown.
+- 2026-11-11-justin-smith
+notes: >-
+  Birth year not found. Who else was in Blinkbat Games is unknown. BioWare and Digital Extremes (outside
+  BC) are kept in the bio rather than as memberships; dates rest on the interview.

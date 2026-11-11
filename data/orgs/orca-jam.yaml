@@ -4,7 +4,13 @@ kind: event-series
 location:
   city: Victoria
   region: victoria
-summary: Game jam where Peglin began in 2019.
+summary: >-
+  Victoria game jam where Peglin began in 2019. Justin Smith remembers about three Orca Jams and Vancouver
+  developers trekking to Victoria and staying in hostels for it; to him it was the most exciting time of the
+  year, livelier than the Full Indie Game Jams.
 status: single-source
 sources:
 - wikipedia-peglin
+- source: 2026-11-11-justin-smith
+  note: Vancouver developers travelling to Orca Jam
+notes: Years of each Orca Jam and its organizers are unknown. Smith suggests asking "Andy" (surname unknown).

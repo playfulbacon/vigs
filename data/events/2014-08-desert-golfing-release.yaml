@@ -17,10 +17,10 @@ status: single-source
 sources:
 - wikipedia-desert-golfing
 - gamedev-7-questions-for-i-desert-golfing-i-creator-justin-smith
-caveat: The opened sources call Blinkbat "Canadian" without naming a city. A 2014 Medium profile calling Smith "Vancouver-based"
-  returned 403 and was not read.
+caveat: The opened sources call Blinkbat "Canadian" without naming a city. Smith says he has lived in Vancouver since
+  2007 (2026 VIGS interview), but he wasn't asked about Desert Golfing specifically.
 open_questions:
-- Were you living in Vancouver when you made Enviro-Bear 2000 and Desert Golfing? Who else was in Blinkbat Games?
+- Was Desert Golfing made in Vancouver? Who else was in Blinkbat Games? (Ask Justin Smith.)
 tags:
 - release
 - mobile

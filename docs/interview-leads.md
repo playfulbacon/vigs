@@ -67,3 +67,36 @@ To confirm:
 Ask: Dylan Gedig, the Northways (University of Victoria), IGDA Victoria organizers.
 
 Web search on November 10, 2026 found nothing published about Goblin Town; most results were about Victoria, Australia.
+
+## From the Justin Smith interview (November 11, 2026)
+
+Leads that came up in the first VIGS interview (`data/interviews/2026-11-11-justin-smith.yaml`). The facts he stated directly are draft claims in `data/claims/`; these are the threads to pull.
+
+### The first meetup: attendee list and photos
+
+- Justin has **a list of the people at the first meetup** (May 2010) and offered to email it.
+- He names **Nels Anderson, Brian Provinciano, Shane Neville, Michael Labbe and Graham Jans** among them.
+- **Michael Labbe** "always had a camera around" and probably has photos of the early meetups. Justin offered to forward him to us.
+- **Graham Jans** is still around; Justin thinks he may be at Klei.
+- Justin remembers a billiard club **in Gastown** and about 25 people. Jake Birkett's write-up says Soho Cafe and Billiards in Yaletown and 40+. Worth settling with the list and the photos.
+
+Ask: Justin Smith (the list), Michael Labbe, Graham Jans, Jake Birkett.
+
+### Orca Jam
+
+- About three Orca Jams; Vancouver developers trekked to Victoria and stayed in hostels. Justin found them more exciting than the Full Indie Game Jams.
+- Justin says to **ask Andy** about Orca Jam. Who is Andy?
+- Which years, who organized it, and did it overlap with Goblin Town (above)?
+
+### After Indie House: Colin's parties
+
+- Justin says that after Indie House, **Colin Northway's parties** became the scene's social centre, and that's when the scene began to feel big and to splinter into several groups. This fits the Kramer's-house lead about when the Northways became the hosts.
+
+### A younger scene?
+
+- **Jared** (who runs, we think, **Game Bus Stop**) has invited Justin to his parties; Justin thinks that may be where a younger scene is gathering. Confirm Jared's surname and the event's name.
+- **Dune Casu** (Absolute Drift, Over the Hill) came to older Full Indie meetups and has been around a long time.
+
+### How did people hear about events?
+
+- Before Full Indie, how did anyone find local game events? Justin found studios through a "Game Dev Map" site (gamedevmap.com?) and doesn't remember how he heard about the first meetup. Ask everyone.

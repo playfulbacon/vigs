@@ -1,9 +1,18 @@
 id: chevy-ray-johnston
 name: Chevy Ray Johnston
+origin: Kamloops, BC (per Justin Smith's 2026 interview)
 vancouver:
   tie: resident
-  note: Shared a Vancouver apartment with Maddy Thorson after her college years, then Indie House.
+  arrived:
+    value: "2010"
+    approximate: true
+    note: Justin Smith recalls the move a few months after a 2009 visit; unconfirmed.
+  note: >-
+    Came down from Kamloops for a weekend in 2009 to port Skullpogo with Justin Smith and moved to Vancouver
+    a few months later for a Flash job (Smith's account). Shared a Vancouver apartment with Maddy Thorson
+    after her college years, then Indie House.
   sources:
+  - 2026-11-11-justin-smith
   - wikipedia-maddy-thorson
   - straight-2024-indie-hub
 roles:
@@ -16,7 +25,11 @@ summary: >-
   Maddy Thorson's roommate who suggested Indie House, and lead developer of Ikenfell (2020, Happy Ray
   Games).
 bio: >-
-  Johnston shared a Vancouver apartment with Maddy Thorson after her college years and suggested getting
+  Johnston was a prominent TIGSource developer in Kamloops and the maker of FlashPunk, the ActionScript
+  library widely used by Flash developers. According to Justin Smith, Johnston came to Vancouver for a
+  weekend in 2009 to port Skullpogo to iPhone with him, then moved to the city a few months later for a
+  Flash job, rooming with Smith for about four months. Johnston brought Maddy Thorson, then in Alberta, to
+  Vancouver. Johnston shared a Vancouver apartment with Maddy Thorson after her college years and suggested getting
   the house near Steveston that became Indie House, which the two took around October 2012. At the June
   2012 Full Indie Game Jam, Johnston and Noel Berry met Kevin Regamey of Power Up Audio. Johnston was
   lead developer, artist and writer of Ikenfell, released by Happy Ray Games with Humble Games on October
@@ -47,4 +60,8 @@ sources:
 - straight-2024-indie-hub
 - wikipedia-ikenfell
 - egm-power-up-audio
-notes: Pronouns and birth year not found; do not assume. A key early witness.
+- 2026-11-11-justin-smith
+notes: >-
+  Pronouns and birth year not found; do not assume (the interview transcript's pronouns for Chevy are not a
+  statement from Chevy). A key early witness: ask about the Skullpogo weekend, the move from Kamloops, and how
+  Chevy and Maddy met.

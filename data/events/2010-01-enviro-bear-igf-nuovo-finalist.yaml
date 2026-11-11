@@ -16,11 +16,10 @@ sources:
 - gamedev-road-to-the-igf-justin-smith-s-i-enviro-bear-2000-i
 - source: gamedev-interview-bear-theft-auto-the-indie-adventures-of-i-enviro-bea
   note: '"Bear Theft Auto" interview, Nov 19, 2010'
-caveat: 'Geography caveat: the opened sources call Justin Smith "Canadian" without naming a city; his Vancouver
-  residence is not documented.'
-open_questions:
-- Were you living in Vancouver when you made Enviro-Bear 2000 and Desert Golfing? Who else was in Blinkbat Games?
-  (Ask Justin Smith.)
+- source: 2026-11-11-justin-smith
+  note: Smith's move to Vancouver in 2007
+caveat: 'Geography: Justin Smith says he moved to Vancouver in 2007 (2026 VIGS interview); published sources call
+  him "Canadian" without naming a city.'
 tags:
 - indie
 - award

@@ -1,10 +1,15 @@
 id: 2026-11-11-justin-smith-028
 interview: 2026-11-11-justin-smith
 speaker: justin-smith
-text: Garret worked on Parkitect for years and talked about it at the meetups; it was a breakout hit for him.
+text: Garret (Randell) worked on Parkitect for years and talked about it at the meetups; it was a breakout hit for
+  him.
 about:
   games:
   - parkitect
+  people:
+  - garret-randell
+  events:
+  - 2018-11-29-parkitect-released
 stance: adds
 kind: memory
 themes:

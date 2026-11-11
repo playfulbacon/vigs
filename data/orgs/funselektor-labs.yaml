@@ -1,0 +1,18 @@
+id: funselektor-labs
+name: Funselektor Labs
+kind: indie-studio
+founded:
+  value: '2014-08-12'
+  note: Giant Bomb, seen only in a search snippet
+founders:
+- dune-casu
+location:
+  city: Vancouver
+  region: vancouver
+summary: Dune Casu's Vancouver studio, maker of Absolute Drift (2015), art of rally (2020) and Over the Hill (2026).
+operating_status: active
+status: verified
+sources:
+- gamespress-2020-art-of-rally
+- canadiangamedevs-funselektor
+- wikipedia-absolute-drift

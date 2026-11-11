@@ -1,0 +1,37 @@
+id: art-of-rally
+title: art of rally
+releases:
+- date: '2020-09-23'
+  kind: release
+  platforms:
+  - Windows
+  - macOS
+  sources:
+  - wikipedia-art-of-rally
+  - gamespress-2020-art-of-rally
+- date: '2021-08-12'
+  kind: port
+  platforms:
+  - Xbox
+  - Switch
+  sources:
+  - wikipedia-art-of-rally
+release_status: released
+developers:
+- funselektor-labs
+publishers:
+- funselektor-labs
+credits:
+- person: dune-casu
+  role: designer
+  sources:
+  - wikipedia-art-of-rally
+vancouver_connection: Funselektor's press release for it carries a Vancouver dateline.
+region: vancouver
+summary: Funselektor Labs' stylized top-down rally game, designed by Dune Casu.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Art_of_Rally
+status: verified
+sources:
+- wikipedia-art-of-rally
+- gamespress-2020-art-of-rally

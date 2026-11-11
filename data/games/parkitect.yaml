@@ -1,6 +1,54 @@
 id: parkitect
 title: Parkitect
-summary: Theme-park builder that Garret worked on for years and talked about at the meetups; a breakout hit.
-status: interview-only
-sources: [2026-11-11-justin-smith]
-notes: Stub from the Justin Smith interview; dates and credits to be filled from published sources.
+releases:
+- date: '2016-05-05'
+  kind: early-access
+  platforms:
+  - Steam
+  sources:
+  - wikipedia-parkitect
+- date: '2018-11-29'
+  kind: full-release
+  platforms:
+  - Windows
+  - macOS
+  - Linux
+  sources:
+  - wikipedia-parkitect
+- date: '2024-07-03'
+  kind: port
+  platforms:
+  - PS4
+  - PS5
+  - Xbox
+  sources:
+  - wikipedia-parkitect
+release_status: released
+developers:
+- texel-raptor
+publishers:
+- texel-raptor
+credits:
+- person: garret-randell
+  role: co-designer, artist
+  sources:
+  - wikipedia-parkitect
+- person: gordon-mcgladdery
+  role: composer
+  sources:
+  - wikipedia-parkitect
+crowdfunding:
+  platform: Kickstarter
+  date: 2014-08
+vancouver_connection: Two of Texel Raptor's three developers were from Vancouver in 2014; music by Gordon McGladdery
+  (A Shell in the Pit).
+region: vancouver
+summary: Texel Raptor's theme-park builder by Garret Randell and Sebastian Mayer, in Early Access from 2016 and
+  released in 2018.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Parkitect
+status: verified
+sources:
+- wikipedia-parkitect
+- cliqist-2014-texel-raptor-parkitect
+- 2026-11-11-justin-smith

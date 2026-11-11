@@ -7,8 +7,11 @@ about:
   - ryan-clark
   games:
   - incredibots
-stance: adds
+  events:
+  - 2008-10-incredibots-released
+stance: supports
 kind: memory
 themes:
 - igf
 review: draft
+notes: 'Confirmed: 2009 IGF Technical Excellence finalist.'

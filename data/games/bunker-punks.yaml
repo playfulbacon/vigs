@@ -1,6 +1,39 @@
 id: bunker-punks
 title: Bunker Punks
-summary: Shane Neville's long-running project, which the early meetup crowd rooted for.
-status: interview-only
-sources: [2026-11-11-justin-smith]
-notes: Stub from the Justin Smith interview; dates and credits to be filled from published sources.
+releases:
+- date: '2016-03-30'
+  kind: early-access
+  platforms:
+  - Steam
+  sources:
+  - gamedev-bunker-punks-canadian-politics
+- date: '2018-05-28'
+  kind: full-release
+  platforms:
+  - Windows
+  - macOS
+  sources:
+  - steam-bunker-punks
+release_status: released
+developers:
+- ninja-robot-dinosaur
+publishers:
+- ninja-robot-dinosaur
+credits:
+- person: shane-neville
+  role: creator
+  sources:
+  - nrdland-home
+vancouver_connection: Made by Vancouver developer Shane Neville (Ninja Robot Dinosaur), an early Full Indie regular.
+region: vancouver
+summary: Shane Neville's lo-res roguelike FPS, inspired by Canadian politics; announced in 2015, in Early Access
+  from 2016 and released in 2018.
+links:
+  steam: https://store.steampowered.com/app/446120/Bunker_Punks/
+status: verified
+sources:
+- steam-bunker-punks
+- gamedev-bunker-punks-canadian-politics
+- kotaku-2015-bunker-punks-preorder
+- nrdland-home
+- 2026-11-11-justin-smith

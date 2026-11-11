@@ -1,0 +1,27 @@
+id: garret-randell
+name: Garret Randell
+vancouver:
+  tie: resident
+  note: Two of Texel Raptor's three developers were from Vancouver in 2014; his own bio says Vancouver-based (snippet).
+  sources:
+  - cliqist-2014-texel-raptor-parkitect
+roles:
+- designer
+- artist
+- founder
+summary: Vancouver co-founder of Texel Raptor and co-designer and artist of Parkitect.
+bio: Randell co-designed Parkitect with Sebastian Mayer and was its artist. It entered Early Access on May 5, 2016
+  and was released on November 29, 2018. Justin Smith remembers him working on it for years and talking about it
+  in the scene.
+memberships:
+- org: texel-raptor
+  role: co-founder
+  sources:
+  - wikipedia-parkitect
+consent:
+  status: not-asked
+status: single-source
+sources:
+- wikipedia-parkitect
+- cliqist-2014-texel-raptor-parkitect
+- 2026-11-11-justin-smith

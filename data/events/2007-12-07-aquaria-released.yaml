@@ -1,0 +1,27 @@
+id: 2007-12-07-aquaria-released
+title: Aquaria released
+date: '2007-12-07'
+era: aaa-roots
+type: release
+summary: Bit Blot releases Alec Holowka and Derek Yu's Aquaria, winner of the 2007 IGF Grand Prize. Justin Smith
+  later named Holowka's code-filled blog as a spur to make his own games.
+people:
+- alec-holowka
+- justin-smith
+games:
+- aquaria
+orgs:
+- bit-blot
+region: international
+significance: 1
+status: single-source
+sources:
+- wikipedia-aquaria
+- source: 2026-11-11-justin-smith
+  note: Smith on Holowka's blog as inspiration
+caveat: 'Not a Vancouver release: Holowka''s Vancouver work came before Aquaria, and the story that he lived here
+  while making it is unconfirmed.'
+tags:
+- igf
+- release
+- inspiration

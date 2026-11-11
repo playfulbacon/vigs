@@ -1,7 +1,29 @@
 id: shane-neville
 name: Shane Neville
-summary: Developer of Bunker Punks; at the first Vancouver indie meetup in May 2010, per Justin Smith.
+vancouver:
+  tie: resident
+  sources:
+  - nrdland-home
+  - 2026-11-11-justin-smith
+roles:
+- designer
+- programmer
+- founder
+summary: Vancouver developer of Bunker Punks (Ninja Robot Dinosaur) and an early Full Indie regular.
+bio: Neville makes games as Ninja Robot Dinosaur. Bunker Punks, a lo-res roguelike FPS inspired by Canadian politics,
+  went on preorder in April 2015, entered Early Access on March 30, 2016 and was released on May 28, 2018. Justin
+  Smith remembers him at the first Vancouver indie meetup in May 2010, and the long project as one the scene rooted
+  for.
+memberships:
+- org: ninja-robot-dinosaur
+  role: founder
+  sources:
+  - nrdland-home
 consent:
   status: not-asked
-status: interview-only
-sources: [2026-11-11-justin-smith]
+status: single-source
+sources:
+- nrdland-home
+- steam-bunker-punks
+- gamedev-bunker-punks-canadian-politics
+- 2026-11-11-justin-smith

@@ -1,0 +1,14 @@
+id: ninja-robot-dinosaur
+name: Ninja Robot Dinosaur
+kind: indie-studio
+founders:
+- shane-neville
+location:
+  city: Vancouver
+  region: vancouver
+summary: Vancouver label publishing Shane Neville's games, including Bunker Punks (2016 Early Access, 2018 release).
+operating_status: unknown
+status: single-source
+sources:
+- nrdland-home
+- steam-bunker-punks

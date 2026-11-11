@@ -1,0 +1,22 @@
+id: 2018-11-29-parkitect-released
+title: Parkitect released
+display_title: Parkitect (1.0)
+date: '2018-11-29'
+era: breakout-years
+type: release
+summary: Texel Raptor releases Parkitect 1.0. Justin Smith calls it a breakout hit for Garret Randell, who had talked
+  about it in the scene for years.
+people:
+- garret-randell
+games:
+- parkitect
+orgs:
+- texel-raptor
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-parkitect
+- 2026-11-11-justin-smith
+tags:
+- release

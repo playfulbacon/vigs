@@ -1,0 +1,22 @@
+id: 2010-01-flashpunk-released
+title: Chevy Ray Johnston releases FlashPunk
+display_title: FlashPunk
+date:
+  value: 2010-01
+  note: MetaFilter and TIGSource posts of January 2010, seen in search snippets only
+era: first-indies
+type: milestone
+summary: Chevy Ray Johnston releases FlashPunk, a free ActionScript 3 library for Flash games. Justin Smith says
+  everyone knew Chevy because everyone used it.
+people:
+- chevy-ray-johnston
+region: vancouver
+significance: 2
+status: unverified
+sources:
+- metafilter-2010-flashpunk
+- 2026-11-11-justin-smith
+caveat: Release month rests on search snippets; whether Johnston had moved to Vancouver yet is unclear.
+tags:
+- tools
+- flash

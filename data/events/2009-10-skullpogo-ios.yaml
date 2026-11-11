@@ -1,0 +1,27 @@
+id: 2009-10-skullpogo-ios
+title: Skullpogo released on iPhone
+display_title: Skullpogo (iOS)
+date:
+  value: '2009-10-21'
+  note: TouchArcade, search snippet only
+era: first-indies
+type: release
+summary: Justin Smith's iPhone port of Chevy Ray Johnston's Skullpogo comes out under Captain Games, the fruit of
+  the weekend that brought Johnston to Vancouver.
+people:
+- justin-smith
+- chevy-ray-johnston
+games:
+- skullpogo
+orgs:
+- captain-games
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- toucharcade-skullpogo
+- touchhle-appdb-skullpogo
+- 2026-11-11-justin-smith
+tags:
+- release
+- mobile

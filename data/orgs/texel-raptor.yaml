@@ -1,0 +1,15 @@
+id: texel-raptor
+name: Texel Raptor
+kind: indie-studio
+founders:
+- garret-randell
+location:
+  region: international
+  note: In 2014 two of three developers were from Vancouver and one from Germany; now based in Canada, Germany,
+    Estonia and the US.
+summary: Studio of Garret Randell and Sebastian Mayer, maker of Parkitect (2016 Early Access, 2018 release).
+operating_status: active
+status: verified
+sources:
+- wikipedia-parkitect
+- cliqist-2014-texel-raptor-parkitect

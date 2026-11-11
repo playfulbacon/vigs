@@ -1,0 +1,23 @@
+id: 2008-10-incredibots-released
+title: IncrediBots released
+date: '2008-10-31'
+era: first-indies
+type: release
+summary: Grubby Games releases IncrediBots, Ryan Clark's Flash robot-building game. It becomes a 2009 IGF Technical
+  Excellence finalist.
+people:
+- ryan-clark
+games:
+- incredibots
+orgs:
+- grubby-games
+region: vancouver
+significance: 1
+status: single-source
+sources:
+- wikipedia-incredibots
+- ubm-igf-2009-finalists
+tags:
+- release
+- flash
+- igf

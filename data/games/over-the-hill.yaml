@@ -1,0 +1,24 @@
+id: over-the-hill
+title: Over the Hill
+releases:
+- date: '2026-10-14'
+  kind: release
+  platforms:
+  - PC (Steam)
+  note: PS5, Xbox Series and Switch 2 versions set for 2027.
+  sources:
+  - gematsu-over-the-hill-launches-october-14
+release_status: released
+developers:
+- funselektor-labs
+credits:
+- person: dune-casu
+  role: creator
+  sources:
+  - 2026-11-11-justin-smith
+vancouver_connection: Funselektor Labs (Vancouver), made with Strelka Games.
+region: vancouver
+summary: Funselektor Labs' off-road driving game, made with Strelka Games, released on PC in October 2026.
+status: verified
+sources:
+- gematsu-over-the-hill-launches-october-14

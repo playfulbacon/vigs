@@ -1,10 +1,27 @@
 id: deep-fried-entertainment
 name: Deep Fried Entertainment
 kind: indie-studio
+founded:
+  value: 2005-06
+  note: CanDevs gives June 2005; Game Developer reported the formation on August 29, 2005.
+founders: []
 location:
   city: Vancouver
   region: vancouver
-summary: Vancouver studio founded around 2007 by a former BioWare and EA developer; it began on its own small games and grew on contract work such as a Major League Baseball game. Justin Smith worked there after moving to Vancouver.
+  note: Downtown (Homer St.) per CanDevs.
+lineage:
+- org: ea-vancouver
+  type: spun-off-from
+summary: Vancouver studio founded in 2005 by five ex-EA developers (Phil Weeks, Russell Rice, Steve Tolin, Ryan
+  Bedard and Brian Tolin), first aiming at PSP and DS games. It did contract work such as 2K's MLB 2K8 Fantasy All-Stars
+  and MLB Superstars (2008). Justin Smith joined in 2007 after leaving Digital Extremes.
 operating_status: unknown
-status: interview-only
-sources: [2026-11-11-justin-smith]
+status: verified
+sources:
+- gamedev-2005-deep-fried-forms
+- candevs-deep-fried
+- wikipedia-mlb-2k8-fantasy-all-stars
+- source: 2026-11-11-justin-smith
+  note: Smith joined in 2007; the friend from BioWare who invited him
+notes: Closure date not found. Smith describes it as a new company when he joined in 2007 and its founder as a BioWare
+  friend who had worked on Need for Speed at EA; which founder is not stated.

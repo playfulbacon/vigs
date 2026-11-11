@@ -1,6 +1,51 @@
 id: aquaria
 title: Aquaria
-summary: Alec Holowka and Derek Yu's underwater action-adventure. Justin Smith heard Holowka lived in Vancouver while making it; unconfirmed.
-status: interview-only
-sources: [2026-11-11-justin-smith]
-notes: Stub from the Justin Smith interview; dates and credits to be filled from published sources.
+releases:
+- date: '2007-12-07'
+  kind: release
+  platforms:
+  - Windows
+  sources:
+  - wikipedia-aquaria
+- date: '2008-12-15'
+  kind: port
+  platforms:
+  - Steam
+  sources:
+  - wikipedia-aquaria
+- date: '2011-11-02'
+  kind: port
+  platforms:
+  - iOS
+  sources:
+  - wikipedia-aquaria
+release_status: released
+developers:
+- bit-blot
+publishers:
+- bit-blot
+credits:
+- person: alec-holowka
+  role: co-designer, programmer, composer
+  sources:
+  - wikipedia-aquaria
+awards:
+- name: IGF Seumas McNally Grand Prize
+  year: 2007
+  result: won
+  sources:
+  - wikipedia-aquaria
+vancouver_connection: Context, not a Vancouver game. Justin Smith heard Alec Holowka lived in Vancouver while making
+  it, but in 2006 Holowka said only that he lived in Canada; published sources place his Vancouver work before Aquaria.
+  Holowka's blog inspired Smith.
+region: international
+summary: Bit Blot's underwater action-adventure by Alec Holowka and Derek Yu (art and co-design), winner of the
+  2007 IGF Seumas McNally Grand Prize.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Aquaria_(video_game)
+status: single-source
+sources:
+- wikipedia-aquaria
+- gamedev-road-to-the-igf-bit-blot-aquaria
+- 2026-11-11-justin-smith
+notes: Derek Yu has no person record. The IGF win came in March 2007, before the December release.

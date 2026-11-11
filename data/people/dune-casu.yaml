@@ -1,7 +1,30 @@
 id: dune-casu
 name: Dune Casu
-summary: Developer of Absolute Drift and Over the Hill; came to older Full Indie meetups, per Justin Smith.
+vancouver:
+  tie: resident
+  note: Funselektor is Vancouver-based; a 2020 press release says Casu works from a van.
+  sources:
+  - gamespress-2020-art-of-rally
+  - canadiangamedevs-funselektor
+roles:
+- designer
+- founder
+summary: 'Founder of Vancouver''s Funselektor Labs: Absolute Drift (2015), art of rally (2020) and Over the Hill
+  (2026).'
+bio: Casu founded Funselektor Labs, which released Absolute Drift on July 29, 2015 and art of rally, which he designed,
+  on September 23, 2020. Over the Hill, made with Strelka Games, came to PC on October 14, 2026. Justin Smith says
+  Casu came to older Full Indie meetups.
+memberships:
+- org: funselektor-labs
+  role: founder
+  sources:
+  - gamespress-2020-art-of-rally
 consent:
   status: not-asked
-status: interview-only
-sources: [2026-11-11-justin-smith]
+status: verified
+sources:
+- wikipedia-absolute-drift
+- wikipedia-art-of-rally
+- gamespress-2020-art-of-rally
+- gematsu-over-the-hill-launches-october-14
+- 2026-11-11-justin-smith

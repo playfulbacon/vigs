@@ -7,13 +7,15 @@ date:
 era: first-indies
 type: other
 summary: Justin Smith finds Chevy Ray Johnston's Skullpogo on TIGSource and invites Johnston, then living in Kamloops,
-  to port it to iPhone. Johnston comes to Vancouver for about three days and they hammer out the port. Johnston
+  to port it to iPhone. Johnston comes to Vancouver for about three days and they hammer out the port, released that October. Johnston
   moves to the city a few months later and brings Maddy Thorson, the start of the line that leads to Indie House.
 people:
 - justin-smith
 - chevy-ray-johnston
 games:
 - skullpogo
+orgs:
+- captain-games
 region: vancouver
 significance: 2
 status: interview-only

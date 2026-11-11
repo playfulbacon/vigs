@@ -1,0 +1,24 @@
+id: 2005-06-deep-fried-entertainment-founded
+title: Deep Fried Entertainment founded
+date:
+  value: 2005-06
+  note: CanDevs; Game Developer reported it on August 29, 2005
+era: aaa-roots
+type: founding
+summary: Five ex-EA developers found Deep Fried Entertainment in Vancouver to make handheld games. It grows on contract
+  work such as 2K's MLB titles, and in 2007 brings Justin Smith to the city.
+people:
+- justin-smith
+orgs:
+- deep-fried-entertainment
+- ea-vancouver
+region: vancouver
+significance: 1
+status: verified
+sources:
+- gamedev-2005-deep-fried-forms
+- candevs-deep-fried
+tags:
+- founding
+- spin-off
+- family-tree

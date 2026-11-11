@@ -1,0 +1,16 @@
+id: grubby-games
+name: Grubby Games
+kind: indie-studio
+founded: '2004'
+founders:
+- ryan-clark
+location:
+  city: Vancouver
+  region: vancouver
+  note: Called a Vancouver studio by Village Gamer (Jan 2009), seen only in a search snippet.
+summary: Indie studio co-founded by Ryan Clark and Matt Parry in 2004, maker of Professor Fizzwizzle and IncrediBots
+  (2008). Ryan Clark later founded Brace Yourself Games.
+operating_status: unknown
+status: single-source
+sources:
+- wikipedia-incredibots

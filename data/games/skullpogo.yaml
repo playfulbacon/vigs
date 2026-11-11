@@ -1,6 +1,46 @@
 id: skullpogo
 title: Skullpogo
-summary: Chevy Ray Johnston's game, which Justin Smith ported to iPhone with Johnston in 2009.
-status: interview-only
-sources: [2026-11-11-justin-smith]
-notes: Stub from the Justin Smith interview; dates and credits to be filled from published sources.
+releases:
+- date: 2008-10
+  kind: release
+  platforms:
+  - Windows (freeware)
+  note: Game Maker freeware by Chevy Ray Johnston as The Proper Undead; TIGSource post of October 11, 2008 seen
+    only in a search snippet.
+  sources:
+  - 2026-11-11-justin-smith
+- date: '2009-10-21'
+  kind: port
+  platforms:
+  - iOS
+  note: Sold by Captain Games Inc.; some databases credit BlinkBat Games, Justin Smith's labels.
+  sources:
+  - toucharcade-skullpogo
+  - touchhle-appdb-skullpogo
+release_status: released
+developers:
+- captain-games
+credits:
+- person: chevy-ray-johnston
+  role: creator
+  sources:
+  - 2026-11-11-justin-smith
+- person: justin-smith
+  role: iOS port
+  sources:
+  - 2026-11-11-justin-smith
+vancouver_connection: The iOS port was made in Vancouver over a weekend in 2009 when Justin Smith brought Chevy
+  Ray Johnston down from Kamloops; Johnston moved to the city soon after.
+region: vancouver
+summary: Chevy Ray Johnston's pogo-skull arcade game, first a Game Maker freeware game (2008), ported to iPhone
+  by Justin Smith with Johnston in 2009.
+links:
+  itch: https://captaingames.itch.io/skullpogo
+status: single-source
+sources:
+- toucharcade-skullpogo
+- touchhle-appdb-skullpogo
+- captaingames-itch-skullpogo
+- 2026-11-11-justin-smith
+notes: Smith's role as porter rests on his interview; the store listing names only Captain Games Inc. The iOS date
+  rests on a TouchArcade snippet.

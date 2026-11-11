@@ -1,6 +1,45 @@
 id: absolute-drift
 title: Absolute Drift
-summary: Dune Casu's drifting game; Casu came to the older Full Indie meetups.
-status: interview-only
-sources: [2026-11-11-justin-smith]
-notes: Stub from the Justin Smith interview; dates and credits to be filled from published sources.
+releases:
+- date: '2015-07-29'
+  kind: release
+  platforms:
+  - Windows
+  - OS X
+  - Linux
+  sources:
+  - wikipedia-absolute-drift
+- date: '2016-08-29'
+  kind: port
+  platforms:
+  - PS4
+  sources:
+  - wikipedia-absolute-drift
+- date: '2020-12-03'
+  kind: port
+  platforms:
+  - Switch
+  sources:
+  - wikipedia-absolute-drift
+release_status: released
+developers:
+- funselektor-labs
+publishers:
+- funselektor-labs
+credits:
+- person: dune-casu
+  role: creator
+  sources:
+  - wikipedia-absolute-drift
+vancouver_connection: Made by Dune Casu's Vancouver studio Funselektor Labs.
+region: vancouver
+summary: Funselektor Labs' minimalist top-down drifting game by Dune Casu.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/Absolute_Drift
+status: single-source
+sources:
+- wikipedia-absolute-drift
+- canadiangamedevs-funselektor
+- 2026-11-11-justin-smith
+notes: Wikipedia's release section also gives August 29, 2016 (the PS4 date) for the PC release; July 29, 2015 is
+  used here.

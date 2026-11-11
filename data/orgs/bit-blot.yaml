@@ -1,0 +1,14 @@
+id: bit-blot
+name: Bit Blot
+kind: indie-studio
+founders:
+- alec-holowka
+location:
+  region: international
+  note: Holowka in Canada, Derek Yu in the US (2006).
+summary: Alec Holowka and Derek Yu's two-person studio, which made Aquaria (2007).
+operating_status: dormant
+status: single-source
+sources:
+- wikipedia-aquaria
+- gamedev-road-to-the-igf-bit-blot-aquaria

@@ -1,6 +1,37 @@
 id: incredibots
 title: IncrediBots
-summary: Ryan Clark's first game, which Justin Smith says was in the IGF and helped launch Clark.
-status: interview-only
-sources: [2026-11-11-justin-smith]
-notes: Stub from the Justin Smith interview; dates and credits to be filled from published sources.
+releases:
+- date: '2008-10-31'
+  kind: release
+  platforms:
+  - Flash (web)
+  sources:
+  - wikipedia-incredibots
+release_status: released
+developers:
+- grubby-games
+credits:
+- person: ryan-clark
+  role: designer
+  sources:
+  - wikipedia-incredibots
+awards:
+- name: IGF Technical Excellence
+  year: 2009
+  result: finalist
+  sources:
+  - ubm-igf-2009-finalists
+vancouver_connection: Made by Grubby Games, called a Vancouver studio by Village Gamer (2009, search snippet only).
+  Justin Smith says it helped launch Ryan Clark.
+region: vancouver
+summary: Grubby Games' Flash robot-building physics game, Ryan Clark's first, a finalist for Technical Excellence
+  at the 2009 IGF.
+links:
+  wikipedia: https://en.wikipedia.org/wiki/IncrediBots
+status: single-source
+sources:
+- wikipedia-incredibots
+- ubm-igf-2009-finalists
+- 2026-11-11-justin-smith
+notes: 'Other designers: Oliver Trujillo, Matt Parry, Michael Pines. A fan site gives November 10, 2008. Later bought
+  by Big Fish Games.'

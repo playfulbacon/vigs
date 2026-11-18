@@ -114,13 +114,13 @@ Leads from the second VIGS interview (`data/interviews/2026-11-18-chevy-ray-john
 
 ### More early meetup names (as transcribed)
 
-Johnston's first meetup had 15–20 people: **Kayla Kinnanan**, **Shane Neville**, **Nick Wonders** (probably Nick Waanders, Slick Entertainment), **Jamie Cheng**, **Tatham Johnson** (then at Klei, no longer in games), **Alex Vostrov**, **Jake Birkett**, **Brad** (Big Fish Games, before it closed), and early on **Jesse**, who later made a game with Nick (Jesse Turner?). Also **Paul Vier** (Paul Veer?), an internet friend who moved here.
+Johnston's first meetup had 15–20 people: **Kayla Kinnanan**, **Shane Neville**, **Nick Waanders** (confirmed), **Jamie Cheng**, **Tatham Johnson** (then at Klei, no longer in games), **Alex Vostrov**, **Jake Birkett**, **Brad** (Big Fish Games, before it closed), and early on **Jesse**, who later made a game with Nick (Jesse Turner?). Also **Paul Veer** (confirmed), an internet friend who moved here.
 
-Cross-check against Justin's list; none of these names is confirmed yet.
+Cross-check against Justin's list. Nick Waanders and Paul Veer are confirmed; the rest are as transcribed.
 
 ### Andy Moore
 
-Johnston names **Andy Moore** as an early TIGSource regular. He may be the "Andy" Justin said to ask about Orca Jam. Confirm.
+Johnston names **Andy Moore** (name confirmed) as an early TIGSource regular. He may be the "Andy" Justin said to ask about Orca Jam. Confirm.
 
 ### The Indie House press feature
 

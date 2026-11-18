@@ -100,3 +100,44 @@ Ask: Justin Smith (the list), Michael Labbe, Graham Jans, Jake Birkett.
 ### How did people hear about events?
 
 - Before Full Indie, how did anyone find local game events? Justin found studios through a "Game Dev Map" site (gamedevmap.com?) and doesn't remember how he heard about the first meetup. Ask everyone.
+
+## From the Chevy Ray Johnston interview (November 18, 2026)
+
+Leads from the second VIGS interview (`data/interviews/2026-11-18-chevy-ray-johnston.yaml`). Johnston cautioned that their memory of dates from the Indie House years is unreliable, so treat dates here as soft.
+
+### The Skullpogo trip and the first meetup: a timing puzzle
+
+- Johnston remembers going to the indie meetup during the Skullpogo trip, with about 15 people there, many of whom already knew Johnston's games.
+- The iOS Skullpogo is dated October 21, 2009 (a TouchArcade snippet), but the first documented meetup is May 2010. Either the trip was later than recorded, the port shipped later, or the meetup was on another visit.
+- Justin remembers a weekend of about three days; Johnston remembers about two weeks. The event is now marked disputed with both accounts.
+- To settle it: the App Store release date, and Justin's attendee list.
+
+### More early meetup names (as transcribed)
+
+Johnston's first meetup had 15–20 people: **Kayla Kinnanan**, **Shane Neville**, **Nick Wonders** (probably Nick Waanders, Slick Entertainment), **Jamie Cheng**, **Tatham Johnson** (then at Klei, no longer in games), **Alex Vostrov**, **Jake Birkett**, **Brad** (Big Fish Games, before it closed), and early on **Jesse**, who later made a game with Nick (Jesse Turner?). Also **Paul Vier** (Paul Veer?), an internet friend who moved here.
+
+Cross-check against Justin's list; none of these names is confirmed yet.
+
+### Andy Moore
+
+Johnston names **Andy Moore** as an early TIGSource regular. He may be the "Andy" Justin said to ask about Orca Jam. Confirm.
+
+### The Indie House press feature
+
+Johnston remembers a journalist, **Chris Plante** they think, for Kotaku, coming to a big party and writing about the house. Plante co-founded Polygon, and Polygon's July 2014 TowerFall feature described the house (`2014-07-polygon-towerfall-launch-feature`). Find the article; it may have photos.
+
+### PAX pilgrimages
+
+Around PAX West, indie developers flew into Vancouver, slept on Indie House's floor and took the train to Seattle together; Rami Ismail often stayed. Ask residents for years and photos.
+
+### Flash and Adult Swim
+
+The group's first income was Flash: exclusive sponsorships, then Adult Swim pitches (Maddy started it). Titles to identify: Noel Berry's drunk-assassin game with a phone-texting UI, and Maddy Thorson and Alec Holowka's planet-crashing game. Ask Thorson and Berry.
+
+### "Poisoning the well"
+
+Shane Neville, arguing against free-to-play at a meetup (the transcript has "at Kaylee's", possibly the venue). Ask Neville.
+
+### How Pedro Medeiros and Amora Bettany found TowerFall
+
+They cold-emailed Johnston a FlashPunk game; Johnston introduced them to Maddy, who needed TowerFall art. Johnston also names "Issa" (Isadora Sophia?). Confirm with Medeiros and Bettany.

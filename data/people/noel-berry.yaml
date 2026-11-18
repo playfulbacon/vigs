@@ -4,9 +4,12 @@ aliases:
 - NoelFB
 vancouver:
   tie: resident
-  note: Indie House resident; in 2014 described working in "our Vancouver-based IndieHouse."
+  note: >-
+    Indie House resident; in 2014 described working in "our Vancouver-based IndieHouse." Chevy Ray Johnston
+    says Berry lived in the Prairies and moved after visiting at Johnston's invitation.
   sources:
   - psblog-procedurally-generated-adventure-skytorn-announced-ps4
+  - 2026-11-18-chevy-ray-johnston
 roles:
 - programmer
 - designer
@@ -16,6 +19,9 @@ summary: >-
   Indie House resident, co-creator of Celeste Classic and lead programmer of Celeste, who now co-leads
   Extremely OK Games.
 bio: >-
+  Berry came from the Game Maker community and was FlashPunk's most active early helper, making games in it
+  every few weeks and answering beginners' questions, which is how Chevy Ray Johnston came to invite him to
+  Vancouver and into Indie House (Johnston's account). He built websites on the side before indie work paid.
   Berry met Kevin Regamey of Power Up Audio at the June 2012 Full Indie Game Jam. Living at Indie House,
   he announced Skytorn for PS4 on December 6, 2014, made "alongside the developers of TowerFall Ascension
   and Night in the Woods." In August 2015 he and Maddy Thorson made the PICO-8 Celeste in a four-day jam,

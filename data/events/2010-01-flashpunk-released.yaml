@@ -6,16 +6,19 @@ date:
   note: MetaFilter and TIGSource posts of January 2010, seen in search snippets only
 era: first-indies
 type: milestone
-summary: Chevy Ray Johnston releases FlashPunk, a free ActionScript 3 library for Flash games. Justin Smith says
-  everyone knew Chevy because everyone used it.
+summary: Chevy Ray Johnston releases FlashPunk, a free ActionScript 3 library for Flash games that shipped with
+  example games. Noel Berry becomes its most active helper and it teaches thousands of beginners to code; Pedro
+  Medeiros and Amora Bettany later reach Johnston with a FlashPunk game.
 people:
 - chevy-ray-johnston
+- noel-berry
 region: vancouver
 significance: 2
 status: unverified
 sources:
 - metafilter-2010-flashpunk
 - 2026-11-11-justin-smith
+- 2026-11-18-chevy-ray-johnston
 caveat: Release month rests on search snippets; whether Johnston had moved to Vancouver yet is unclear.
 tags:
 - tools

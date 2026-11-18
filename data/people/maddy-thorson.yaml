@@ -12,12 +12,14 @@ vancouver:
   tie: resident
   note: >-
     After college she moved into a Vancouver apartment with Chevy Ray Johnston; the arrival year was not
-    found (Justin Smith guesses 2010 and says Johnston, whom she knew from the online Flash and TIGSource
-    community, brought her over). Lived at Indie House.
+    found (Justin Smith guesses 2010). Johnston, who had known her since about 16 through the Game Maker
+    community, says Thorson visited Vancouver at Johnston's invitation and then moved. Lived at Indie House.
   sources:
   - wikipedia-maddy-thorson
   - source: 2026-11-11-justin-smith
     note: Johnston brought her to Vancouver; year a guess
+  - source: 2026-11-18-chevy-ray-johnston
+    note: Met Johnston through Game Maker; visited, then moved
 roles:
 - designer
 - programmer

@@ -35,6 +35,8 @@ sources:
 - egm-power-up-audio
 - source: osm-nominatim
   note: 'Coordinates: Steveston neighbourhood centre, not the house.'
+- source: 2026-11-18-chevy-ray-johnston
+  note: Johnston on proposing the house, PAX visitors sleeping on the floor, playtesting
 notes: 'Private home: located only to "near Steveston, Richmond"; no address is recorded. 2014 sources
   (PlayStation Blog, CGM, Polygon via Game Developer) just say "Vancouver." Games tied to it include TowerFall,
   Celeste, Night in the Woods (through Holowka), Skytorn and Ikenfell. Open questions: address, move-in

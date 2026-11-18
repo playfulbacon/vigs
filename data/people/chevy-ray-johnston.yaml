@@ -1,17 +1,20 @@
 id: chevy-ray-johnston
 name: Chevy Ray Johnston
-origin: Kamloops, BC (per Justin Smith's 2026 interview)
+origin: A small town in the BC Interior (Kamloops, per Justin Smith); Johnston's own 2026 interview
 vancouver:
   tie: resident
   arrived:
     value: "2010"
     approximate: true
-    note: Justin Smith recalls the move a few months after a 2009 visit; unconfirmed.
+    note: >-
+      Smith recalls the move a few months after a 2009 visit; Johnston says it followed the Skullpogo trip
+      directly. The year is soft.
   note: >-
-    Came down from Kamloops for a weekend in 2009 to port Skullpogo with Justin Smith and moved to Vancouver
-    a few months later for a Flash job (Smith's account). Shared a Vancouver apartment with Maddy Thorson
-    after her college years, then Indie House.
+    Came to Vancouver to make the iPhone port of Skullpogo with Justin Smith (a weekend by Smith's account,
+    about two weeks by Johnston's) and moved to the city soon after. Shared a Vancouver apartment with Maddy
+    Thorson after her college years, then Indie House.
   sources:
+  - 2026-11-18-chevy-ray-johnston
   - 2026-11-11-justin-smith
   - wikipedia-maddy-thorson
   - straight-2024-indie-hub
@@ -22,14 +25,17 @@ roles:
 - writer
 - founder
 summary: >-
-  Maddy Thorson's roommate who suggested Indie House, and lead developer of Ikenfell (2020, Happy Ray
-  Games).
+  FlashPunk creator who drew Maddy Thorson and Noel Berry to Vancouver and proposed Indie House; lead
+  developer of Ikenfell (2020, Happy Ray Games).
 bio: >-
-  Johnston was a prominent TIGSource developer in Kamloops and the maker of FlashPunk, the ActionScript
-  library widely used by Flash developers. According to Justin Smith, Johnston came to Vancouver for a
-  weekend in 2009 to port Skullpogo to iPhone with him, then moved to the city a few months later for a
-  Flash job, rooming with Smith for about four months. Johnston brought Maddy Thorson, then in Alberta, to
-  Vancouver. Johnston shared a Vancouver apartment with Maddy Thorson after her college years and suggested getting
+  Johnston grew up making free games in the Game Maker community, where Johnston met Maddy Thorson at
+  about 16, and later on TIGSource, and made FlashPunk, the free ActionScript library, whose most active
+  helper was Noel Berry. After Justin Smith cold-emailed about an iPhone Skullpogo, Johnston came to
+  Vancouver to build the port with Smith in his kitchen, went to the indie meetup, and moved to the city,
+  rooming with Smith for about four months. After about a year here Johnston kept inviting Thorson and
+  Berry, both in the Prairies, to visit until they moved, and proposed the shared house. Johnston also
+  introduced Pedro Medeiros and Amora Bettany to Thorson for TowerFall, and taught at Vancouver Film School
+  before indie work paid. Johnston shared a Vancouver apartment with Maddy Thorson after her college years and suggested getting
   the house near Steveston that became Indie House, which the two took around October 2012. At the June
   2012 Full Indie Game Jam, Johnston and Noel Berry met Kevin Regamey of Power Up Audio. Johnston was
   lead developer, artist and writer of Ikenfell, released by Happy Ray Games with Humble Games on October
@@ -48,12 +54,18 @@ memberships:
   sources:
   - straight-2024-indie-hub
   - wikipedia-maddy-thorson
+- org: vancouver-film-school
+  role: instructor
+  status: interview-only
+  sources:
+  - 2026-11-18-chevy-ray-johnston
 - org: happy-ray-games
   role: founder
   sources:
   - wikipedia-ikenfell
 consent:
   status: not-asked
+  note: Interviewed November 18, 2026 (2026-11-18-chevy-ray-johnston); release form pending.
 status: verified
 sources:
 - wikipedia-maddy-thorson
@@ -61,6 +73,7 @@ sources:
 - wikipedia-ikenfell
 - egm-power-up-audio
 - 2026-11-11-justin-smith
+- 2026-11-18-chevy-ray-johnston
 notes: >-
   Pronouns and birth year not found; do not assume (the interview transcript's pronouns for Chevy are not a
   statement from Chevy). A key early witness: ask about the Skullpogo weekend, the move from Kamloops, and how

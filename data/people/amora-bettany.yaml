@@ -53,6 +53,8 @@ consent:
   status: not-asked
 status: single-source
 sources:
+- source: 2026-11-18-chevy-ray-johnston
+  note: Cold-emailed Johnston a FlashPunk game; Johnston introduced them to Thorson for TowerFall art
 - wikipedia-amora-bettany
 - gamedev-i-celeste-i-developers-form-new-studio-extremely-ok-games
 - wikipedia-celeste-video-game
